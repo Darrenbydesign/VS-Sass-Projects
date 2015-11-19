@@ -16,7 +16,7 @@
 @import 'layout/sidebars';
 @import 'layout/footer';
 
-// components styling go here (this is where you place things like accordions, navbars, tabs, buttons, etc. 
+// components styling go here (this is where you place things like accordions, navbars, tabs, buttons, etc.
 // they should be made agnostic to your layout so that they can be used anywhere they are needed.)
 @import 'components/forms';
 @import 'components/icons';
@@ -26,7 +26,7 @@
 @import 'components/accordions';
 @import 'components/breadcrumbs';
 
-// Modules are things like Navigation, Headers, Footers, Sidebars, Etc. 
+// Modules are things like Navigation, Headers, Footers, Sidebars, Etc.
 // They are built with components to create larger more structures
 @import 'modules/masthead';
 @import 'modules/status';
@@ -41,7 +41,7 @@
 // @import 'pages/office-365-page';
 
 // This section is where all the the bad code goes until its learned its lesson and has become good code.
-// (This is where quick and dirty code fixes should go and this should be 
-// regularly checked for re-organization of code into appropriate folder hierarchy. 
+// (This is where quick and dirty code fixes should go and this should be
+// regularly checked for re-organization of code into appropriate folder hierarchy.
 // This file should be empty most of the time.)
 @import 'shame';
