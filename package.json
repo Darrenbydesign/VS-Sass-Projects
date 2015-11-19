@@ -1,0 +1,33 @@
+{
+  "name": "vs-sass-project",
+  "version": "1.0.0",
+  "description": "A Template project for using Sass and Gulp in visual studio with NodeJS, Sassdoc, Jade and Boostrap-sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darrenbydesign/VS-Sass-Projects.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Sass",
+    "Boostrap",
+    "Template",
+    "Visual",
+    "Studio",
+    "Jade",
+    "Boostrap-sass"
+  ],
+  "author": "Darren Sorrels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darrenbydesign/VS-Sass-Projects/issues"
+  },
+  "homepage": "https://github.com/Darrenbydesign/VS-Sass-Projects#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
+  }
+}
