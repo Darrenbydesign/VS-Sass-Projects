@@ -1,0 +1,48 @@
+/*
+=================================================================== 
+ $Info-Block - Info blocks are useful for small blurbs of text
+ that inform users about a task or guides them through a process
+===================================================================
+*/
+
+.info-block-container {
+  @include flexbox;
+  @include flex-flow(column, wrap);
+  flex-direction: column;
+  flex-wrap: wrap;
+  @include justify-content(center);
+  align-content: center;
+  @include flexpoint-sm {
+    @include flex-flow(row, wrap);
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.info-block {
+  width: 70vw;
+  background: $brand-white;
+  box-shadow: $brand-box-shadow;
+  padding: 10px 15px;
+  margin: 20px 15px;
+  a {
+    text-decoration: none;
+  }
+  p{
+    @include font-size(18px);
+  }
+  @include flexpoint-sm{
+    width: 50vmin;
+  }
+}
+
+.info-block-header {
+  text-align: center;
+  @include font-size(40px);
+  font-family: $brand-typeface-Light;
+}
+
+.info-bar {
+  background: $brand-white;
+  padding: 5px;
+}

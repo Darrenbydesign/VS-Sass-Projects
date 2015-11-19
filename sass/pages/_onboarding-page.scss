@@ -1,0 +1,46 @@
+.onboarding-bg {
+  background: linear-gradient(rgba($black, 0.5), rgba($black, 0.4)), url($onboarding-bg) no-repeat center center;
+  @include prefix((background-size: cover), ms o);
+  height: 560px;
+}
+
+.ob-info-container {
+  color: $white;
+  margin-top: 150px;
+}
+
+.ob-info-content {
+  padding-bottom: 30px;
+}
+
+.ob-checklist {
+  list-style-type: square;
+}
+
+.ob-form-bg {
+  background: #f4f4f4;
+}
+
+.ob-form-block {
+  background: $white;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+}
+
+.ob-textarea {
+  position: relative;
+  min-height: 8em;
+  max-height: 100%;
+  -ms-resize: both;
+  resize: both;
+  @include border-radius(0);
+  @include breakpoint-lg {
+    min-height: 10em;
+  }
+}
+
+.ob-button-group {
+  @include breakpoint-lg {
+    float: right;
+  }
+}

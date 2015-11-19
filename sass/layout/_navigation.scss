@@ -1,0 +1,35 @@
+/*================$Navigation Styles====================== */
+
+.navbar-inverse {
+    .ft-nav {
+        border-right: 1px solid $gray-light;
+        >li {
+            >a {
+                color: $white;
+            }
+        }
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
+
+.ft-nav {
+    border-right: 1px solid $gray-light;
+    >li {
+        >a {
+            color: $white;
+        }
+    }
+    &:last-child {
+        border-right: 0;
+    }
+}
+
+.onboarding-link {
+    background: $corp-color;
+    color: dt($corp-color);
+    a {
+        color: dt($corp-color);
+    }
+}

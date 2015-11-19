@@ -1,0 +1,103 @@
+////
+/// @group Alternate-Theme
+////
+
+//==============================
+///Color variables
+//==============================
+$white: #fff;
+///
+$blue: #0078D7;
+///
+$gray: #4d4d4d;
+///
+$purple: #5C005C;
+///
+$gray-light: lighten($gray, 15%);
+///
+$gray-dark: darken($gray, 15%);
+
+
+/// Corp-color - these are the base colors for this theme If a color is not redefined here the default styles will be used from the base config.scss file
+$corp-color: $blue;
+///
+$corp-color-dark: darken($corp-color, 15%);
+///
+$corp-color-light: lighten($corp-color, 15%);
+///
+$corp-color-second: $white;
+///
+$corp-color-second-dark: darken($corp-color-second, 15%);
+///
+$corp-color-second-light: lighten($corp-color-second, 15%);
+
+//==============================
+///Typography variables
+//==============================
+
+/// Base Font Stack
+$segoe-UI-regular: (
+  'Segoe UI', 
+  'Helvetica', 
+  'Arial', 
+  sans-serif,
+  );
+/// Header Font Stack
+$segoe-UI-light: (
+  'Segoe UI Light', 
+  'Helvetica', 
+  'Arial', 
+  sans-serif,
+  );
+/// Sub Header Font Stack
+$segoe-UI-semilight: (
+  'Segoe UI Semilight', 
+  'Helvetica', 
+  'Arial', 
+  sans-serif,
+  );
+/// Sub-Sub-header/Caption Font Stack
+$segoe-UI-semibold: (
+  'Segoe UI Semibold', 
+  'Helvetica', 
+  'Arial', 
+  sans-serif,
+  );
+
+/// Font: Declare your fonts sizes and base coloring here anything not defined here will use the default settings
+$base-font-size: 14px;
+///
+$base-font-family: $segoe-UI-regular;
+///
+$base-font-color: $gray;
+
+//==============================
+//Layout variables
+//==============================
+
+/// Borders: Default border-color for containers and other modules using the default theme goes here.
+$base-border-radius: 0px;
+
+/// border-radius variable for circle
+$rounded-border-radius: 50%;
+
+/// base border color used for default theme
+$base-border-color: $gray-light;
+
+
+/// This variable is for use with sites that use fixed headers
+$fixed-nav-body-padding: 50px; 
+
+
+/// This variable is for sites that utilize a sticky footer with an explicit height set to the footer
+$footer-height: 70px; 
+
+/// This should be added to the body element to compensagte for the absolute position of the footer and its explicit height
+$margin-bottom: $footer-height; 
+
+//==============================
+//Image variables - Images instead of writing paths to images in the partials make them variables in order keep consistent pathing and easily change out images.
+//==============================
+
+// This is where you import the partial file and default config variables this must be placed at the end of the theme file
+@import '../../main';

@@ -1,0 +1,132 @@
+.ems-bg {
+  background: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url($ems-bg) no-repeat top center;
+  @include prefix((background-size: cover), ms o);
+  @include breakpoint-lg {
+    background: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url($ems-bg) no-repeat top center;
+    @include prefix((background-size: cover), ms o);
+    height: 500px;
+  }
+}
+
+.masthead-info-container {
+  color: $white;
+  @include breakpoint-lg {
+    margin-top: 100px;
+  }
+}
+
+.manage-office-bg {
+  background: $white;
+  @include breakpoint-lg {
+    background: url($manage-bg) no-repeat center center;
+    @include prefix((background-size: cover), ms o);
+    height: 500px;
+  }
+}
+
+.mobile-apps-bg {
+  background: $corp-color;
+  @include breakpoint-lg {
+    background: url($apps-bg) no-repeat center center;
+    @include prefix((background-size: cover), ms o);
+    height: 500px;
+  }
+}
+
+.app-info-container {
+  color: $white;
+  @include breakpoint-lg {
+    margin-top: 100px;
+  }
+}
+
+.mobile-solutions-bg {
+  background: $white;
+  @include breakpoint-lg {
+    background: url($mobile-solutions-bg) no-repeat center center;
+    @include prefix((background-size: cover), ms o);
+    height: 500px;
+  }
+}
+
+.mobile-solutions-container {
+  @include breakpoint-lg {
+    margin-top: 100px;
+  }
+}
+
+.pricing-table-container {
+  display: flex;
+  align-self: flex-start;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.pt-heading {
+  background: $gray;
+  @include font-size(20px);
+  color: dt($gray);
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.pt-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.price-section {
+  background: $corp-color;
+  padding: 7px 10px;
+  flex-grow: 2;
+  sup {
+    @include font-size(20px);
+    position: relative;
+    top: -20px;
+    &:first-child {
+      @include font-size(30px);
+      position: relative;
+      top: -8px;
+    }
+  }
+  h4 {
+    color: dt($corp-color);
+  }
+}
+
+.list-section {
+  color: dt(lighten($gray-light, 25%));
+  flex-grow: 1;
+  ul {
+    list-style: none;
+    height: 100%;
+  }
+  li {
+    background: lighten($gray-light, 50%);
+    padding: 10px 15px;
+    margin-left: -2.5em;
+    &:nth-child(2) {
+      background: lighten($gray-light, 40%);
+    }
+    &:nth-child(3) {
+      background: lighten($gray-light, 30%);
+    }
+  }
+}
+
+.amount {
+  color: dt($corp-color);
+  @include font-size(50px);
+  font-family: $segoe-UI-light;
+  text-align: center;
+}
+
+.ems-button {
+  /// margin-bottom: 10px;
+}
+
+.value-info-container {
+  padding: 40px;
+}

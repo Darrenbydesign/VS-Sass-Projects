@@ -1,0 +1,25 @@
+//- The extension below pulls all block content in this file in the docwrapper partial and outputs the respective file
+extends docwrapper
+block title 
+  | Page Title
+block append meta-tags
+  meta(name="description", content="The initial page in the base template project")
+  
+block content
+  .container-fluid
+    h1 
+      block title
+    .row
+      #section-1.col-md-12
+        object.test-svg(data="images/icons/SVG/check_icon.svg#check-icon", type="image/svg+xml")
+        object.test-svg(data="images/icons/SVG/search.svg#search.svg", type="image/svg+xml")
+    .row
+      #section-2.col-md-12
+        svg: use(xlink:href="images/icons/SVG/check_icon.svg#check-icon#check-icon")
+    .row
+      #section-3.col-md-12
+        h1.title-header This is a test
+    .row
+      #section-4.col-md-12
+        p
+          | This should be changed to real text soon.

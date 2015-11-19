@@ -1,0 +1,12 @@
+.button {
+    font-family: $segoe-UI-regular;
+    @include button($corp-color);
+}
+.button-block{
+  @include button($corp-color);
+  width: 100%;
+}
+.button-small{
+  @include button($corp-color);
+  padding: 6px 10px;
+}

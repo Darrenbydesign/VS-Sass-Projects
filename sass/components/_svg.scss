@@ -1,0 +1,12 @@
+/* ===========$SVG Styles========================= */
+.test-svg {
+  height: 150px;
+}
+
+.check-mark-svg {
+  /// width: 250px;
+  /// height: 250px;
+  polygon {
+    fill: $corp-color;
+  }
+}

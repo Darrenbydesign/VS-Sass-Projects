@@ -1,0 +1,9 @@
+/* =====================$Base-layout Styles===================== */
+.wrap {
+    min-height: 100%;
+}
+body {
+	padding-top: $fixed-nav-body-padding;
+	margin-bottom: $margin-bottom;
+	// @include link-color($corp-color, $corp-color-dark, $corp-color-dark, $corp-color);
+}

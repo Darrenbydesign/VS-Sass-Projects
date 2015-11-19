@@ -1,0 +1,23 @@
+/*
+=================================================================== 
+ $Tables - CIE Table styles go here
+===================================================================
+*/
+
+.table {
+  >tbody>tr>td,
+  >tbody>tr>th,
+  >tfoot>tr>td,
+  >tfoot>tr>th,
+  >thead>tr>td,
+  >thead>tr>th {
+    padding: 10px 15px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    margin-top: 0;
+  }
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: $brand-gray-lt;
+}

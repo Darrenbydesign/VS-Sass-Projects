@@ -1,0 +1,49 @@
+.grid{
+	@include prefix((display: flex), webkit ms o moz);
+	flex-flow: row wrap;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.grid-cell{
+	flex: 1;
+}
+
+.grid-gutter{
+	margin: -1em 0 0 -1em;
+	.grid-cell{
+		padding: 1em 0 0 1em;
+	}
+}
+
+/// This controls the row alignment. Options are top middle bottom
+.grid-align-top{
+	align-items: flex-start;
+}
+.grid-align-middle{
+	align-items: flex-end;
+}
+
+.grid-align-bottom{
+	align-items: center;
+}
+
+.grid-cell-top{
+	align-self: flex-start;
+}
+.grid-cell-middle{
+
+	align-self: center;
+}
+
+.grid-cell-align-bottom{
+	align-self: flex-end;
+}
+
+.grid-fit
+{
+	.grid-cell{
+		flex: 1;
+	}
+}
