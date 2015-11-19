@@ -8,6 +8,11 @@
 @import 'base/typography';
 @import 'helpers/helper-classes';
 
+
+// Vendors styles loaded before custom styles so that overrides can be made properly
+/* Boostrap Styles Loaded into project instead of called seperately*/
+@import 'vendors/_bootstrap.scss';
+
 // Layout styling goes here (Things like footers,headers, sidebars, etc)
 // @import 'layout/grid';
 @import 'layout/base-layout';
@@ -39,6 +44,9 @@
 // @import 'pages/onboarding-page';
 // @import 'pages/ems-page';
 // @import 'pages/office-365-page';
+
+
+
 
 // This section is where all the the bad code goes until its learned its lesson and has become good code.
 // (This is where quick and dirty code fixes should go and this should be

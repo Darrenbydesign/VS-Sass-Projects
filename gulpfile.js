@@ -5,13 +5,17 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 //var autoprefixer = require('gulp-autoprefixer');
 var sassdoc = require('sassdoc');
+var jade = require('gulp-jade');
+
 
 
 //Variables 
-var input = 'sass/**/*.scss'; //This finds the scss files in the sass folder for compilation
+var sassInput = 'sass/**/*.scss'; //This finds the scss files in the sass folder for compilation
 
-var output = './css'; //This outputs the compiled css files into the CSS folder
+var sassOutput = './css'; //This outputs the compiled css files into the CSS folder
 
+var jadeInput = './jade/**/*.jade';
+var jadeOutput = './Views/Static';
 var sassOptions = {
     errLogToConsole: true,
     outputStyle: 'expanded'
@@ -23,24 +27,25 @@ var autoprefixerOptions = {
 
 var sassdocOptions = {
     dest: './sassdoc'
-};
+}; // adds values to the sassdoc to set the path for the documentation
+
 
 // Gulp Task to compile sass files using gulp-sass provides extra options and logs errors when compile fails
 gulp.task('sass', function () {
     return gulp
-        .src(input)
+        .src(sassInput)
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(sourcemaps.write('./maps'))
         //.pipe(autoprefixer(autoprefixerOptions))
-        .pipe(gulp.dest(output));
+        .pipe(gulp.dest(sassOutput));
 });
 
 
 // Seperate task to create sassdoc  documentation
 gulp.task('sassdoc', function () {
     return gulp
-        .src(input)
+        .src(sassInput)
         .pipe(sassdoc(sassdocOptions))
         .resume();
 });
@@ -51,7 +56,8 @@ gulp.task('watch', function () {
     return gulp
     // Step 1. Watch Folder
     // Step 2. Run 'sass' task whenver a change happens
-    .watch(input, ['sass'])
+    .watch(sassInput, ['sass'])
+    .watch(jadeInput,['jade'])
     //Step 3. Log a message in the console when a change is made
     .on('change', function (event) {
         console.log('File' + event.path + 'was' + event.type + ', running tasks...');
@@ -61,10 +67,19 @@ gulp.task('watch', function () {
 // Build settings for production
 gulp.task('prod', ['sassdoc'], function () {
     return gulp
-       .src(input)
+       .src(sassInput)
         .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(gulp.dest(output));
+        .pipe(gulp.dest(sassOutput));
+});
+
+
+// Gulp task that runs gulp jade in the CLI
+gulp.task('jade', function () {
+    return gulp
+        .src(jadeInput)
+        .pipe(jade())
+        .pipe(gulp.dest(jadeOutput));
 });
 
 // Default task that runs watch on sass files
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass','jade', 'watch']);
