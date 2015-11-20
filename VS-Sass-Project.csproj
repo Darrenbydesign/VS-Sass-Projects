@@ -155,12 +155,7 @@
     <Content Include="Scripts\bootstrap\tab.js" />
     <Content Include="Scripts\bootstrap\tooltip.js" />
     <Content Include="Scripts\bootstrap\transition.js" />
-    <Content Include="Views\Static\about.html" />
-    <Content Include="Views\Static\docwrapper.html" />
-    <Content Include="Views\Static\footer.html" />
-    <Content Include="Views\Static\head.html" />
     <Content Include="Views\Static\index.html" />
-    <Content Include="Views\Static\navigation.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -169,12 +164,6 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="LICENSE" />
-    <Content Include="jade\about.jade" />
-    <Content Include="jade\docwrapper.jade" />
-    <Content Include="jade\footer.jade" />
-    <Content Include="jade\head.jade" />
-    <Content Include="jade\index.jade" />
-    <Content Include="jade\navigation.jade" />
     <Content Include="README.md" />
     <Content Include="sass\.sass-cache\06654fb6d9b4c6848227e7346d187f78105171c0\_functions.scssc" />
     <Content Include="sass\.sass-cache\06654fb6d9b4c6848227e7346d187f78105171c0\_mixins.scssc" />

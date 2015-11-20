@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 //var autoprefixer = require('gulp-autoprefixer');
 var sassdoc = require('sassdoc');
-var jade = require('gulp-jade');
+//var jade = require('gulp-jade');
 
 
 
@@ -14,8 +14,12 @@ var sassInput = 'sass/**/*.scss'; //This finds the scss files in the sass folder
 
 var sassOutput = './css'; //This outputs the compiled css files into the CSS folder
 
-var jadeInput = './jade/**/*.jade';
-var jadeOutput = './Views/Static';
+//var jadeInput = './jade/**/*.jade';
+//var jadeOutput = './Views/Static';
+//var jadeOptions = {
+//   jade: jade,
+//    pretty: true
+//}
 var sassOptions = {
     errLogToConsole: true,
     outputStyle: 'expanded'
@@ -35,7 +39,8 @@ gulp.task('sass', function () {
     return gulp
         .src(sassInput)
         .pipe(sourcemaps.init())
-        .pipe(sass(sassOptions).on('error', sass.logError))
+        .pipe(sass(sassOptions)
+        .on('error', sass.logError))
         .pipe(sourcemaps.write('./maps'))
         //.pipe(autoprefixer(autoprefixerOptions))
         .pipe(gulp.dest(sassOutput));
@@ -56,9 +61,9 @@ gulp.task('watch', function () {
     return gulp
     // Step 1. Watch Folder
     // Step 2. Run 'sass' task whenver a change happens
+    // Step 3. Log a message in the console when a change is made
     .watch(sassInput, ['sass'])
-    .watch(jadeInput,['jade'])
-    //Step 3. Log a message in the console when a change is made
+    //.watch(jadeInput, ['jade'])
     .on('change', function (event) {
         console.log('File' + event.path + 'was' + event.type + ', running tasks...');
     });
@@ -74,12 +79,14 @@ gulp.task('prod', ['sassdoc'], function () {
 
 
 // Gulp task that runs gulp jade in the CLI
-gulp.task('jade', function () {
-    return gulp
-        .src(jadeInput)
-        .pipe(jade())
-        .pipe(gulp.dest(jadeOutput));
-});
+//gulp.task('jade', function () {
+//    return gulp
+//        .src(jadeInput)
+//        .pipe(jade(jadeOptions))
+//        .pipe(gulp.dest(jadeOutput))
+//        .on('error', gutil.log);
+//});
 
-// Default task that runs watch on sass files
-gulp.task('default', ['sass','jade', 'watch']);
+// Default task that runs watch files that can be compiled
+// more watch tasks can be added to this default task ... e.g a 'jade' watch can added to utilize that function
+gulp.task('default', ['sass', 'watch']);
