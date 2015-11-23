@@ -8574,7 +8574,11 @@ select {
   text-align: center;
 }
 
-/* ===========$SVG Styles========================= */
+/*
+=================================================================== 
+ $SVG - Styles for SVGs go here
+===================================================================
+*/
 .test-svg {
   height: 150px;
 }
@@ -8816,7 +8820,7 @@ select {
 
 /*
 =================================================================== 
- $MastHead - Mastheads are used when full screen images are needed
+ $Masthead - Mastheads are used when full screen images are needed
  the image is used for titles or call to action page headers
 ===================================================================
 */
@@ -8854,6 +8858,216 @@ select {
   .masthead-info-container {
     margin-top: 100px;
   }
+}
+
+/* Grid Box Styling */
+.grid-box {
+  margin: 15px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.grid-box > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-box li {
+  display: inline-block;
+  margin: 0;
+  padding: 15px 15px 15px 0;
+  text-align: left;
+  position: relative;
+  list-style: none;
+}
+
+.grid-box li div {
+  position: relative;
+  margin: 0;
+  width: 450px;
+  height: 430px;
+}
+
+.grid-box li img {
+  padding: 10px 0px;
+  width: 100%;
+  height: 150px;
+}
+
+.grid-box li h3 {
+  font-family: "Segoe UI Semibold", "Helvetica", "Arial", sans-serif;
+  margin-top: 0px;
+}
+
+.grid-box figure {
+  position: relative;
+  margin: 0;
+  width: 450px;
+  height: 430px;
+}
+
+.grid-box figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+.grid-box figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.grid-box figure h3 {
+  text-align: center;
+}
+
+.grid-box figure span {
+  margin: 0 10px;
+}
+
+.gb-style-1 figure {
+  overflow: hidden;
+}
+
+.gb-style-1 figure img {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.gb-style-1 figure figcaption {
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.gb-style-1 figure:hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+
+.gb-style-1 figure figcaption a:hover {
+  background: #6db55e;
+}
+
+/*
+=================================================================== 
+ $Alerts - 
+===================================================================
+*/
+.ft-alert {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  position: relative;
+  top: -250px;
+  z-index: 15;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.ft-close-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+}
+
+.wkl-heading {
+  margin-top: 0;
+}
+
+.wkl-info-container {
+  background: #0066b7;
+  padding: 10px 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wkl-info-container figure {
+  flex-grow: 1;
+  margin-left: 0;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .wkl-info-container figure {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    flex-grow: 2;
+  }
+}
+
+.wkl-info-container .close {
+  color: inherit;
+  position: initial;
+  float: none;
+  font-size: 36px;
+  font-size: 2.25em;
+  font-weight: initial;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.wkl-content {
+  width: 450px;
+  color: #fff;
+}
+
+.wkl-content a {
+  color: white;
+  font-size: 18px;
+  font-size: 1.125em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .wkl-content {
+    width: 500px;
+  }
+}
+
+.wkl-icon path {
+  fill: white;
+}
+
+.wkl-hide {
+  display: none !important;
+}
+
+.wkl-unhide {
+  display: flex !important;
 }
 
 /*
@@ -9153,6 +9367,11 @@ select {
   }
 }
 
+/*
+=================================================================== 
+ $Slide Navigation - 
+===================================================================
+*/
 .slide-nav-container {
   background: #0066b7;
   color: #fff;
@@ -9229,112 +9448,95 @@ select {
   margin-top: 50px;
 }
 
-/* Grid Box Styling */
-.grid-box {
-  margin: 15px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.grid-box > ul {
+/*
+=================================================================== 
+ $Pricing Table - 
+===================================================================
+*/
+.pricing-table-container {
+  display: flex;
+  align-self: flex-start;
+  flex-flow: column wrap;
   margin: 0;
   padding: 0;
 }
 
-.grid-box li {
-  display: inline-block;
-  margin: 0;
-  padding: 15px 15px 15px 0;
-  text-align: left;
+.pt-heading {
+  background: #838282;
+  font-size: 20px;
+  font-size: 1.25em;
+  color: #4d4d4d;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.pt-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.price-section {
+  background: #0078d7;
+  padding: 7px 10px;
+  flex-grow: 2;
+}
+
+.price-section sup {
+  font-size: 20px;
+  font-size: 1.25em;
   position: relative;
-  list-style: none;
+  top: -20px;
 }
 
-.grid-box li div {
+.price-section sup:first-child {
+  font-size: 30px;
+  font-size: 1.875em;
   position: relative;
-  margin: 0;
-  width: 450px;
-  height: 430px;
+  top: -8px;
 }
 
-.grid-box li img {
-  padding: 10px 0px;
-  width: 100%;
-  height: 150px;
-}
-
-.grid-box li h3 {
-  font-family: "Segoe UI Semibold", "Helvetica", "Arial", sans-serif;
-  margin-top: 0px;
-}
-
-.grid-box figure {
-  position: relative;
-  margin: 0;
-  width: 450px;
-  height: 430px;
-}
-
-.grid-box figure img {
-  max-width: 100%;
-  display: block;
-  position: relative;
-}
-
-.grid-box figure figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 15px;
+.price-section h4 {
   color: #fff;
+}
+
+.list-section {
+  color: #4d4d4d;
+  flex-grow: 1;
+}
+
+.list-section ul {
+  list-style: none;
+  height: 100%;
+}
+
+.list-section li {
+  background: white;
+  padding: 10px 15px;
+  margin-left: -2.5em;
+}
+
+.list-section li:nth-child(2) {
+  background: white;
+}
+
+.list-section li:nth-child(3) {
+  background: whitesmoke;
+}
+
+.amount {
+  color: #fff;
+  font-size: 50px;
+  font-size: 3.125em;
+  font-family: "Segoe UI Light", "Helvetica", "Arial", sans-serif;
   text-align: center;
 }
 
-.grid-box figure h3 {
-  text-align: center;
-}
-
-.grid-box figure span {
-  margin: 0 10px;
-}
-
-.gb-style-1 figure {
-  overflow: hidden;
-}
-
-.gb-style-1 figure img {
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-}
-
-.gb-style-1 figure figcaption {
-  width: 100%;
-  top: auto;
-  bottom: 0;
-  opacity: 0;
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-}
-
-.gb-style-1 figure:hover figcaption {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-}
-
-.gb-style-1 figure figcaption a:hover {
-  background: #6db55e;
-}
-
+/*
+=================================================================== 
+ $Landing Page - This is where all Landing page specific styles go. 
+===================================================================
+*/
 /*
 =================================================================== 
  $SHAME - This is where are the quick fix styles go when they don't

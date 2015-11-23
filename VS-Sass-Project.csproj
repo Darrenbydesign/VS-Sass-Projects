@@ -281,10 +281,7 @@
     <Content Include="sass\modules\_slide-nav.scss" />
     <Content Include="sass\modules\_status.scss" />
     <Content Include="sass\modules\_wizards.scss" />
-    <Content Include="sass\pages\_ems-page.scss" />
     <Content Include="sass\pages\_landing-page.scss" />
-    <Content Include="sass\pages\_office-365-page.scss" />
-    <Content Include="sass\pages\_onboarding-page.scss" />
     <Content Include="sass\themes\Theme-1\theme-1.scss" />
     <Content Include="sass\_shame.scss" />
     <Content Include="css\maps\main.css.map" />
@@ -369,6 +366,8 @@
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="css\maps\boostrap.css.map" />
+    <Content Include="sass\modules\_pricing-table.scss" />
+    <Content Include="sass\modules\_alerts.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
