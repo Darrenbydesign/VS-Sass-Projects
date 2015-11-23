@@ -30,7 +30,10 @@ var autoprefixerOptions = {
 }; // autoprefixer options variable when using the autoprefixer option in the css files
 
 var sassdocOptions = {
-    dest: './sassdoc'
+    dest: './sassdoc',
+    verbose: true,
+    theme: 'flippant', // This uses a theme aside from the default theme to find out about creating custom themes visit: http://http://sassdoc.com/using-your-own-theme/
+
 }; // adds values to the sassdoc to set the path for the documentation
 
 

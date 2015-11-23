@@ -209,7 +209,6 @@ label {
   font-family: "Segoe UI Light", "Helvetica", "Arial", sans-serif;
 }
 
-/*=====================helper classes to be used when you want to tweak other elements but don't want to muddy your CSS=========================*/
 .font-blue {
   color: #0078D7;
 }
@@ -8188,36 +8187,36 @@ input[type='email'],
 input[type='tel'],
 input[type='search'] {
   -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   background: #f4f4f4;
 }
 
 textarea {
   -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   background: #f4f4f4;
 }
 
 select {
   -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   background: #f4f4f4;
 }
 
 .form-control {
   -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   background: #f4f4f4;
   font-size: 14px;
@@ -8563,9 +8562,9 @@ select {
   top: 1px;
   right: -9px;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   border: 2px solid #272727;
   font-family: "Segoe UI Semibold", "Helvetica", "Arial", sans-serif;
@@ -8589,6 +8588,7 @@ select {
   font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
   background-color: #0078D7;
   color: #fff;
+  border-color: #409ae1;
 }
 
 .button, .button-block, .button-small {
@@ -8600,9 +8600,9 @@ select {
   vertical-align: middle;
   margin-bottom: 0;
   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 
@@ -8625,6 +8625,7 @@ select {
 .button-block {
   background-color: #0078D7;
   color: #fff;
+  border-color: #409ae1;
   width: 100%;
 }
 
@@ -8643,6 +8644,7 @@ select {
 .button-small {
   background-color: #0078D7;
   color: #fff;
+  border-color: #409ae1;
   padding: 6px 10px;
 }
 
@@ -8818,22 +8820,12 @@ select {
  the image is used for titles or call to action page headers
 ===================================================================
 */
-.learn-bg {
-  background: linear-gradient(rgba(0, 120, 215, 0.8), rgba(0, 120, 215, 0.8)), url("/content/images/about-cie.jpg");
+.masthead-banner {
+  background: linear-gradient(rgba(0, 120, 215, 0.8), rgba(0, 120, 215, 0.8)), url("https://placekitten.com/2000/300");
   background-position: top center;
 }
 
-.help-bg {
-  background: linear-gradient(rgba(0, 120, 215, 0.8), rgba(0, 120, 215, 0.8)), url("/content/images/masthead-image-4.png");
-  background-position: center center;
-}
-
-.community-bg {
-  background: linear-gradient(90deg, rgba(0, 120, 215, 0.8), rgba(0, 120, 215, 0.8)), url("/content/images/community.png");
-  background-position: top center;
-}
-
-.learn-bg, .help-bg, .community-bg {
+.masthead-banner {
   -webkit-background-blend-mode: multiply;
   -moz-background-blend-mode: multiply;
   -ms-background-blend-mode: multiply;
@@ -8849,7 +8841,7 @@ select {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .learn-bg, .help-bg, .community-bg {
+  .masthead-banner {
     height: 100%;
   }
 }
@@ -8873,9 +8865,9 @@ select {
 */
 .status {
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   display: inline-block;
   width: 1.25em;
@@ -9165,9 +9157,9 @@ select {
   background: #004d8b;
   color: #fff;
   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
   margin-bottom: 0;
 }
@@ -9176,17 +9168,17 @@ select {
   border: 0;
   border-bottom: 0;
   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 
 .slide-nav-container .nav-justified > li > a:hover, .slide-nav-container .nav-justified > li > a:focus, .slide-nav-container .nav-justified > li > a:active {
   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 
@@ -9198,9 +9190,9 @@ select {
   font-size: 30px;
   font-size: 1.875em;
   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 
@@ -9208,9 +9200,9 @@ select {
   background: #004d8b;
   color: #fff;
   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 

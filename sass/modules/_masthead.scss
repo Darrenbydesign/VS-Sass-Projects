@@ -5,37 +5,27 @@
 ===================================================================
 */
 
-.learn-bg {
-  background: linear-gradient(rgba($blue, 0.8), rgba($blue, 0.8)), url($learn-bg);
-  background-position: top center;
-  @extend %title-base;
+.masthead-banner {
+    background: linear-gradient(rgba($blue, 0.8), rgba($blue, 0.8)), url($img-placeholder);
+    background-position: top center;
+    @extend %masthead-base;
 }
 
-.help-bg {
-  background: linear-gradient(rgba($blue, 0.8), rgba($blue, 0.8)), url($help-bg);
-  background-position: center center;
-  @extend %title-base;
-}
+%masthead-base {
+    @include prefix((background-blend-mode: multiply));
+    @include prefix((background-size: cover));
+    background-repeat: no-repeat;
+    height: 200px;
 
-.community-bg {
-  background: linear-gradient(90deg, rgba($blue, 0.8), rgba($blue, 0.8)), url($community-bg);
-  background-position: top center;
-  @extend %title-base;
-}
-
-%title-base {
-  @include prefix((background-blend-mode: multiply), webkit moz ms o);
-  @include prefix((background-size: cover), webkit moz ms o);
-  background-repeat: no-repeat;
-  height: 200px;
-  @include breakpoint-sm {
-    height: 100%;
-  }
+    @include breakpoint-sm {
+        height: 100%;
+    }
 }
 
 .masthead-info-container {
-  color: $white;
-  @include breakpoint-lg {
-    margin-top: 100px;
-  }
+    color: $white;
+
+    @include breakpoint-lg {
+        margin-top: 100px;
+    }
 }

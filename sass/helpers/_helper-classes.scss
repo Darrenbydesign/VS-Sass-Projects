@@ -1,7 +1,8 @@
-////
-/// @author Darren Sorrels
-////
-/*=====================helper classes to be used when you want to tweak other elements but don't want to muddy your CSS=========================*/
+
+//==================================================================
+// $helper classes to be used when you want to tweak other elements 
+// but don't want to muddy your CSS
+//===================================================================
 
 .font-blue {
   color: $blue;
@@ -145,6 +146,8 @@
     text-decoration: none;
   }
 }
+
+
 /// This is a cool animation that turns things from black and white to color! Its currently set to the hover action
 .bw-clr {
     @include prefix((filter: grayscale(1)), webkit moz ms o);
@@ -152,6 +155,8 @@
     &:hover {
         @include prefix((filter: grayscale(0)), webkit moz ms o);
         @include transition(((filter 0.8s ease-in)));
+        // Form some reason the webkit prefix used on the transition mixin is not being recognized 
+        // in the browser so this is a back up plan. Needs to be assed in the future.
         transition: -webkit-filter 0.3s ease-in;
     }
 }
