@@ -5,8 +5,8 @@
     <meta http-quiv="X-UA-Compatabile" content="IE=Edge">
     <meta name="viewport,content=width=device-width,initial-scale=1">
     <title>Page Title</title>
-    <link rel="stylesheet" href="css/boostrap.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles/boostrap.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
     <!-- [if lt IE 9]>
@@ -17,22 +17,28 @@
     <meta name="description" content="The initial page in the base template project">
   </head>
   <body>
-    <header>
-      <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button data-toggle="collapse" data-target="#main-nav" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">[Company Name Here]</a>
-          </div>
-          <div id="main-nav" class="collapse navbar-collapse">
-            <ul class="nav ft-nav navbar-nav navbar-right">
-              <li><a href="#">Link1</a></li>
-              <li><a href="#">Link2</a></li>
-              <li><a href="#">Link3</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+      <header>
+          <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+              <div class="container-fluid">
+                  <div class="navbar-header">
+                      <button data-toggle="collapse" data-target="#main-nav" aria-expanded="false" class="navbar-toggle collapsed">
+                          <span class="sr-only">Toggle Navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a href="#" class="navbar-brand">[Company Name Here]</a>
+                  </div>
+                  <div id="main-nav" class="collapse navbar-collapse">
+                      <ul class="nav ft-nav navbar-nav navbar-right">
+                          <li><a href="#">Link1</a></li>
+                          <li><a href="#">Link2</a></li>
+                          <li><a href="#">Link3</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </header>
     <main class="wrap">
       <div class="container-fluid">
         <h1> Page Title</h1>
@@ -44,9 +50,12 @@
         </div>
         <div class="row">
           <div id="section-2" class="col-md-12">
-            <svg>
-              <use xlink:href="images/icons/SVG/check_icon.svg#check-icon#check-icon"></use>
-            </svg>
+              <video controls>
+                  <source src="foo.ogg" type="video/ogg">
+                  <source src="foo.mp4" type="video/mp4">
+                  Your browser does not support the
+                  <code>video</code> element.
+              </video>
           </div>
         </div>
         <div class="row">
@@ -77,5 +86,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <!-- Bootstrap JavaScript-->
     <script src="scripts/bootstrap.min.js"></script>
+    <!-- Output of Compiled TypeScript -->
+    <script src="compiled-js/tsoutput.js"></script>
   </body>
 </html>

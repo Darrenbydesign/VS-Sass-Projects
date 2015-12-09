@@ -1,3 +1,4 @@
+
 ////
 /// Mixins simple solutions to complicated CSS/SASS problems... thank me later
 /// @group Mixins
@@ -177,7 +178,42 @@ $Placeholder-Selectors: ();
 /// Use this one to give animation action values like timing and looping, etc.
 /// @group helpers 
 @mixin animation($str) {
-    @include prefix((animation: $str));
+    @include prefix((animation: #{$str}));
+}
+
+/// Transform mixin for writing animations quickly while utilizing the vendor prefixes
+/// @group helpers
+@mixin transform($args) {
+    @include prefix((transform: #{args}));
+}
+
+/// Translate mixin for animating objects
+///@group helpers
+@mixin translate($args){
+    @include transform(#{$args}); 
+}
+
+/// Rotate mixin for animating objects
+///@group helpers
+@mixin rotate($args){
+    @include transform(#{$args}); 
+}
+/// Skew mixin for animating objects
+///@group helpers
+@mixin skew($args){
+    @include transform(#{$args}); 
+}
+
+/// Scale mixin for animating objects
+///@group helpers
+@mixin scale($args){
+    @include transform(#{$args}); 
+}
+
+/// Opacity mixin for animating objects
+///@group helpers
+@mixin opacity($args){
+    @include transform(#{$args}); 
 }
 
 /// A mixin that makes creating transition animations a little less of a burden.
