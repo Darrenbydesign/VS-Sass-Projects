@@ -1,0 +1,37 @@
+/// <reference path="base/config.scss" />
+
+/*
+=================================================================== 
+ $SHAME - This is where are the quick fix styles go when they don't
+ have an official home yet. This file is meant to be checked for 
+ refactoring regularly
+===================================================================
+*/
+
+.video-full
+{
+  @include translate(-50%, -50%);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.video-caption{
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(rgba($blue, 0.8), rgba($blue, 0.8)), url($img-placeholder);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.video-container{
+    background: $corp-color;
+}

@@ -1,15 +1,15 @@
 ﻿{
     "compilerOptions": {
         "module": "commonjs",
-        "noImplicitAny": false,
-        "removeComments": true,
-        "preserveConstEnums": true,
         "declaration": true,
-        "outDir": "tsoutput.js",
-        "sourceMap": true,
+        "noImplicitAny": false,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "noExternalResolve": true,
+        "out": "main.js",
         "watch": true
     },
     "files": [
-        "typescript/greeter.ts"
+        "app/Scripts/test.ts"
     ]
 }
