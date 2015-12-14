@@ -21,8 +21,8 @@ var paths = {
     sassOutput      : 'app/styles',                  // outputs the compiled css files into the CSS folder
 
     // typescript paths
-    tsInput         : 'app/typescripts/**/*.ts',     // finds the typescript files in the typescript folder for compilation
-    tsoutput        : 'app/Scripts',                 // outputs to compiled js files to the Scripts folder
+    tsInput         : 'app/typescript/**/*.ts',     // finds the typescript files in the typescript folder for compilation
+    tsOutput        : 'app/Scripts',                    // outputs to compiled js files to the Scripts folder
 
     // production paths
     production      : 'production',
@@ -34,6 +34,7 @@ var paths = {
 
     // dev paths
     fonts           : 'app/fonts/**/*',
+    scripts         : 'app/Scripts/**/*.js',
     images          : 'app/images/**/*.+(png|jpg|gif|svg)',
     html            : 'app/Views/**/*.html',
     mapPath         : './maps',
@@ -55,6 +56,7 @@ var sassdocOptions = {
 
 // Gulp task to send fonts to production folder
 gulp.task('fonts', function () {
+    console.log('Compliling Fonts');
     return gulp
         .src(paths.fonts)
         .pipe(gulp.dest(paths.prodFonts));
@@ -62,6 +64,7 @@ gulp.task('fonts', function () {
 
 // Gulp task to send html to production folder
 gulp.task('html', function () {
+    console.log('Compliling HTML');
     return gulp
         .src(paths.html)
         .pipe(gulp.dest(paths.prodViews));
@@ -69,13 +72,22 @@ gulp.task('html', function () {
 
 // Gulp task to send images to production folder
 gulp.task('images', function () {
+    console.log('Compliling images');
     return gulp
         .src(paths.images)
         .pipe(gulp.dest(paths.prodImages));
 });
 
+gulp.task('scripts', function () {
+    console.log('transferring scripts');
+    return gulp
+        .src(paths.scripts)
+        .pipe(gulp.dest(paths.prodScripts));
+});
+
 // Gulp task to clean up the production folder 
 gulp.task('clean', function (callback) {
+    console.log('Cleaning production folder');
     del(paths.production);
     return cache.clearAll(callback);
 });
@@ -92,8 +104,8 @@ gulp.task('typescript', function () {
         .pipe(sourcemaps.init())
         .pipe(ts(tsProject))
         .pipe(sourcemaps.write(paths.mapPath))
-        .pipe(gulp.dest(paths.tsoutput));
-
+        .pipe(gulp.dest(paths.tsOutput));
+    console.log('Compiling typescript');
     return tsResult.js;
 });
 
@@ -120,21 +132,12 @@ gulp.task('sass', function () {
 });
 
 // Gulp Task that watches the Sass files and compiles CSS after a file is saved
-gulp.task('sass-watch', function () {
-    return gulp
-        .watch(paths.sassInput, ['sass'])
+gulp.task('watch', function () {
+    gulp.watch(paths.sassInput, ['sass'])
         .on('change', function (event) {
             console.log('File' + event.path + ' was ' + event.type + ', running tasks...');
         });
-});
-
-// Gulp watch task that watches for changes to Typescript files and chages them Javascript
-gulp.task('ts-watch', function () {
-    return gulp
-    .watch(paths.tsInput, ['typescript'])
-    .on('change', function (event) {
-        console.log('File' + event.path + ' was ' + event.type + ', running tasks...');
-    });
+    gulp.watch(paths.tsInput, ['typescript']);
 });
 
 
@@ -145,15 +148,15 @@ gulp.task('prod', function (callback) {
         .pipe(sass({ outputStyle: 'compressed'}))
         .pipe(gulp.dest(paths.prodStyles));
 
-    runSequence(['sassdoc','clean:production', 'fonts', 'images', 'html'], callback);
+    runSequence(['sassdoc','clean:production', 'fonts','scripts', 'images', 'html'], callback);
     return prodResult;
 });
 // Deploy task that moves files to production folder
 gulp.task('deploy', ['prod'], function () {
-    console.log('Deploying to Production Folder.')
+    console.log('Deploying to Production Folder.');
 });
 // Default task that runs watch files that can be compiled
 // more watch tasks can be added to this default task
-gulp.task('default', ['ts-watch', 'sass-watch'], function () {
+gulp.task('default', ['watch'], function () {
     console.log('Running default tasks for you');
 });

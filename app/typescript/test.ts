@@ -1,4 +1,4 @@
-﻿class Link {
+﻿class Ganondarf {
     name: string;
 
     constructor(name: string) {

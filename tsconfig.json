@@ -6,10 +6,10 @@
         "removeComments": false,
         "preserveConstEnums": true,
         "noExternalResolve": true,
-        "out": "main.js",
-        "watch": true
+        "target": "es6",
+        "out": "main.js"
     },
     "files": [
-        "app/Scripts/test.ts"
+        "typescript/test.ts"
     ]
 }
