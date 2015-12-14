@@ -1,11 +1,11 @@
-﻿var Ganondarf = (function () {
-    function Ganondarf(name) {
+﻿var Link = (function () {
+    function Link(name) {
         this.name = name;
     }
-    Ganondarf.prototype.getName = function () {
+    Link.prototype.getName = function () {
         return this.name;
     };
-    return Ganondarf;
+    return Link;
 })();
 
 function greeter(person) {

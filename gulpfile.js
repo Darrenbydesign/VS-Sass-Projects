@@ -56,7 +56,7 @@ var sassdocOptions = {
 
 // Gulp task to send fonts to production folder
 gulp.task('fonts', function () {
-    console.log('Compliling Fonts');
+    console.log('transferring Fonts');
     return gulp
         .src(paths.fonts)
         .pipe(gulp.dest(paths.prodFonts));
@@ -64,7 +64,7 @@ gulp.task('fonts', function () {
 
 // Gulp task to send html to production folder
 gulp.task('html', function () {
-    console.log('Compliling HTML');
+    console.log('transferring HTML');
     return gulp
         .src(paths.html)
         .pipe(gulp.dest(paths.prodViews));
@@ -72,7 +72,7 @@ gulp.task('html', function () {
 
 // Gulp task to send images to production folder
 gulp.task('images', function () {
-    console.log('Compliling images');
+    console.log('transferring images');
     return gulp
         .src(paths.images)
         .pipe(gulp.dest(paths.prodImages));
@@ -115,6 +115,7 @@ gulp.task('sassdoc', function () {
         .src(paths.sassInput)
         .pipe(sassdoc(sassdocOptions))
         .resume();
+    console.log('creating sass documentation')
     return sassdocResult;
 });
 
@@ -127,7 +128,7 @@ gulp.task('sass', function () {
         .on('error', sass.logError))
         .pipe(sourcemaps.write(paths.mapPath))
         .pipe(gulp.dest(paths.sassOutput));
-
+    console.log('compiling sass')
     return sassResult;
 });
 
