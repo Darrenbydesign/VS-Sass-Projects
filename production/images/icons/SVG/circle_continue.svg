@@ -1,0 +1,9 @@
+<?xml-stylesheet type="text/css" href="../../../css/main.css"?>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+    <g>
+      <polygon points="14.4,20.5 21.5,15 14.4,9.5   " />
+      <rect x="10.5" y="10" width="2.4" height="10" />
+      <path d="M15,0C6.8,0,0,6.8,0,15c0,8.2,6.8,15,15,15c8.2,0,15-6.8,15-15C30,6.8,23.2,0,15,0z M15,28
+    C7.8,28,1.8,22.2,1.8,15c0-7.2,6-13,13.2-13c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z" />
+    </g>
+  </svg>
