@@ -189,8 +189,8 @@ $Placeholder-Selectors: ();
 
 /// Translate mixin for animating objects
 ///@group helpers
-@mixin translate($args){
-    @include transform(#{$args}); 
+@mixin translate($x, $y: auto){
+    @include transform(#{$x, $y}); 
 }
 
 /// Rotate mixin for animating objects

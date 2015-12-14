@@ -1,4 +1,4 @@
-﻿class Ganondorf {
+﻿class Link {
     name: string;
 
     constructor(name: string) {
@@ -22,3 +22,4 @@ function greeter(person: Person) {
 var user = { firstname: "Ganondarf", lastname: "The Great" };
 
 document.body.innerHTML = greeter(user);
+console.log("Hello");

@@ -9545,11 +9545,6 @@ select {
 
 /*
 =================================================================== 
- $Landing Page - This is where all Landing page specific styles go. 
-===================================================================
-*/
-/*
-=================================================================== 
  $SHAME - This is where are the quick fix styles go when they don't
  have an official home yet. This file is meant to be checked for 
  refactoring regularly
@@ -9583,7 +9578,7 @@ select {
 }
 
 .video-container {
-  background: #0078D7;
+  background: #004d8b;
 }
 
 /*# sourceMappingURL=../../maps/themes/Theme-1/theme-1.css.map */
