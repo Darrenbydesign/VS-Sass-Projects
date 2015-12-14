@@ -1,0 +1,11 @@
+<?xml-stylesheet type="text/css" href="../../../css/main.css"?>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+    <g>
+      <path d="M15,0.7C6.8,0.7,0,7,0,15.1C0,23,6.8,29.3,15,29.3c8.2,0,15-6.3,15-14.2C30,7,23.2,0.7,15,0.7z M15,27.6
+    C7.8,27.6,2,22,2,15.1C2,8,7.8,2.4,15,2.4c7.2,0,13,5.6,13,12.7C28,22,22.2,27.6,15,27.6z" />
+      <g>
+        <rect x="13.2" y="18.2" width="2" height="2.5" />
+        <path d="M9.2,20.7H12v-3.3h6v3.3h2.8V9.3H9.2V20.7z M10.8,9.9h8v4.2h-8V9.9z" />
+      </g>
+    </g>
+  </svg>
