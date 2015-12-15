@@ -62,6 +62,7 @@
     <Content Include="app\styles\boostrap.css" />
     <Content Include="app\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="app\styles\themes\Theme-1\theme-1.css" />
+    <Content Include="app\typescript\test.js" />
     <Content Include="gulpfile.js" />
     <Content Include="app\images\00912100_Size1024.png" />
     <Content Include="app\images\about-cie.jpg" />
@@ -128,20 +129,6 @@
     <Content Include="app\images\yammer.png" />
     <Content Include="app\styles\main.css" />
     <Content Include="app\Views\Static\index.html" />
-    <Content Include="app\sassdoc\assets\css\main.css" />
-    <Content Include="app\sassdoc\assets\images\favicon.png" />
-    <Content Include="app\sassdoc\assets\images\logo_full_compact.svg" />
-    <Content Include="app\sassdoc\assets\images\logo_full_inline.svg" />
-    <Content Include="app\sassdoc\assets\images\logo_light_compact.svg" />
-    <Content Include="app\sassdoc\assets\images\logo_light_inline.svg" />
-    <Content Include="app\sassdoc\assets\js\main.js" />
-    <Content Include="app\sassdoc\assets\js\main.min.js" />
-    <Content Include="app\sassdoc\assets\js\search.js" />
-    <Content Include="app\sassdoc\assets\js\sidebar.js" />
-    <Content Include="app\sassdoc\assets\js\vendor\fuse.min.js" />
-    <Content Include="app\sassdoc\assets\js\vendor\jquery.min.js" />
-    <Content Include="app\sassdoc\assets\js\vendor\prism.min.js" />
-    <Content Include="app\sassdoc\index.html" />
     <Content Include="app\Scripts\bootstrap-sprockets.js" />
     <Content Include="app\Scripts\bootstrap.js" />
     <Content Include="app\Scripts\bootstrap.min.js" />
@@ -219,6 +206,22 @@
     <Content Include="production\images\upldr-yellow.png" />
     <Content Include="production\images\x_icon.png" />
     <Content Include="production\images\yammer.png" />
+    <Content Include="production\Scripts\bootstrap-sprockets.js" />
+    <Content Include="production\Scripts\bootstrap.js" />
+    <Content Include="production\Scripts\bootstrap.min.js" />
+    <Content Include="production\Scripts\bootstrap\affix.js" />
+    <Content Include="production\Scripts\bootstrap\alert.js" />
+    <Content Include="production\Scripts\bootstrap\button.js" />
+    <Content Include="production\Scripts\bootstrap\carousel.js" />
+    <Content Include="production\Scripts\bootstrap\collapse.js" />
+    <Content Include="production\Scripts\bootstrap\dropdown.js" />
+    <Content Include="production\Scripts\bootstrap\modal.js" />
+    <Content Include="production\Scripts\bootstrap\popover.js" />
+    <Content Include="production\Scripts\bootstrap\scrollspy.js" />
+    <Content Include="production\Scripts\bootstrap\tab.js" />
+    <Content Include="production\Scripts\bootstrap\tooltip.js" />
+    <Content Include="production\Scripts\bootstrap\transition.js" />
+    <Content Include="production\Scripts\main.js" />
     <Content Include="production\styles\main.css" />
     <Content Include="production\styles\themes\Theme-1\theme-1.css" />
     <Content Include="production\Views\Static\index.html" />
@@ -452,6 +455,10 @@
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="production\styles\maps\main.css.map" />
+    <Content Include="production\styles\maps\themes\Theme-1\theme-1.css.map" />
+    <Content Include="production\Scripts\maps\main.js.map" />
+    <Content Include="app\typescript\test.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -475,7 +482,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60190</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
