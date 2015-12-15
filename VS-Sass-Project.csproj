@@ -59,6 +59,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Scripts\main.js" />
     <Content Include="app\styles\boostrap.css" />
     <Content Include="app\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="app\styles\themes\Theme-1\theme-1.css" />
@@ -129,6 +130,20 @@
     <Content Include="app\images\yammer.png" />
     <Content Include="app\styles\main.css" />
     <Content Include="app\Views\Static\index.html" />
+    <Content Include="app\sassdoc\assets\css\main.css" />
+    <Content Include="app\sassdoc\assets\images\favicon.png" />
+    <Content Include="app\sassdoc\assets\images\logo_full_compact.svg" />
+    <Content Include="app\sassdoc\assets\images\logo_full_inline.svg" />
+    <Content Include="app\sassdoc\assets\images\logo_light_compact.svg" />
+    <Content Include="app\sassdoc\assets\images\logo_light_inline.svg" />
+    <Content Include="app\sassdoc\assets\js\main.js" />
+    <Content Include="app\sassdoc\assets\js\main.min.js" />
+    <Content Include="app\sassdoc\assets\js\search.js" />
+    <Content Include="app\sassdoc\assets\js\sidebar.js" />
+    <Content Include="app\sassdoc\assets\js\vendor\fuse.min.js" />
+    <Content Include="app\sassdoc\assets\js\vendor\jquery.min.js" />
+    <Content Include="app\sassdoc\assets\js\vendor\prism.min.js" />
+    <Content Include="app\sassdoc\index.html" />
     <Content Include="app\Scripts\bootstrap-sprockets.js" />
     <Content Include="app\Scripts\bootstrap.js" />
     <Content Include="app\Scripts\bootstrap.min.js" />
@@ -455,9 +470,7 @@
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
-    <Content Include="production\styles\maps\main.css.map" />
-    <Content Include="production\styles\maps\themes\Theme-1\theme-1.css.map" />
-    <Content Include="production\Scripts\maps\main.js.map" />
+    <Content Include="app\Scripts\maps\main.js.map" />
     <Content Include="app\typescript\test.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -482,7 +495,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60190</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

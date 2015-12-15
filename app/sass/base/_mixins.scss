@@ -46,10 +46,9 @@
 }
 
 
-/// Button
-/// Button mixin creates a button for you. all it needs is a color declararation added for the background yay!
+/// Button mixin part:2  creates a button for you. all it needs is a color declararation added for the background yay!
 /// No more using the extend class on the button each time bloating the output CSS.
-/// @group helpers
+/// @group buttons
 /// @param {alphanum} $color [$gray] - include a color in the mixin and this will add all the values for you
 /// @param {bool} $extend [true] - This value pertains to the button static mixin that is used to do all the heavy lifting. It should be set to true to start the loop.
 @mixin button($color: $gray, $extend: true) {
@@ -72,12 +71,13 @@
 }
 
 ///Variable used for generating the button mixin placeholder selectors
+///@group buttons
 ///@type Map
 $Placeholder-Selectors: ();
 
-/// Button mixin creates a button for you. all it needs is a color declararation added for the background yay!
+/// Button mixin part 1: creates a button for you. all it needs is a color declararation added for the background yay!
 /// No more using the extend class on the button each time bloating the output CSS.
-
+/// @group buttons
 /// @param {String} $button-selector - unique value that drives looping function to create buttons dynamically
 /// @param {bool} $extend [true] - It should be set to true to start the loop.
 @mixin button-static($extend: true) {
