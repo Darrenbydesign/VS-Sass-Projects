@@ -472,6 +472,9 @@
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
     <Content Include="app\Scripts\maps\main.js.map" />
     <Content Include="app\typescript\test.js.map" />
+    <Content Include="production\styles\maps\main.css.map" />
+    <Content Include="production\styles\maps\themes\Theme-1\theme-1.css.map" />
+    <Content Include="production\Scripts\maps\main.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
