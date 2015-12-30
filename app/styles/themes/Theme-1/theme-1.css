@@ -8862,112 +8862,7 @@ select {
   }
 }
 
-/* Grid Box Styling */
-.grid-box {
-  margin: 15px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.grid-box > ul {
-  margin: 0;
-  padding: 0;
-}
-
-.grid-box li {
-  display: inline-block;
-  margin: 0;
-  padding: 15px 15px 15px 0;
-  text-align: left;
-  position: relative;
-  list-style: none;
-}
-
-.grid-box li div {
-  position: relative;
-  margin: 0;
-  width: 450px;
-  height: 430px;
-}
-
-.grid-box li img {
-  padding: 10px 0px;
-  width: 100%;
-  height: 150px;
-}
-
-.grid-box li h3 {
-  font-family: "Segoe UI Semibold", "Helvetica", "Arial", sans-serif;
-  margin-top: 0px;
-}
-
-.grid-box figure {
-  position: relative;
-  margin: 0;
-  width: 450px;
-  height: 430px;
-}
-
-.grid-box figure img {
-  max-width: 100%;
-  display: block;
-  position: relative;
-}
-
-.grid-box figure figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 15px;
-  color: #fff;
-  text-align: center;
-}
-
-.grid-box figure h3 {
-  text-align: center;
-}
-
-.grid-box figure span {
-  margin: 0 10px;
-}
-
-.gb-style-1 figure {
-  overflow: hidden;
-}
-
-.gb-style-1 figure img {
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-}
-
-.gb-style-1 figure figcaption {
-  width: 100%;
-  top: auto;
-  bottom: 0;
-  opacity: 0;
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-}
-
-.gb-style-1 figure:hover figcaption {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-}
-
-.gb-style-1 figure figcaption a:hover {
-  background: #6db55e;
-}
-
+/*@import 'modules/gridbox';*/
 /*
 =================================================================== 
  $Alerts - 
@@ -9152,12 +9047,7 @@ select {
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
   padding: 0;
-  /* For IE since it hates changes and doesnt like viewport units :-( */
-  margin-top: 20px;
-  /* For IE since it hates changes and doesnt like viewport units :-( */
-  margin-bottom: 30px;
-  margin-top: 1vmax;
-  margin-bottom: 1.5vmax;
+  margin: 1vmax auto 1.5vmax auto;
 }
 
 @media (min-width: 40em) {
@@ -9261,8 +9151,9 @@ select {
   -ms-flex-flow: column wrap;
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -9298,6 +9189,7 @@ select {
 @media (min-width: 64em) {
   .wizard-block-list li {
     width: 30.33%;
+    /* Magic number in use*/
   }
 }
 
@@ -9556,8 +9448,8 @@ select {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 50%;
+  left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -9569,8 +9461,9 @@ select {
 
 .video-caption {
   z-index: 2;
-  position: relative;
-  background: linear-gradient(rgba(0, 120, 215, 0.8), rgba(0, 120, 215, 0.8)), url("https://placekitten.com/2000/300");
+  position: absolute;
+  color: #fff;
+  background: linear-gradient(rgba(0, 120, 215, 0.8), rgba(0, 120, 215, 0.8));
   top: 0;
   bottom: 0;
   left: 0;
@@ -9579,10 +9472,6 @@ select {
 
 .video-container {
   background: #004d8b;
-}
-
-.new-class {
-  /* update me soon*/
 }
 
 /*# sourceMappingURL=../../maps/themes/Theme-1/theme-1.css.map */

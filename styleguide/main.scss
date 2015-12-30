@@ -1,0 +1,55 @@
+@charset 'utf-8';
+
+// Base variables for sass structure
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/config';
+@import 'base/reset';
+@import 'base/typography';
+@import 'helpers/helper-classes';
+
+
+// Vendors styles loaded before custom styles so that overrides can be made properly
+/* Boostrap Styles Loaded into project instead of called seperately*/
+@import 'vendors/bootstrap';
+
+// Layout styling goes here (Things like footers,headers, sidebars, etc)
+
+@import 'layout/base-layout';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/sidebars';
+@import 'layout/footer';
+
+// components styling go here (this is where you place things like accordions, navbars, tabs, buttons, etc.
+// they should be made agnostic to your layout so that they can be used anywhere they are needed.)
+@import 'components/forms';
+@import 'components/icons';
+@import 'components/svg';
+@import 'components/modals';
+@import 'components/buttons';
+@import 'components/accordions';
+@import 'components/breadcrumbs';
+
+
+// Modules are things like Navigation, Headers, Footers, Sidebars, Etc.
+// They are built with components to create larger more structures
+@import 'modules/masthead';
+/*@import 'modules/gridbox';*/
+@import 'modules/alerts';
+@import 'modules/status';
+@import 'modules/wizards';
+@import 'modules/slide-nav';
+@import 'modules/pricing-table';
+
+// Pages styling for things that are strictly page designed
+//@import 'pages/landing-page'; 
+
+
+
+
+// This section is where all the the bad code goes until its learned its lesson and has become good code.
+// (This is where quick and dirty code fixes should go and this should be
+// regularly checked for re-organization of code into appropriate folder hierarchy.
+// This file should be empty most of the time.)
+@import 'shame';

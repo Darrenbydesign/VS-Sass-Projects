@@ -1,0 +1,16 @@
+/*
+=================================================================== 
+ $Reset - Reset styles to reset browser defaults go here
+===================================================================
+*/
+
+*,
+*:before,
+*:after {
+  box-sizing: $default-box-sizing;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}

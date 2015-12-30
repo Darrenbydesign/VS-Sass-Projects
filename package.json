@@ -30,9 +30,11 @@
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "del": "^2.2.0",
+    "dss": "^1.0.4",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cache": "^0.4.1",
+    "gulp-imagemin": "^2.4.0",
     "gulp-jade": "^1.1.0",
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^2.1.0",
@@ -43,6 +45,7 @@
     "run-sequence": "^1.1.5",
     "sassdoc": "^2.1.15",
     "sassdoc-theme-flippant": "^0.1.0",
+    "sc5-styleguide": "^0.3.41",
     "tsd": "^0.6.5",
     "typescript": "^1.7.3"
   }

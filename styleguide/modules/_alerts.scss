@@ -1,0 +1,91 @@
+/// <reference path="../base/config.scss" />
+/// <reference path="../base/mixins.scss" />
+
+/*
+=================================================================== 
+ $Alerts - 
+===================================================================
+*/
+.ft-alert {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    @include border-radius(0px);
+    position: relative;
+    top: -250px;
+    z-index: 15;
+    @include transition(all 0.3s ease-in-out);
+}
+
+.ft-close-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+}
+
+.wkl-heading {
+    margin-top: 0;
+}
+
+.wkl-info-container {
+    background: $corp-color-dark;
+    padding: 10px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    figure {
+        flex-grow: 1;
+        margin-left: 0;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        align-self: center;
+        @include breakpoint-lg {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            flex-grow: 2;
+        }
+    }
+    .close {
+        color: inherit;
+        position: initial;
+        float: none;
+        @include font-size(36px);
+        font-weight: initial;
+        text-shadow: none;
+        opacity: 1;
+    }
+}
+
+.wkl-content {
+    width: 450px;
+    color: dt($corp-color-dark);
+    a {
+        color: $white;
+        @include font-size(18px);
+    }
+    @include breakpoint-lg {
+        width: 500px;
+    }
+}
+
+.wkl-icon {
+    path {
+        fill: $white;
+    }
+}
+
+.wkl-hide {
+    display: none !important;
+}
+
+.wkl-unhide {
+    display: flex !important;
+}
