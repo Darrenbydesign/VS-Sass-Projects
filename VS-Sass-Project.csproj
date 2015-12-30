@@ -239,6 +239,7 @@
     <Content Include="sassdoc\assets\js\vendor\jquery.min.js" />
     <Content Include="sassdoc\assets\js\vendor\prism.min.js" />
     <Content Include="sassdoc\index.html" />
+    <Content Include="styleguide\index.html" />
     <Content Include="styleguide\styleguide.css" />
     <Content Include="styleguide\styleguide_at_rules.css" />
     <Content Include="styleguide\styleguide_pseudo_styles.css" />
