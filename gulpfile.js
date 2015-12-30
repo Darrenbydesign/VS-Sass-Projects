@@ -1,91 +1,91 @@
 /// <vs SolutionOpened='default' />
 //Requirements for the project gulp tasks to work
 //=====================================================================
-var gulp         = require('gulp'),
+var gulp                = require('gulp'),
     // non grouped plugins
-     del         = require('del'),
-     cache       = require('gulp-cache'),
-     imagemin    = require('gulp-imagemin'),
-     sourcemaps  = require('gulp-sourcemaps'),
-     runSequence = require('run-sequence'),
-     browserSync = require('browser-sync'),
-     styleguide  = require('sc5-styleguide'),
+     del                = require('del'),
+     cache              = require('gulp-cache'),
+     imagemin           = require('gulp-imagemin'),
+     sourcemaps         = require('gulp-sourcemaps'),
+     runSequence        = require('run-sequence'),
+     browserSync        = require('browser-sync'),
+     styleguide         = require('sc5-styleguide'),
 
      // grouped plugins
-     sass      = require('gulp-sass'),
-     sassdoc   = require('sassdoc'),
-     ts        = require('gulp-typescript'),
-     tsProject = ts.createProject('tsconfig.json');
+     sass               = require('gulp-sass'),
+     sassdoc            = require('sassdoc'),
+     ts                 = require('gulp-typescript'),
+     tsProject          = ts.createProject('tsconfig.json');
 
 //Path Variables for various actions on folders and files 
 //=====================================================================
 var paths = {
     // sass paths
-    sassInput            : 'app/sass/**/*.scss',                // finds the scss files in the sass folder for compilation
-    sassOutput           : 'app/styles',                       // outputs the compiled css files into the CSS folder
+    sassInput                        : 'app/sass/**/*.scss',                // finds the scss files in the sass folder for compilation
+    sassOutput                       : 'app/styles',                        // outputs the compiled css files into the CSS folder
     // typescript paths
-    tsInput              : 'app/typescript/**/*.ts',          // finds the typescript files in the typescript folder for compilation
-    tsOutput             : 'app/Scripts',                    // outputs to compiled js files to the Scripts folder
+    tsInput                          : 'app/typescript/**/*.ts',            // finds the typescript files in the typescript folder for compilation
+    tsOutput                         : 'app/Scripts',                       // outputs to compiled js files to the Scripts folder
     // styleguide paths
-    sc5Output            : 'styleguide',
-    styleguide_htmlOutput: 'styleguide',
+    sc5Output                        : 'styleguide',
+    styleguide_htmlOutput            : 'styleguide',
 
     // production paths
-    production           : 'production',
-    prodFonts            : 'production/fonts',
-    prodStyles           : 'production/styles',
-    prodImages           : 'production/images',
-    prodScripts          : 'production/Scripts',
-    prodViews            : 'production/',
+    production                       : 'production',
+    prodFonts                        : 'production/fonts',
+    prodStyles                       : 'production/styles',
+    prodImages                       : 'production/images',
+    prodScripts                      : 'production/Scripts',
+    prodViews                        : 'production/',
 
     // dev paths
-    fonts                : 'app/fonts/**/*',
-    scripts              : 'app/Scripts/**/*.js',
-    images               : 'app/images/**/*.+(png|jpg|gif|svg)',
-    videos               : 'app/images/**/*.+(mp4|webm|ogg|theora|mov)',
-    html                 : 'app/**/*.html',
-    mapPath              : './maps',
+    fonts                            : 'app/fonts/**/*',
+    scripts                          : 'app/Scripts/**/*.js',
+    images                           : 'app/images/**/*.+(png|jpg|gif|svg)',
+    videos                           : 'app/images/**/*.+(mp4|webm|ogg|theora|mov)',
+    html                             : 'app/**/*.html',
+    mapPath                          : './maps',
 },
 
 // JSON options for compiling Sass files
 //=====================================================================
     sassOptions = {
-        errLogToConsole: true,
-        outputStyle    : 'expanded'
+        errLogToConsole              : true,
+        outputStyle                  : 'expanded'
     },
 
 // JSON options for compiling Sassdoc files
 //=====================================================================
     sassdocOptions = {
-        dest           : './sassdoc',
-        verbose        : true,
-        theme          : 'flippant',                        // This uses a theme aside from the default theme to find out about creating custom themes visit: http://http://sassdoc.com/using-your-own-theme/
+        dest                         : './sassdoc',
+        verbose                      : true,
+        theme                        : 'flippant',                        // This uses a theme aside from the default theme to find out about creating custom themes visit http://http://sassdoc.com/using-your-own-theme/
     },
 
 // JSON options for BrowswerSync Server
 //=====================================================================
     browserSyncOptions = {
-        server         : {
-            baseDir    : 'app/',
+        server                       : {
+            baseDir                  : 'app/',
         },
-        //files        : [paths.html, paths.sassInput, paths.tsInput]
+        //files                      : [paths.html, paths.sassInput, paths.tsInput]
     },
 
 // JSON options for SC5 Styleguide generator
 //=====================================================================
     sc5Options = {
-        title          : 'VS Project Style Guide',
-        appRoot        : 'styleguide',
-        rootPath       : 'styleguide',
-        disableHtml5Mode : true,
-        port           : '9000',
-        overviewPath   : 'README.md'
+        title                        : 'VS Project Style Guide',
+        appRoot                      : 'styleguide',
+        rootPath                     : 'styleguide',
+        disableHtml5Mode             : true,
+        port                         : '9000',
+        overviewPath                 : 'README.md'
     },
 // JSON options for imagemin plug-in
     imageminOptions = {
-        progressive: true,
-        svgoPlugins: [{ removeViewBox: false }, { removeEmptyAttrs: true }],
-        interlaced: true
+        progressive                  : true,
+        svgoPlugins                  : [{ removeViewBox: false }, { removeEmptyAttrs: true }],
+        interlaced                   : true
     };
 
 // COMPILE TASK TO CREATE CSS JS and DOCUMENTATION FILES
@@ -121,9 +121,7 @@ gulp.task('sass', function () {
         .pipe(sass(sassOptions)
         .on('error', sass.logError))
         .pipe(sourcemaps.write(paths.mapPath))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
+        .pipe(browserSync.reload({stream: true}))
         .pipe(gulp.dest(paths.sassOutput));
     console.log('\nCompiling sass\n\n');
     return sassResult;
