@@ -174,7 +174,7 @@ gulp.task('html', function () {
 
 // Gulp task to send html to production folder
 gulp.task('html:styleguide', function () {
-    console.log('\nTransferring HTML to Styleguide' + paths.sc5Output + '\n\n');
+    console.log('\nTransferring HTML to Styleguide folder: ' + paths.sc5Output + '\n\n');
     return gulp
         .src(paths.html)
         .pipe(gulp.dest(paths.styleguide_htmlOutput));
@@ -231,9 +231,12 @@ gulp.task('clean:production', function (callback) {
 //=====================================================================
 
 gulp.task('dev', ['browserSync'], function () {
-    gulp.watch(paths.sassInput, ['sass', 'styleguide']);
-    gulp.watch(paths.html,  ['html:styleguide'], browserSync.reload);
-    gulp.watch(paths.tsInput, ['typescript']);
+    gulp.watch(paths.sassInput, ['sass', 'styleguide'])
+        .on('change', function (event) {
+            console.log('\n File' + event.path + ' was ' + event.type + ', running tasks...');
+        });
+    gulp.watch(paths.html, browserSync.reload);
+    gulp.watch(paths.tsInput, ['typescript'], browserSync.reload);
     console.log(
         '\nDeveloper mode!\n\nSC5 Styleguide available at http://localhost:9000/\n'
     );
