@@ -1,17 +1,17 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// =================================================================== 
+// $BUTTONS - this is where all the button styles are created for
+// forms and other interface modules that require interaction
+// ===================================================================
 
-// Buttons
-//
-// description: A standard button in this library
-//
-// state: :hover - Highlights when hovered.
-// state: :disabled - Dims the button when disabled.
-// state: .block - button that takes the full width of the parent container.
-// state: .small - a smaller version of the stanadard button
-
-// markup:
-// <button> This is a button</button>
+/**
+ * Buttons:
+ * `.button` - this is where all the button styles are created for
+ * forms and other interface modules that require interaction
+ *
+ *     @example
+ *     button.button 
+ *      | button
+ */
 
 .button {
     font-family: $segoe-UI-regular;

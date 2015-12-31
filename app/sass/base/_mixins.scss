@@ -1,6 +1,3 @@
-
-// styleguide:ignore:start
-
 ////
 /// Mixins simple solutions to complicated CSS/SASS problems... thank me later
 /// @group Mixins
@@ -33,7 +30,7 @@
                 #{'-' + $vendor + '-' + $prop}: #{$value};
             }
         }
-        /// add regular property to the end of list without vendor prefixes
+        // add regular property to the end of list without vendor prefixes
         #{$prop}: #{$value};
     }
 }
@@ -143,12 +140,11 @@ $Placeholder-Selectors: ();
 @mixin img-responsive($display: block) {
     display: $display;
     max-width: 100%;
-    /// Part 1: Set a maximum relative to the parent
+    // Part 1: Set a maximum relative to the parent
     height: auto;
-    /// Part 2: Scale the height according to the width, otherwise you get stretching
+    // Part 2: Scale the height according to the width, otherwise you get stretching
 }
 
-///
 /// This mixin will alleviate the need to write the vendor prefixes yourself for animations.
 /// Now all you have to do is call this mixin and enter your animation name and enter your actions.
 /// @group helpers 
@@ -248,9 +244,9 @@ $Placeholder-Selectors: ();
     }
 }
 
-/// Media Queries
-/// These mixins help with creating media queries. They can now be more semantic instead of worrying about the
-/// syntax of the @media call you can just call the mixin and place in your content. This does all that for you!
+// Media Queries
+// These mixins help with creating media queries. They can now be more semantic instead of worrying about the
+// syntax of the @media call you can just call the mixin and place in your content. This does all that for you!
 
 /// Media Query Small
 /// @group media queries
@@ -318,7 +314,7 @@ $mq-xlarge: 1600px;
 }
 
 
-/// Define the upper and lower range of the media queries programatically for more complex media queries
+// Define the upper and lower range of the media queries programatically for more complex media queries
 
 /// Flexible query extra large
 /// @group media queries
@@ -513,5 +509,3 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
     //-webkit-order: $value;
     order: $value;
 }
-
-// styleguide:ignore:end

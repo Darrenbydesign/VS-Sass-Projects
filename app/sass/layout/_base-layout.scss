@@ -1,12 +1,14 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/* =====================$Base-layout Styles===================== */
+// =================================================================== 
+// $Base-layout - section info
+// ===================================================================
 .wrap {
     min-height: 100%;
 }
 body {
 	padding-top: $fixed-nav-body-padding;
 	margin-bottom: $margin-bottom;
-	// @include link-color($corp-color, $corp-color-dark, $corp-color-dark, $corp-color);
+	@include link-color($corp-color, $corp-color-dark, $corp-color-dark, $corp-color);
 }

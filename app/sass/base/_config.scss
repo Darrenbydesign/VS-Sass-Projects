@@ -3,58 +3,66 @@
 /// @group Variables
 ////
 
-//==============================
-/// @group Color variables
-//==============================
-
 /// Black
+/// @group Color variables
 /// @type Color
 $black: rgba(0,0,0,1) !default;
 
 /// White
+/// @group Color variables
 /// @type Color
 $white: rgba(255,255,255,1) !default;
 
 /// Red
+/// @group Color variables
 /// @type Color
 $red: rgba(164,0,2,1) !default;
 
 /// Orange
+/// @group Color variables
 /// @type Color
 $orange: rgba(219,58,0,1) !default;
 
 /// Yellow
+/// @group Color variables
 /// @type Color
 $yellow: rgba(247,233,140,1) !default;
 
 /// Blue
+/// @group Color variables
 /// @type Color
 $blue: rgba(0,120,215,1) !default;
 
 /// Green
+/// @group Color variables
 /// @type Color
 $green: rgba(109,181,94,1) !default;
 
 /// Purple
+/// @group Color variables
 /// @type Color
 $purple:rgba(92,0,92,1) !default;
 
 
-/// Base colors for our dark values in the default theme this is mostly for text setting.
+// Base colors for our dark values in the default theme this is mostly for text setting.
 
 /// Gray Base
+/// @group Color variables
 /// @type Color
 $gray-base: $black !default;
 
 /// Gray
+/// @group Color variables
 /// @type Color
 $gray: rgba(131,130,130,1) !default;
 
 /// Gray Light
+/// @group Color variables
 /// @type Color
 $gray-light: lighten($gray, 15%) !default;
 
 /// Gray Dark
+/// @group Color variables
 /// @type Color
 $gray-dark: darken($gray, 15%) !default;
 
@@ -62,37 +70,43 @@ $gray-dark: darken($gray, 15%) !default;
 // Default Theme Colors - These are the base colors that start any project using the initial theme. They are pretty generic right now but will be revitalized in the v1.0.1 of this doucment
 
 /// Primary-color
+/// @group Color variables
 /// @type Color
 $corp-color: $blue !default;
 
-/// Darker version of the main theme color. Created using shade and tint functions fromt the @group functions list
+// Darker version of the main theme color. Created using shade and tint functions fromt the @group functions list
 
 /// Primary color dark
 /// @requires {function} shade
+/// @group Color variables
 /// @type Color
 $corp-color-dark: shade($corp-color, 15%) !default;
 
 /// Primary color light
 /// @requires {function} tint
+/// @group Color variables
 /// @type Color
 $corp-color-light: tint($corp-color, 15%) !default;
 
 /// Secondary color 
+/// @group Color variables
 /// @type Color
 $corp-color-second: $white !default;
 
 /// Secondary color dark
 /// @requires {function} shade
+/// @group Color variables
 /// @type Color
 $corp-color-second-dark: shade($corp-color-second, 15%) !default;
 
 /// Secondary color light
 /// @requires {function} tint
+/// @group Color variables
 /// @type Color
 $corp-color-second-light: tint($corp-color-second, 15%) !default;
 
 //==============================
-///Typography variables
+// Typography variables
 //==============================
 
 /// Base Font Stack
@@ -131,7 +145,7 @@ $segoe-UI-semibold: (
   sans-serif,
   ) !default;
 
-/// Declare your fonts sizes and base color here
+// Declare your fonts sizes and base color here
 
 ///Base Font size
 /// @type Number
@@ -147,9 +161,9 @@ $base-font-family: $segoe-UI-regular !default;
 /// @type Color
 $base-font-color: $gray-dark !default;
 
-///==============================
+//==============================
 // Layout variables
-///==============================
+//==============================
 
 /// Border Box Sizing
 /// Default box-sizing for the projects
@@ -179,7 +193,7 @@ $base-border-color: $gray !default;
 /// @type String
 $default-box-shadow: 0px 1px 5px rgba($gray, 0.2) !default;
 
-/// This is used with navigation menus that are using fixed positioning
+// This is used with navigation menus that are using fixed positioning
 /// @type Number
 $fixed-nav-body-padding: 50px !default;
 

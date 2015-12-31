@@ -1,5 +1,10 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
+
+// =================================================================== 
+// $Grid Systems - This is where the experimental flexible grid is 
+// created. Still a huge Work in Progress
+// ===================================================================
 
 .grid{
 	@include prefix((display: flex), webkit ms o moz);
@@ -20,7 +25,7 @@
 	}
 }
 
-/// This controls the row alignment. Options are top middle bottom
+// This controls the row alignment. Options are top middle bottom
 .grid-align-top{
 	align-items: flex-start;
 }

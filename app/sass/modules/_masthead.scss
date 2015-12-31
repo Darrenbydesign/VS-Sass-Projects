@@ -1,12 +1,10 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/*
-=================================================================== 
- $Masthead - Mastheads are used when full screen images are needed
- the image is used for titles or call to action page headers
-===================================================================
-*/
+//=================================================================== 
+// $Masthead - Mastheads are used when full screen images are needed
+// the image is used for titles or call to action page headers
+// ===================================================================
 
 .masthead-banner {
     background: linear-gradient(rgba($blue, 0.8), rgba($blue, 0.8)), url($img-placeholder);

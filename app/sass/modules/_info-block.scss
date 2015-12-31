@@ -1,12 +1,10 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/*
-=================================================================== 
- $Info-Block - Info blocks are useful for small blurbs of text
- that inform users about a task or guides them through a process
-===================================================================
-*/
+//=================================================================== 
+// $Info-Block - Info blocks are useful for small blurbs of text
+// that inform users about a task or guides them through a process
+// ===================================================================
 
 .info-block-container {
   @include flexbox();

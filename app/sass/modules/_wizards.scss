@@ -1,36 +1,10 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/*
-=================================================================== 
- $Wizards - This is where all wizard styles go. 
- This module can be abstracted more but for now its pretty versatile
-===================================================================
-*/
-
-// Wizards - This is where all wizard styles go. 
+// =================================================================== 
+// $Wizards - This is where all wizard styles go.
 // This module can be abstracted more but for now its pretty versatile
-
-
-// markup:
-//
-// <div class="wizard-form-container">
-//       <div class="container">
-//           <h1 class="wizard-title">Select your session Type</h1>
-//          <ul class="wizard-block-list">
-//               <li id="RegularSession" class="wizard-block">
-//                   <div class="wizard-block-img">
-//                       <span class="icons icon-session-regular"></span>
-//                   </div>
-//                   <h3 class="wizard-block-title">REGULAR SESSION</h3>
-//                  <div class="wizard-block-content text-center">
-//                       <p>Requires client setup. Provides you with a tenant for an in-person session.</p>
-//                   </div>
-//               </li>
-//           </ul>
-//       </div>
-//   </div>
-//
+// ===================================================================
 
 .wizard-form-container {
   background: $white;
@@ -131,7 +105,7 @@
       width: 50%;
     }
     @include flexpoint-md {
-      /// width: 33.33%;
+      // width: 33.33%;
       width: 30.33%; /* Magic number in use*/
     }
     margin: 10px 15px;
@@ -147,15 +121,15 @@
   @include flex-direction(column);
   @include transition(border 0.3s ease-in);
   @include flexpoint-sm {
-    /// width: 45vmin;
+    // width: 45vmin;
     align-self: auto;
   }
   background: $white;
   border: 2px solid darken($gray-dark, 10%);
   padding: 10px 15px;
-  /// align-self: center;
+  // align-self: center;
   height: auto;
-  /// width: 60vw;
+  // width: 60vw;
 }
 
 .wizard-block-img {

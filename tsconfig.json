@@ -10,6 +10,8 @@
         "out": "main.js"
     },
     "files": [
-        "typescript/test.ts"
+        "typescript/test.ts",
+        "typescript/test2.ts",
+        "typescript/test3.ts"
     ]
 }

@@ -59,10 +59,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\Scripts\main.js" />
+    <Content Include="app\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="app\styles\main.css" />
     <Content Include="app\styles\themes\Theme-1\theme-1.css" />
-    <Content Include="app\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="gulpfile.js" />
     <Content Include="app\images\00912100_Size1024.png" />
     <Content Include="app\images\about-cie.jpg" />
@@ -239,10 +238,7 @@
     <Content Include="sassdoc\assets\js\vendor\jquery.min.js" />
     <Content Include="sassdoc\assets\js\vendor\prism.min.js" />
     <Content Include="sassdoc\index.html" />
-    <Content Include="styleguide\index.html" />
-    <Content Include="styleguide\styleguide.css" />
-    <Content Include="styleguide\styleguide_at_rules.css" />
-    <Content Include="styleguide\styleguide_pseudo_styles.css" />
+    <Content Include="styledown\styleguide.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -453,127 +449,16 @@
     <Content Include="app\sass\modules\_pricing-table.scss" />
     <Content Include="app\sass\modules\_alerts.scss" />
     <Content Include="tsconfig.json" />
-    <Content Include="app\styles\maps\main.css.map" />
-    <Content Include="app\styles\maps\themes\Theme-1\theme-1.css.map" />
-    <Content Include="app\Scripts\maps\main.js.map" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
-    <Content Include="styleguide\base\_config.scss" />
-    <Content Include="styleguide\base\_functions.scss" />
-    <Content Include="styleguide\base\_mixins.scss" />
-    <Content Include="styleguide\base\_reset.scss" />
-    <Content Include="styleguide\base\_typography.scss" />
-    <Content Include="styleguide\components\_accordions.scss" />
-    <Content Include="styleguide\components\_banners.scss" />
-    <Content Include="styleguide\components\_breadcrumbs.scss" />
-    <Content Include="styleguide\components\_buttons.scss" />
-    <Content Include="styleguide\components\_flex-items.scss" />
-    <Content Include="styleguide\components\_forms.scss" />
-    <Content Include="styleguide\components\_icons.scss" />
-    <Content Include="styleguide\components\_info-block.scss" />
-    <Content Include="styleguide\components\_list-group.scss" />
-    <Content Include="styleguide\components\_modals.scss" />
-    <Content Include="styleguide\components\_pagination.scss" />
-    <Content Include="styleguide\components\_panels.scss" />
-    <Content Include="styleguide\components\_svg.scss" />
-    <Content Include="styleguide\components\_tables.scss" />
-    <Content Include="styleguide\helpers\_helper-classes.scss" />
-    <Content Include="styleguide\layout\_base-layout.scss" />
-    <Content Include="styleguide\layout\_footer.scss" />
-    <Content Include="styleguide\layout\_grid.scss" />
-    <Content Include="styleguide\layout\_header.scss" />
-    <Content Include="styleguide\layout\_navigation.scss" />
-    <Content Include="styleguide\layout\_sidebars.scss" />
-    <Content Include="styleguide\main.scss" />
-    <Content Include="styleguide\modules\_alerts.scss" />
-    <Content Include="styleguide\modules\_gridbox.scss" />
-    <Content Include="styleguide\modules\_info-block.scss" />
-    <Content Include="styleguide\modules\_masthead.scss" />
-    <Content Include="styleguide\modules\_pricing-table.scss" />
-    <Content Include="styleguide\modules\_slide-nav.scss" />
-    <Content Include="styleguide\modules\_status.scss" />
-    <Content Include="styleguide\modules\_wizards.scss" />
-    <Content Include="styleguide\pages\_landing-page.scss" />
-    <Content Include="styleguide\themes\Theme-1\theme-1.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_alerts.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_background-variant.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_border-radius.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_buttons.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_center-block.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_clearfix.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_forms.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_gradients.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_grid-framework.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_grid.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_hide-text.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_image.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_labels.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_list-group.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_nav-divider.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_nav-vertical-align.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_opacity.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_pagination.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_panels.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_progress-bar.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_reset-filter.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_reset-text.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_resize.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_responsive-visibility.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_size.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_tab-focus.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_table-row.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_text-emphasis.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_text-overflow.scss" />
-    <Content Include="styleguide\vendors\bootstrap\mixins\_vendor-prefixes.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_alerts.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_badges.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_breadcrumbs.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_button-groups.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_buttons.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_carousel.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_close.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_code.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_component-animations.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_dropdowns.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_forms.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_glyphicons.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_grid.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_input-groups.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_jumbotron.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_labels.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_list-group.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_media.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_mixins.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_modals.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_navbar.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_navs.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_normalize.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_pager.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_pagination.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_panels.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_popovers.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_print.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_progress-bars.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_responsive-embed.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_responsive-utilities.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_scaffolding.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_tables.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_theme.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_thumbnails.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_tooltip.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_type.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_utilities.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_variables.scss" />
-    <Content Include="styleguide\vendors\bootstrap\_wells.scss" />
-    <Content Include="styleguide\vendors\_bootstrap-compass.scss" />
-    <Content Include="styleguide\vendors\_bootstrap-mincer.scss" />
-    <Content Include="styleguide\vendors\_bootstrap-sprockets.scss" />
-    <Content Include="styleguide\vendors\_bootstrap.scss" />
-    <Content Include="styleguide\_shame.scss" />
     <Content Include="production\styles\maps\main.css.map" />
     <Content Include="production\styles\maps\themes\Theme-1\theme-1.css.map" />
+    <Content Include="app\styles\maps\main.css.map" />
+    <Content Include="app\styles\maps\themes\Theme-1\theme-1.css.map" />
+    <Content Include="production\Scripts\maps\main.js.map" />
+    <Content Include="app\config.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -582,7 +467,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\typescript\test3.ts" />
     <TypeScriptCompile Include="app\typescript\test.ts" />
+    <TypeScriptCompile Include="app\typescript\test2.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

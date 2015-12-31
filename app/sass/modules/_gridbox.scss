@@ -1,7 +1,10 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/* Grid Box Styling */
+// =================================================================== 
+// $GridBox - this is a custom module that allows you to create a 
+// semi flexible grid. [needs to be refactored]
+// ===================================================================
 
 .grid-box {
     margin: 15px auto;

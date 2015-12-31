@@ -39,6 +39,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-styledown": "0.0.2",
     "gulp-typescript": "^2.10.0",
     "gulp-util": "^3.0.7",
     "jade": "^1.11.0",
@@ -46,6 +47,7 @@
     "sassdoc": "^2.1.15",
     "sassdoc-theme-flippant": "^0.1.0",
     "sc5-styleguide": "^0.3.41",
+    "styledown": "^1.0.2",
     "tsd": "^0.6.5",
     "typescript": "^1.7.3"
   }

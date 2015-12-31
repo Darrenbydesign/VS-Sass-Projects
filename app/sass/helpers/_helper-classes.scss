@@ -1,5 +1,5 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
 //==================================================================
 // $helper classes to be used when you want to tweak other elements 
@@ -46,8 +46,9 @@
   background: $purple;
 }
 
-
-/*=============margin and padding helper classes go here=============*/
+// =================================================================== 
+// $Layout helpers - margin and padding helpers go here
+// ===================================================================
 
 .margin-top-10 {
   margin-top: 10px;
@@ -150,7 +151,7 @@
 }
 
 
-/// This is a cool animation that turns things from black and white to color! Its currently set to the hover action
+// This is a cool animation that turns things from black and white to color! Its currently set to the hover action
 .bw-clr {
     @include prefix((filter: grayscale(1)), webkit moz ms o);
 

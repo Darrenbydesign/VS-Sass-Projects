@@ -1,13 +1,11 @@
-/// <reference path="base/config.scss" />
-/// <reference path="base/mixins.scss" />
+// <reference path="base/config.scss" />
+// <reference path="base/mixins.scss" />
 
-/*
-=================================================================== 
- $SHAME - This is where are the quick fix styles go when they don't
- have an official home yet. This file is meant to be checked for 
- refactoring regularly
-===================================================================
-*/
+// =================================================================== 
+// $SHAME - This is where are the quick fix styles go when they don't
+// have an official home yet. This file is meant to be checked for 
+// refactoring regularly
+// ===================================================================
 
 .video-full {
     @include translate(-50%, -50%);

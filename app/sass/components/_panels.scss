@@ -1,11 +1,10 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/*
-=================================================================== 
- $Panels - Default Panel Styles
-===================================================================
-*/
+//=================================================================== 
+// $Panels - Default Panel Styles
+//===================================================================
+
 
 .tile-container {
   margin-top: ce(20px);
@@ -30,8 +29,8 @@
     margin-bottom: 10px;
     position: relative;
     .panel-button {
-      /// top: 0;
-      /// bottom: -3px;
+      // top: 0;
+      // bottom: -3px;
       bottom: -0.975em;
       right: 15px;
       position: absolute;
@@ -58,10 +57,10 @@
   >.cie-list-group .list-group-item,
   >.panel-collapse>.cie-list-group .list-group-item {
     @include border-radius(0);
-    /// border-bottom: 1px solid $brand-gray-md;
+    // border-bottom: 1px solid $brand-gray-md;
     border-bottom: none;
   }
-}
+}`
 .next-steps-panel{
   min-height: 100%;
   .panel-heading{
@@ -75,11 +74,9 @@
   }
 }
 
-/*
-=================================================================== 
- $Panels - Notification Panel styles
-===================================================================
-*/
+// =================================================================== 
+// $Panels Notifications - Notification Panel styles
+// ===================================================================
 
 .Panel-notifications {
   .notPanelHead {

@@ -1,19 +1,18 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/*
-=================================================================== 
- $SVG - Styles for SVGs go here
-===================================================================
-*/
+//=================================================================== 
+// $SVG - Styles for SVGs go here
+//===================================================================
+
 
 .test-svg {
   height: 150px;
 }
 
 .check-mark-svg {
-  /// width: 250px;
-  /// height: 250px;
+  // width: 250px;
+  // height: 250px;
   polygon {
     fill: $corp-color;
   }

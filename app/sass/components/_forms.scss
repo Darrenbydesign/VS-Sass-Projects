@@ -1,8 +1,9 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/* ===========$Form Styles========================= */
-
+// =================================================================== 
+// $Form Styles
+// ===================================================================
 input[type='text'],
 input[type='email'],
 input[type='tel'],
@@ -21,7 +22,7 @@ select {
     background: #f4f4f4;
 }
 
-/// Overwrite to boostraps borders on all elements using this class
+// Overwrite to boostraps borders on all elements using this class
 .form-control {
     @include border-radius(0);
     background: #f4f4f4;

@@ -53,7 +53,7 @@
   @return ($target / $container) * 100%;
 }
 
-/// Createing shorthand names for quicker use if you're extremely lazy....or cant type...or just don't like long function names
+// Creating shorthand names for quicker use if you're extremely lazy....or cant type...or just don't like long function names
 
 /// This functions is just the shorthand versions of calculateEm
 /// @group shorthand functions
@@ -123,12 +123,12 @@ $dark-text: #4d4d4d;
 @function dynamicTextColor($color) {
   @if (lightness($color) > 50) {
     
-    /// This should return black text for items with lighter backgrounds
+    // This should return black text for items with lighter backgrounds
     @return $dark-text; 
   }
   @else {
 
-    /// This should return white text for items with dark backgrounds
+    // This should return white text for items with dark backgrounds
     @return $light-text; 
   }
 }

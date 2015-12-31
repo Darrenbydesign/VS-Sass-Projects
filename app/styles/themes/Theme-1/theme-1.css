@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*
-=================================================================== 
- $Reset - Reset styles to reset browser defaults go here
-===================================================================
-*/
 *,
 *:before,
 *:after {
@@ -15,11 +10,6 @@ html {
   min-height: 100%;
 }
 
-/*
-=================================================================== 
-$Typography - All default styling for typpgraphy should go here
-===================================================================
-*/
 html {
   font-size: 100%;
   font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
@@ -249,7 +239,6 @@ label {
   background: #5C005C;
 }
 
-/*=============margin and padding helper classes go here=============*/
 .margin-top-10 {
   margin-top: 10px;
 }
@@ -373,7 +362,6 @@ label {
   transition: -webkit-filter 0.3s ease-in;
 }
 
-/* Boostrap Styles Loaded into project instead of called seperately*/
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -8110,7 +8098,6 @@ button.close {
   }
 }
 
-/* =====================$Base-layout Styles===================== */
 .wrap {
   min-height: 100%;
 }
@@ -8120,11 +8107,26 @@ body {
   margin-bottom: 70px;
 }
 
+body a {
+  color: #0078D7;
+}
+
+body a:visited {
+  color: #004d8b;
+}
+
+body a:hover {
+  color: #004d8b;
+}
+
+body a:active {
+  color: #0078D7;
+}
+
 .header {
   background: #4d4d4d;
 }
 
-/*================$Navigation Styles====================== */
 .navbar-inverse .ft-nav {
   border-right: 1px solid #737373;
 }
@@ -8181,7 +8183,6 @@ body {
   }
 }
 
-/* ===========$Form Styles========================= */
 input[type='text'],
 input[type='email'],
 input[type='tel'],
@@ -8574,11 +8575,6 @@ select {
   text-align: center;
 }
 
-/*
-=================================================================== 
- $SVG - Styles for SVGs go here
-===================================================================
-*/
 .test-svg {
   height: 150px;
 }
@@ -8587,7 +8583,15 @@ select {
   fill: #0078D7;
 }
 
-/*================$Modal Styles==================*/
+/**
+ * Buttons:
+ * `.button` - this is where all the button styles are created for
+ * forms and other interface modules that require interaction
+ *
+ *     @example
+ *     button.button 
+ *      | button
+ */
 .button {
   font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
   background-color: #0078D7;
@@ -8664,7 +8668,6 @@ select {
   text-decoration: none;
 }
 
-/*breadcrumb nav styles*/
 .flex-breadcrumb li a:after, .flex-breadcrumb li a:before {
   content: ' ';
   display: block;
@@ -8820,12 +8823,6 @@ select {
   }
 }
 
-/*
-=================================================================== 
- $Masthead - Mastheads are used when full screen images are needed
- the image is used for titles or call to action page headers
-===================================================================
-*/
 .masthead-banner {
   background: linear-gradient(rgba(0, 120, 215, 0.8), rgba(0, 120, 215, 0.8)), url("https://placekitten.com/2000/300");
   background-position: top center;
@@ -8862,12 +8859,6 @@ select {
   }
 }
 
-/*@import 'modules/gridbox';*/
-/*
-=================================================================== 
- $Alerts - 
-===================================================================
-*/
 .ft-alert {
   padding: 0;
   margin: 0;
@@ -8967,13 +8958,6 @@ select {
   display: flex !important;
 }
 
-/*
-=================================================================== 
- $Status - status indicators are used inside of the tables under the 
- columns labeled Status. This is used instead of icons because its
- nice to use CSS instead of loading images.
-===================================================================
-*/
 .status {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -9013,12 +8997,6 @@ select {
   background: #6db55e;
 }
 
-/*
-=================================================================== 
- $Wizards - This is where all wizard styles go. 
- This module can be abstracted more but for now its pretty versatile
-===================================================================
-*/
 .wizard-form-container {
   background: #fff;
   box-shadow: 0px 1px 5px rgba(77, 77, 77, 0.2);
@@ -9270,11 +9248,6 @@ select {
   }
 }
 
-/*
-=================================================================== 
- $Slide Navigation - 
-===================================================================
-*/
 .slide-nav-container {
   background: #004d8b;
   color: #fff;
@@ -9351,11 +9324,6 @@ select {
   margin-top: 50px;
 }
 
-/*
-=================================================================== 
- $Pricing Table - 
-===================================================================
-*/
 .pricing-table-container {
   display: flex;
   align-self: flex-start;
@@ -9435,13 +9403,6 @@ select {
   text-align: center;
 }
 
-/*
-=================================================================== 
- $SHAME - This is where are the quick fix styles go when they don't
- have an official home yet. This file is meant to be checked for 
- refactoring regularly
-===================================================================
-*/
 .video-full {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

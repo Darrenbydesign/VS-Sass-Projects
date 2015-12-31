@@ -1,13 +1,11 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
+// <reference path="../base/config.scss" />
+// <reference path="../base/mixins.scss" />
 
-/*
-=================================================================== 
- $Status - status indicators are used inside of the tables under the 
- columns labeled Status. This is used instead of icons because its
- nice to use CSS instead of loading images.
-===================================================================
-*/
+//=================================================================== 
+// $Status - status indicators are used inside of the tables under the 
+// columns labeled Status. This is used instead of icons because its
+// nice to use CSS instead of loading images.
+//===================================================================
 
 .status {
   @include border-radius(50%);
@@ -25,7 +23,7 @@
 }
 
 .status-closed {
-  /// background: $gray-md;
+  // background: $gray-md;
   background: $corp-color-dark;
 }
 
@@ -33,17 +31,17 @@
   background: $red;
 }
 .status-pending,.status-in-progress {
-  /// background: $yellow;
+  // background: $yellow;
   background: $yellow;
 }
 
 .status-reopened, .status-opened {
-  /// background: $red;
+  // background: $red;
   background: lighten($blue, 15%);
 }
 
 .status-solution {
-  /// background: $blue;
+  // background: $blue;
   background: $green;
 }
 

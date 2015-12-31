@@ -1,155 +1,156 @@
-/// <reference path="config.scss" />
-/// <reference path="mixins.scss" />
-
+// <reference path="config.scss" />
+// <reference path="mixins.scss" />
 ////
 /// @author Darren Sorrels
 ////
 
-/*
-=================================================================== 
-$Typography - All default styling for typpgraphy should go here
-===================================================================
-*/
+// =================================================================== 
+// $Typography - All default styling for typpgraphy should go here
+// ===================================================================
 
 html {
-    // Set the project default type size to 100% (This is usually 16px in most modern browsers)
-    font-size: 100%;
-    font-family: $segoe-UI-regular;
-}
-// styleguide:ignore:start
-@font-face {
-    font-family: 'su';
-    src: url('../Fonts/segoeui.eot');/* IE9 Compat Modes */
-    src: url('../Fonts/segoeui.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
-    url('../Fonts/segoeui.woff') format('woff'),/* Modern Browsers */
-    url('../Fonts/segoeui.ttf') format('truetype'),/* Safari, Android, iOS */
-    url('../Fonts/segoeui.svg#segoeui') format('svg')/* Legacy iOS */
+  // Set the project default type size to 100% (This is usually 16px in most modern browsers)
+  font-size: 100%;
+  font-family: $segoe-UI-regular;
 }
 
 @font-face {
-    font-family: 'susl';
-    src: url('../Fonts/segoeuisl.eot');/* IE9 Compat Modes */
-    src: url('../Fonts/segoeuisl.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
-    url('../Fonts/segoeuisl.woff') format('woff'),/* Modern Browsers */
-    url('../Fonts/segoeuisl.ttf') format('truetype'),/* Safari, Android, iOS */
-    url('../Fonts/segoeuisl.svg#segoeuisl') format('svg')/* Legacy iOS */
+  font-family: 'su';
+  src: url('../Fonts/segoeui.eot');
+  /* IE9 Compat Modes */
+  src: url('../Fonts/segoeui.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../Fonts/segoeui.woff') format('woff'), /* Modern Browsers */
+  url('../Fonts/segoeui.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../Fonts/segoeui.svg#segoeui') format('svg')/* Legacy iOS */
 }
 
 @font-face {
-    font-family: 'sul';
-    src: url('../Fonts/segoeuil.eot');/* IE9 Compat Modes */
-    src: url('../Fonts/segoeuil.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
-    url('../Fonts/segoeuil.woff') format('woff'),/* Modern Browsers */
-    url('../Fonts/segoeuil.ttf') format('truetype'),/* Safari, Android, iOS */
-    url('../Fonts/segoeuil.svg#7a970ceae9a1ab02ac93bba8667b5195') format('svg');/* Legacy iOS */
-    
-    font-style: normal;
-    font-weight: 200;
+  font-family: 'susl';
+  src: url('../Fonts/segoeuisl.eot');
+  /* IE9 Compat Modes */
+  src: url('../Fonts/segoeuisl.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../Fonts/segoeuisl.woff') format('woff'), /* Modern Browsers */
+  url('../Fonts/segoeuisl.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../Fonts/segoeuisl.svg#segoeuisl') format('svg')/* Legacy iOS */
 }
 
 @font-face {
-    font-family: 'susb';
-    src: url('../Fonts/seguisb.eot');/* IE9 Compat Modes */
-    src: url('../Fonts/seguisb.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
-    url('../Fonts/seguisb.woff') format('woff'),/* Modern Browsers */
-    url('../Fonts/seguisb.ttf') format('truetype'),/* Safari, Android, iOS */
-    url('../Fonts/seguisb.svg#segoeuisl') format('svg')/* Legacy iOS */
+  font-family: 'sul';
+  src: url('../Fonts/segoeuil.eot');
+  /* IE9 Compat Modes */
+  src: url('../Fonts/segoeuil.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../Fonts/segoeuil.woff') format('woff'), /* Modern Browsers */
+  url('../Fonts/segoeuil.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../Fonts/segoeuil.svg#7a970ceae9a1ab02ac93bba8667b5195') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
 }
-// styleguide:ignore:end
+
+@font-face {
+  font-family: 'susb';
+  src: url('../Fonts/seguisb.eot');
+  /* IE9 Compat Modes */
+  src: url('../Fonts/seguisb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../Fonts/seguisb.woff') format('woff'), /* Modern Browsers */
+  url('../Fonts/seguisb.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../Fonts/seguisb.svg#segoeuisl') format('svg')/* Legacy iOS */
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: $segoe-UI-light;
-    color: $corp-color;
+  font-family: $segoe-UI-light;
+  color: $corp-color;
 }
 
 h1 {
-    @include font-size(32px);
-    line-height: 1.25em;
-    @include breakpoint-lg {
-        @include font-size(48px);
-        line-height: 1.05em;
-    }
-    @include breakpoint-md {
-        @include font-size(40px);
-        line-height: 1.125em;
-    }
+  @include font-size(32px);
+  line-height: 1.25em;
+  @include breakpoint-lg {
+    @include font-size(48px);
+    line-height: 1.05em;
+  }
+  @include breakpoint-md {
+    @include font-size(40px);
+    line-height: 1.125em;
+  }
 }
 
 h2 {
-    @include font-size(26px);
+  @include font-size(26px);
+  line-height: 1.1538em;
+  @include breakpoint-lg {
+    @include font-size(36px);
+    line-height: 1.25em;
+  }
+  @include breakpoint-md {
+    @include font-size(32px);
     line-height: 1.1538em;
-    @include breakpoint-lg {
-        @include font-size(36px);
-        line-height: 1.25em;
-    }
-    @include breakpoint-md {
-        @include font-size(32px);
-        line-height: 1.1538em;
-    }
+  }
 }
 
 h3 {
-    @include font-size(22px);
-    line-height: 1.136em;
-    @include breakpoint-lg {
-        @include font-size(28px);
-        line-height: 1.25em;
-    }
-    @include breakpoint-md {
-        @include font-size(24px);
-        line-height: 1.1363em;
-    }
+  @include font-size(22px);
+  line-height: 1.136em;
+  @include breakpoint-lg {
+    @include font-size(28px);
+    line-height: 1.25em;
+  }
+  @include breakpoint-md {
+    @include font-size(24px);
+    line-height: 1.1363em;
+  }
 }
 
 h4 {
+  @include font-size(18px);
+  line-height: 1.111em;
+  @include breakpoint-lg {
+    @include font-size(18px);
+    line-height: 1.222em;
+  }
+  @include breakpoint-md {
     @include font-size(18px);
     line-height: 1.111em;
-    @include breakpoint-lg {
-        @include font-size(18px);
-        line-height: 1.222em;
-    }
-    @include breakpoint-md {
-        @include font-size(18px);
-        line-height: 1.111em;
-    }
+  }
 }
 
 h5 {
+  @include font-size(14px);
+  line-height: 1.111em;
+  @include breakpoint-lg {
+    @include font-size(14px);
+    line-height: 1.2em;
+  }
+  @include breakpoint-md {
     @include font-size(14px);
     line-height: 1.111em;
-    @include breakpoint-lg {
-        @include font-size(14px);
-        line-height: 1.2em;
-    }
-    @include breakpoint-md {
-        @include font-size(14px);
-        line-height: 1.111em;
-    }
+  }
 }
 
 h6 {
+  @include font-size(12px);
+  line-height: 1.111em;
+  @include breakpoint-lg {
+    @include font-size(12px);
+    line-height: 1.2em;
+  }
+  @include breakpoint-md {
     @include font-size(12px);
     line-height: 1.111em;
-    @include breakpoint-lg {
-        @include font-size(12px);
-        line-height: 1.2em;
-    }
-    @include breakpoint-md {
-        @include font-size(12px);
-        line-height: 1.111em;
-    }
+  }
 }
 
 body {
-    @include font-size($base-font-size);
-    color: $base-font-color;
-    font-family: $segoe-UI-regular;
+  @include font-size($base-font-size);
+  color: $base-font-color;
+  font-family: $segoe-UI-regular;
 }
-label
-{
-    font-family: $segoe-UI-light;
+
+label {
+  font-family: $segoe-UI-light;
 }
