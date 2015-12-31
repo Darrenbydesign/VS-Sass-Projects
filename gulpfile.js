@@ -29,7 +29,7 @@ var paths = {
     tsOutput                : 'app/Scripts', // outputs to compiled js files to the Scripts folder
 
     // styleguide paths
-    styledownConfigPath     : 'app/sass/config.md',
+    styledownConfigPath     : 'app/config.md',
     styledownOutputPath     : 'styledown/',
 
     // production paths
