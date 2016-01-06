@@ -1,9 +1,14 @@
-// <reference path="../base/config.scss" />
-// <reference path="../base/mixins.scss" />
-
 // =================================================================== 
 // $Tables - Table styles go here
 // ===================================================================
+
+// Tables
+// 
+// This is where the `.table` styles go
+// 
+// Markup: kss/snippets/table.html
+// 
+// Styleguide 2.1
 
 .table {
   >tbody>tr>td,
@@ -12,7 +17,7 @@
   >tfoot>tr>th,
   >thead>tr>td,
   >thead>tr>th {
-    padding: 10px 15px;
+    padding: $common-padding;
     line-height: 1.42857143;
     vertical-align: top;
     margin-top: 0;
@@ -20,5 +25,5 @@
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-  background-color: $brand-gray-lt;
+  background-color: $gray;
 }

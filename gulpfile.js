@@ -9,7 +9,6 @@ var gulp                    = require('gulp'),
   sourcemaps                = require('gulp-sourcemaps'),
   runSequence               = require('run-sequence'),
   browserSync               = require('browser-sync'),
-  styledown                 = require('gulp-styledown'),
 
   // grouped plugins
   sass                      = require('gulp-sass'),
@@ -28,9 +27,6 @@ var paths = {
     tsInput                 : 'app/typescript/**/*.ts', // finds the typescript files in the typescript folder for compilation
     tsOutput                : 'app/Scripts', // outputs to compiled js files to the Scripts folder
 
-    // styleguide paths
-    styledownConfigPath     : 'app/config.md',
-    styledownOutputPath     : 'styledown/',
 
     // production paths
     production              : 'production/',
@@ -41,54 +37,43 @@ var paths = {
     prodViews               : 'production/',
 
     // dev paths
+    dev                     : 'app/',
     fonts                   : 'app/fonts/**/*',
     scripts                 : 'app/Scripts/**/*.js',
     images                  : 'app/images/**/*.+(png|jpg|gif|svg)',
     videos                  : 'app/images/**/*.+(mp4|webm|ogg|theora|mov)',
     html                    : 'app/**/*.html',
     mapPath                 : 'maps',
-  },
+},
 
   // JSON options for compiling Sass files
   //=====================================================================
   sassOptions = {
-    errLogToConsole: true,
-    outputStyle: 'expanded'
+      errLogToConsole: true,
+      outputStyle: 'expanded'
   },
 
   // JSON options for compiling Sassdoc files
   //=====================================================================
   sassdocOptions = {
-    dest: 'sassdoc',
-    verbose: true,
-    theme: 'flippant',  // find out about creating custom themes visit http://sassdoc.com/using-your-own-theme/
+      dest: 'sassdoc',
+      verbose: true,
+      theme: 'flippant',  // find out about creating custom themes visit http://sassdoc.com/using-your-own-theme/
   },
 
   // JSON options for BrowswerSync Server
   //=====================================================================
   browserSyncOptions = {
-    server: {
-      baseDir: paths.production,
-    },
+      server: {
+          baseDir: paths.dev,
+      },
   },
 
   // JSON options for imagemin plug-in
   //=====================================================================
   imageminOptions = {
-    progressive: true,
-    svgoPlugins: [{
-      removeViewBox: false
-    }, {
-      removeEmptyAttrs: true
-    }],
-    interlaced: true
-  },
-
-  // JSON options for Styleguide generator
-  //=====================================================================
-  styledownOptions = {
-    config: paths.styledownConfigPath,
-    filename: 'styleguide.html'
+      progressive: true,
+      interlaced: true
   };
 
 // COMPILE TASK TO CREATE CSS JS and DOCUMENTATION FILES
@@ -100,9 +85,9 @@ gulp.task('typescript', function() {
     .src(paths.tsInput)
     .pipe(sourcemaps.init())
     .pipe(ts(tsProject))
-    .on('error', ts.logError)
+    //.on('error', ts.logError)
     .pipe(sourcemaps.write(paths.mapPath))
-    .pipe(gulp.dest(paths.prodScripts));
+    .pipe(gulp.dest(paths.tsOutput));
 
   console.log('Compiling typescript... \n');
   return tsResult.js;
@@ -184,14 +169,9 @@ gulp.task('html', function() {
 //=============================================================================
 // Gulp task to create styleguide of project using comments in SASS/CSS documents
 
-gulp.task('styledown', function() {
-  var styledownResult = gulp
-    .src(paths.styledownConfigPath)
-    .pipe(styledown(styledownOptions))
-    .pipe(gulp.dest(paths.styledownOutputPath));
-
-  return styledownResult;
-});
+// gulp.task('styleguide', function () {
+//
+// });
 
 
 // BROWSERSYNC TASK RELOADS THE AFTER SAVING CHANGES AUTOMATICALLY
@@ -213,20 +193,25 @@ gulp.task('clean', function(callback) {
 
 // Gulp task to clean up specific folders in production
 gulp.task('clean:production', function(callback) {
-  del(['production/**/*', '!production/images', '!production/images/**/*', callback]);
-  console.log('Cleaning production folder for Deployment \n');
+    var cleanUpProd = del.sync(paths.production);
+    console.log('Cleaning production folder for Deployment \n');
+    return cleanUpProd;
 });
+
+gulp.task('cache:clear', function (callback) {
+    return cache.clearAll(callback)
+})
 
 // BUILD TASKS FOR DEV AND PRODUCTION ENVIORNMENT
 //=====================================================================
 
 gulp.task('dev', ['browserSync'], function() {
-  gulp.watch(paths.sassInput, ['sass','styledown'])
+  gulp.watch(paths.sassInput, ['sass'])
     .on('change', function(event) {
       console.log('\n File' + event.path + ' was ' + event.type + ', running tasks...');
     });
-  gulp.watch(paths.html, ['html'], browserSync.reload);
-  gulp.watch(paths.tsInput, ['typescript'], browserSync.reload);
+  gulp.watch(paths.html, browserSync.reload);
+  gulp.watch(paths.tsInput, ['typescript']);
 });
 
 // Build settings for compiling sass, sassdoc, and typescript differently in production
@@ -239,8 +224,7 @@ gulp.task('prod', function(callback) {
     .pipe(sourcemaps.write(paths.mapPath))
     .pipe(gulp.dest(paths.prodStyles));
 
-  runSequence(
-    ['clean:production', 'fonts', 'scripts', 'images', 'videos', 'html', 'sassdoc'], callback);
+  runSequence(['clean:production', 'fonts', 'scripts', 'images', 'videos', 'html', 'sassdoc'], callback);
   return prodResult;
 });
 
@@ -254,13 +238,13 @@ gulp.task('deploy', ['prod'], function() {
 //=====================================================================
 // Gulp Task that watches the Sass, Typescript & the StyleGuide Generator
 
-gulp.task('watch', ['browserSync','styledown'], function() {
+gulp.task('watch', ['browserSync'], function() {
   gulp.watch(paths.sassInput, ['sass'])
     .on('change', function(event) {
       console.log('\n File' + event.path + ' was ' + event.type + ', running tasks... \n');
     });
   gulp.watch(paths.html, browserSync.reload);
-  gulp.watch(paths.tsInput, ['typescript']);
+  gulp.watch(paths.tsInput, ['typescript']).on('change', browserSync.reload);
 });
 
 //DEFAULT TASKS

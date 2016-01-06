@@ -55,7 +55,7 @@
   }
   li {
     background: lighten($gray-light, 50%);
-    padding: 10px 15px;
+    padding:$common-padding;
     margin-left: -2.5em;
     &:nth-child(2) {
       background: lighten($gray-light, 40%);

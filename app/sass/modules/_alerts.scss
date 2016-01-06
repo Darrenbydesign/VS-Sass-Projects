@@ -34,7 +34,7 @@
 
 .wkl-info-container {
     background: $corp-color-dark;
-    padding: 10px 15px;
+    padding:$common-padding;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;

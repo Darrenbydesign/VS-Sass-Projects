@@ -60,11 +60,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="app\Scripts\main.js" />
     <Content Include="app\styles\main.css" />
     <Content Include="app\styles\themes\Theme-1\theme-1.css" />
     <Content Include="gulpfile.js" />
     <Content Include="app\images\00912100_Size1024.png" />
-    <Content Include="app\images\about-cie.jpg" />
     <Content Include="app\images\community.jpg" />
     <Content Include="app\images\videos\confab-demo.mov" />
     <Content Include="app\images\videos\confab-demo.mp4" />
@@ -74,7 +74,6 @@
     <Content Include="app\images\girl-on-computer.png" />
     <Content Include="app\images\hand-holding-computer.png" />
     <Content Include="app\images\icons\help-icon.png" />
-    <Content Include="app\images\icons\icons.png" />
     <Content Include="app\images\SVG\arrow-right-icon-blue.svg" />
     <Content Include="app\images\SVG\arrow-right-icon.svg" />
     <Content Include="app\images\SVG\box-icon.svg" />
@@ -113,19 +112,11 @@
     <Content Include="app\images\SVG\search.svg" />
     <Content Include="app\images\SVG\users.svg" />
     <Content Include="app\images\icons\learn-more-icon.png" />
-    <Content Include="app\images\logo-cie-black-font.png" />
-    <Content Include="app\images\logo-cie.png" />
     <Content Include="app\images\man-woman-shaking-hands.png" />
     <Content Include="app\images\masthead-image-4.png" />
-    <Content Include="app\images\microsoft-logo.png" />
     <Content Include="app\images\modal-header-customer.png" />
-    <Content Include="app\images\icons\mscie-icons.png" />
     <Content Include="app\images\OFF14_Eve_LoganA_Max_Mercedes_02.png" />
-    <Content Include="app\images\trellis-announcement_icon_Cropped.png" />
-    <Content Include="app\images\upldr-blue.png" />
-    <Content Include="app\images\upldr-yellow.png" />
     <Content Include="app\images\icons\x_icon.png" />
-    <Content Include="app\images\yammer.png" />
     <Content Include="app\index.html" />
     <Content Include="app\Scripts\bootstrap-sprockets.js" />
     <Content Include="app\Scripts\bootstrap.js" />
@@ -142,9 +133,34 @@
     <Content Include="app\Scripts\bootstrap\tab.js" />
     <Content Include="app\Scripts\bootstrap\tooltip.js" />
     <Content Include="app\Scripts\bootstrap\transition.js" />
+    <Content Include="kss\custom-template\index.html" />
+    <Content Include="kss\custom-template\public\github-fork--black.png" />
+    <Content Include="kss\custom-template\public\kss.css" />
+    <Content Include="kss\custom-template\public\kss.js" />
+    <Content Include="kss\custom-template\public\less.js" />
+    <Content Include="kss\custom-template\public\noise-low.png" />
+    <Content Include="kss\custom-template\public\prettify.js" />
+    <Content Include="kss\custom-template\public\sample-inline.png" />
+    <Content Include="kss\custom-template\public\sample-inline.svg" />
+    <Content Include="kss\custom-template\public\sample.png" />
+    <Content Include="kss\custom-template\public\sample.svg" />
+    <Content Include="kss\custom-template\public\WARNING.txt" />
+    <Content Include="kss\custom-template\template_config.js" />
+    <Content Include="kss\snippets\button.html" />
+    <Content Include="kss\snippets\table.html" />
+    <Content Include="kss\styleguide\public\github-fork--black.png" />
+    <Content Include="kss\styleguide\public\kss.css" />
+    <Content Include="kss\styleguide\public\kss.js" />
+    <Content Include="kss\styleguide\public\less.js" />
+    <Content Include="kss\styleguide\public\noise-low.png" />
+    <Content Include="kss\styleguide\public\prettify.js" />
+    <Content Include="kss\styleguide\public\sample-inline.png" />
+    <Content Include="kss\styleguide\public\sample-inline.svg" />
+    <Content Include="kss\styleguide\public\sample.png" />
+    <Content Include="kss\styleguide\public\sample.svg" />
+    <Content Include="kss\styleguide\public\WARNING.txt" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="production\images\00912100_Size1024.png" />
-    <Content Include="production\images\about-cie.jpg" />
     <Content Include="production\images\community.jpg" />
     <Content Include="production\images\girl-on-computer.png" />
     <Content Include="production\images\hand-holding-computer.png" />
@@ -152,14 +168,10 @@
     <Content Include="production\images\icons\eye-icon.png" />
     <Content Include="production\images\icons\eye-icon2x.png" />
     <Content Include="production\images\icons\help-icon.png" />
-    <Content Include="production\images\icons\icons.png" />
     <Content Include="production\images\icons\learn-more-icon.png" />
     <Content Include="production\images\icons\x_icon.png" />
-    <Content Include="production\images\logo-cie-black-font.png" />
-    <Content Include="production\images\logo-cie.png" />
     <Content Include="production\images\man-woman-shaking-hands.png" />
     <Content Include="production\images\masthead-image-4.png" />
-    <Content Include="production\images\microsoft-logo.png" />
     <Content Include="production\images\modal-header-customer.png" />
     <Content Include="production\images\OFF14_Eve_LoganA_Max_Mercedes_02.png" />
     <Content Include="production\images\SVG\arrow-right-icon-blue.svg" />
@@ -199,12 +211,8 @@
     <Content Include="production\images\SVG\pie-chart-icon.svg" />
     <Content Include="production\images\SVG\search.svg" />
     <Content Include="production\images\SVG\users.svg" />
-    <Content Include="production\images\trellis-announcement_icon_Cropped.png" />
-    <Content Include="production\images\upldr-blue.png" />
-    <Content Include="production\images\upldr-yellow.png" />
     <Content Include="production\images\videos\confab-demo.mov" />
     <Content Include="production\images\videos\confab-demo.mp4" />
-    <Content Include="production\images\yammer.png" />
     <Content Include="production\index.html" />
     <Content Include="production\Scripts\bootstrap-sprockets.js" />
     <Content Include="production\Scripts\bootstrap.js" />
@@ -238,7 +246,6 @@
     <Content Include="sassdoc\assets\js\vendor\jquery.min.js" />
     <Content Include="sassdoc\assets\js\vendor\prism.min.js" />
     <Content Include="sassdoc\index.html" />
-    <Content Include="styledown\styleguide.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -449,16 +456,18 @@
     <Content Include="app\sass\modules\_pricing-table.scss" />
     <Content Include="app\sass\modules\_alerts.scss" />
     <Content Include="tsconfig.json" />
+    <Content Include="app\styles\maps\main.css.map" />
+    <Content Include="app\styles\maps\themes\Theme-1\theme-1.css.map" />
+    <Content Include="kss\homepage.md" />
+    <Content Include="kss\kss-config.json" />
+    <Content Include="app\Scripts\maps\main.js.map" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
-    <Content Include="production\styles\maps\main.css.map" />
-    <Content Include="production\styles\maps\themes\Theme-1\theme-1.css.map" />
-    <Content Include="app\styles\maps\main.css.map" />
-    <Content Include="app\styles\maps\themes\Theme-1\theme-1.css.map" />
-    <Content Include="production\Scripts\maps\main.js.map" />
-    <Content Include="app\config.md" />
+    <Content Include="kss\styleguide\public\kss.less" />
+    <Content Include="kss\custom-template\package.json" />
+    <Content Include="kss\custom-template\public\kss.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

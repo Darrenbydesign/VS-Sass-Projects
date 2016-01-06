@@ -8124,7 +8124,7 @@ body a:active {
 }
 
 .header {
-  background: #838282;
+  background: #0078d7;
 }
 
 .navbar-inverse .ft-nav {
@@ -8224,12 +8224,6 @@ select {
   font-size: 0.875em;
 }
 
-/*
-=================================================================== 
- $Icons - Icons styles go here including the CIE spritesheet styles
- as well as any new icons styles created
-===================================================================
-*/
 .ft-icon {
   display: inline-block;
   position: relative;
@@ -8583,15 +8577,6 @@ select {
   fill: #0078d7;
 }
 
-/**
- * Buttons:
- * `.button` - this is where all the button styles are created for
- * forms and other interface modules that require interaction
- *
- *     @example
- *     button.button 
- *      | button
- */
 .button {
   font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
   background-color: #0078d7;
@@ -8823,11 +8808,18 @@ select {
   }
 }
 
-.masthead-banner {
-  background: linear-gradient(rgba(0, 120, 215, 0.8), rgba(0, 120, 215, 0.8)), url("https://placekitten.com/2000/300");
-  background-position: top center;
-}
-
+/**
+* Mastheads:
+* `.masthead-banner` - Mastheads are used when full screen images are needed
+* the image is used for titles or call to action page headers
+* 
+*     @example
+*     .masthead-banner
+*       h1.masthead-title Test Title
+*       section.masthead-info-container
+*         p 
+*           | content goes here
+*/
 .masthead-banner {
   -webkit-background-blend-mode: multiply;
   -moz-background-blend-mode: multiply;
@@ -8840,7 +8832,7 @@ select {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 300px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -8849,13 +8841,41 @@ select {
   }
 }
 
+.masthead-banner {
+  background-image: linear-gradient(rgba(0, 102, 183, 0.8), rgba(0, 102, 183, 0.8));
+  background-position: top center;
+}
+
+.masthead-title {
+  padding-top: 50px;
+  text-align: center;
+  color: #fff;
+}
+
 .masthead-info-container {
-  color: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.masthead-info-container p {
+  color: #fff;
+  padding: 10px 15px;
 }
 
 @media only screen and (min-width: 1200px) {
   .masthead-info-container {
-    margin-top: 100px;
+    padding-top: 50px;
   }
 }
 

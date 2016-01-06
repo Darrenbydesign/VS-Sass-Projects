@@ -208,6 +208,10 @@ $footer-height: 70px !default;
 /// @type String
 $margin-bottom: $footer-height !default;
 
+/// Padding Styles
+/// @group Layout variables
+/// @type Number
+$common-padding: 10px 15px !default;
 
 //============================================================================
 // Image variables - Images instead of writing paths to images in the partials 

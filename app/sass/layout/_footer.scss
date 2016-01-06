@@ -17,7 +17,7 @@
     }
 }
 .footer-nav{
-	padding: 10px 15px;
+	padding:$common-padding;
 	@include breakpoint-sm{
 		padding: 0 15px;
 	}

@@ -1,32 +1,53 @@
-/// <reference path="../base/config.scss" />
-/// <reference path="../base/mixins.scss" />
-
 //=================================================================== 
 // $Masthead - Mastheads are used when full screen images are needed
 // the image is used for titles or call to action page headers
 // ===================================================================
 
-.masthead-banner {
-    background: linear-gradient(rgba($blue, 0.8), rgba($blue, 0.8)), url($img-placeholder);
-    background-position: top center;
-    @extend %masthead-base;
-}
+/**
+* Mastheads:
+* `.masthead-banner` - Mastheads are used when full screen images are needed
+* the image is used for titles or call to action page headers
+* 
+*     @example
+*     .masthead-banner
+*       h1.masthead-title Test Title
+*       section.masthead-info-container
+*         p 
+*           | content goes here
+*/
 
 %masthead-base {
-    @include prefix((background-blend-mode: multiply));
-    @include prefix((background-size: cover));
-    background-repeat: no-repeat;
-    height: 200px;
+  @include prefix((background-blend-mode: multiply));
+  @include prefix((background-size: cover));
+  background-repeat: no-repeat;
+  height: 300px;
+  @include breakpoint-sm {
+  height: 100%;
+  }
+}
 
-    @include breakpoint-sm {
-        height: 100%;
-    }
+.masthead-banner {
+  // background-image: linear-gradient(rgba($corp-color-dark, 0.8), rgba($corp-color-dark, 0.8)), url($img-placeholder);
+  background-image: linear-gradient(rgba($corp-color-dark, 0.8), rgba($corp-color-dark, 0.8));
+  background-position: top center;
+  @extend %masthead-base;
+}
+
+.masthead-title {
+  padding-top: 50px;
+  text-align: center;
+  color: dt($corp-color-dark);
 }
 
 .masthead-info-container {
-    color: $white;
-
-    @include breakpoint-lg {
-        margin-top: 100px;
-    }
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  p {
+  color: dt($corp-color-dark);
+  padding: $common-padding;
+  }
+  @include breakpoint-lg {
+  padding-top: 50px;
+  }
 }

@@ -1,12 +1,7 @@
-// <reference path="../base/config.scss" />
-// <reference path="../base/mixins.scss" />
-
-/*
-=================================================================== 
- $Info-Block - Info blocks are useful for small blurbs of text
- that inform users about a task or guides them through a process
-===================================================================
-*/
+// =================================================================== 
+// $Info-Block - Info blocks are useful for small blurbs of text
+// that inform users about a task or guides them through a process - section info
+// ===================================================================
 
 .info-block-container {
   @include flexbox;
@@ -26,7 +21,7 @@
   width: 70vw;
   background: $brand-white;
   box-shadow: $brand-box-shadow;
-  padding: 10px 15px;
+  padding:$common-padding;
   margin: 20px 15px;
   a {
     text-decoration: none;
@@ -34,7 +29,7 @@
   p{
     @include font-size(18px);
   }
-  @include flexpoint-sm{
+  @include flexpoint-sm {
     width: 50vmin;
   }
 }

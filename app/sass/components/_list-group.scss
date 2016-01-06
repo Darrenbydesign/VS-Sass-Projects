@@ -1,14 +1,12 @@
-// <reference path="../base/config.scss" />
-// <reference path="../base/mixins.scss" />
-
 // =================================================================== 
 // $List-Group - CIE default list group styles
 // ===================================================================
+
 .list-group {
   .list-group-item {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding:$common-padding;
     margin-bottom: -1px;
     background-color: #fff;
     border: none;

@@ -3,15 +3,15 @@
 // forms and other interface modules that require interaction
 // ===================================================================
 
-/**
- * Buttons:
- * `.button` - this is where all the button styles are created for
- * forms and other interface modules that require interaction
- *
- *     @example
- *     button.button 
- *      | button
- */
+// Buttons
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: kss/snippets/button.html
+//
+// Styleguide 1.1
 
 .button {
     font-family: $segoe-UI-regular;

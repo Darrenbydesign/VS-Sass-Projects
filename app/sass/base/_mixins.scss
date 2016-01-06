@@ -41,7 +41,7 @@
 /// @group Cross-Browser Support
 /// @param {number} $radius[0] - value that desired for border-radius
 @mixin border-radius($radius: 0) {
-    @include prefix( (border-radius: $radius));
+    @include prefix((border-radius: $radius));
 }
 
 
