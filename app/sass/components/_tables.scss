@@ -6,10 +6,12 @@
 // 
 // This is where the `.table` styles go
 // 
-// Markup: kss/snippets/table.html
+// .table-striped - for tables that need zebra striping
+// .table-bordered - bordered 
 // 
-// Styleguide 2.1
-
+// Markup: ../snippets/table.html
+// 
+// Styleguide: Components - Tables
 .table {
   >tbody>tr>td,
   >tbody>tr>th,

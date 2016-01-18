@@ -5,23 +5,59 @@
 
 // Buttons
 //
+// Use the button classes on an <code>a</code>, <code>button</code>, or <code>input</code> element.
+//
+// 
+// 
+// Markup: ../snippets/button.html
+//
+// Styleguide: Components - Buttons
+.button {
+    @include button($corp-color);
+    font-family: $segoe-UI-regular;
+}
+
+// Text button
+// 
+// This is a text based button
+// 
+// .button-small
+// .button-text
+// .button-block
+// 
+// Markup:  ../../snippets/button-text.html
+// 
+// Styleguide  Components - Buttons - Text
+.button-text {
+  @include button(transparent);
+  color: $corp-color;
+  font-family: $segoe-UI-regular;
+  &:hover{
+    color: $corp-color-dark;
+    @include transition( background 0.3s ease-in-out);
+  }
+}
+
+// Buttons Block
+//
 // Your standard button suitable for clicking.
 //
-// :hover   - Highlights when hovering.
+// Markup: ../snippets/button-block.html
 //
-// Markup: kss/snippets/button.html
-//
-// Styleguide 1.1
-
-.button {
-    font-family: $segoe-UI-regular;
-    @include button($corp-color);
-}
-.button-block{
+// Styleguide: Components - Buttons - Button-block
+.button-block {
   @include button($corp-color);
   width: 100%;
 }
-.button-small{
+
+// Buttons Small
+//
+// Your standard button suitable for clicking.
+//
+// Markup: ../snippets/button-small.html
+//
+// Styleguide: Components - Buttons - Button-small
+.button-small {
   @include button($corp-color);
   padding: 6px 10px;
 }

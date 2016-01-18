@@ -1,79 +1,94 @@
 /// <vs SolutionOpened='default' />
 // Requirements for the project gulp tasks to work
 //=====================================================================
-var gulp                    = require('gulp'),
+var gulp                          = require('gulp'),
   // non grouped plugins
-  del                       = require('del'),
-  cache                     = require('gulp-cache'),
-  imagemin                  = require('gulp-imagemin'),
-  sourcemaps                = require('gulp-sourcemaps'),
-  runSequence               = require('run-sequence'),
-  browserSync               = require('browser-sync'),
+  del                             = require('del'),
+  cache                           = require('gulp-cache'),
+  imagemin                        = require('gulp-imagemin'),
+  sourcemaps                      = require('gulp-sourcemaps'),
+  runSequence                     = require('run-sequence'),
+  browserSync                     = require('browser-sync'),
+  kss                             = require('gulp-kss'),
 
   // grouped plugins
-  sass                      = require('gulp-sass'),
-  sassdoc                   = require('sassdoc'),
-  ts                        = require('gulp-typescript'),
-  tsProject                 = ts.createProject('tsconfig.json');
+  sass                            = require('gulp-sass'),
+  sassdoc                         = require('sassdoc'),
+  ts                              = require('gulp-typescript'),
+  tsProject                       = ts.createProject('tsconfig.json');
 
 // Path Variables for various actions on folders and files 
 //=====================================================================
 var paths = {
     // sass paths
-    sassInput               : 'app/sass/**/*.scss', // finds the scss files in the sass folder for compilation
-    sassOutput              : 'app/styles', // outputs the compiled css files into the CSS folder
+    sassInput                     : 'app/sass/**/*.scss', // finds the scss files in the sass folder for compilation
+    sassOutput                    : 'app/styles', // outputs the compiled css files into the CSS folder
 
     // typescript paths
-    tsInput                 : 'app/typescript/**/*.ts', // finds the typescript files in the typescript folder for compilation
-    tsOutput                : 'app/Scripts', // outputs to compiled js files to the Scripts folder
+    tsInput                       : 'app/typescript/**/*.ts', // finds the typescript files in the typescript folder for compilation
+    tsOutput                      : 'app/Scripts', // outputs to compiled js files to the Scripts folder
+
+    // Styleguide paths
+    kssStyleguideFile             : 'kss/homepage.md',
+    snippetPath                   : 'sass/snippets/',
+    templatePath                  : 'kss/custom-template/',
+    styleguideOutputPath          : 'styleguide/',
+
 
 
     // production paths
-    production              : 'production/',
-    prodFonts               : 'production/fonts',
-    prodStyles              : 'production/styles',
-    prodImages              : 'production/images',
-    prodScripts             : 'production/Scripts',
-    prodViews               : 'production/',
+    production                    : 'production/',
+    prodFonts                     : 'production/fonts',
+    prodStyles                    : 'production/styles',
+    prodImages                    : 'production/images',
+    prodScripts                   : 'production/Scripts',
+    prodViews                     : 'production/',
 
     // dev paths
-    dev                     : 'app/',
-    fonts                   : 'app/fonts/**/*',
-    scripts                 : 'app/Scripts/**/*.js',
-    images                  : 'app/images/**/*.+(png|jpg|gif|svg)',
-    videos                  : 'app/images/**/*.+(mp4|webm|ogg|theora|mov)',
-    html                    : 'app/**/*.html',
-    mapPath                 : 'maps',
-},
+    dev                           : 'app/',
+    fonts                         : 'app/fonts/**/*',
+    scripts                       : 'app/Scripts/**/*.js',
+    images                        : 'app/images/**/*.+(png|jpg|gif|svg)',
+    videos                        : 'app/images/**/*.+(mp4|webm|ogg|theora|mov)',
+    html                          : 'app/**/*.html',
+    mapPath                       : 'maps',
+  },
 
   // JSON options for compiling Sass files
   //=====================================================================
   sassOptions = {
-      errLogToConsole: true,
-      outputStyle: 'expanded'
+    errLogToConsole: true,
+    outputStyle: 'expanded'
   },
 
   // JSON options for compiling Sassdoc files
   //=====================================================================
   sassdocOptions = {
-      dest: 'sassdoc',
-      verbose: true,
-      theme: 'flippant',  // find out about creating custom themes visit http://sassdoc.com/using-your-own-theme/
+    dest: 'sassdoc',
+    verbose: true,
+    theme: 'flippant', // find out about creating custom themes visit http://sassdoc.com/using-your-own-theme/
   },
 
   // JSON options for BrowswerSync Server
   //=====================================================================
   browserSyncOptions = {
-      server: {
-          baseDir: paths.dev,
-      },
+    server: {
+      baseDir: paths.dev,
+    },
   },
 
   // JSON options for imagemin plug-in
   //=====================================================================
   imageminOptions = {
-      progressive: true,
-      interlaced: true
+    progressive: true,
+    interlaced: true
+  },
+
+  // KSS options for imagemin plug-in
+  //=====================================================================
+  kssOptions = {
+    overview: __dirname + paths.kssStyleguideFile,
+    templateDirectory: paths.templatePath,
   };
 
 // COMPILE TASK TO CREATE CSS JS and DOCUMENTATION FILES
@@ -169,9 +184,12 @@ gulp.task('html', function() {
 //=============================================================================
 // Gulp task to create styleguide of project using comments in SASS/CSS documents
 
-// gulp.task('styleguide', function () {
-//
-// });
+gulp.task('styleguide', function() {
+  var kssGuide = gulp
+    .src(paths.sassInput)
+    .pipe(kss(kssOptions))
+    .pipe(gulp.dest(paths.styleguideOutputPath));
+});
 
 
 // BROWSERSYNC TASK RELOADS THE AFTER SAVING CHANGES AUTOMATICALLY
@@ -193,13 +211,13 @@ gulp.task('clean', function(callback) {
 
 // Gulp task to clean up specific folders in production
 gulp.task('clean:production', function(callback) {
-    var cleanUpProd = del.sync(paths.production);
-    console.log('Cleaning production folder for Deployment \n');
-    return cleanUpProd;
+  var cleanUpProd = del.sync(paths.production);
+  console.log('Cleaning production folder for Deployment \n');
+  return cleanUpProd;
 });
 
-gulp.task('cache:clear', function (callback) {
-    return cache.clearAll(callback)
+gulp.task('cache:clear', function(callback) {
+  return cache.clearAll(callback)
 })
 
 // BUILD TASKS FOR DEV AND PRODUCTION ENVIORNMENT

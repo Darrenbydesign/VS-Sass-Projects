@@ -50,7 +50,7 @@
 /// @group buttons
 /// @param {alphanum} $color [$gray] - include a color in the mixin and this will add all the values for you
 /// @param {bool} $extend [true] - This value pertains to the button static mixin that is used to do all the heavy lifting. It should be set to true to start the loop.
-@mixin button($color: $gray, $extend: true) {
+@mixin button($color: $gray-light, $extend: true) {
     @include button-static($extend);
     background-color: $color;
     color: dt($color);
@@ -58,6 +58,12 @@
     a {
         color: dt($color);
         text-decoration: none;
+        &:hover {
+            background-color: mix($black, $color, 15%);
+            border-color: mix($black, $color, 40%);
+            color: dt($color);
+            text-decoration: none;
+        }
     }
 
     &:hover {
@@ -95,6 +101,8 @@ $Placeholder-Selectors: ();
     }
     @else {
         border: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
         padding-left: 10px;
         padding-right: 10px;
         display: inline-block;
@@ -229,15 +237,12 @@ $Placeholder-Selectors: ();
 @mixin link-color($link, $visited, $hover, $active) {
     a {
         color: $link;
-
         &:visited {
             color: $visited;
         }
-
         &:hover {
             color: $hover;
         }
-
         &:active {
             color: $active;
         }

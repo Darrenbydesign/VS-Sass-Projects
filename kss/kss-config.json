@@ -1,13 +1,14 @@
 {
   "//": "The source and destination paths are relative to this file.",
-  "source": ".",
-
+  "source": ["../app/sass"],
   "//": "The css and js paths are URLs relative to the generated style guide.",
   "css": [
-    "public/styles.css"
+    "../../app/styles/main.css",
+    "../../kss/custom-template/public/github.css"
   ],
   "js": [],
 
-  "title": "kss-node Style Guide",
-  "homepage": "homepage.md"
+  "title": "New pattern Style Guide",
+  "homepage": "../../kss/homepage.md",
+  "template": "custom-template"
 }

@@ -8578,14 +8578,16 @@ select {
 }
 
 .button {
-  font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
   background-color: #0078d7;
   color: #fff;
   border-color: #409ae1;
+  font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
 }
 
-.button, .button-block, .button-small {
+.button, .button-text, .button-block, .button-small {
   border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
   display: inline-block;
@@ -8599,11 +8601,18 @@ select {
   border-radius: 0px;
 }
 
-.button:hover, .button-block:hover, .button-small:hover {
+.button:hover, .button-text:hover, .button-block:hover, .button-small:hover {
   cursor: pointer;
 }
 
 .button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button a:hover {
+  background-color: #0066b7;
+  border-color: #004881;
   color: #fff;
   text-decoration: none;
 }
@@ -8615,6 +8624,40 @@ select {
   text-decoration: none;
 }
 
+.button-text {
+  background-color: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #0078d7;
+  font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
+}
+
+.button-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-text a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-text:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-text:hover {
+  color: #0066b7;
+  -webkit-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
 .button-block {
   background-color: #0078d7;
   color: #fff;
@@ -8623,6 +8666,13 @@ select {
 }
 
 .button-block a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-block a:hover {
+  background-color: #0066b7;
+  border-color: #004881;
   color: #fff;
   text-decoration: none;
 }
@@ -8642,6 +8692,13 @@ select {
 }
 
 .button-small a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-small a:hover {
+  background-color: #0066b7;
+  border-color: #004881;
   color: #fff;
   text-decoration: none;
 }

@@ -1,5 +1,3 @@
-// <reference path="config.scss" />
-// <reference path="mixins.scss" />
 ////
 /// @author Darren Sorrels
 ////
@@ -9,12 +7,11 @@
 // ===================================================================
 
 // Typography
+//
+// Headings, paragraphs, blockquotes, lists, and more have some global resets. The resets are handled by the vendor styles 
+// from Boostrap. We modify the sizing and font-family here to accomodate the project needs
 // 
-// All default styling for typography should be handled using these styles
-// 
-// Styleguide 1.2
-    
-
+// Styleguide: CSS - Typography
 html {
   // Set the project default type size to 100% (This is usually 16px in most modern browsers)
   font-size: 100%;
@@ -64,6 +61,11 @@ html {
   url('../Fonts/seguisb.svg#segoeuisl') format('svg')/* Legacy iOS */
 }
 
+// Headings
+//
+// Markup:  ../../snippets/headings.html
+// 
+// Styleguide  CSS - Typography - Headings
 h1,
 h2,
 h3,
@@ -152,6 +154,13 @@ h6 {
   }
 }
 
+// Body Text
+//
+// This is where we modify the base text size for the entire site. This is modifiable on a theme basis.
+// 
+// Markup:  ../../snippets/body-text.html
+// 
+// Styleguide  CSS - Typography - Body Text
 body {
   @include font-size($base-font-size);
   color: $base-font-color;

@@ -60,6 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="app\sass\snippets\body-text.html" />
+    <Content Include="app\sass\snippets\button-block.html" />
+    <Content Include="app\sass\snippets\button-small.html" />
+    <Content Include="app\sass\snippets\button-text.html" />
+    <Content Include="app\sass\snippets\button.html" />
+    <Content Include="app\sass\snippets\headings.html" />
+    <Content Include="app\sass\snippets\table.html" />
     <Content Include="app\Scripts\main.js" />
     <Content Include="app\styles\main.css" />
     <Content Include="app\styles\themes\Theme-1\theme-1.css" />
@@ -146,9 +153,10 @@
     <Content Include="kss\custom-template\public\sample.svg" />
     <Content Include="kss\custom-template\public\WARNING.txt" />
     <Content Include="kss\custom-template\template_config.js" />
-    <Content Include="kss\snippets\button.html" />
-    <Content Include="kss\snippets\table.html" />
+    <Content Include="kss\styleguide\index.html" />
     <Content Include="kss\styleguide\public\github-fork--black.png" />
+    <Content Include="kss\styleguide\public\github.css" />
+    <Content Include="kss\styleguide\public\highlight.pack.js" />
     <Content Include="kss\styleguide\public\kss.css" />
     <Content Include="kss\styleguide\public\kss.js" />
     <Content Include="kss\styleguide\public\less.js" />
@@ -158,7 +166,11 @@
     <Content Include="kss\styleguide\public\sample-inline.svg" />
     <Content Include="kss\styleguide\public\sample.png" />
     <Content Include="kss\styleguide\public\sample.svg" />
+    <Content Include="kss\styleguide\public\styleguide.js" />
     <Content Include="kss\styleguide\public\WARNING.txt" />
+    <Content Include="kss\styleguide\section-components.html" />
+    <Content Include="kss\styleguide\section-css.html" />
+    <Content Include="kss\styleguide\section-overview.html" />
     <Content Include="production\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="production\images\00912100_Size1024.png" />
     <Content Include="production\images\community.jpg" />
