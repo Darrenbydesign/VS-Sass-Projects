@@ -50,7 +50,7 @@ var paths = {
     scripts                       : 'app/Scripts/**/*.js',
     images                        : 'app/images/**/*.+(png|jpg|gif|svg)',
     videos                        : 'app/images/**/*.+(mp4|webm|ogg|theora|mov)',
-    html                          : 'app/**/*.html',
+    html                          : ['app/**/*.html', '!app/sass/snippets/**/*.html'],
     mapPath                       : 'maps',
   },
 
