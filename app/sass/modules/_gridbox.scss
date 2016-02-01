@@ -1,6 +1,3 @@
-// <reference path="../base/config.scss" />
-// <reference path="../base/mixins.scss" />
-
 // =================================================================== 
 // $GridBox - this is a custom module that allows you to create a 
 // semi flexible grid. [needs to be refactored]
@@ -67,32 +64,22 @@
 .gb-style-1 figure {
     overflow: hidden;
     img {
-        -webkit-transition: -webkit-transform 0.4s;
-        transition: -webkit-transform 0.4s;
-        transition: transform 0.4s;
+        @include transition(transform 0.4s);
     }
     figcaption {
+        @include translate(0, 100%);
+        @include transition(transform 0.4s);
         width: 100%;
         top: auto;
         bottom: 0;
         opacity: 0;
-        -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-        transform: translateY(100%);
-        -webkit-transition: -webkit-transform 0.4s;
-        transition: -webkit-transform 0.4s;
-        transition: transform 0.4s;
     }
 }
 
 .gb-style-1 figure:hover figcaption {
+    @include transition(transform 0.4s ease-in-out);
+    @include translate(0, 0);
     opacity: 1;
-    -webkit-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    transform: translateY(0px);
-    -webkit-transition: -webkit-transform 0.4s ease-in-out;
-    transition: -webkit-transform 0.4s ease-in-out;
-    transition: transform 0.4s ease-in-out;
 }
 
 .gb-style-1 figure figcaption a:hover {

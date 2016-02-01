@@ -2,19 +2,48 @@
 // $BUTTONS - this is where all the button styles are created for
 // forms and other interface modules that require interaction
 // ===================================================================
-
 // Buttons
 //
 // Use the button classes on an <code>a</code>, <code>button</code>, or <code>input</code> element.
-//
-// 
 // 
 // Markup: ../snippets/button.html
 //
 // Styleguide: Components - Buttons
 .button {
-    @include button($corp-color);
-    font-family: $segoe-UI-regular;
+  @include button($corp-color);
+  @include transition(color 0.7s);
+  color: $white;
+  font-family: $segoe-UI-regular;
+  &:focus {
+    outline: none;
+    color: $corp-color-dark;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -35px 0 0 -35px;
+    width: 70px;
+    height: 70px;
+    @include border-radius(50%);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.button-click {
+  outline: none;
+  color: $corp-color-light;
+  &:after {
+    @include animation(anim-effect-boris 0.3s loop);
+  }
+}
+
+.be-boris {
+  &:after {
+    background: rgba($corp-color, 0.1);
+  }
 }
 
 // Text button
@@ -32,7 +61,7 @@
   @include button(transparent);
   color: $corp-color;
   font-family: $segoe-UI-regular;
-  &:hover{
+  &:hover {
     color: $corp-color-dark;
     @include transition( background 0.3s ease-in-out);
   }

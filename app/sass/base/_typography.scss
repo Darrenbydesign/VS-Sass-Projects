@@ -1,7 +1,6 @@
 ////
 /// @author Darren Sorrels
 ////
-
 // =================================================================== 
 // $Typography - All default styling for typpgraphy should go here
 // ===================================================================
@@ -15,65 +14,53 @@
 html {
   // Set the project default type size to 100% (This is usually 16px in most modern browsers)
   font-size: 100%;
-  font-family: $segoe-UI-regular;
+  font-family: $base-font-family;
 }
 
-@font-face {
-  font-family: 'su';
-  src: url('../Fonts/segoeui.eot');
-  /* IE9 Compat Modes */
-  src: url('../Fonts/segoeui.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../Fonts/segoeui.woff') format('woff'), /* Modern Browsers */
-  url('../Fonts/segoeui.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../Fonts/segoeui.svg#segoeui') format('svg')/* Legacy iOS */
-}
+// Font-face font stack for custom web fonts using mixin
+@include font-face('segoeui', $segoe-regular-path);
 
-@font-face {
-  font-family: 'susl';
-  src: url('../Fonts/segoeuisl.eot');
-  /* IE9 Compat Modes */
-  src: url('../Fonts/segoeuisl.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../Fonts/segoeuisl.woff') format('woff'), /* Modern Browsers */
-  url('../Fonts/segoeuisl.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../Fonts/segoeuisl.svg#segoeuisl') format('svg')/* Legacy iOS */
-}
+@include font-face('segoeuisl', $segoe-semilight-path);
 
-@font-face {
-  font-family: 'sul';
-  src: url('../Fonts/segoeuil.eot');
-  /* IE9 Compat Modes */
-  src: url('../Fonts/segoeuil.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../Fonts/segoeuil.woff') format('woff'), /* Modern Browsers */
-  url('../Fonts/segoeuil.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../Fonts/segoeuil.svg#7a970ceae9a1ab02ac93bba8667b5195') format('svg');
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 200;
-}
+@include font-face('segoeuil', $segoe-light-path);
 
-@font-face {
-  font-family: 'susb';
-  src: url('../Fonts/seguisb.eot');
-  /* IE9 Compat Modes */
-  src: url('../Fonts/seguisb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../Fonts/seguisb.woff') format('woff'), /* Modern Browsers */
-  url('../Fonts/seguisb.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../Fonts/seguisb.svg#segoeuisl') format('svg')/* Legacy iOS */
-}
+@include font-face('segoeuisb', $segoe-semibold-path);
 
 // Headings
 //
 // Markup:  ../../snippets/headings.html
 // 
 // Styleguide  CSS - Typography - Headings
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $segoe-UI-light;
-  color: $corp-color;
+// Sass map of headings to dynamically create heading structure  and colors to be used
+
+$headings-complex: ( 
+  h1: ( 
+    font-family: $heading-major,
+    color: map-get($colors, blue)),
+  h2: ( 
+    font-family: $heading-major,
+    color: map-get($colors, blue)),
+  h3: ( 
+    font-family: $heading-minor,
+    color: map-get($colors,dark-gray)),
+  h4: ( 
+    font-family: $heading-minor,
+    color: map-get($colors,dark-gray)),
+  h5: ( 
+    font-family: $heading-minor,
+    color: map-get($colors, dark-gray)),
+  h6: ( 
+    font-family: $heading-minor,
+    color: map-get($colors, dark-gray))
+);
+
+@each $element,
+$style-map in $headings-complex {
+  #{$element} {
+    @each $property, $value in $style-map {
+      #{$property}: $value;
+    }
+  }
 }
 
 h1 {
@@ -164,9 +151,9 @@ h6 {
 body {
   @include font-size($base-font-size);
   color: $base-font-color;
-  font-family: $segoe-UI-regular;
+  font-family: $base-font-family;
 }
 
 label {
-  font-family: $segoe-UI-light;
+  font-family: $segoe-UI-semibold;
 }

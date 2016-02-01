@@ -1,87 +1,86 @@
 ﻿// =================================================================== 
 // $Alerts - notifications created for the site using custom styles
 // ===================================================================
-
 .ft-alert {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    display: none;
-    justify-content: center;
-    align-items: flex-start;
-    @include border-radius(0px);
-    position: relative;
-    top: -250px;
-    z-index: 15;
-    @include transition(all 0.3s ease-in-out);
+  @include border-radius(1px);
+  @include transition(all 0.3s ease-in-out);
+  @include justify-content(center);
+  @include align-items(flex-start);
+  display: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  top: -250px;
+  z-index: 15;
 }
 
 .ft-close-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 100%;
-    margin: 0;
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(flex-end);
+  @include align-items(flex-start);
+  width: 100%;
+  margin: 0;
 }
 
 .wkl-heading {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .wkl-info-container {
-    background: $corp-color-dark;
-    padding:$common-padding;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    figure {
-        flex-grow: 1;
-        margin-left: 0;
-        margin-right: 15px;
-        margin-bottom: 10px;
-        align-self: center;
-        @include breakpoint-lg {
-            margin-left: 15px;
-            margin-right: 15px;
-            margin-bottom: 10px;
-            flex-grow: 2;
-        }
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(flex-start);
+  @include align-items(flex-start);
+  background: $corp-color-dark;
+  padding: $common-padding;
+  figure {
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    align-self: center;
+    @include breakpoint-lg {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      flex-grow: 2;
     }
-    .close {
-        color: inherit;
-        position: initial;
-        float: none;
-        @include font-size(36px);
-        font-weight: initial;
-        text-shadow: none;
-        opacity: 1;
-    }
+  }
+  .close {
+    color: inherit;
+    position: initial;
+    float: none;
+    @include font-size(36px);
+    font-weight: initial;
+    text-shadow: none;
+    opacity: 1;
+  }
 }
 
 .wkl-content {
-    width: 450px;
-    color: dt($corp-color-dark);
-    a {
-        color: $white;
-        @include font-size(18px);
-    }
-    @include breakpoint-lg {
-        width: 500px;
-    }
+  color: dt($corp-color-dark);
+  width: 450px;
+  a {
+    @include font-size(18px);
+    color: $white;
+  }
+  @include breakpoint-lg {
+    width: 500px;
+  }
 }
 
 .wkl-icon {
-    path {
-        fill: $white;
-    }
+  path {
+    fill: $white;
+  }
 }
 
-.wkl-hide {
-    display: none !important;
+.js-wkl-hide {
+  display: none !important;
 }
 
-.wkl-unhide {
-    display: flex !important;
+.js-wkl-unhide {
+  display: flex !important;
 }

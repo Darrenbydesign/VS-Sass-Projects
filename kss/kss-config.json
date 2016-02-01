@@ -10,6 +10,5 @@
 
   "title": "New pattern Style Guide",
   "homepage": "../../kss/homepage.md",
-  "template": "custom-template",
-  "verbose": true
+  "template": "custom-template"
 }

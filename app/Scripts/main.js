@@ -1,6 +1,20 @@
-// This is a test
-console.log("Hello I'm from Test 1 I'm lonely");
-console.log("Hello I'm from Test 2 not as bad as one");
-console.log("Hello I'm from Test 3 I'm the charm");
+var Shape = (function () {
+    function Shape(name, width, height) {
+        this.area = width * height;
+        this.color = "pink;";
+    }
+    ;
+    Shape.prototype.shoutout = function () {
+        return "I'm  " + this.color + " " + this.name + " with an area of " + this.area + " cm squared.";
+    };
+    return Shape;
+})();
+var square = new Shape("square", 30, 30);
+console.log(square.shoutout());
+console.log('Area of Shape: ' + square.area);
+console.log('Name of Shape: ' + square.name);
+console.log('Color of Shape: ' + square.color);
+console.log('Width of Shape: ' + square.width);
+console.log('Height of Shape: ' + square.height);
 
 //# sourceMappingURL=maps/main.js.map

@@ -1,20 +1,22 @@
 ﻿@charset 'utf-8';
 
+// Vendors styles loaded before custom styles so that overrides can be made properly
+
+// Boostrap Styles and dependencies Loaded directly into project instead of called seperately through another stylesheet
+@import 'vendors/bootstrap';
+
 // Base variables for sass structure
 @import 'base/functions';
 @import 'base/mixins';
 @import 'base/config';
 @import 'base/reset';
 @import 'base/typography';
+
+// Helper classes are shortcut styles that can be called for quick tests or "on-off" cases where
+// things need to be changed on components
 @import 'helpers/helper-classes';
 
-
-// Vendors styles loaded before custom styles so that overrides can be made properly
-// Boostrap Styles Loaded into project instead of called seperately
-@import 'vendors/bootstrap';
-
 // Layout styling goes here (Things like footers,headers, sidebars, etc)
-
 @import 'layout/base-layout';
 @import 'layout/header';
 @import 'layout/navigation';
@@ -35,7 +37,7 @@
 // Modules are things like Navigation, Headers, Footers, Sidebars, Etc.
 // They are built with components to create larger more structures
 @import 'modules/masthead';
-//@import 'modules/gridbox';
+@import 'modules/gridbox';
 @import 'modules/alerts';
 @import 'modules/status';
 @import 'modules/wizards';
@@ -43,7 +45,7 @@
 @import 'modules/pricing-table';
 
 // Pages styling for things that are strictly page designed
-//@import 'pages/landing-page'; 
+@import 'pages/landing-page'; 
 
 
 // This section is where all the the bad code goes until its learned its lesson and has become good code.

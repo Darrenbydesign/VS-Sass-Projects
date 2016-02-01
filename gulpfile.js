@@ -100,10 +100,8 @@ gulp.task('typescript', function() {
     .src(paths.tsInput)
     .pipe(sourcemaps.init())
     .pipe(ts(tsProject))
-    //.on('error', ts.logError)
     .pipe(sourcemaps.write(paths.mapPath))
     .pipe(gulp.dest(paths.tsOutput));
-
   console.log('Compiling typescript... \n');
   return tsResult.js;
 });

@@ -66,6 +66,15 @@ $gray-light: lighten($gray, 15%) !default;
 /// @type Color
 $gray-dark: darken($gray, 15%) !default;
 
+// Status colors sass map for use in various state based components, ie. buttons, alerts, etc.
+$colors: ( 
+  blue      : $blue,
+  red       : $red,
+  green     : $green,
+  yellow: $yellow,
+  gray      : $gray,
+  dark-gray : $gray-dark
+);
 
 // Default Theme Colors - These are the base colors that start any project using the initial theme. They are pretty generic right now but will be revitalized in the v1.0.1 of this doucment
 
@@ -156,6 +165,16 @@ $base-font-size: 16px !default;
 /// @type List
 $base-font-family: $segoe-UI-regular !default;
 
+/// Heading Major Font Family
+/// @requires {variable} segoe-UI-light
+/// @type List
+$heading-major: $segoe-UI-light !default;
+
+/// Heading Minor Font Family
+/// @requires {variable} segoe-UI-semibold
+/// @type List
+$heading-minor: $segoe-UI-semibold !default;
+
 /// Base Font Color
 /// @requires {variable} $gray-dark
 /// @type Color
@@ -214,9 +233,9 @@ $margin-bottom: $footer-height !default;
 $common-padding: 10px 15px !default;
 
 //============================================================================
-// Image variables - Images instead of writing paths to images in the partials 
+// Path based variables - instead of writing paths to images and things like that 
 // make them variables in order keep consistent 
-// paths and easily change out images in large css files.
+// paths and easily change out items in large css files.
 //=============================================================================
 
 $arrow-right: '../images/icons/svg/arrow-right-icon.svg' !default;
@@ -224,6 +243,11 @@ $arrow-right: '../images/icons/svg/arrow-right-icon.svg' !default;
 $icons: "/content/images/icons.png" !default;
 
 $img-placeholder: "https://placekitten.com/2000/300" !default;
+
+$segoe-regular-path: '../Fonts/segoeui';
+$segoe-semilight-path: '../Fonts/segoeuisl';
+$segoe-light-path: '../Fonts/segoeuil';
+$segoe-semibold-path: '../Fonts/segoeuisb';
 
 // NOTE: the value '!default' is used to define base values.
 // If no value is given to a variable in another theme file the above values will be used instead of having an undeclared variable.

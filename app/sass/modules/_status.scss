@@ -1,6 +1,3 @@
-// <reference path="../base/config.scss" />
-// <reference path="../base/mixins.scss" />
-
 //=================================================================== 
 // $Status - status indicators are used inside of the tables under the 
 // columns labeled Status. This is used instead of icons because its
@@ -8,41 +5,34 @@
 //===================================================================
 
 .status {
-  @include border-radius(50%);
-  display: inline-block;
-  width: ce(20px);
-  height: ce(20px);
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
+  @include status($blue);
 }
-
-.status-created {
-  background: $white;
-  border: 2px solid $corp-color-dark;
+$status-map: (
+  created:(
+    background: $white,
+    border: 2px solid $corp-color-dark,
+    ),
+  open:(
+    background: map-get($colors, blue)
+    ),
+  info:(
+    background: map-get($colors, red)
+    ),
+  closed: (
+    background: map-get($colors, dark-gray)
+    ),
+  pending: (
+    background: map-get($colors, yellow)
+    ),
+  solution: (
+    background: map-get($colors, green)
+    )
+);
+@each $name, $style-map in $status-map {
+  .status-#{$name} {
+    @each $property, $value in $style-map {
+      #{$property}: $value;
+    }
+  }
 }
-
-.status-closed {
-  // background: $gray-md;
-  background: $corp-color-dark;
-}
-
-.status-more-info{
-  background: $red;
-}
-.status-pending,.status-in-progress {
-  // background: $yellow;
-  background: $yellow;
-}
-
-.status-reopened, .status-opened {
-  // background: $red;
-  background: lighten($blue, 15%);
-}
-
-.status-solution {
-  // background: $blue;
-  background: $green;
-}
-
 
