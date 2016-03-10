@@ -59,12 +59,12 @@ $gray: rgba(131,130,130,1) !default;
 /// Gray Light
 /// @group Color variables
 /// @type Color
-$gray-light: lighten($gray, 15%) !default;
+$gray-light: lighten($gray, 25%) !default;
 
 /// Gray Dark
 /// @group Color variables
 /// @type Color
-$gray-dark: darken($gray, 15%) !default;
+$gray-dark: darken($gray, 25%) !default;
 
 // Status colors sass map for use in various state based components, ie. buttons, alerts, etc.
 $colors: ( 
@@ -81,21 +81,19 @@ $colors: (
 /// Primary-color
 /// @group Color variables
 /// @type Color
-$corp-color: $blue !default;
+$corp-color: rgba(0,120,215,1) !default;
 
 // Darker version of the main theme color. Created using shade and tint functions fromt the @group functions list
 
 /// Primary color dark
-/// @requires {function} shade
 /// @group Color variables
 /// @type Color
-$corp-color-dark: shade($corp-color, 15%) !default;
+$corp-color-dark: darken($corp-color, 15%) !default;
 
 /// Primary color light
-/// @requires {function} tint
 /// @group Color variables
 /// @type Color
-$corp-color-light: tint($corp-color, 15%) !default;
+$corp-color-light: lighten($corp-color, 15%) !default;
 
 /// Secondary color 
 /// @group Color variables
@@ -103,16 +101,14 @@ $corp-color-light: tint($corp-color, 15%) !default;
 $corp-color-second: $white !default;
 
 /// Secondary color dark
-/// @requires {function} shade
 /// @group Color variables
 /// @type Color
-$corp-color-second-dark: shade($corp-color-second, 15%) !default;
+$corp-color-second-dark: darken($corp-color-second, 15%) !default;
 
 /// Secondary color light
-/// @requires {function} tint
 /// @group Color variables
 /// @type Color
-$corp-color-second-light: tint($corp-color-second, 15%) !default;
+$corp-color-second-light: lighten($corp-color-second, 15%) !default;
 
 //==============================
 // Typography variables
@@ -227,6 +223,12 @@ $footer-height: 70px !default;
 /// @type String
 $margin-bottom: $footer-height !default;
 
+
+/// Margin Styles
+/// @group Layout variables
+/// @type Number
+$common-margin: 10px 15px !default;
+
 /// Padding Styles
 /// @group Layout variables
 /// @type Number
@@ -239,6 +241,7 @@ $common-padding: 10px 15px !default;
 //=============================================================================
 
 $arrow-right: '../images/icons/svg/arrow-right-icon.svg' !default;
+
 
 $icons: "/content/images/icons.png" !default;
 

@@ -8137,11 +8137,11 @@ body a {
 }
 
 body a:visited {
-  color: #0066b7;
+  color: #004d8b;
 }
 
 body a:hover {
-  color: #0066b7;
+  color: #004d8b;
 }
 
 body a:active {
@@ -8594,14 +8594,94 @@ select {
   text-align: center;
 }
 
-.test-svg {
+svg {
+  border: 1px solid #777777;
+  width: 100%;
+}
+
+.icon {
+  width: 150px;
   height: 150px;
+  fill: #777777;
 }
 
-.check-mark-svg polygon {
-  fill: #0078d7;
+.icon path {
+  fill: inherit;
 }
 
+.is-x2 {
+  width: 64px;
+  height: 64px;
+}
+
+.is-check {
+  fill: #fe4365;
+}
+
+.is-outlined {
+  stroke: #fe4365;
+  stroke-width: 2px;
+  fill: transparent;
+}
+
+.is-hoverable:hover {
+  fill: #fe4265;
+  cursor: pointer;
+}
+
+.is-activeable:active {
+  -webkit-transform: args;
+  -moz-transform: args;
+  -ms-transform: args;
+  -o-transform: args;
+  transform: args;
+  cursor: pointer;
+}
+
+.ic-1 {
+  fill: skyblue;
+}
+
+.ic-2 {
+  fill: #fdc646;
+}
+
+.ic-3 {
+  fill: #ff2d49;
+}
+
+.codrops-1 {
+  fill: #4BC0A5;
+  color: #A4DFD1;
+}
+
+.codrops-2 {
+  fill: #0099CC;
+  color: #7FCBE5;
+}
+
+.codrops-3 {
+  fill: #5F5EC0;
+  color: #AEAFDD;
+}
+
+#robot-1 {
+  --primary-color: #0099CC;
+  --secondary-color: #FFDF34;
+  --tertiary-color: #333;
+}
+
+#robot-2 {
+  --primary-color: #E52A39;
+  --secondary-color: #11EBD8;
+  --tertiary-color: #000;
+}
+
+/*#robot-3 {
+  --primary-color: ;
+  --secondary-color: ;
+  --tertiary-color: ;
+}*/
 .button {
   background-color: #0078d7;
   color: #fff;
@@ -8615,7 +8695,7 @@ select {
   font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
 }
 
-.button, .button-text, .button-block, .button-small {
+.button, .button-text, .button-block, .button-small, .calendar-larrow, .calendar-rarrow {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -8633,7 +8713,7 @@ select {
   padding-right: 10px;
 }
 
-.button:hover, .button-text:hover, .button-block:hover, .button-small:hover {
+.button:hover, .button-text:hover, .button-block:hover, .button-small:hover, .calendar-larrow:hover, .calendar-rarrow:hover {
   cursor: pointer;
 }
 
@@ -8658,7 +8738,7 @@ select {
 
 .button:focus {
   outline: none;
-  color: #0066b7;
+  color: #004d8b;
 }
 
 .button:after {
@@ -8680,7 +8760,7 @@ select {
 
 .button-click {
   outline: none;
-  color: #268cdd;
+  color: #259eff;
 }
 
 .button-click:after {
@@ -8723,7 +8803,7 @@ select {
 }
 
 .button-text:hover {
-  color: #0066b7;
+  color: #004d8b;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   -ms-transition: background 0.3s ease-in-out;
@@ -8972,7 +9052,7 @@ select {
 }
 
 .masthead-banner {
-  background-image: linear-gradient(rgba(0, 102, 183, 0.8), rgba(0, 102, 183, 0.8));
+  background-image: linear-gradient(rgba(0, 77, 139, 0.8), rgba(0, 77, 139, 0.8)), url("https://placekitten.com/2000/300");
   background-position: top center;
 }
 
@@ -9194,7 +9274,7 @@ select {
   -moz-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-  background: #0066b7;
+  background: #004d8b;
   padding: 10px 15px;
 }
 
@@ -9255,6 +9335,153 @@ select {
   display: flex !important;
 }
 
+.calendar-container {
+  background: #e4e4e4;
+  border: 1px solid #777777;
+  margin-bottom: 20px;
+}
+
+.calendar-navigation {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.calendar-nav-item {
+  margin: 5px 10px;
+}
+
+.calendar-larrow {
+  background-color: #0078d7;
+  color: #fff;
+  border-color: #409ae1;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.calendar-larrow a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.calendar-larrow a:hover {
+  background-color: #0066b7;
+  border-color: #004881;
+  color: #fff;
+  text-decoration: none;
+}
+
+.calendar-larrow:hover {
+  background-color: #0066b7;
+  border-color: #004881;
+  color: #fff;
+  text-decoration: none;
+}
+
+.calendar-larrow:before {
+  content: '<';
+}
+
+.calendar-rarrow {
+  background-color: #0078d7;
+  color: #fff;
+  border-color: #409ae1;
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  display: inline-block;
+}
+
+.calendar-rarrow a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.calendar-rarrow a:hover {
+  background-color: #0066b7;
+  border-color: #004881;
+  color: #fff;
+  text-decoration: none;
+}
+
+.calendar-rarrow:hover {
+  background-color: #0066b7;
+  border-color: #004881;
+  color: #fff;
+  text-decoration: none;
+}
+
+.calendar-rarrow:after {
+  content: '>';
+}
+
+.calendar-month {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.calendar-picker {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.calendar-day-header {
+  text-align: center;
+  padding: 3px 5px;
+  border-bottom: 1px solid #777777;
+}
+
+.calendar-date {
+  font-size: 12px;
+  font-size: 0.75em;
+  text-align: right;
+  background: #f2f2f2;
+  padding: 3px 5px;
+  height: 44px;
+  min-height: 44px;
+}
+
+.calendar-date:hover {
+  background: #b3b3b3;
+  color: #4d4d4d;
+}
+
+.date-is-selected {
+  background: #0078d7;
+  color: #fff;
+}
+
+.date-in-range {
+  background: white;
+}
+
+.date-disabled {
+  background: #f1f1f1;
+  color: #4d4d4d;
+  cursor: not-allowed;
+}
+
+.date-disabled:hover {
+  background: #f1f1f1;
+  color: #4d4d4d;
+}
+
 .status {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -9272,7 +9499,7 @@ select {
 
 .status-created {
   background: white;
-  border: 2px solid #0066b7;
+  border: 2px solid #004d8b;
 }
 
 .status-open {
@@ -9549,7 +9776,7 @@ select {
 }
 
 .slide-nav-container {
-  background: #0066b7;
+  background: #004d8b;
   color: #fff;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -9592,7 +9819,7 @@ select {
 }
 
 .sl-nav > li > a:hover, .sl-nav > li > a:focus, .sl-nav > li > a:active {
-  background: #0066b7;
+  background: #004d8b;
   color: #fff;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -9608,7 +9835,7 @@ select {
   bottom: -25px;
   border-width: 25px 25px 0px;
   border-style: solid;
-  border-color: #0066b7 transparent;
+  border-color: #004d8b transparent;
   z-index: 1;
 }
 
@@ -9733,7 +9960,7 @@ select {
 }
 
 .video-container {
-  background: #0066b7;
+  background: #004d8b;
 }
 
 /*# sourceMappingURL=maps/main.css.map */

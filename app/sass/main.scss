@@ -1,4 +1,4 @@
-﻿@charset 'utf-8';
+@charset 'utf-8';
 
 // Vendors styles loaded before custom styles so that overrides can be made properly
 
@@ -6,9 +6,10 @@
 @import 'vendors/bootstrap';
 
 // Base variables for sass structure
+@import 'base/config';
 @import 'base/functions';
 @import 'base/mixins';
-@import 'base/config';
+
 @import 'base/reset';
 @import 'base/typography';
 
@@ -39,6 +40,7 @@
 @import 'modules/masthead';
 @import 'modules/gridbox';
 @import 'modules/alerts';
+@import 'modules/calendar';
 @import 'modules/status';
 @import 'modules/wizards';
 @import 'modules/slide-nav';

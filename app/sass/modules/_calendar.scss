@@ -1,0 +1,83 @@
+    .calendar-container {
+        background: tint($gray-light, 80);
+        border: 1px solid $gray-light;
+        margin-bottom: 20px;
+    }
+    
+    .calendar-navigation {
+        @include flexbox;
+        @include flex-flow(row, wrap);
+        @include justify-content(space-between);
+        @include align-content(center);
+        padding: 5px 0;
+    }
+    
+    .calendar-nav-item {
+        margin: 5px 10px;
+    }
+    
+    .calendar-larrow {
+        @include button($corp-color);
+        @include order(1);
+        &:before {
+            content: '<';
+        }
+    }
+    
+    .calendar-rarrow {
+        @include button($corp-color);
+        @include order(3);
+        display: inline-block;
+        &:after {
+            content: '>';
+        }
+    }
+    
+    .calendar-month {
+        @include order(2);
+    }
+    
+    .calendar-picker {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .calendar-day-header {
+        text-align: center;
+        padding: 3px 5px;
+        border-bottom: 1px solid $gray-light;
+    }
+    
+    $disabled-color: tint($gray-light, 90);
+    $calendar-hover-color:shade($white, 30%);
+    .calendar-date {
+        @include font-size(12px);
+        text-align: right;
+        background: shade($white, 5);
+        padding: 3px 5px;
+        height: 44px;
+        min-height: 44px;
+        &:hover {
+            background: $calendar-hover-color;
+            color: dt($calendar-hover-color);
+        }
+    }
+    
+    .date {
+        &-is-selected {
+            background: $corp-color;
+            color: dt($corp-color);
+        }
+        &-in-range {
+            background: $white;
+        }
+        &-disabled {
+            background: $disabled-color;
+            color: dt($disabled-color);
+            cursor: not-allowed;
+            &:hover {
+                background: $disabled-color;
+                color: dt($disabled-color);
+            }
+        }
+    }

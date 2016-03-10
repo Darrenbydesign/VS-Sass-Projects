@@ -94,8 +94,7 @@
 /// @param {Number} $percentage - percentage of `$color` in returned color
 /// @return {Color}
 @function tint($color, $percentage) {
-
-  @return mix(white, $color, $percentage);
+  @return mix(#fff, $color, $percentage);
 }
 
 /// Slightly darken a color by adding black to the color 
@@ -104,7 +103,7 @@
 /// @return {Color}
 @function shade($color, $percentage) {
 
-  @return mix(black, $color, $percentage);
+  @return mix(#000, $color, $percentage);
 }
 
 /// color used for dynamictext function
@@ -132,8 +131,6 @@ $dark-text: #4d4d4d;
     @return $light-text; 
   }
 }
-
-
 
 /// Function to remove units from a measurement
 /// @param {variable} $number
