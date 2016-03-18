@@ -1,54 +1,164 @@
 // =================================================================== 
-// $Grid Systems - This is where the experimental flexible grid is 
-// created. Still a huge Work in Progress
+// $Grid Systems - This is where the experimental grid  spec is 
+// created. Still a huge Work in Progress using the new and much needed
+// grid spec
 // ===================================================================
-
-.grid{
-	@include prefix((display: flex), webkit ms o moz);
-	flex-flow: row wrap;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+$row: unquote('[row]');
+$column: unquote('[col]');
+.grid-base {
+    width: 100%;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, $column 1fr);
+    grid-template-rows: repeat(5, $row auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 15px;
+    // grid-template-rows: 
+    //  [row-header-start] auto
+    //  [row-content-start] auto
+    //  [row-sidebar-start] auto
+    //  [row-footer-start] auto [row-footer-end];
+    // grid-template-areas:
+    // 	"header"
+    // 	"content"
+    // 	"sidebar"
+    // 	"footer";
+    @include flexpoint-sm {
+        // grid-template-columns: 2fr 4fr;
+        // grid-row-gap: 20px;
+        // grid-column-gap: 2em;
+        // grid-template-areas:
+        // 	"header header"
+        // 	"sidebar content"
+        // 	"footer footer"
+    }
 }
 
-.grid-cell{
-	flex: 1;
+.article-title {
+    // background-color: $corp-color;
+    // color: dt($corp-color);
+    padding: $common-padding;
+    margin: 0;
+    grid-column: col / span 12;
+    grid-row: row;
+    // grid-row: row-header-start;
+    // grid-area: header;
+    // @include flexpoint-sm {
+    //     grid-column: 1/3;
+    //     grid-row: 1;
+    // }
 }
 
-.grid-gutter{
-	margin: -1em 0 0 -1em;
-	.grid-cell{
-		padding: 1em 0 0 1em;
-	}
+.sidebar-left {
+    background-color: $gray-light;
+    padding: $common-padding;
+    // grid-column: 1;
+    // grid-row: row-sidebar-start;
+    // grid-area: sidebar;
+    // @include flexpoint-sm {
+    //     grid-column: 1;
+    //     grid-row: 2;
+    // }
 }
 
-// This controls the row alignment. Options are top middle bottom
-.grid-align-top{
-	align-items: flex-start;
-}
-.grid-align-middle{
-	align-items: flex-end;
-}
-
-.grid-align-bottom{
-	align-items: center;
-}
-
-.grid-cell-top{
-	align-self: flex-start;
-}
-.grid-cell-middle{
-
-	align-self: center;
+.article-content {
+    // padding: $common-padding;
+    // grid-column: 2;
+    // grid-row: row-content-start;
+    // grid-area: content;
+    // grid-column: content-start;
+    // grid-row: content-start/footer-end;
+    // z-index: 100;
+    // @include flexpoint-sm {
+    //     grid-column: 2/3;
+    //     grid-row: 2;
+    // }
 }
 
-.grid-cell-align-bottom{
-	align-self: flex-end;
+.article-footer {
+    background: $corp-color-dark;
+    color: dt($corp-color-dark);
+    padding: 10px;
+    // grid-row: row-footer-start;
+    // grid-area:footer;
+    // @include flexpoint-sm {
+    //     grid-column: 1/3;
+    //     grid-row: 3;
+    //     span {
+    //         float: right;
+    //         clear: both;
+    //     }
+    // }
 }
 
-.grid-fit
-{
-	.grid-cell{
-		flex: 1;
-	}
+%box-base {
+    padding: 10px;
+    border: 2px solid $gray-light;
+}
+
+.box1 {
+    background: tint($corp-color, 20%);
+    grid-column: col 1 /span 4;
+    grid-row: row 2;
+}
+
+.box2 {
+    grid-column: col 5 / span 4;
+    grid-row: row 2;
+}
+
+.box3 {
+    grid-column: col 9 / span 4;
+    grid-row: row 2;
+}
+
+.box4 {
+    grid-column: col / span 8;
+    grid-row: row 3;
+}
+
+.box5 {
+    grid-column: col 9 / span 4;
+    grid-row: row 3;
+}
+
+.box6 {
+    grid-column: col / span 3;
+    grid-row: row 4 / span 2;
+}
+
+.box7 {
+    grid-column: col 4 / span 3;
+    grid-row: row 4 / span 3;
+}
+
+.box8 {
+    background: tint($corp-color, 20%);
+    grid-column: col 7 / span 3;
+    // grid-row: row 4;
+}
+
+.box9 {
+    grid-column: col 10 / span 3;
+    // grid-row: row 4;
+}
+
+.box10 {
+    grid-column: col / span 6;
+    // grid-row: row 5;
+}
+
+.box11 {
+    grid-column: col 7 / span 6;
+    // grid-row: row 5;
+}
+
+$box-list: 'box';
+@for $i from 1 through 12 {
+    .#{$box-list}#{$i} {
+        @extend %box-base;
+    }
 }

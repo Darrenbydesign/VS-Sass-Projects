@@ -19,6 +19,7 @@
 
 // Layout styling goes here (Things like footers,headers, sidebars, etc)
 @import 'layout/base-layout';
+@import 'layout/grid';
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/sidebars';
@@ -38,7 +39,7 @@
 // Modules are things like Navigation, Headers, Footers, Sidebars, Etc.
 // They are built with components to create larger more structures
 @import 'modules/masthead';
-@import 'modules/gridbox';
+// @import 'modules/gridbox';
 @import 'modules/alerts';
 @import 'modules/calendar';
 @import 'modules/status';
