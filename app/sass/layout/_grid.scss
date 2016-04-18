@@ -44,59 +44,31 @@ $column: unquote('[col]');
     margin: 0;
     grid-column: col / span 12;
     grid-row: row;
-    // grid-row: row-header-start;
-    // grid-area: header;
-    // @include flexpoint-sm {
-    //     grid-column: 1/3;
-    //     grid-row: 1;
-    // }
 }
 
 .sidebar-left {
     background-color: $gray-light;
     padding: $common-padding;
-    // grid-column: 1;
-    // grid-row: row-sidebar-start;
-    // grid-area: sidebar;
-    // @include flexpoint-sm {
-    //     grid-column: 1;
-    //     grid-row: 2;
-    // }
 }
 
-.article-content {
-    // padding: $common-padding;
-    // grid-column: 2;
-    // grid-row: row-content-start;
-    // grid-area: content;
-    // grid-column: content-start;
-    // grid-row: content-start/footer-end;
-    // z-index: 100;
-    // @include flexpoint-sm {
-    //     grid-column: 2/3;
-    //     grid-row: 2;
-    // }
-}
+.article-content {}
 
 .article-footer {
     background: $corp-color-dark;
     color: dt($corp-color-dark);
     padding: 10px;
-    // grid-row: row-footer-start;
-    // grid-area:footer;
-    // @include flexpoint-sm {
-    //     grid-column: 1/3;
-    //     grid-row: 3;
-    //     span {
-    //         float: right;
-    //         clear: both;
-    //     }
-    // }
 }
 
 %box-base {
     padding: 10px;
     border: 2px solid $gray-light;
+}
+
+$box-list: 'box';
+@for $i from 1 through 12 {
+    .#{$box-list}#{$i} {
+        @extend %box-base;
+    }
 }
 
 .box1 {
@@ -154,11 +126,4 @@ $column: unquote('[col]');
 .box11 {
     grid-column: col 7 / span 6;
     // grid-row: row 5;
-}
-
-$box-list: 'box';
-@for $i from 1 through 12 {
-    .#{$box-list}#{$i} {
-        @extend %box-base;
-    }
 }

@@ -1,0 +1,829 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"valo",
+				"valorem-secondary-color"
+			],
+			[
+				"fons",
+				"font-size"
+			],
+			[
+				"base",
+				"base-font-color"
+			],
+			[
+				"gameO",
+				"gameObject	[class]"
+			],
+			[
+				"Collider",
+				"Collider	[class]"
+			],
+			[
+				"Find",
+				"Find	Transform.*(name)"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"Afterglow",
+				"Afterglow-magenta"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/review-form.html",
+			"settings":
+			{
+				"buffer_size": 31260,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/sass/pages/_review-form.scss",
+			"settings":
+			{
+				"buffer_size": 3378,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "run",
+		"selected_items":
+		[
+			[
+				"run",
+				"Gulp: Run arbitrary task"
+			],
+			[
+				"ki",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"kill",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"kil",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"show",
+				"Gulp: Show panel"
+			],
+			[
+				"default",
+				"Preferences: Settings - Default"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"build sa",
+				"Build With: SASS"
+			],
+			[
+				"gulp",
+				"Gulp: Run arbitrary task"
+			],
+			[
+				"xml",
+				"Indent XML"
+			],
+			[
+				"au",
+				"Auto indent"
+			],
+			[
+				"auto",
+				"Auto indent"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"xml in",
+				"Snippet: XML Processing Instruction"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"ss xml",
+				"Set Syntax: XML"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"sho",
+				"Gulp: Show panel"
+			],
+			[
+				"run ",
+				"Gulp: Run arbitrary task"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ss mard",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ss markdown",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ss mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ss mm",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"ss m",
+				"Set Syntax: Markdown"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"gulp run",
+				"Gulp: Run arbitrary task"
+			],
+			[
+				"gulp list",
+				"Gulp: List plugins"
+			],
+			[
+				"update p",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"preferences",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"html ",
+				"HTMLPrettify"
+			],
+			[
+				"pck control",
+				"Preferences: Package Control Settings – User"
+			]
+		],
+		"width": 1217.0
+	},
+	"console":
+	{
+		"height": 521.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projects/VS-Sass-Projects",
+		"/C/Projects/VS-Sass-Projects/app",
+		"/C/Projects/VS-Sass-Projects/app/images",
+		"/C/Projects/VS-Sass-Projects/app/images/SVG"
+	],
+	"file_history":
+	[
+		"/C/Projects/VS-Sass-Projects/app/index.html",
+		"/C/Projects/VS-Sass-Projects/app/images/SVG/Valorem_logo.svg",
+		"/C/Projects/VS-Sass-Projects/gulpfile.js",
+		"/C/Projects/VS-Sass-Projects/app/sass/pages/_review-form.scss",
+		"/C/Projects/VS-Sass-Projects/app/sass/components/_forms.scss",
+		"/C/Projects/VS-Sass-Projects/app/sass/components/_flex-items.scss",
+		"/C/Projects/VS-Sass-Projects/app/sass/main.scss",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/index.html",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/main.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/_shame.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/layout/_base-layout.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/css/main.css",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/helpers/_helper-classes.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/components/_buttons.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/components/_flex-items.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/base/_config.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/themes/Theme-1/theme-1.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/css/theme-1.css",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/themes/Theme-1/theme-2.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/base/_typography.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/modules/_masthead.scss",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/sass/components/_banners.scss",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/SASS Build/SASS.sublime-build",
+		"/C/Users/Dsorrels/Desktop/MOD_Redirect_Page/css/_shame.css.map",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Installed Packages/SASS Build.sublime-package",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Projects/VS-Sass-Projects/app/review-form.html",
+		"/C/Projects/VS-Sass-Projects/app/grid-example.html",
+		"/C/Users/Dsorrels/Dropbox/Web-Mockups/IW Portal View-assets/errors.txt",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/SuccessPlanSummaryOutput-Final.41.IDReplacement.epr",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/NEWSucessPlanSummaryOutput.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/CSS/OutputDoc.css",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/CSS Color Converter/colorconvert.sublime-settings",
+		"/C/Users/Dsorrels/Dropbox/Closet_Cleaner/Resources/User Stories.md",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/SucessPlanSummaryOutput.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/XML Sandbox.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/Data_Source/20160328.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/Ecrion_Template/SucessPlanSummaryOutput.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/20160328.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/OutputDoc.css",
+		"/C/Users/Dsorrels/Desktop/Ecrion_work/editing-outputdoc.xml",
+		"/C/Users/Dsorrels/Desktop/XML-debug.xml",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/inline-parature-emails.zip",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/inline-ft-parature-solution-suggested.html",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/inline-ft-parature-need-more-info.html",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/inline-ft-parature-new-ticket.html",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/inline-ft-parature-escalated.html",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-solution-suggested.html",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-need-more-info.html",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-new-ticket.html",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-escalated.html",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-Support-ticket-response.html",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/Dsorrels/Desktop/patternlab-php-master/patternlab-php-master/README.md",
+		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-Support-ticket-response-inline.html",
+		"/C/Projects/VS-Sass-Projects/app/sass/layout/_grid.scss",
+		"/C/Projects/VS-Sass-Projects/app/styles/main.css",
+		"/C/Projects/VS-Sass-Projects/app/sass/layout/_base-layout.scss",
+		"/C/Projects/VS-Sass-Projects/app/sass/components/_buttons.scss",
+		"/C/Projects/VS-Sass-Projects/app/sass/base/_reset.scss",
+		"/C/Projects/VS-Sass-Projects/app/sass/components/_svg.scss",
+		"/U/UX-Folder-README.txt",
+		"/U/UX-Folder-README.md",
+		"/U/Projects_Creator.txt",
+		"/C/Users/Dsorrels/Desktop/The RUG/authtoken-github.txt",
+		"/C/Users/Dsorrels/Desktop/index.html",
+		"/C/Users/Dsorrels/Desktop/svg.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/components/_svg.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/index.html",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/components/_icons.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/_shame.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/base/_config.scss",
+		"/C/Users/Dsorrels/Desktop/Unity Practice/My First Game/Assets/Scripts/CoinCollect.js",
+		"/C/Users/Dsorrels/Dropbox/User Stories.md",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/helpers/_animations.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/base/_mixins.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/styles/main.css",
+		"/U/Text2Folders/Projects_Creator.txt",
+		"/U/Text2Folders/SharePoint Projects_Creator.txt",
+		"/U/Text2Folders/Internal Projects_Creator.txt",
+		"/C/Users/Dsorrels/Desktop/Design of Everday Things Lesson/funny ASCII.txt",
+		"/C/Users/Dsorrels/Desktop/Azure Cloud Icon.svg",
+		"/C/Projects/VS-Sass-Projects-master/tsconfig.json",
+		"/C/Projects/VS-Sass-Projects-master/gulpfile.js",
+		"/C/Projects/VS-Sass-Projects-master/sassdoc/index.html",
+		"/C/Users/Dsorrels/Desktop/Unity Practice/My First Game/Assets/Scripts/Pickup.js",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/modules/_calendar.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/modules/_status.scss",
+		"/C/Users/Dsorrels/Desktop/Organizational Updates.md",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/base/_functions.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/modules/_masthead.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/main.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/vendors/bootstrap/_variables.scss",
+		"/C/Projects/VS-Sass-Projects-master/app/sass/modules/calendar.scss",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Installed Packages/Sass.sublime-package",
+		"/C/Users/Dsorrels/Desktop/Outlook Premium Newsletter/Outlook_premium_feedback.html",
+		"/C/Users/Dsorrels/Desktop/Outlook Premium Newsletter/Outlook_premium_feedback-inline.html",
+		"/C/Users/Dsorrels/Desktop/Outlook Premium Newsletter/examples/basic.html",
+		"/C/Users/Dsorrels/Desktop/Outlook Premium Newsletter/ink.css",
+		"/C/Users/Dsorrels/Desktop/Outlook Premium Newsletter/cie-session-email.html",
+		"/C/Users/Dsorrels/Desktop/Outlook Premium Newsletter/boilerplate.html",
+		"/C/Users/Dsorrels/Desktop/CIE-SiteRedesign/dashboard.html",
+		"//fileshare/Teams/UI-UX/package list.json",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Dsorrels/Desktop/License.sublime_license"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"*.scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$dark-gray",
+			"review-section-header",
+			"<header>",
+			"class=\"review-question-label\"",
+			"<label for=\"goal1",
+			"<label for=\"question01\">",
+			"pull-right",
+			"form-group",
+			"rating-scale-input",
+			"Goes here",
+			"rows=\"10\"",
+			"                    ",
+			"$white;",
+			"class=\" review-form-input\"",
+			"<label class=\"review-question-label\"",
+			"<label for=\"question",
+			"<input type=\"text\" class=\"\">",
+			"form-control",
+			"15px",
+			"<h3>section Title",
+			"<input type=\"text\" class=\"form-control\">",
+			"<label for=\"question",
+			"<div class=\"form-control\">",
+			"list-question",
+			"list-question-",
+			"col-xs-12",
+			"6",
+			"btn-lg",
+			"<button class=\"button\">",
+			"button",
+			"flex-item",
+			"$brand-dark",
+			"form-group",
+			"flex-item",
+			".lead",
+			".fullscreen-bg",
+			" Identity and ",
+			" Identity",
+			" Identity & Provisioning",
+			" Identity and Provisioning",
+			" Identity and Provisioning section",
+			"Microsoft Intune",
+			"text-underline-style=\"solid\" text-underline-width=\"auto\" color=\"rgb(0,0,255)\"",
+			"<fo:table-cell border=\"1pt solid none\" padding=\"2pt\">",
+			"border=\"1pt solid none\" padding=\"2pt\"",
+			"border-bottom-color=\"white\" border-bottom-style=\"none\" border-bottom-width=\"1pt\" border-left-color=\"white\" border-left-width=\"1pt\" border-right-color=\"white\" border-right-style=\"none\" border-right-width=\"1pt\" border-top-color=\"rgb(0, 114, 198)\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
+			"<fo:table-cell border=\"1pt black\" border-style=\"solid none none none\"",
+			"year 1",
+			"border-bottom-color=\"white\" border-bottom-style=\"none\" border-bottom-width=\"1pt\" border-left-color=\"white\" border-left-width=\"1pt\" border-right-color=\"white\" border-right-style=\"none\" border-right-width=\"1pt\" border-top-color=\"rgb(0, 114, 198)\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
+			"<fo:table-cell border-bottom-color=\"white\" border-bottom-style=\"none\" border-bottom-width=\"1pt\" border-left-color=\"white\" border-left-width=\"1pt\" border-right-color=\"white\" border-right-style=\"none\" border-right-width=\"1pt\" border-top-color=\"rgb(0, 114, 198)\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
+			"Year 1",
+			"border=\"1pt black\" border-style=\"solid none none none\" padding=\"2pt\"",
+			"<fo:table-cell border=\"1pt black\" border-style=\"solid none solid solid\" padding=\"2pt\"",
+			"<fo:table-cell border=\"1pt solid black\" padding=\"2pt\"",
+			"border-bottom-color=\"white\" border-bottom-style=\"none\" border-bottom-width=\"1pt\" border-left-color=\"white\" border-left-width=\"1pt\" border-right-color=\"white\" border-right-style=\"none\" border-right-width=\"1pt\" border-top-color=\"rgb(0, 114, 198)\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
+			"<fo:table-cell border=\"1pt solid black\" padding=\"2pt\">",
+			"border-bottom-color=\"black\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-left-color=\"black\" border-left-style=\"solid\" border-left-width=\"1pt\" border-right-color=\"black\" border-right-style=\"solid\" border-right-width=\"1pt\" border-top-color=\"black\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
+			"border-bottom-color=\"black\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-left-color=\"black\" border-left-style=\"solid\" border-left-width=\"1pt\" border-right-color=\"black\" border-right-width=\"1pt\" border-top-color=\"black\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
+			"border-bottom-color=\"black\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-left-color=\"black\" border-left-width=\"1pt\" border-right-color=\"black\" border-right-style=\"solid\" border-right-width=\"1pt\" border-top-color=\"black\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
+			"background-color=\"#002060\"",
+			"background-color=\"#DEEAF6\"",
+			"background-color=\"#1E4E79\"",
+			"color=\"#505050\" font-family=\"Segoe UI Light\"",
+			"Dynamics CRM",
+			"CURRENT USE",
+			"Project",
+			"color=\"#505050\" end-indent=\"0px\" font-family=\"Segoe UI Semibold, Arial, sans-serif, monospace\" font-size=\"11.000pt\" id=\"71A29F79\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"0.000px\" start-indent=\"0px\"",
+			"block",
+			"text-transform=\"uppercase\"",
+			"body-text",
+			"text-transform=\"uppercase\"",
+			"Azure Overview",
+			"IMplementation &amp; Deployment Assistance",
+			"Skype for Business",
+			"Recommended Tasks: Business Case",
+			"text",
+			"Office 365 Service Availability Design",
+			"https://technet.microsoft.com/en-us/library/dn646965.aspx",
+			"Enterprise Mobility Suite",
+			"Azure Rights Management",
+			"inline",
+			"text-transform=\"uppercase\"",
+			"inline",
+			"text-transform=\"uppercase\"",
+			"Deploy",
+			"text-transform=\"none\"",
+			"body-text",
+			"text-transform=\"capitalize\"",
+			"body-text",
+			"inline",
+			"class=\"body-text\"",
+			"<fo:block class=\"body-text\" end-indent=\"0px\"",
+			"Enterprise mobility Suite",
+			"Enterpris mobility Suite",
+			"line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"16.000px\" space-after=\"5.67px\" space-before=\"2.33px\" text-align=\"left\"",
+			"inline",
+			"color=\"#767171\" font-family=\"Segoe UI Semibold, Arial, sans-serif, monospace\" font-size=\"12.000pt\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"13.333px\" text-align=\"left\" text-transform=\"none\"",
+			"Enterprise Mobility Suite",
+			"color=\"rgb(0,32,80)\" font-family=\"Segoe UI\" font-size=\"11pt\" font-weight=\"bold\"",
+			"inline",
+			"<fo:inline color=\"rgb(0,114,198)\" font-family=\"Segoe UI\"",
+			"inline",
+			"Environment",
+			"you will assign",
+			"USE",
+			"Office Clients",
+			"Office Clients ",
+			"Office Clients",
+			"inline",
+			"<fo:inline background-color=\"rgb(80,80,80)\" color=\"#ffffff\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-size=\"11.000pt\"",
+			"The recommend migration for",
+			"inline",
+			"<fo:block background-color=\"White\" font-style=\"normal\"> </fo:block>",
+			"line-height=\"100.000%\" margin-bottom=\"5.333px\" margin-top=\"2.667px\" text-align=\"left\"",
+			"assign an on premises",
+			"Exchange Environment",
+			"cutover",
+			"<fo:block color=\"#505050\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-size=\"11.000pt\" line-height=\"100.000%\" margin-bottom=\"5.333px\" margin-top=\"2.667px\" text-align=\"left\" />",
+			"line-height=\"107.917%\" margin-bottom=\"10.667px\" text-align=\"left\"",
+			"color=\"#005494\" font-family=\"Segoe UI Semibold, Arial, sans-serif, monospace\" font-size=\"11.000pt\" id=\"483CD313\" keep-together.within-column=\"always\" keep-with-next.within-column=\"always\" line-height=\"107.917%\" margin-bottom=\"0.000px\" margin-top=\"2.667px\" text-align=\"left\" text-transform=\"uppercase\"",
+			"olor=\"#005494\" font-family=\"Segoe UI Semibold, Arial, sans-serif, monospace\" font-size=\"11.000pt\" id=\"483CD313\" keep-together.within-column=\"always\" keep-with-next.within-column=\"always\" line-height=\"107.917%\" margin-bottom=\"0.000px\" margin-top=\"2.667px\" text-align=\"left\" text-transform=\"uppercase\"",
+			"<fo:inline class=\"body-text\" ",
+			"<fo:inline color=\"rgb(0,114,198)\" font-family=\"Segoe UI\" font-size=\"11pt\"",
+			"<fo:block class=\"body-text\"></fo:block>",
+			"color=\"#505050\" end-indent=\"0px\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-size=\"11pt\" id=\"3F41D310\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"0.000px\" start-indent=\"0px\" text-align=\"left\"",
+			"color=\"#505050\" end-indent=\"0px\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"0.000px\" start-indent=\"0px\" text-align=\"left\"",
+			"<fo:inline color=\"#505050\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-size=\"11pt\"",
+			"color=\"#505050\" end-indent=\"0px\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-weight=\"bold\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"0.000px\" start-indent=\"0px\" text-align=\"left\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/review-form.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2162,
+								2162
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 213.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/sass/pages/_review-form.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gulp_output":
+	{
+		"height": 138.0
+	},
+	"pinned_build_system": "Packages/SASS Build/SASS.sublime-build",
+	"project": "VS-Sass-Project.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"revi",
+				"app\\sass\\pages\\_review-form.scss"
+			],
+			[
+				"forms.scss",
+				"app\\sass\\components\\_forms.scss"
+			],
+			[
+				"flex",
+				"app\\sass\\components\\_flex-items.scss"
+			],
+			[
+				"base",
+				"sass\\layout\\_base-layout.scss"
+			],
+			[
+				"main.css",
+				"css\\main.css"
+			],
+			[
+				"helper",
+				"sass\\helpers\\_helper-classes.scss"
+			],
+			[
+				"button",
+				"sass\\components\\_buttons.scss"
+			],
+			[
+				"butons",
+				"sass\\components\\_buttons.scss"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"config",
+				"sass\\base\\_config.scss"
+			],
+			[
+				"typ",
+				"sass\\base\\_typography.scss"
+			],
+			[
+				"mas",
+				"sass\\modules\\_masthead.scss"
+			],
+			[
+				"bann",
+				"sass\\components\\_banners.scss"
+			],
+			[
+				"main",
+				"css\\main.css"
+			],
+			[
+				"confi",
+				"sass\\base\\_config.scss"
+			],
+			[
+				"out",
+				"CSS\\OutputDoc.css"
+			],
+			[
+				"xml",
+				"XML Sandbox.xml"
+			],
+			[
+				"",
+				"C:\\Users\\Dsorrels\\Desktop\\XML-debug.xml"
+			],
+			[
+				"base-",
+				"app\\sass\\layout\\_base-layout.scss"
+			],
+			[
+				"button.scss",
+				"app\\sass\\components\\_buttons.scss"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"main.scss",
+				"app\\sass\\main.scss"
+			],
+			[
+				"reset",
+				"app\\sass\\base\\_reset.scss"
+			],
+			[
+				"svg",
+				"app\\sass\\components\\_svg.scss"
+			],
+			[
+				"svg.scss",
+				"app\\sass\\components\\_svg.scss"
+			],
+			[
+				"icons.scss",
+				"app\\sass\\components\\_icons.scss"
+			],
+			[
+				"shame",
+				"app\\sass\\_shame.scss"
+			],
+			[
+				"animta",
+				"app\\sass\\helpers\\_animations.scss"
+			],
+			[
+				"mixins",
+				"app\\sass\\base\\_mixins.scss"
+			],
+			[
+				"status",
+				"app\\sass\\modules\\_status.scss"
+			],
+			[
+				"masthead",
+				"app\\sass\\modules\\_masthead.scss"
+			],
+			[
+				"fnu",
+				"app\\sass\\base\\_functions.scss"
+			],
+			[
+				"congi",
+				"app\\sass\\base\\_config.scss"
+			],
+			[
+				"var",
+				"app\\sass\\vendors\\bootstrap\\_variables.scss"
+			],
+			[
+				"mast",
+				"app\\sass\\modules\\_masthead.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 366.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

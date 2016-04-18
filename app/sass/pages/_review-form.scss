@@ -1,0 +1,173 @@
+$valorem-background-color: #231f20;
+$valorem-secondary-color: #009ADE;
+$review-text-color-primary: #f4f4f4;
+$review-form-bg: #f4f4f4;
+$fs-heading-main-color: #f4f4f4;
+$fs-review-bg: #303E48;
+.review-nav {
+    background: $valorem-background-color;
+    padding: 15px;
+}
+
+.review-nav-heading {
+    margin-top: 0;
+    color: dt($valorem-background-color);
+}
+.valorem-icon{
+    height: 30px;
+}
+body.fs-form-bg {
+    background: $fs-review-bg;
+}
+
+.fullscreen-review-form {
+    width: 100%;
+    margin: 0 auto;
+    // padding-bottom: ce(40px);
+    margin-bottom: ce(40px);
+    @include flexpoint-lg {
+        width: 50vw;
+    }
+}
+
+.fs-header {
+    padding-bottom: 80px;
+    .fs-heading-main {
+        margin-top: 1em;
+        text-align: center;
+        color: $review-text-color-primary;
+    }
+}
+
+.question-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.question-list-item {
+    color: $review-text-color-primary;
+    padding-right: ce(15px);
+    padding-left: ce(15px);
+}
+
+%label-base {
+    font-weight: normal;
+    margin-bottom: ce(20px);
+}
+
+.fs-review-question-label {
+    @extend %label-base;
+    @include font-size(35px);
+    font-weight: normal;
+    margin-bottom: ce(20px);
+}
+
+.review-question-label {
+    @include font-size(24px);
+    margin-bottom: ce(24px);
+}
+
+%review-input-base {
+    background: none !important;
+    border: none;
+    border-bottom: 2px solid $valorem-background-color;
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid #009ADE;
+        transition: border 0.15s ease-in;
+    }
+}
+
+.review-form-input {
+    @extend %review-input-base;
+    width: 100%;
+}
+
+.rating-scale-input {
+    @extend %review-input-base;
+}
+
+.review-form-textarea {
+    @extend %review-input-base;
+    min-width: 100%;
+}
+
+.rating-scale-group {
+    @include flexbox;
+    @include flex-flow(row, wrap);
+    @include align-content(center);
+    @include align-items(baseline);
+    @include justify-content(space-between);
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    label {
+        @include flex(1 0 75%);
+    }
+    .rating-scale-input {
+        @include flex(0 2 15%);
+    }
+}
+
+.list-question .fs-heading-main {
+    color: $fs-heading-main-color;
+}
+
+.review-section-heading {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.review-form-bg {
+    background: $review-form-bg;
+}
+
+.review-form-container {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: ce(15px);
+    padding-left: ce(15px);
+    padding-top: ce(40px);
+    padding-bottom: ce(20px);
+    @include flexpoint-lg {
+        width: 50vw;
+    }
+    .fs-review-footer {
+        color: $valorem-background-color;
+    }
+}
+
+.fs-review-footer {
+    @include flexbox;
+    @include flex-flow(row, wrap);
+    @include justify-content(flex-end);
+    color: $review-text-color-primary;
+}
+
+.review-form-button-group {
+    @include font-size(20px);
+    padding: ce(25px);
+}
+
+%form-button-base {
+    @include border-radius(2px);
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+}
+
+.submit-form-button {
+    @extend %form-button-base;
+    @include button(transparent);
+    border: 2px solid $valorem-background-color;
+    color: $valorem-background-color;
+}
+
+.review-form-button {
+    @extend %form-button-base;
+    @include button($fs-review-bg);
+    border: 2px solid $review-text-color-primary;
+}
