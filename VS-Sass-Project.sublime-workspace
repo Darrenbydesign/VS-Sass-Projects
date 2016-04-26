@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"valore",
+				"valorem-secondary-color"
+			],
+			[
+				"valorem-",
+				"valorem-background-color"
+			],
+			[
 				"valo",
 				"valorem-secondary-color"
 			],
@@ -44,19 +52,11 @@
 	"buffers":
 	[
 		{
-			"file": "app/review-form.html",
+			"file": "/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.epr",
 			"settings":
 			{
-				"buffer_size": 31260,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/sass/pages/_review-form.scss",
-			"settings":
-			{
-				"buffer_size": 3378,
-				"line_ending": "Windows"
+				"buffer_size": 5740104,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -67,29 +67,49 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
-		"last_filter": "run",
+		"height": 230.0,
+		"last_filter": "show",
 		"selected_items":
 		[
 			[
-				"run",
-				"Gulp: Run arbitrary task"
+				"show",
+				"Gulp: Show panel"
 			],
 			[
-				"ki",
-				"Gulp: Kill running tasks"
+				"run",
+				"Gulp: Run arbitrary task"
 			],
 			[
 				"kill",
 				"Gulp: Kill running tasks"
 			],
 			[
-				"kil",
+				"html",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"ss xml",
+				"Set Syntax: XML"
+			],
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"ki",
 				"Gulp: Kill running tasks"
 			],
 			[
-				"show",
-				"Gulp: Show panel"
+				"kil",
+				"Gulp: Kill running tasks"
 			],
 			[
 				"default",
@@ -136,10 +156,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"ss xml",
-				"Set Syntax: XML"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -148,16 +164,8 @@
 				"Git: Status"
 			],
 			[
-				"git push",
-				"Git: Push"
-			],
-			[
 				"git comm",
 				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add All"
 			],
 			[
 				"sho",
@@ -220,10 +228,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"html",
-				"HTMLPrettify"
-			],
-			[
 				"html ",
 				"HTMLPrettify"
 			],
@@ -232,7 +236,7 @@
 				"Preferences: Package Control Settings – User"
 			]
 		],
-		"width": 1217.0
+		"width": 510.0
 	},
 	"console":
 	{
@@ -253,17 +257,24 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Projects/VS-Sass-Projects",
-		"/C/Projects/VS-Sass-Projects/app",
-		"/C/Projects/VS-Sass-Projects/app/images",
-		"/C/Projects/VS-Sass-Projects/app/images/SVG"
+		"/C/Users/Dsorrels/Desktop/Ecrion",
+		"/C/Users/Dsorrels/Desktop/Ecrion/Data_Source"
 	],
 	"file_history":
 	[
+		"/C/Users/Dsorrels/Desktop/Ecrion/Data_Source/New workload.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion/Data_Source/5557502_Snapshot.xml",
+		"/C/Users/Dsorrels/Desktop/Ecrion/CSS/OutputDoc_InUse.css",
+		"/C/Projects/VS-Sass-Projects/app/review-form.html",
+		"/C/Projects/VS-Sass-Projects/app/sass/pages/_review-form.scss",
+		"/C/Projects/VS-Sass-Projects/app/sass/components/_svg.scss",
+		"/C/Projects/VS-Sass-Projects/app/sass/components/_icons.scss",
+		"/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.epr",
+		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
 		"/C/Projects/VS-Sass-Projects/app/index.html",
 		"/C/Projects/VS-Sass-Projects/app/images/SVG/Valorem_logo.svg",
 		"/C/Projects/VS-Sass-Projects/gulpfile.js",
-		"/C/Projects/VS-Sass-Projects/app/sass/pages/_review-form.scss",
 		"/C/Projects/VS-Sass-Projects/app/sass/components/_forms.scss",
 		"/C/Projects/VS-Sass-Projects/app/sass/components/_flex-items.scss",
 		"/C/Projects/VS-Sass-Projects/app/sass/main.scss",
@@ -290,7 +301,6 @@
 		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Installed Packages/SASS Build.sublime-package",
 		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
 		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Projects/VS-Sass-Projects/app/review-form.html",
 		"/C/Projects/VS-Sass-Projects/app/grid-example.html",
 		"/C/Users/Dsorrels/Dropbox/Web-Mockups/IW Portal View-assets/errors.txt",
 		"/C/Users/Dsorrels/Desktop/Ecrion_work/SuccessPlanSummaryOutput-Final.41.IDReplacement.epr",
@@ -316,7 +326,6 @@
 		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-new-ticket.html",
 		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-escalated.html",
 		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-Support-ticket-response.html",
-		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
 		"/C/Users/Dsorrels/Desktop/patternlab-php-master/patternlab-php-master/README.md",
 		"/U/UI_Resources/Email_Templates/Parature-Support-Emails/ft-parature-Support-ticket-response-inline.html",
 		"/C/Projects/VS-Sass-Projects/app/sass/layout/_grid.scss",
@@ -324,7 +333,6 @@
 		"/C/Projects/VS-Sass-Projects/app/sass/layout/_base-layout.scss",
 		"/C/Projects/VS-Sass-Projects/app/sass/components/_buttons.scss",
 		"/C/Projects/VS-Sass-Projects/app/sass/base/_reset.scss",
-		"/C/Projects/VS-Sass-Projects/app/sass/components/_svg.scss",
 		"/U/UX-Folder-README.txt",
 		"/U/UX-Folder-README.md",
 		"/U/Projects_Creator.txt",
@@ -387,6 +395,78 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Can port",
+			"<fo:block>Paragraph repeated for every 'Question'.</fo:block>",
+			"Paragraph repeated for every Question",
+			"Paragraph repeated",
+			"How many active",
+			"Current Active Directory Environment",
+			"Determining how many ATA Gateways and ATA Centers to deploy in your network",
+			"AtA Requirements",
+			"Paragraph repeated for every 'workload'",
+			"Title=\\",
+			"<fo:block>https://",
+			"text-align=\"left\"",
+			"<fo:table-cell class=\"body-text\" text-align=\"center\" ",
+			"<fo:table-cell class=\"body-text\" text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\" border-left-color=\"rgb(0,0,0)\" border-right-style=\"solid\" border-right-width=\"1pt\" border-right-color=\"rgb(0,0,0)\" border-top-style=\"solid\" border-top-width=\"1pt\" border-top-color=\"rgb(0,0,0)\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-bottom-color=\"rgb(0,0,0)\" padding-top=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-bottom=\"2pt\" background=\"#e7e6e6\" border-top-right-radius=\"0pt 0pt\" border-top-left-radius=\"0pt 0pt\" border-bottom-right-radius=\"0pt 0pt\" border-bottom-left-radius=\"0pt 0pt\">",
+			"<fo:table-cell class=\"body-text\" text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\" border-left-color=\"rgb(0,0,0)\" border-right-style=\"solid\" border-right-width=\"1pt\" border-right-color=\"rgb(0,0,0)\" border-top-style=\"solid\" border-top-width=\"1pt\" border-top-color=\"rgb(0,0,0)\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-bottom-color=\"rgb(0,0,0)\" padding-top=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-bottom=\"2pt\" background=\"#E7E6E6\" border-top-right-radius=\"0pt 0pt\" border-top-left-radius=\"0pt 0pt\" border-bottom-right-radius=\"0pt 0pt\" border-bottom-left-radius=\"0pt 0pt\">",
+			"<fo:table-cell class=\"body-text\" text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\" border-left-color=\"rgb(0,0,0)\" border-right-style=\"solid\" border-right-width=\"1pt\" border-right-color=\"rgb(0,0,0)\" border-top-style=\"solid\" border-top-width=\"1pt\" border-top-color=\"rgb(0,0,0)\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-bottom-color=\"rgb(0,0,0)\" padding-top=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-bottom=\"2pt\" background=\"#e7e6e6\" border-top-right-radius=\"0pt 0pt\" border-top-left-radius=\"0pt 0pt\" border-bottom-right-radius=\"0pt 0pt\" border-bottom-left-radius=\"0pt 0pt\">",
+			"<fo:table-cell class=\"body-text\" text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\" border-left-color=\"rgb(0,0,0)\" border-right-style=\"solid\" border-right-width=\"1pt\" border-right-color=\"rgb(0,0,0)\" border-top-style=\"solid\" border-top-width=\"1pt\" border-top-color=\"rgb(0,0,0)\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-bottom-color=\"rgb(0,0,0)\" padding-top=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-bottom=\"2pt\" background=\"#E7E6E6\" border-top-right-radius=\"0pt 0pt\" border-top-left-radius=\"0pt 0pt\" border-bottom-right-radius=\"0pt 0pt\" border-bottom-left-radius=\"0pt 0pt\">",
+			"<fo:table-cell class=\"body-text\" text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\" border-left-color=\"rgb(0,0,0)\" border-right-style=\"solid\" border-right-width=\"1pt\" border-right-color=\"rgb(0,0,0)\" border-top-style=\"solid\" border-top-width=\"1pt\" border-top-color=\"rgb(0,0,0)\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-bottom-color=\"rgb(0,0,0)\" padding-top=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-bottom=\"2pt\" background=\"#e7e6e6\" border-top-right-radius=\"0pt 0pt\" border-top-left-radius=\"0pt 0pt\" border-bottom-right-radius=\"0pt 0pt\" border-bottom-left-radius=\"0pt 0pt\">",
+			"windows server",
+			"<fo:table-cell text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\" border-left-color=\"rgb(0,0,0)\" border-right-style=\"solid\"",
+			"text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\" border-left-color=\"rgb(0,0,0)\"",
+			"text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\"",
+			"background=\"#E7E6E6\"",
+			"text-align=\"center\" border-left-style=\"solid\"",
+			"color=\"rgb(255,255,255)\"",
+			"background-color=\"rgb(0,0,0)\"",
+			"port mirroring",
+			"text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\"",
+			"text-align=\"center\" border-left-style=\"solid\"",
+			"text-align=\"center\" border-left-style=\"solid\" border-left-width=\"1pt\"",
+			"background-color=\"rgb(111,111,111)\"",
+			"background-color=\"rgb(118,118,118)\"",
+			"text-align=\"center\"",
+			"background-color=\"transparent\"",
+			"text-align=\"center\" color=\"rgb(255,255,255)\"",
+			"color=\"rgb(255,255,255)\"",
+			"background-color=\"rgb(80,80,80)\"",
+			"background-color=\"transparent\"",
+			"background-color=\"rgb(0,0,0)\"",
+			"number-columns-spanned=\"2\"   border-left-width=\"1px\" border-right-width=\"1.0pt\"",
+			"number-columns-spanned=\"2\"  border-right-style=\"inset\" border-top-style=\"inset\"",
+			"number-columns-spanned=\"2\"  border-left-width=\"1px\" border-right-width=\"1.0pt\" ",
+			"number-columns-spanned=\"2\" width=\"157.25pt\" display-align=\"before\"",
+			"number-columns-spanned=\"2\" width=\"157.25pt\"",
+			"height=\"31.45pt\"",
+			"height=\"31.45pt\" border-top-color=\"none\" border-top-style=\"none\"",
+			"<fo:table-cell class=\"body-text\" height=\"31.45pt\"",
+			"<fo:table-row height=\"31.45pt !msorm\"",
+			"<fo:table-row height=\"31.45pt !msorm\">",
+			"fo:table-cell number-columns-spanned=\"2\" number-rows-spanned=\"2\" width=\"103.5pt\" display-align=\"before\"",
+			"<fo:table-cell number-columns-spanned=\"2\" width=\"103.5pt\"",
+			"<fo:table-cell number-columns-spanned=\"2\" width=\"103.5pt\" display-align=\"before\"",
+			"<fo:table-cell number-columns-spanned=\"2\" width=\"175.8pt\" display-align=\"before\"",
+			"number-columns-spanned=\"2\" width=\"175.8pt\" display-align=\"before\"",
+			"text-decoration=\"underline\" color=\"blue\"",
+			"<fo:block margin-bottom=\".0001pt\" line-height=\"normal\">",
+			"margin-bottom=\".0001pt\" line-height=\"normal\" font-size=\"6.0pt\"",
+			"margin-top=\"2.0pt\" margin-right=\"0in\" margin-bottom=\"2.0pt\" margin-left=\"0in\" line-height=\"normal\" text-autospace=\"none\"",
+			"<fo:block margin-bottom=\".0001pt\" line-height=\"normal\">\n                                            </fo:block>",
+			"white",
+			"margin-bottom=\".0001pt\" line-height=\"normal\" font-style=\"italic\"",
+			"font-size=\"6.0pt\" font-family=\"Segoe UI\"",
+			"margin-bottom=\".0001pt\" line-height=\"normal\" color=\"black\"",
+			"margin-bottom=\".0001pt\" line-height=\"normal\" font-weight=\"bolder\"",
+			"margin-bottom=\".0001pt\" line-height=\"normal\" class=\"bold-text\"",
+			"border=\"solid windowtext 1.0pt !msorm\" padding=\"0in 5.4pt 0in 5.4pt !msorm\" border-style=\"inset\" width=\"156.95pt\" display-align=\"before\"",
+			"text-align=\"start\" start-indent=\"0pt\" end-indent=\"0pt\" text-indent=\"0pt\" text-align-last=\"relative\"",
+			"border-collapse=\"collapse !msorm\" border-spacing=\"0px\" border=\"none !msorm\" display-align=\"center\" inline-progression-dimension=\"582px\" border-style=\"outset\"",
+			"602",
+			"16",
+			"602",
+			"30px",
 			"$dark-gray",
 			"review-section-header",
 			"<header>",
@@ -442,84 +522,12 @@
 			"<fo:table-cell border=\"1pt black\" border-style=\"solid none solid solid\" padding=\"2pt\"",
 			"<fo:table-cell border=\"1pt solid black\" padding=\"2pt\"",
 			"border-bottom-color=\"white\" border-bottom-style=\"none\" border-bottom-width=\"1pt\" border-left-color=\"white\" border-left-width=\"1pt\" border-right-color=\"white\" border-right-style=\"none\" border-right-width=\"1pt\" border-top-color=\"rgb(0, 114, 198)\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
-			"<fo:table-cell border=\"1pt solid black\" padding=\"2pt\">",
-			"border-bottom-color=\"black\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-left-color=\"black\" border-left-style=\"solid\" border-left-width=\"1pt\" border-right-color=\"black\" border-right-style=\"solid\" border-right-width=\"1pt\" border-top-color=\"black\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
-			"border-bottom-color=\"black\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-left-color=\"black\" border-left-style=\"solid\" border-left-width=\"1pt\" border-right-color=\"black\" border-right-width=\"1pt\" border-top-color=\"black\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
-			"border-bottom-color=\"black\" border-bottom-style=\"solid\" border-bottom-width=\"1pt\" border-left-color=\"black\" border-left-width=\"1pt\" border-right-color=\"black\" border-right-style=\"solid\" border-right-width=\"1pt\" border-top-color=\"black\" border-top-style=\"solid\" border-top-width=\"1pt\" padding-bottom=\"2pt\" padding-left=\"2pt\" padding-right=\"2pt\" padding-top=\"2pt\"",
-			"background-color=\"#002060\"",
-			"background-color=\"#DEEAF6\"",
-			"background-color=\"#1E4E79\"",
-			"color=\"#505050\" font-family=\"Segoe UI Light\"",
-			"Dynamics CRM",
-			"CURRENT USE",
-			"Project",
-			"color=\"#505050\" end-indent=\"0px\" font-family=\"Segoe UI Semibold, Arial, sans-serif, monospace\" font-size=\"11.000pt\" id=\"71A29F79\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"0.000px\" start-indent=\"0px\"",
-			"block",
-			"text-transform=\"uppercase\"",
-			"body-text",
-			"text-transform=\"uppercase\"",
-			"Azure Overview",
-			"IMplementation &amp; Deployment Assistance",
-			"Skype for Business",
-			"Recommended Tasks: Business Case",
-			"text",
-			"Office 365 Service Availability Design",
-			"https://technet.microsoft.com/en-us/library/dn646965.aspx",
-			"Enterprise Mobility Suite",
-			"Azure Rights Management",
-			"inline",
-			"text-transform=\"uppercase\"",
-			"inline",
-			"text-transform=\"uppercase\"",
-			"Deploy",
-			"text-transform=\"none\"",
-			"body-text",
-			"text-transform=\"capitalize\"",
-			"body-text",
-			"inline",
-			"class=\"body-text\"",
-			"<fo:block class=\"body-text\" end-indent=\"0px\"",
-			"Enterprise mobility Suite",
-			"Enterpris mobility Suite",
-			"line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"16.000px\" space-after=\"5.67px\" space-before=\"2.33px\" text-align=\"left\"",
-			"inline",
-			"color=\"#767171\" font-family=\"Segoe UI Semibold, Arial, sans-serif, monospace\" font-size=\"12.000pt\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"13.333px\" text-align=\"left\" text-transform=\"none\"",
-			"Enterprise Mobility Suite",
-			"color=\"rgb(0,32,80)\" font-family=\"Segoe UI\" font-size=\"11pt\" font-weight=\"bold\"",
-			"inline",
-			"<fo:inline color=\"rgb(0,114,198)\" font-family=\"Segoe UI\"",
-			"inline",
-			"Environment",
-			"you will assign",
-			"USE",
-			"Office Clients",
-			"Office Clients ",
-			"Office Clients",
-			"inline",
-			"<fo:inline background-color=\"rgb(80,80,80)\" color=\"#ffffff\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-size=\"11.000pt\"",
-			"The recommend migration for",
-			"inline",
-			"<fo:block background-color=\"White\" font-style=\"normal\"> </fo:block>",
-			"line-height=\"100.000%\" margin-bottom=\"5.333px\" margin-top=\"2.667px\" text-align=\"left\"",
-			"assign an on premises",
-			"Exchange Environment",
-			"cutover",
-			"<fo:block color=\"#505050\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-size=\"11.000pt\" line-height=\"100.000%\" margin-bottom=\"5.333px\" margin-top=\"2.667px\" text-align=\"left\" />",
-			"line-height=\"107.917%\" margin-bottom=\"10.667px\" text-align=\"left\"",
-			"color=\"#005494\" font-family=\"Segoe UI Semibold, Arial, sans-serif, monospace\" font-size=\"11.000pt\" id=\"483CD313\" keep-together.within-column=\"always\" keep-with-next.within-column=\"always\" line-height=\"107.917%\" margin-bottom=\"0.000px\" margin-top=\"2.667px\" text-align=\"left\" text-transform=\"uppercase\"",
-			"olor=\"#005494\" font-family=\"Segoe UI Semibold, Arial, sans-serif, monospace\" font-size=\"11.000pt\" id=\"483CD313\" keep-together.within-column=\"always\" keep-with-next.within-column=\"always\" line-height=\"107.917%\" margin-bottom=\"0.000px\" margin-top=\"2.667px\" text-align=\"left\" text-transform=\"uppercase\"",
-			"<fo:inline class=\"body-text\" ",
-			"<fo:inline color=\"rgb(0,114,198)\" font-family=\"Segoe UI\" font-size=\"11pt\"",
-			"<fo:block class=\"body-text\"></fo:block>",
-			"color=\"#505050\" end-indent=\"0px\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-size=\"11pt\" id=\"3F41D310\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"0.000px\" start-indent=\"0px\" text-align=\"left\"",
-			"color=\"#505050\" end-indent=\"0px\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"0.000px\" start-indent=\"0px\" text-align=\"left\"",
-			"<fo:inline color=\"#505050\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-size=\"11pt\"",
-			"color=\"#505050\" end-indent=\"0px\" font-family=\"Segoe UI, Arial, sans-serif, monospace\" font-weight=\"bold\" line-height=\"100.000%\" margin-bottom=\"0.000px\" margin-top=\"0.000px\" start-indent=\"0px\" text-align=\"left\""
+			"<fo:table-cell border=\"1pt solid black\" padding=\"2pt\">"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
 		],
@@ -532,66 +540,36 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/review-form.html",
+					"file": "/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.epr",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 31260,
+						"buffer_size": 5740104,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2162,
-								2162
+								5096941,
+								5096941
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/XML/XML.sublime-syntax",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 213.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/sass/pages/_review-form.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3378,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								354,
-								354
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 131.0,
+						"translation.y": 177441.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -635,9 +613,13 @@
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 156.0
+	},
 	"output.gulp_output":
 	{
-		"height": 138.0
+		"height": 220.0
 	},
 	"pinned_build_system": "Packages/SASS Build/SASS.sublime-build",
 	"project": "VS-Sass-Project.sublime-project",
@@ -652,6 +634,30 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"suc",
+				"SuccessPlanSummaryOutput.xml"
+			],
+			[
+				"ou",
+				"CSS\\OutputDoc_InUse.css"
+			],
+			[
+				"svg",
+				"app\\sass\\components\\_svg.scss"
+			],
+			[
+				"icons.scss",
+				"app\\sass\\components\\_icons.scss"
+			],
+			[
+				"review.scss",
+				"app\\sass\\pages\\_review-form.scss"
+			],
+			[
+				"review",
+				"app\\review-form.html"
+			],
 			[
 				"revi",
 				"app\\sass\\pages\\_review-form.scss"
@@ -745,16 +751,8 @@
 				"app\\sass\\base\\_reset.scss"
 			],
 			[
-				"svg",
-				"app\\sass\\components\\_svg.scss"
-			],
-			[
 				"svg.scss",
 				"app\\sass\\components\\_svg.scss"
-			],
-			[
-				"icons.scss",
-				"app\\sass\\components\\_icons.scss"
 			],
 			[
 				"shame",
@@ -820,8 +818,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 366.0,
+	"side_bar_visible": false,
+	"side_bar_width": 284.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

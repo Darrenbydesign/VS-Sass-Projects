@@ -5,25 +5,51 @@ $review-form-bg: #f4f4f4;
 $fs-heading-main-color: #f4f4f4;
 $fs-review-bg: #303E48;
 .review-nav {
+    @include flexbox;
+    @include flex-flow(column, wrap);
+    @include justify-content(flex-start);
+    @include align-items(center);
+    width: 100%;
     background: $valorem-background-color;
-    padding: 15px;
+    padding: ce(20px);
+    @include flexpoint-lg {
+        @include flex-flow(row, wrap);
+    }
 }
 
 .review-nav-heading {
-    margin-top: 0;
+    @include flex(1);
+    @include order(2);
     color: dt($valorem-background-color);
+    margin-left: ce(15px);
+    text-align: center;
 }
-.valorem-icon{
-    height: 30px;
+
+.username {
+    @include order(3);
 }
-body.fs-form-bg {
+
+.review-nav-link {
+    color: dt($valorem-background-color);
+    &:hover{
+        color: $valorem-secondary-color;
+    }
+}
+
+.valorem-icon {
+    width: ce(60px);
+    height: ce(60px);
+    @include order(1);
+}
+
+.fs-form-bg {
     background: $fs-review-bg;
 }
 
 .fullscreen-review-form {
+    position: relative;
     width: 100%;
     margin: 0 auto;
-    // padding-bottom: ce(40px);
     margin-bottom: ce(40px);
     @include flexpoint-lg {
         width: 50vw;
@@ -49,8 +75,15 @@ body.fs-form-bg {
     color: $review-text-color-primary;
     padding-right: ce(15px);
     padding-left: ce(15px);
+    width: 100%;
+    z-index: 1;
+    top: 5vh;
+    // position: absolute;
+    // visibility: hidden;
 }
-
+.question-current{
+    visibility: visible;
+}
 %label-base {
     font-weight: normal;
     margin-bottom: ce(20px);

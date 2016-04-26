@@ -8684,7 +8684,6 @@ select {
 }
 
 svg {
-  border: 1px solid #737373;
   width: 100%;
 }
 
@@ -9905,24 +9904,80 @@ svg {
 }
 
 .review-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: flex-start;
+  -moz-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
   background: #231f20;
-  padding: 15px;
+  padding: 1.25em;
+}
+
+@media (min-width: 90em) {
+  .review-nav {
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
 }
 
 .review-nav-heading {
-  margin-top: 0;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  color: #fff;
+  margin-left: 0.9375em;
+  text-align: center;
+}
+
+.username {
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.review-nav-link {
   color: #fff;
 }
 
-.valorem-icon {
-  height: 30px;
+.review-nav-link:hover {
+  color: #009ADE;
 }
 
-body.fs-form-bg {
+.valorem-icon {
+  width: 3.75em;
+  height: 3.75em;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.fs-form-bg {
   background: #303E48;
 }
 
 .fullscreen-review-form {
+  position: relative;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 2.5em;
@@ -9954,6 +10009,13 @@ body.fs-form-bg {
   color: #f4f4f4;
   padding-right: 0.9375em;
   padding-left: 0.9375em;
+  width: 100%;
+  z-index: 1;
+  top: 5vh;
+}
+
+.question-current {
+  visibility: visible;
 }
 
 .fs-review-question-label {
