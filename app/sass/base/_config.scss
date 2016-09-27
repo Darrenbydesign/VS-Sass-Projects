@@ -110,6 +110,21 @@ $corp-color-second-dark: darken($corp-color-second, 15%) !default;
 /// @type Color
 $corp-color-second-light: lighten($corp-color-second, 15%) !default;
 
+// New temporary colors
+//=============================
+$bluescope-blue: #086DB6 !default;
+$surfmist: #EEEEED !default;
+$surfmist-mid: #E5E5E4;
+$surfgray: #BFBFBF !default;
+$monument: #36393A !default;
+$monument-dark: #282A2A !default;
+$monument-black: #181818 !default;
+$deep-ocean: #073247 !default;
+$bluescope-bright: #55C9F4 !default;
+$goldenrod: #EFB91B !default;
+$warning: #DE4825 !default;
+
+
 //==============================
 // Typography variables
 //==============================
@@ -241,10 +256,7 @@ $common-padding: 10px 15px !default;
 //=============================================================================
 
 $arrow-right: '../images/icons/svg/arrow-right-icon.svg' !default;
-
-
 $icons: "/content/images/icons.png" !default;
-
 $img-placeholder: "https://placekitten.com/2000/300" !default;
 
 $segoe-regular-path: '../Fonts/segoeui';

@@ -92,7 +92,7 @@ $Placeholder-Selectors: ();
     @extend %#{$button-selector};
   }
   @else {
-    @include border-radius(0px);
+    @include border-radius(2px);
     position: relative;
     display: inline-block;
     text-align: center;
@@ -459,7 +459,7 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// @param {String} $value [center] - This aligns flex child content in a group along the x or y axis depending the parent container flex-direction (row or column)
 /// @group Flexbox
 @mixin align-content($value: center) {
-  align-items: $value;
+  align-content: $value;
 }
 
 /// Justify-content

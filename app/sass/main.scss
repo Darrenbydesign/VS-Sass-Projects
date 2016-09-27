@@ -31,9 +31,12 @@
 @import 'components/icons';
 @import 'components/svg';
 @import 'components/modals';
+@import 'components/panels';
+@import 'components/tables';
 @import 'components/buttons';
 @import 'components/accordions';
 @import 'components/breadcrumbs';
+@import 'components/flex-items';
 
 
 // Modules are things like Navigation, Headers, Footers, Sidebars, Etc.
@@ -50,6 +53,7 @@
 // Pages styling for things that are strictly page designed
 @import 'pages/landing-page'; 
 @import 'pages/review-form';
+@import 'pages/generalLoadings';
 
 
 // This section is where all the the bad code goes until its learned its lesson and has become good code.

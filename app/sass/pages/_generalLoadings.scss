@@ -1,0 +1,201 @@
+%modal-button-container-base {
+    @include flexbox;
+    @include flex-flow(row, wrap);
+    @include align-content(center);
+    margin-left: 15px;
+    // margin-right: 15px;
+    margin-bottom: 20px;
+    .button,
+    .btn {
+        @include border-radius(8px);
+        @include font-size(18px);
+        margin: 0 3px;
+    }
+}
+
+%info-text-base {
+    color: $bluescope-bright;
+    font-style: italic;
+}
+
+.properties-modal {
+    background: rgba($bluescope-blue, 0.5);
+}
+
+.properties-modal-container {
+    @include transition(width 0.3s ease-in);
+    @include transition(height 0.3s ease-in);
+    width: 80vw;
+    max-width: 80vw;
+    margin: 6vh auto;
+    @include flexpoint-lg {
+        width: 50vw;
+    }
+}
+
+.properties-modal-header {
+    @include flex(0 1 100%);
+    background: $monument-black;
+    border-bottom: 1px solid transparent;
+    .properties-modal-close {
+        color: $white;
+        opacity: 0.5;
+    }
+}
+
+.properties-modal-title {
+    text-align: center;
+    font-weight: normal;
+    color: dt(#181818);
+}
+
+.properties-modal-content {
+    @include flexbox;
+    @include flex-flow(row, wrap);
+    @include justify-content(flex-start);
+    @include border-radius(4px);
+    background: $monument;
+    color: $surfmist;
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid $surfgray;
+    }
+}
+
+.properties-modal-nav-container {
+    @include flexbox;
+    @include flex-flow(column, wrap);
+    @include justify-content(space-between);
+    @include flex(0.5 1 0);
+    background: #282A2A;
+    margin: 0;
+    padding: 0;
+    @include flexpoint-lg {
+        @include flex(1 1 0);
+    }
+}
+
+.properties-modal-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .checkbox {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.properties-modal-nav-item {
+    background: rgba($surfgray, 0.5);
+    color: $surfgray;
+    margin: 5px 0;
+    padding: 3px 15px;
+    &.active {
+        background: rgba($surfgray, 1);
+        color: $monument;
+        a {
+            color: $monument;
+        }
+    }
+    a {
+        color: $surfmist;
+        &:hover {
+            color: $surfmist;
+        }
+    }
+}
+
+// This should ideally be used instead of the active boostrap class
+// This class has better semantic meaning than just "active"
+.pm-item-active {
+    background: rgba($surfgray, 1);
+    color: $monument;
+    .checkbox {
+        label {
+            font-weight: bold;
+        }
+    }
+    a {
+        color: $monument;
+        &:hover {
+            text-decoration: none;
+            color: $monument-black;
+        }
+    }
+}
+
+.properties-modal-body {
+    @include flex(1 1 0);
+    padding: 10px 20px;
+    @include flexpoint-lg {
+        @include flex(2 1 0);
+    }
+    .form-inline > .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+.properties-modal-input {
+    display: inherit;
+    background: rgba($surfgray, 0.5);
+    color: $surfmist;
+}
+
+.properties-modal-input option {
+    background: rgba($surfgray, 0.9);
+    color: $surfmist;
+    &:hover {
+        color: $surfmist;
+        background: $monument;
+    }
+}
+
+.pm-read-only {
+    @extend %info-text-base;
+}
+
+.properties-modal-info-text {
+    @extend %info-text-base;
+    padding: 20px;
+}
+
+.properties-modal-button-container {
+    @extend %modal-button-container-base;
+    @include justify-content(flex-end);
+}
+
+.properties-modal-footer {
+    @extend %modal-button-container-base;
+    @include justify-content(flex-start);
+    @include align-content(flex-end);
+}
+
+.text-counter {
+    color: saturate($bluescope-bright, 10%);
+}
+
+.pm-inline-group {
+    @include font-size(14px);
+}
+
+.pm-table {
+    @include border-radius(6px);
+    @include font-size(13px);
+    border: 1px solid $surfmist;
+    thead,
+    tbody,
+    tr,
+    td {
+        border: 1px solid $surfgray;
+    }
+    tbody {
+        > tr {
+            > td {
+                background: rgba($surfgray, 0.4);
+                padding: 3px 5px;
+            }
+        }
+    }
+}

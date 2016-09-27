@@ -1,28 +1,43 @@
 // =================================================================== 
 // $Form Styles
 // ===================================================================
-
 input[type='text'],
 input[type='email'],
 input[type='tel'],
 input[type='search'] {
-    @include border-radius(0);
-    background: #f4f4f4;
+    @include border-radius(2px);
+    border: 1px solid transparent;
 }
 
 textarea {
-    @include border-radius(0);
-    background: #f4f4f4;
+    @include border-radius(2px);
+    border: 1px solid transparent;
 }
 
 select {
-    @include border-radius(0);
-    background: #f4f4f4;
+    @include border-radius(2px);
+    border: 1px solid transparent;
+}
+
+fieldset {
+    border: 1px solid $surfgray;
+    margin: 15px 0;
+    padding: 10px 15px;
+    legend{
+        @include font-size(14px);
+        margin-left: -5px;
+        margin-bottom: 15px;
+        padding: 0 15px 10px 10px;
+        border-bottom: none;
+        width: auto;
+        color: inherit;
+    }
 }
 
 // Overwrite to boostraps borders on all elements using this class
 .form-control {
-    @include border-radius(0);
-    background: #f4f4f4;
+    @include border-radius(2px);
     @include font-size(14px);
+    border: 1px solid transparent;
+    // background: #BFBFBF;
 }

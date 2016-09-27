@@ -10,40 +10,40 @@
 //
 // Styleguide: Components - Buttons
 .button {
-  @include button($corp-color);
-  @include transition(color 0.7s);
-  color: $white;
-  font-family: $segoe-UI-regular;
-  &:focus {
-    outline: none;
-    color: $corp-color-dark;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -35px 0 0 -35px;
-    width: 70px;
-    height: 70px;
-    @include border-radius(50%);
-    opacity: 0;
-    pointer-events: none;
-  }
+    @include button($corp-color);
+    @include transition(color 0.7s);
+    color: $white;
+    font-family: $segoe-UI-regular;
+    &:focus {
+        outline: none;
+        color: $corp-color-dark;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -35px 0 0 -35px;
+        width: 70px;
+        height: 70px;
+        @include border-radius(50%);
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .button-click {
-  outline: none;
-  color: $corp-color-light;
-  &:after {
-    @include animation(anim-effect-boris 0.3s loop);
-  }
+    outline: none;
+    color: $corp-color-light;
+    &:after {
+        @include animation(anim-effect-boris 0.3s loop);
+    }
 }
 
 .be-boris {
-  &:after {
-    background: rgba($corp-color, 0.1);
-  }
+    &:after {
+        background: rgba($corp-color, 0.1);
+    }
 }
 
 // Text button
@@ -58,13 +58,13 @@
 // 
 // Styleguide  Components - Buttons - Text
 .button-text {
-  @include button(transparent);
-  color: $corp-color;
-  font-family: $segoe-UI-regular;
-  &:hover {
-    color: $corp-color-dark;
-    @include transition( background 0.3s ease-in-out);
-  }
+    @include button(transparent);
+    color: $corp-color;
+    font-family: $segoe-UI-regular;
+    &:hover {
+        color: $corp-color-dark;
+        @include transition( background 0.3s ease-in-out);
+    }
 }
 
 // Buttons Block
@@ -75,8 +75,8 @@
 //
 // Styleguide: Components - Buttons - Button-block
 .button-block {
-  @include button($corp-color);
-  width: 100%;
+    @include button($corp-color);
+    width: 100%;
 }
 
 // Buttons Small
@@ -87,6 +87,6 @@
 //
 // Styleguide: Components - Buttons - Button-small
 .button-small {
-  @include button($corp-color);
-  padding: 6px 10px;
+    @include button($corp-color);
+    padding: 6px 10px;
 }

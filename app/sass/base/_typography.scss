@@ -149,11 +149,12 @@ h6 {
 // 
 // Styleguide  CSS - Typography - Body Text
 body {
-  @include font-size($base-font-size);
+  @include font-size(14px);
   color: $base-font-color;
   font-family: $base-font-family;
 }
 
 label {
-  font-family: $segoe-UI-semibold;
+  font-family: $segoe-UI-semilight;
+  font-weight: normal;
 }

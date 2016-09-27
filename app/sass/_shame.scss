@@ -31,3 +31,43 @@
 .video-container {
     background: $corp-color-dark;
 }
+
+.hva-list {
+    @include flexbox;
+    @include flex-flow(row, wrap);
+    @include justify-content(center);
+    @include align-content(flex-start);
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+}
+
+.hva-list-item {
+    margin: 0;
+    padding: 0 20px;
+    background: $corp-color-second;
+    width: 40vw;
+    min-height: 20vh;
+}
+
+.sloped-left {
+    @include prefix((clip-path: polygon(0px 0px, 688px -1px, 768px 191px, 0px 190px)));
+    background: $corp-color-dark;
+}
+
+.sloped-right {
+    @include prefix((clip-path: polygon(0px -10px, 768px 0px, 768px 191px, 84px 192px)));
+    background: $gray-light;
+    margin-left: -4.7%;
+}
+
+.sloped-reverse-left {
+    @include prefix((clip-path: polygon(0px 0px, 765px -1px, 685px 192px, 0px 190px)));
+    background: $gray-lighter;
+}
+
+.sloped-reverse-right {
+    @include prefix((clip-path: polygon(83px 0px, 768px 0px, 768px 191px, 3px 192px)));
+    background: $corp-color-light;
+    margin-left: -4.7%;
+}

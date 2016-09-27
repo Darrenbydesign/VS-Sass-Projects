@@ -51,14 +51,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.epr",
-			"settings":
-			{
-				"buffer_size": 5740104,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"build_system_choices":
@@ -67,10 +59,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 230.0,
-		"last_filter": "show",
+		"height": 185.0,
+		"last_filter": "git psuh",
 		"selected_items":
 		[
+			[
+				"git psuh",
+				"Git: Push Current Branch"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
 			[
 				"show",
 				"Gulp: Show panel"
@@ -98,10 +102,6 @@
 			[
 				"commi",
 				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add All"
 			],
 			[
 				"ki",
@@ -236,7 +236,7 @@
 				"Preferences: Package Control Settings – User"
 			]
 		],
-		"width": 510.0
+		"width": 1282.0
 	},
 	"console":
 	{
@@ -255,24 +255,20 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/Users/Dsorrels/Desktop/Ecrion",
-		"/C/Users/Dsorrels/Desktop/Ecrion/Data_Source"
-	],
 	"file_history":
 	[
+		"/C/Projects/VS-Sass-Projects/app/review-form.html",
+		"/C/Projects/VS-Sass-Projects/app/grid-example.html",
+		"/C/Projects/VS-Sass-Projects/app/index.html",
+		"/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.epr",
 		"/C/Users/Dsorrels/Desktop/Ecrion/Data_Source/New workload.xml",
 		"/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.xml",
 		"/C/Users/Dsorrels/Desktop/Ecrion/Data_Source/5557502_Snapshot.xml",
 		"/C/Users/Dsorrels/Desktop/Ecrion/CSS/OutputDoc_InUse.css",
-		"/C/Projects/VS-Sass-Projects/app/review-form.html",
 		"/C/Projects/VS-Sass-Projects/app/sass/pages/_review-form.scss",
 		"/C/Projects/VS-Sass-Projects/app/sass/components/_svg.scss",
 		"/C/Projects/VS-Sass-Projects/app/sass/components/_icons.scss",
-		"/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.epr",
 		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
-		"/C/Projects/VS-Sass-Projects/app/index.html",
 		"/C/Projects/VS-Sass-Projects/app/images/SVG/Valorem_logo.svg",
 		"/C/Projects/VS-Sass-Projects/gulpfile.js",
 		"/C/Projects/VS-Sass-Projects/app/sass/components/_forms.scss",
@@ -301,7 +297,6 @@
 		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Installed Packages/SASS Build.sublime-package",
 		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
 		"/C/Users/Dsorrels/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Projects/VS-Sass-Projects/app/grid-example.html",
 		"/C/Users/Dsorrels/Dropbox/Web-Mockups/IW Portal View-assets/errors.txt",
 		"/C/Users/Dsorrels/Desktop/Ecrion_work/SuccessPlanSummaryOutput-Final.41.IDReplacement.epr",
 		"/C/Users/Dsorrels/Desktop/Ecrion_work/NEWSucessPlanSummaryOutput.xml",
@@ -540,41 +535,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/Dsorrels/Desktop/Ecrion/SuccessPlanSummaryOutput.epr",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5740104,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5096941,
-								5096941
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
-						},
-						"translation.x": 131.0,
-						"translation.y": 177441.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -818,7 +780,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 284.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -1,7 +1,6 @@
 // =================================================================== 
 // $Tables - Table styles go here
 // ===================================================================
-
 // Tables
 // 
 // This is where the `.table` styles go
@@ -13,19 +12,20 @@
 // 
 // Styleguide: Components - Tables
 .table {
-  >tbody>tr>td,
-  >tbody>tr>th,
-  >tfoot>tr>td,
-  >tfoot>tr>th,
-  >thead>tr>td,
-  >thead>tr>th {
-    padding: $common-padding;
-    line-height: 1.42857143;
-    vertical-align: top;
-    margin-top: 0;
-  }
+    >tbody>tr>td,
+    >tbody>tr>th,
+    >tfoot>tr>td,
+    >tfoot>tr>th,
+    >thead>tr>td,
+    >thead>tr>th {
+        padding: $common-padding;
+        border-bottom: 1px solid $gray-lighter;
+        line-height: 1.42857143;
+        vertical-align: top;
+        margin-top: 0;
+    }
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-  background-color: $gray;
+    background-color: $gray-light;
 }
