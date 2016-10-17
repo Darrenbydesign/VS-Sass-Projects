@@ -9,6 +9,8 @@ components is to provide unity and consistency of the interface design across th
 
 ## Design Principles to follow:
 
+[Examples needed here]
+
 __Clarity__
 
 Reduce Ambiguity. Make the elements of the UI clear, easy to understand, and easy to take actions (with confidence in their decisions)
@@ -70,59 +72,87 @@ nVision takes its color pallette from its founding company BlueScope. The colors
 
 When using primary colors in your pallette this color should be the most used color across the screens on primary actions buttons and components.
 
-__$bluescope-blue:__
-<div style="background:#056DB6; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<ul style="display: flex; list-style: none;">  
+<li style="padding: 10px 15px;">
+  <strong>$bluescope-blue:</strong>
+  <div style="background:#056DB6; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+</li>
 
-__$bluescope-bright:__
-<div style="background:#55C9F4; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<li style="padding: 10px 15px;">
+<strong>$bluescope-bright:</strong>
+  <div style="background:#55C9F4; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+</li>
+<li style="padding: 10px 15px;">
+<strong>$steel-grey:</strong>
+  <div style="background:#5C87a1; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+</li>
 
-__$steel-grey:__
-<div style="background:#5C87a1; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
-
-__$deep-ocean:__
-<div style="background:#073246; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<li style="padding: 10px 15px;">
+<strong>$deep-ocean:</strong>
+  <div style="background:#073246; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+</li>
+</ul>
 
 
 ### Accent Colors
 These colors are also used to denote primary actions and points of attention. The difference being these colors are more often used to provide greater contrast. 
 
-
-__$zincalume:__
+<ul style="display: flex; list-style: none;">
+<li style="padding: 10px 15px;">  
+<strong>$zincalume:</strong>
 <div style="background:#449C2D; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+</li>
 
-__$goldenrod:__
+<li style="padding: 10px 15px;">  
+<strong>$goldenrod:</strong>
 <div style="background:#EFB91B; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+</li>
 
-__$colorbond-red:__
+<li style="padding: 10px 15px;">  
+<strong>$colorbond-red:</strong>
 <div style="background:#E04619; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+</li>
+</ul>
 
 ### Neutrals
 
-__$white:__
-<div style="display:inline-block; background:#ffffff; width: 50px; height: 50px; border: 1px solid #ededed; "></div> 
+<ul style="display: flex; list-style: none;">
+    <li style="padding:10px 15px;">
+        <strong>$white:</strong>
+        <div style="background:#ffffff; width: 50px; height: 50px; border: 1px solid #ededed; "></div>
+    </li>
+    <li style="padding:10px 15px;">
+        <strong>$black:</strong>
+        <div style="background:#000000; width: 50px; height: 50px;"></div>
+    </li>
+    <li style="padding:10px 15px;">
+        <strong>$surfmist:</strong>
+        <div style="background:#EEEEED; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
+    </li>
+    <li style="padding:10px 15px;">
+        <strong>$surfmist-mid:</strong>
+        <div style="background:#e5e5e4; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
+    </li>
+</ul>
 
-__$black:__
-<div style="display:inline-block; background:#000000; width: 50px; height: 50px;"></div>
-
-
-__$surfmist:__
-<div style="background:#EEEEED; width: 50px; height: 50px; border: 1px solid #282A2A; "></div> 
-
-__$surfmist-mid:__
-<div style="background:#e5e5e4; width: 50px; height: 50px; border: 1px solid #282A2A; "></div> 
-
-__$surfgray:__
-<div style="background:#BFBfBF; width: 50px; height: 50px; border: 1px solid #282A2A; "></div> 
-
-__$monument:__
-<div style="background:#363939; width: 50px; height: 50px; border: 1px solid #282a2a;"></div> 
-
-__$monument-dark:__
-<div style="background:#242626; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
-
-__$monument-black:__
-<div style="background:#181818; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
-
+<ul style="display: flex; list-style: none;">
+  <li style="padding:10px 15px;">
+        <strong>$surfgray:</strong>
+        <div style="background:#BFBfBF; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
+    </li>
+    <li style="padding:10px 15px;">
+        <strong>$monument:</strong>
+        <div style="background:#363939; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+    </li>
+    <li style="padding:10px 15px;">
+        <strong>$monument-dark:</strong>
+        <div style="background:#242626; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+    </li>
+    <li style="padding:10px 15px;">
+        <strong>$monument-black:</strong>
+        <div style="background:#181818; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+    </li>
+</ul>
 
 ### BlueScope Sister Colors
 
@@ -151,13 +181,49 @@ __Simple text Input__
 
 _This is the base level of data entry, usually it is single lines of text but can also be multiple lines of text._
 
-
 For situations where a user need to enter limited amount of text use a single line input field.
 
+__Labeling__
+
+Input fields should have labels should be listed above the field or to the left of the field. In most contexts the label will be listed to provide better readability and clarity to users. 
+
+Horizontal labeling on the left side of the input should be used when screen real-estate is critical issue and there are only a small amound of fields. We try to make use of this when there is fewer than 5 fields.
+
+__Context__
+
+inputs that contain related data should be grouped together. Simple examples of this would be address fields and login information. Complex examples would be dimension calculations in our dialog panes.
+
+---
 
 <form>
-  <div>
-    <input style=" width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
+  <div style="padding: 10px 15x; margin-bottom: 20px;>
+    <label style="font-weight: bold"> Input field
+    <input style="width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
+    </label>
+  </div>
+  <hr>
+  <div style="display: inline-flex; padding: 10px 15x; margin-bottom: 20px;">
+    <label style="font-weight: bold"> First Name field
+    <input style="width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
+    </label>
+    </div>
+    <div style="display: inline-flex; padding: 10px 15x; margin-bottom: 20px;">
+    <label style="font-weight: bold"> Last Name field
+      <input style="width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
+    </label>
+    </div>
+    <div style="padding: 10px 15x; margin-bottom: 20px;">
+    <label style="font-weight: bold"> Email field
+      <input style="width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
+    </label>
   </div>
 </form>
+---
 
+__Sizing__
+
+Inputs width should be 100% of their container and input labels should respond to its corresponding label.
+
+For ease of accesibility the `<label>` element should wrap around the `input` markup.
+
+[Example of markup goes here]

@@ -169,44 +169,50 @@ $Placeholder-Selectors: ();
 /// This mixin can be coupled with the keyframes animation above.
 /// Use this one to give animation action values like timing and looping, etc.
 /// @group helpers 
-@mixin animation($str) {
+@mixin animation($str...) {
   @include prefix((animation: #{$str}));
 }
 
 /// Transform mixin for writing animations quickly while utilizing the vendor prefixes
 /// @group helpers
 @mixin transform($args) {
-  @include prefix((transform: #{args}));
+  @include prefix((transform: #{$args}));
 }
 
 /// Translate mixin for animating objects
 ///@group helpers
 @mixin translate($x, $y: auto) {
-  @include transform(#{$x, $y});
+  @include prefix((translate: #{$x, $y}));
 }
 
 /// Rotate mixin for animating objects
 ///@group helpers
 @mixin rotate($args) {
-  @include transform(#{$args});
+  @include prefix((rotate: #{$args}));
 }
 
 /// Skew mixin for animating objects
 ///@group helpers
 @mixin skew($args) {
-  @include transform(#{$args});
+  @include prefix((skew: #{$args}));
 }
 
 /// Scale mixin for animating objects
 ///@group helpers
-@mixin scale($args) {
-  @include transform(#{$args});
+@mixin scale($dimensions) {
+  @include prefix((scale: #{$dimensions}));
+}
+
+/// Scale3D mixin for animating objects in 3 dimensions
+///@group helpers
+@mixin scale3d($dimensions...) {
+  @include prefix((scale3d: #{$dimensions...}));
 }
 
 /// Opacity mixin for animating objects
 ///@group helpers
 @mixin opacity($args) {
-  @include transform(#{$args});
+  @include prefix((opacity: #{$args}));
 }
 
 /// A mixin that makes creating transition animations a little less of a burden.

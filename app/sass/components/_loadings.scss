@@ -1,0 +1,23 @@
+.loading-cube-container {
+  @include flexbox;
+  @include justify-content(center);
+  @include align-content(center);
+  margin-top: 25vh;
+  height: 30vh;
+}
+
+.loading-cube {
+  @include animation(grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite);
+  background: $surfmist; // This is a fallback color for when the animation fails
+  margin: 10vh auto;
+  height: 50px;
+  width: 50px;
+}
+
+.loading-cube-dark {
+  @include animation(grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite);
+  background: $monument-black; // This is a fallback color for when the animation fails
+  margin: 10vh auto;
+  height: 50px;
+  width: 50px;
+}

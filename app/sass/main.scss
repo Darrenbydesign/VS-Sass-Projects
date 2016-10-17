@@ -16,6 +16,7 @@
 // Helper classes are shortcut styles that can be called for quick tests or "on-off" cases where
 // things need to be changed on components
 @import 'helpers/helper-classes';
+@import 'helpers/animations';
 
 // Layout styling goes here (Things like footers,headers, sidebars, etc)
 @import 'layout/base-layout';
@@ -37,6 +38,7 @@
 @import 'components/accordions';
 @import 'components/breadcrumbs';
 @import 'components/flex-items';
+@import 'components/loadings';
 
 
 // Modules are things like Navigation, Headers, Footers, Sidebars, Etc.
