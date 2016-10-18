@@ -8244,11 +8244,11 @@ label {
 
 @-webkit-keyframes grow-shrink {
   0% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
   50% {
     -webkit-scale: 2.5;
@@ -8258,21 +8258,21 @@ label {
     scale: 2.5;
   }
   100% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
 }
 
 @-moz-keyframes grow-shrink {
   0% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
   50% {
     -webkit-scale: 2.5;
@@ -8282,21 +8282,21 @@ label {
     scale: 2.5;
   }
   100% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
 }
 
 @-ms-keyframes grow-shrink {
   0% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
   50% {
     -webkit-scale: 2.5;
@@ -8306,21 +8306,21 @@ label {
     scale: 2.5;
   }
   100% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
 }
 
 @-o-keyframes grow-shrink {
   0% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
   50% {
     -webkit-scale: 2.5;
@@ -8330,21 +8330,21 @@ label {
     scale: 2.5;
   }
   100% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
 }
 
 @keyframes grow-shrink {
   0% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
   50% {
     -webkit-scale: 2.5;
@@ -8354,86 +8354,321 @@ label {
     scale: 2.5;
   }
   100% {
-    -webkit-scale: 0.5;
-    -moz-scale: 0.5;
-    -ms-scale: 0.5;
-    -o-scale: 0.5;
-    scale: 0.5;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    scale: 1;
   }
 }
 
 @-webkit-keyframes color-phase {
   0% {
+    fill: #EEEEED;
     opacity: 0.6;
-    background: #36393A;
   }
   50% {
-    background: #282A2A;
+    fill: #BFBFBF;
     opacity: 0.85;
   }
   100% {
+    fill: #E5E5E4;
     opacity: 0.6;
-    background: #181818;
   }
 }
 
 @-moz-keyframes color-phase {
   0% {
+    fill: #EEEEED;
     opacity: 0.6;
-    background: #36393A;
   }
   50% {
-    background: #282A2A;
+    fill: #BFBFBF;
     opacity: 0.85;
   }
   100% {
+    fill: #E5E5E4;
     opacity: 0.6;
-    background: #181818;
   }
 }
 
 @-ms-keyframes color-phase {
   0% {
+    fill: #EEEEED;
     opacity: 0.6;
-    background: #36393A;
   }
   50% {
-    background: #282A2A;
+    fill: #BFBFBF;
     opacity: 0.85;
   }
   100% {
+    fill: #E5E5E4;
     opacity: 0.6;
-    background: #181818;
   }
 }
 
 @-o-keyframes color-phase {
   0% {
+    fill: #EEEEED;
     opacity: 0.6;
-    background: #36393A;
   }
   50% {
-    background: #282A2A;
+    fill: #BFBFBF;
     opacity: 0.85;
   }
   100% {
+    fill: #E5E5E4;
     opacity: 0.6;
-    background: #181818;
   }
 }
 
 @keyframes color-phase {
   0% {
+    fill: #EEEEED;
     opacity: 0.6;
-    background: #36393A;
   }
   50% {
-    background: #282A2A;
+    fill: #BFBFBF;
     opacity: 0.85;
   }
   100% {
+    fill: #E5E5E4;
     opacity: 0.6;
-    background: #181818;
+  }
+}
+
+@-webkit-keyframes color-phase-dark {
+  0% {
+    fill: #36393A;
+    opacity: 0.6;
+  }
+  50% {
+    fill: #282A2A;
+    opacity: 0.85;
+  }
+  100% {
+    fill: #181818;
+    opacity: 0.6;
+  }
+}
+
+@-moz-keyframes color-phase-dark {
+  0% {
+    fill: #36393A;
+    opacity: 0.6;
+  }
+  50% {
+    fill: #282A2A;
+    opacity: 0.85;
+  }
+  100% {
+    fill: #181818;
+    opacity: 0.6;
+  }
+}
+
+@-ms-keyframes color-phase-dark {
+  0% {
+    fill: #36393A;
+    opacity: 0.6;
+  }
+  50% {
+    fill: #282A2A;
+    opacity: 0.85;
+  }
+  100% {
+    fill: #181818;
+    opacity: 0.6;
+  }
+}
+
+@-o-keyframes color-phase-dark {
+  0% {
+    fill: #36393A;
+    opacity: 0.6;
+  }
+  50% {
+    fill: #282A2A;
+    opacity: 0.85;
+  }
+  100% {
+    fill: #181818;
+    opacity: 0.6;
+  }
+}
+
+@keyframes color-phase-dark {
+  0% {
+    fill: #36393A;
+    opacity: 0.6;
+  }
+  50% {
+    fill: #282A2A;
+    opacity: 0.85;
+  }
+  100% {
+    fill: #181818;
+    opacity: 0.6;
+  }
+}
+
+@-webkit-keyframes color-phase-text {
+  0% {
+    color: #EEEEED;
+    opacity: 0.6;
+  }
+  50% {
+    color: #BFBFBF;
+    opacity: 0.85;
+  }
+  100% {
+    color: #E5E5E4;
+    opacity: 0.6;
+  }
+}
+
+@-moz-keyframes color-phase-text {
+  0% {
+    color: #EEEEED;
+    opacity: 0.6;
+  }
+  50% {
+    color: #BFBFBF;
+    opacity: 0.85;
+  }
+  100% {
+    color: #E5E5E4;
+    opacity: 0.6;
+  }
+}
+
+@-ms-keyframes color-phase-text {
+  0% {
+    color: #EEEEED;
+    opacity: 0.6;
+  }
+  50% {
+    color: #BFBFBF;
+    opacity: 0.85;
+  }
+  100% {
+    color: #E5E5E4;
+    opacity: 0.6;
+  }
+}
+
+@-o-keyframes color-phase-text {
+  0% {
+    color: #EEEEED;
+    opacity: 0.6;
+  }
+  50% {
+    color: #BFBFBF;
+    opacity: 0.85;
+  }
+  100% {
+    color: #E5E5E4;
+    opacity: 0.6;
+  }
+}
+
+@keyframes color-phase-text {
+  0% {
+    color: #EEEEED;
+    opacity: 0.6;
+  }
+  50% {
+    color: #BFBFBF;
+    opacity: 0.85;
+  }
+  100% {
+    color: #E5E5E4;
+    opacity: 0.6;
+  }
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-rotate: 45deg;
+    -moz-rotate: 45deg;
+    -ms-rotate: 45deg;
+    -o-rotate: 45deg;
+    rotate: 45deg;
+  }
+  100% {
+    -webkit-rotate: 180deg;
+    -moz-rotate: 180deg;
+    -ms-rotate: 180deg;
+    -o-rotate: 180deg;
+    rotate: 180deg;
+  }
+}
+
+@-moz-keyframes rotation {
+  0% {
+    -webkit-rotate: 45deg;
+    -moz-rotate: 45deg;
+    -ms-rotate: 45deg;
+    -o-rotate: 45deg;
+    rotate: 45deg;
+  }
+  100% {
+    -webkit-rotate: 180deg;
+    -moz-rotate: 180deg;
+    -ms-rotate: 180deg;
+    -o-rotate: 180deg;
+    rotate: 180deg;
+  }
+}
+
+@-ms-keyframes rotation {
+  0% {
+    -webkit-rotate: 45deg;
+    -moz-rotate: 45deg;
+    -ms-rotate: 45deg;
+    -o-rotate: 45deg;
+    rotate: 45deg;
+  }
+  100% {
+    -webkit-rotate: 180deg;
+    -moz-rotate: 180deg;
+    -ms-rotate: 180deg;
+    -o-rotate: 180deg;
+    rotate: 180deg;
+  }
+}
+
+@-o-keyframes rotation {
+  0% {
+    -webkit-rotate: 45deg;
+    -moz-rotate: 45deg;
+    -ms-rotate: 45deg;
+    -o-rotate: 45deg;
+    rotate: 45deg;
+  }
+  100% {
+    -webkit-rotate: 180deg;
+    -moz-rotate: 180deg;
+    -ms-rotate: 180deg;
+    -o-rotate: 180deg;
+    rotate: 180deg;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-rotate: 45deg;
+    -moz-rotate: 45deg;
+    -ms-rotate: 45deg;
+    -o-rotate: 45deg;
+    rotate: 45deg;
+  }
+  100% {
+    -webkit-rotate: 180deg;
+    -moz-rotate: 180deg;
+    -ms-rotate: 180deg;
+    -o-rotate: 180deg;
+    rotate: 180deg;
   }
 }
 
@@ -9926,43 +10161,136 @@ svg {
   border-radius: 50%;
 }
 
-.loading-cube-container {
+.loading-cube-screen, .loading-cube-screen-light {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   align-content: center;
-  margin-top: 25vh;
-  height: 30vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-cube, .loading-cube-sm, .loading-cube-lg, .loading-cube-dark, .loading-cube-dark-sm, .loading-cube-dark-lg {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  fill: #EEEEED;
+}
+
+.loading-cube-screen {
+  background: rgba(7, 50, 71, 0.9);
+}
+
+.loading-cube-screen-light {
+  background: rgba(191, 191, 191, 0.9);
+}
+
+.loading-cube-container {
+  padding-top: 40vh;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.loading-heading {
+  -webkit-animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  -moz-animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  -ms-animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  -o-animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  font-size: 24px;
+  font-size: 1.5em;
+  margin-top: 12vh;
+  text-align: center;
+}
+
+.loading-heading .loading-text {
+  color: #EEEEED;
+}
+
+.loading-heading-dark {
+  -webkit-animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  -moz-animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  -ms-animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  -o-animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  animation: color-phase-text 2.5s ease-in-out alternate infinite;
+  font-size: 24px;
+  font-size: 1.5em;
+  margin-top: 12vh;
+  text-align: center;
+}
+
+.loading-heading-dark .loading-text {
+  color: #282A2A;
 }
 
 .loading-cube {
-  -webkit-animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  -moz-animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  -ms-animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  -o-animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  background: #EEEEED;
-  margin: 10vh auto;
-  height: 50px;
-  width: 50px;
+  -webkit-animation: grow-shrink 2s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -moz-animation: grow-shrink 2s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -ms-animation: grow-shrink 2s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -o-animation: grow-shrink 2s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  animation: grow-shrink 2s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+}
+
+.loading-cube-sm {
+  -webkit-animation: grow-shrink 3s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -moz-animation: grow-shrink 3s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -ms-animation: grow-shrink 3s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -o-animation: grow-shrink 3s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  animation: grow-shrink 3s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+}
+
+.loading-cube-lg {
+  -webkit-animation: grow-shrink 4s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -moz-animation: grow-shrink 4s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -ms-animation: grow-shrink 4s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  -o-animation: grow-shrink 4s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
+  animation: grow-shrink 4s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite;
 }
 
 .loading-cube-dark {
-  -webkit-animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  -moz-animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  -ms-animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  -o-animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  animation: grow-shrink 3s ease-in-out infinite, color-phase 2s ease-in-out infinite;
-  background: #181818;
-  margin: 10vh auto;
-  height: 50px;
-  width: 50px;
+  -webkit-animation: grow-shrink 2s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -moz-animation: grow-shrink 2s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -ms-animation: grow-shrink 2s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -o-animation: grow-shrink 2s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  animation: grow-shrink 2s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  fill: #36393A;
+}
+
+.loading-cube-dark-sm {
+  -webkit-animation: grow-shrink 3s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -moz-animation: grow-shrink 3s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -ms-animation: grow-shrink 3s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -o-animation: grow-shrink 3s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  animation: grow-shrink 3s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+}
+
+.loading-cube-dark-lg {
+  -webkit-animation: grow-shrink 4s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -moz-animation: grow-shrink 4s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -ms-animation: grow-shrink 4s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  -o-animation: grow-shrink 4s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
+  animation: grow-shrink 4s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite;
 }
 
 /**

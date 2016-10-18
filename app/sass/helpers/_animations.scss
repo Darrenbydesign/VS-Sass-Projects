@@ -14,27 +14,63 @@
 
 @include keyframes(grow-shrink) {
     0% {
-        @include scale(0.5);
+        @include scale(1);
     }
     50% {
         @include scale(2.5);
     }
     100% {
-        @include scale(0.5);
+        @include scale(1);
     }
 }
 
 @include keyframes(color-phase) {
     0% {
+        fill: $surfmist;
         opacity: 0.6;
-        background: $monument;
     }
     50% {
-        background: $monument-dark;
+        fill: $surfgray;
         opacity: 0.85;
     }
     100% {
+        fill: $surfmist-mid;
         opacity: 0.6;
-        background: $monument-black;
     }
+}
+@include keyframes(color-phase-dark) {
+    0% {
+        fill: $monument;
+        opacity: 0.6;
+    }
+    50% {
+        fill: $monument-dark;
+        opacity: 0.85;
+    }
+    100% {
+        fill: $monument-black;
+        opacity: 0.6;
+    }
+}
+@include keyframes(color-phase-text) {
+    0% {
+        color: $surfmist;
+        opacity: 0.6;
+    }
+    50% {
+        color: $surfgray;
+        opacity: 0.85;
+    }
+    100% {
+        color: $surfmist-mid;
+        opacity: 0.6;
+    }
+}
+@include keyframes(rotation){
+  0%{
+    @include rotate(45deg);
+  }
+  100%{
+    @include rotate(180deg);
+  }
 }
