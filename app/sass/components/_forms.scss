@@ -6,7 +6,7 @@ input[type='email'],
 input[type='tel'],
 input[type='search'] {
     @include border-radius(2px);
-    border: 1px solid transparent;
+    // border: 1px solid transparent;
 }
 
 textarea {

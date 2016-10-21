@@ -8855,7 +8855,6 @@ input[type='search'] {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  border: 1px solid transparent;
 }
 
 textarea {
@@ -11433,7 +11432,7 @@ svg {
 }
 
 .properties-modal {
-  background: rgba(8, 109, 182, 0.5);
+  background: rgba(7, 50, 71, 0.9);
 }
 
 .properties-modal-container {
