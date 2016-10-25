@@ -35,21 +35,7 @@ Motion must be added to the interface to provide a sense of realism and tangibil
 __Accessibility__
 As a design principle we should aim to reach every user that we possibly can with our application. By providing contraols that accomodate users with visibility issues such as color blindness and low vision.
 
-
-## Design UI Standards
-
-## Tyopography
-
-__Arial__
-
-[Arial typeface example here]
-
-[Arial typeface families examples here]
-
-__Type Sizes__
-
-[provide example of type sizes here]
-
+# nVision UI Styling
 
 ## Colors
 
@@ -75,99 +61,97 @@ Color should be used to draw attention to the important elements that we want th
 __Accessibility__
 In the realm of color we need to provide contrast according to the [WCAG guidlines](https://www.w3.org/TR/WCAG20/). We do this to provide practical interaction to users with colorblindness and those with low vision issues on the application.
 
-### BlueScope Color Pallette
+#### BlueScope Color Pallette
 
 nVision takes its color pallette from its founding company BlueScope. The colors follow cool pattern of blues with a pairing of cool gray tones for neutral contrast. These colors have been designed to work harmoniously together. They follow a pattern in order to work in the most effective manner.
 
-
-### Primary Colors
+#### Primary Colors
 
 When using primary colors in your pallette this color should be the most used color across the screens on primary actions buttons and components.
 
-<ul style="display: flex; list-style: none;">  
+<ul style="display: flex; list-style: none; margin: 0; padding: 0;">  
 <li style="padding: 10px 15px;">
-  <strong>$bluescope-blue:</strong>
-  <div style="background:#056DB6; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+  <strong>$bluescope-blue</strong>
+  <div style="background:#056DB6; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
 </li>
 
 <li style="padding: 10px 15px;">
-<strong>$bluescope-bright:</strong>
-  <div style="background:#55C9F4; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<strong>$bluescope-bright</strong>
+  <div style="background:#55C9F4; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
 </li>
 <li style="padding: 10px 15px;">
-<strong>$steel-grey:</strong>
-  <div style="background:#5C87a1; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<strong>$steel-grey</strong>
+  <div style="background:#5C87a1; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
 </li>
 
 <li style="padding: 10px 15px;">
-<strong>$deep-ocean:</strong>
-  <div style="background:#073246; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<strong>$deep-ocean</strong>
+  <div style="background:#073246; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
 </li>
 </ul>
 
-
-### Accent Colors
+#### Accent Colors
 
 These colors are also used to denote primary actions and points of attention. The difference being these colors are more often used to provide greater contrast. 
 
-<ul style="display: flex; list-style: none;">
+<ul style="display: flex; list-style: none; margin: 0; padding: 0;">
 <li style="padding: 10px 15px;">  
-<strong>$zincalume:</strong>
-<div style="background:#449C2D; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<strong>$zincalume</strong>
+<div style="background:#449C2D; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
 </li>
 
 <li style="padding: 10px 15px;">  
-<strong>$goldenrod:</strong>
-<div style="background:#EFB91B; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<strong>$goldenrod</strong>
+<div style="background:#EFB91B; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
 </li>
 
 <li style="padding: 10px 15px;">  
-<strong>$colorbond-red:</strong>
-<div style="background:#E04619; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+<strong>$colorbond-red</strong>
+<div style="background:#E04619; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
 </li>
 </ul>
 
-### Neutrals
+#### Neutrals
 
-<ul style="display: flex; list-style: none;">
+<ul style="display: flex; list-style: none; margin: 0; padding: 0;">
     <li style="padding:10px 15px;">
-        <strong>$white:</strong>
-        <div style="background:#ffffff; width: 50px; height: 50px; border: 1px solid #ededed; "></div>
+        <strong>$white</strong>
+        <div style="background:#ffffff; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #ededed; "></div>
     </li>
     <li style="padding:10px 15px;">
-        <strong>$black:</strong>
-        <div style="background:#000000; width: 50px; height: 50px;"></div>
+        <strong>$black</strong>
+        <div style="background:#000000; margin: 0 auto; width: 50px; height: 50px;"></div>
     </li>
     <li style="padding:10px 15px;">
-        <strong>$surfmist:</strong>
-        <div style="background:#EEEEED; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
+        <strong>$surfmist</strong>
+        <div style="background:#EEEEED; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
     </li>
     <li style="padding:10px 15px;">
-        <strong>$surfmist-mid:</strong>
-        <div style="background:#e5e5e4; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
+        <strong>$surfmist-mid</strong>
+        <div style="background:#e5e5e4; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
     </li>
 </ul>
 
-<ul style="display: flex; list-style: none;">
+<ul style="display: flex; list-style: none; margin: 0; padding: 0;">
   <li style="padding:10px 15px;">
-        <strong>$surfgray:</strong>
-        <div style="background:#BFBfBF; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
+        <strong>$surfgray</strong>
+        <div style="background:#BFBfBF; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282A2A; "></div>
     </li>
     <li style="padding:10px 15px;">
-        <strong>$monument:</strong>
-        <div style="background:#363939; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+        <strong>$monument</strong>
+        <div style="background:#363939; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
     </li>
     <li style="padding:10px 15px;">
-        <strong>$monument-dark:</strong>
-        <div style="background:#242626; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+        <strong>$monument-dark</strong>
+        <div style="background:#242626; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
     </li>
     <li style="padding:10px 15px;">
-        <strong>$monument-black:</strong>
-        <div style="background:#181818; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
+        <strong>$monument-black</strong>
+        <div style="background:#181818; margin: 0 auto; width: 50px; height: 50px; border: 1px solid #282a2a;"></div>
     </li>
 </ul>
 
-### BlueScope Sister Colors
+#### BlueScope Sister Colors
 
 To add greater depth to the application, some colors were expanded to include sister colors. These colors are within the same color family but have lower levels of brightness.
 
@@ -177,18 +161,256 @@ __Opacity Rules__
 
 In specific cases opacity may be used to define different states for an element or component.
 
-_Button colors_
+__Button colors__
 
 [Include example here]
 
-_Text_
+__Text &amp; Background Colors__
 
 [Include example here]
+
+## Imagery
+
+__Principles__
+
+__Best Practices__
+
+__UI Integration__
+
+## Icons
+
+[ provide more details about icons here soon] 
+
+__Sizing__
+Icons intended to be used in the Model Configurator are sized at `w: 50px h: 50px`
+
+Icons inted to be used in the Dashboard are sized `w: 25px h: 25px`
+
+__Keylines__
+
+__Icon Anatomy__
+
+__Geometry__
+
+__Color__
+
+__Tint, Shade, & Lighting__
+
+__System Icons__
+
+__Action Icons__
+
+## Typography
+
+#### Primary Font
+__Arial__
+
+[Arial typeface example here]
+
+[Arial typeface families examples here]
+
+#### Type Sizing 
+
+[provide example of type sizes here]
+
+__Opacity Rules__
+
+
+## Voice &amp; Tone
+
+The nVision text should understandable by anyone, anywhere, regardless of culture or language. Although this is an application used by engineers the terminology should not impede new users and begineers from understanding how to find their way through it.
+
+Clarity and accuracy of the text while being concise is key to user confidence in an application. The more concise and clear the text in the application the quicker users can learn how to operate within our application.
+
+The voice and tone guidelines of the application should trickle into every element of the application that has text from navigation to buttons.
+
+When writing in this application be sure to be mindful of the following:
+
++ Tone
++ Capitilization
++ Punctuation
++ Spelling
++ Language
+
+#### Tone
+
+The nVision application should be approachable and respectful to its end user their needs. The text should reflect this through the use of a friendly tone to complimentary our UI designs friendly but architectural asethetic.
+
+__Use a Respectful Tone__
+
+The text should not make users feel patronized or feel stupid.
+
+__Use an Approachable Tone __
+
+Focus on the benefits of UI interaction in the text instead of overloading the users with intense details about how the action functions.
+
+Avoid using messages that suggest that a user's action was suprising or unusual to the UI. This can cause a lack of confidence in the end user and come across as rude.
+
+__Use positive text__
+
+nVision should present information in a positive way as possible when interacting with the end user. Concise text doesn't have to result in rude or negative speech.
+
+> Example:
+  **Good**
+  "Use 30 characters or less for Project names"
+  **Bad**
+  "Your Project name must be no more than 30 characters."
+
+__Use Necessary text only__
+
+When writing a message to the end user in text form ask this critical question.
+
+"Does the user really need to know this?... Really?"
+
+Its better to let the user stay focused on the task at hand instead of bombarding them with notifications. Provide a good UX always, use words when necessary.
+
+[ Provide example of lengthy description and a concise version of that message]
+
+#### Capitilization &amp; Punctuation
+
+__Use Sentence Style Capitlization__
+
+nVision utilizes sentence style captilization in its text. This includes titles, Headings, labels, menu items, navigation, toolbars etc.
+
+
+__Brand specific names__
+
+For names of products created for nVision or other external products use the market appropriate case. Examples: **Butlerib II**, **Panel Rib**, and **Galvalume** etc.
+
+__Use of punctuation__
+
+In order to help users scan through the text easily avoid using unnecesary punctation marks.
+
+Periods - Should be omitted if there is only one sentence presented or if the text is used in the following elements:
+
++ Labels
++ Hover text
++ Bulleted Lists
++ Dialog body text
+
+Periods should be used in the following instances:
+
++ All text where there are multiple sentences (this includes bulleted lists)
++ Sentences followed by a link. (the period should appear before the link)
++ Dialogs with multiple sentences
+
+Colons  - should be omitted when dealing with labels. Normal grammar rules for colons apply for other situation where a colon is needed.
+
+> Example:
+  **Good**
+  "First Name"
+  **Bad**
+  "First Name:"
+
+
+__Use Contractions__
+
+Contractions are shorter and sometimes more concise than their full name counterparts. However, where necessary don't be afraid to use `Do not` where it might provide more clarity.
+
+
+__Avoid Exclamation__
+
+When using exclamations users can often interpret this as shouting so it is best to consider the full context of the statement before deciding to use `!` 
+
+> Example:
+  **Good**
+  "Welcome!"
+  "Success"
+  **Bad**
+  "Learn more about Bracing Features!"
+
+__Use Numerals instead of words__
+
+When dealing numerical text users can parse the number form quicker then its textual counterpart. Its best to use the number form as often as possible.
+
+> Example: 
+  **Good**
+  "You hace 14 notifications"
+  **Bad**
+  "You have fourteen notifications"
+
+  > **ProTip:** When dealing with a mixture of context with numbers its ok to use the number form and the text format to provide more clarity to users.
+  > Example: "Enter two 8s in this field"
+
+__Punctuation List__
+
+|       | Glyph/ Character| Description/ usage|
+|-------|----------------|-------------------|
+|Periods| .| Don't use these for fragment and single sentences. Use this for full sentences in body text.|
+| Commas | ,| Use a comma when listing out things such as "this, that, and the other thing."
+| Exclamation points| ! | Avoid these for things that should not sound like shouting or excitement from the UI. If you woudln't shot it in person the app shouldn't either|
+| Colons| &#58; `&#58;` `\u003A`| Don't add these to labels in forms or dialogs|
+| Quotation Marks | &ldquo;  &rdquo;  or  &lsquo;  &rsquo; `&ldquo;` `&rdquo;` or `&lsquo;` `&rsquo;` `\u201c` `\u2018` or `\u201D` `\u2019`| When quoting this in text use the **Real** quote marks not the inch and foot symbols. Right single quotes are used for apostrophes as well. Primes and generic quote marks are used by the application for measurement and should not be used for text.|
+| Primes | &prime; `&prime;` or `\u2032`  `&Prime;` or `\u2033` | The prime or `'` mark is used for feet in nVision. The double prime or `"` is used for inches|
+| Ellipses| &hellip; or &vellip; `&hellip;` or `&vellip;`| Use the ellipsis to indicate an action is in progress or to indcate a truncated statement. Don't use these in buttons or dialogs menu items that start another process to avoid a lack of clarity to the action.|
+| Em Dash| &mdash; `&mdash;` \u2014| These should not be used in nVision|
+| En Dash| &ndash; `&ndash;` \u2013 | En dashes are used instead of a hypen to represent a range (in English language). If a dash is needed to seperate lines of text like &ndash; this use an `en dash`. Example Meeting: 8:30 AM &ndash; 12:00 PM|
+| Hyphens | - | Hyphens are used for negative numbers. like -10, -$200, etc. Hypens are also used for joined words like anti-flammatory or work-space to avoid ambiguity of text|
+| Parenthesis | ( ) | parenthesis are used to define acronyms or jargon that users may not know for various reasons. Example: "Please update the SDD (Shape dimensions dialog) before continuing."
+
+#### Language
+
+Addressing the user in this application should be as if having a conversation with them.
+
+__Second Person Usage__
+Use the second person when writing for this application in most cases. Use terms like "You" or "Your" instead of vague or impersonal statements.
+
+__First Person Usage__
+Occasionally we will need to shift into First person usage for message in the nVision application. Using "I" or "My" should occur when the user needs to emphasize some form of ownership to an interaction or content within the nVision application.
+
+> **ProTip:** Avoid mixing first person and second person in statements to the user. Don't combine "me/my" with "you/your" because it confusing and this breaks our principle of clarity in the application.
+ 
+Use the term we sparingly. nVision should focus on the end user when speaking and seldom mention its self in the active sense. The exception to this rule is when a real human is actually taking action on behalf of the end user.
+
+> Example:
+  **Good**
+  "We will review your change order and will call within a few hours for more details."
+  **Bad**
+  "Your change order will be reviewed and you will receive a resonpse within a few hours."
+
+__Use present Tense__
+
+Text in nVision should written in the present tense to describe action and interactions. Avoid the use of future tense to explain interactions in the project because this can cause a potential lack of clarity.
+
+When future tense or past tense wording needs to be used remember to be concise and use simple verbs forms.
+
+__Use concise wording__
+
+The definition of consise is to a great deal of information in a few words.
+This means to be brief while retaining comprehensity. 
+
+Users of the web tend to read small, scannable bits of text better than long sentences. The nVision should utilize concise text in order to help our end users navigate the application.
+
+__Use simple wording__
+
+Simple language is often the most direct and easiest language for users to understand across a broader spectrum.
+
+> Example:
+  **Good**
+  "Save Changes?"
+  **Bad**
+  "Do you want to save your changes?"
+
+> Example:
+  **Good**
+  "Overwrite existing frames on this shape?"
+  **Bad**
+  "If you continue, your existing frames will be deleted from your shape."
+
+Avoid industry specific terminology or custom name for UI features in nVision.
+This reduces clarity for new users and makes it harder to provide accesibility to users. Text should be readable by both advanced and beginers of English.
+
+[Provide example of industry specific text and a counter example to use here]
+
+#### Localization
+
+[This still needs to be determined not in this phase or milestone]
+
+# nVision UI Patterns
 
 ## Data Inputs
 
 nVision users will need to add, change, delete information quite often. In order to make this process efficient and universal across the application we provided a list of standards to use on text/numerical entry for this application.
-
 
 #### Simple text Input
 
@@ -208,31 +430,7 @@ __Context__
 
 Inputs that contain related data should be grouped together. Simple examples of this would be address fields and login information. Complex examples would be dimension calculations in our dialog panes of the Model Configurator.
 
-<form style="padding: 10px 15px;">
-  <div style="padding: 10px 15x; margin-bottom: 20px;>
-    <label style="font-weight: bold;">Input Field
-    <input style="width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
-    </label>
-  </div>
-  
-  <div style="display: inline-flex; padding: 10px 15x; margin-bottom: 20px;">
-    <label style="font-weight: bold;"> First Name
-    <input style="width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
-    </label>
-    </div>
-    <div style="display: inline-flex; padding: 10px 15x; margin-bottom: 20px;">
-    <label style="font-weight: bold;"> Last Name
-      <input style="width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
-    </label>
-    </div>
-    <div style="padding: 10px 15x; margin-bottom: 20px;">
-    <label style="font-weight: bold"> Email
-      <input style="width: 100%; border-radius: 4px; border: 1px solid #EEEEED; padding: 5px 8px;" type="text" placeholder="single line input example">
-    </label>
-  </div>
-</form>
-
-
+[Provide example of different input orientations here]
 
 __Sizing__
 
@@ -240,9 +438,9 @@ Inputs width should be 100% of their container and input labels should respond t
 
 >For ease of accesibility the `<label>` element should wrap around the `input` markup.
 
-[Example of markup goes here]
+[Example of input markup goes here]
 
-#### Input Validation/Errors
+#### Validation/Errors
 
 Errors and validation are useful in data entry because it provides users with feedback on inputs that are not recognized by the application.
 
@@ -252,14 +450,33 @@ Validations should occur when a users input is not understood.
 
 In order to mitigate errors in our application and hold to our strive for accessibility we should make it easier for users to input information in as flexible a way as possible. 
 
-The nVision app should accept common data formats (e.g. number, email, date-time, etc.) and provide proper context through affordances to help users avoid these errors
+> **ProTip:** The nVision app should accept common data formats (e.g. number, email, date-time, etc.) and provide proper context through affordances to help users avoid these errors
 
-In the event of validation errors our application should employ the following: 
+__In the event of validation errors our application should employ the following:__
 
 + Clear, concise communication of the problem
 + Describe how a user can solve the issue that occurred
-+ Prevent as much user input as possible. Where the system can include common entries such as units of measurement or numerical parsers like decimals `.` or architectural marks `'` or `
++ Prevent as much user input as possible. Where the system can include common entries such as units of measurement or numerical parsers like decimals `.` or architectural marks `'` or `"`
 
+[Provide example of validation error here]
+
+If there are validation errors on an input, the application should help the user resolve the issue as soon as possible. The confirm action button should become disabled until issues are resolved. For inputs that occur in real-time with no confirmation of the action.
+
+__Error/Validation Text__
+
+Error text should only be shown after the interaction with the field. When the user leaves the field the validation should appear before the user clicks on the confirm action button.
+
+Some instances will require the inline validation to occur 
+
+[provide example of error text on an input]
+
+When using inline validation the field that contains an error should be highlighted using our error state color for nVision (See [Color](#Colors) section for details on color states).
+
+The error text should have contrast with its background. The text should be legible and readable.
+
+[Provide example of error text on light background]
+
+[Provide example of error text on dark background]
 
 #### Input help
 
@@ -267,13 +484,13 @@ Input or other form elements that are particularly unique should be provided wit
 
 For brief information about an input use helper text under the input field or next to the input according to layout (horizontal or vertical layout).
 
-[example of input with helptext here]
+[Example of input with help text here]
 
 For even more brief information provide users with examples of the valid input using placeholder text in the input fields
 
 [Example of input with placeholder text here]
 
-#### Complex Input fields
+### Complex Input fields
 
 These inputs are inputs that provide users adssistance in specific types of data entry that requires more than manual  textual/ numerical input.
 
@@ -294,7 +511,6 @@ Users should be able to type in a phrase and see the list they are searching thr
 
 [Show an example here of  search functionality with library list]
 
-
 #### Checkboxes
 
 [Provide examples of Checkboxes here]
@@ -310,7 +526,6 @@ Likewwise If a user needs to select the types of areas affected during an  Appli
 [Provide example of radio buttons here]
 
 Radio buttons are designed to allow a user to select one option from list of options. Its best to use radio buttons when you have less than 10 items to choose from, anymore than this and spacing can become an issue and users may not be able to compare items together. 
-
 
 #### Dropdowns
 
@@ -328,20 +543,19 @@ Fields that allow inline editing should be paired with the edit pencil icon in a
 
 [provide example of inline edit input here]
 
-
 __Progressive enhancement__
 
 Progressive enhancement is a tern in web design that describes an emphasis on accesibility, semantic markup (HTML) and the use of external stylesheets and scripting files.
 
 Progressive enhancement is a focus on accessibility and efficiency for our user base while also containing a fallback for older browsers where necessary.
 
-Below are some of the cases where we try to offer progressive enhancements where possible.
+Below are some of the cases where we try to offer progressive enhancements whenever possible.
 
 #### Decimal Inputs
 
 values that contain decimal values should provide parsing for the user input.
 
->Example if a user enters the value in a `123456` in a field that requires an input format of `xxxx.xxxx`
+> **Example** if a user enters the value in a `123456` in a field that requires an input format of `xxxx.xxxx`
 
 [provide decimal input example here]
 
@@ -353,6 +567,24 @@ nVision is an application that largely deals with mesaurements in the empirical 
   This should also occur when presses the <kbd>Enter</kbd> key on the keyboard while in focused the input field.
 
 [provide architectural input example here]
+
+#### Phone Number Inputs
+
+When dealing with phone numbers in nVision we will utilize progressive enhancement to allow users to easily enter numbers and let the system parse the values as needed. We provide this enhancement by allowing the user to enter their 10 digit phone number with no hyphens.
+
+If a user enters a value `555 555 5555` or `5555555555` the system should  parse this string of numbers into its standardized format of `555-555-5555`.
+
+__Handling Localization codes__
+
+When dealing with international numbers the system should perform a lookup of the entered number to see which Country code matches the number entered. When the code is determined it should be pre-pend the country code to the number
+
+If the user decides to add the country code themselves then the system will perform a check to see if that country code matches a known record.
+
+[Provide example of phone number here]
+
+
+
+
 
 ## Data Presentation
 
@@ -366,58 +598,27 @@ When displaying data for a user the items should be easy to differentiate from e
 
 #### Data Tables
 
-
 [provide example of tables here]
-
 
 #### Tree Grid
 
 [provide example of Model Structure here]
 
-
 #### Tiles
 
 [provide example of tile card from pricing here]
 
-#### Timeline/ Activity Feed
+#### Timeline/Activity Feed
 
 [provide exmaple of Versioning timeline here]
-
-
-## Layouts
-
-Layouts are structured templates that provide consistency for common actions/patterns in the application.
-
-**Layouts guidelines to follow when creating/selecing layouts:** 
-
-+ **Content drives layout** - Understand how the information wil be used before choosing a layout design.
-+ **Priorities First** - Organize the content to display the most important information first 
-+ **Group like items together** - Make it efficient for users to sift through the content.
-
-
-#### Dashboard Layouts
-
-#### Workspace Layouts
-
-[provide example of workspace layout here]
-
-#### List Layouts
-
-[provide example of List layout here]
-
-#### Grid Layouts
-
-[provide example of grid layout here]
 
 ## Data Loading and Processing
 
 Loading indicators are helpful to user because they provide communcation that the application is actively working to retrieve data for them. There are a variety of ways we present this data to our users in the nVision application.
 
-
 #### Spinners
 
 Spinners are animated SVGs or GIFs that provide feedback on an otherwise blank screen when the system is loading or working to retrieve data. Contraty to their name they don't always have to spin they can animate in lots of creative ways. Use spinners when a component on a page is making an udpate asynchronously without refreshing the entire page.
-
 
 Spinners should generally be centerd vertically _AND_ horizontally within its container. In order to provide contrast against any possible backdrop provide a light or dark overlay behind the spinner.
 
@@ -434,7 +635,6 @@ Sometimes spinners need more context added to them to indicate the type of actio
 [provide Modal loading animation]
 
 [ provide an example of continuous scrolling loading here]
-
 
 #### Blueprints
 
@@ -459,11 +659,69 @@ __Blueprints aesthetic__
 + They should be responsive and stretch/shrink t fit their containers.
 + When loading blueprints they should follow the pattern of Top left to bottom right.
 
-
 [provide an example of Blueprint placeholder for lists]
 
 [provide an example of Blueprint placeholder for model/project here]
 
+## Empty States
+
+Empty states are a design pattern we employ when the UI can't show content.
+When a dialog doesn't contain any items or a search doesn't retrieve any results. These state should not be very common but in the event that they occur its better to provide users with a designed experience instead of a blank screen (which is often seen as an afterthought). 
+
+__Empty state layout__
+
+Empty state should display a non-interactive image coupled with a text tagline.
+
+__Search empty State__
+
+When a user searches in nVision and their results are not found we should display helper text to help them troubleshoot their query:
+
+> Example:
+  No Results found. Please refine your search
+  Here are some tips:
+  Check your spelling
+  Use first 3 characters of text to search
+
+__Image &amp; Background__
+The image should be neutral in tone. The background should also be neutral in tone compared to the normal state of the container.
+
+[Provide example of empty state in Sidebar dialogs]
+
+__Text Usage__
+
+The text should be very brief and follow the principles of [#Voice and Tone](Voice and Tone).
+
+__Action Options__
+
+Some Empty states should contain a way for users to add content to the component. 
+
+[Provide example of Empty state with action text/button here]
+
+## Layouts
+
+Layouts are structured templates that provide consistency for common actions/patterns in the application.
+
+**Layouts guidelines to follow when creating/selecing layouts:** 
+
++ **Content drives layout** - Understand how the information will be used before choosing a layout design.
++ **Priorities First** - Organize the content to display the most important information first 
++ **Group like items together** - Make it efficient for users to sift through the content.
+
+#### Dashboard Layouts
+
+[provide example of dashboard layout here]
+
+#### Workspace Layouts
+
+[provide example of workspace layout here]
+
+#### List Layouts
+
+[provide example of List layouts here]
+
+#### Grid Layouts
+
+[provide example of grid layouts here]
 
 ## Notifications
 
@@ -502,7 +760,7 @@ __ Alert Types__
 
 __Sizing__
 
-Alerts should have a minimum width of 60% of their container (see alerts in components section for more details). Alert text should wrap to as many lines as necessary without truncation
+Alerts should have a minimum width of 60% of their container (see alerts in components section for more details). Alert text should wrap to as many lines as necessary without truncation. Alerts should also be centered within their container or withtin the canvas of the workspace.
 
 __Alert Stacking__
 
@@ -514,7 +772,7 @@ Alert stacking can become quite busy. To minimize the amount of alerts that appe
 
 [Provide example of batched alerts of the same type here]
 
-> ProTip: Sucesss message Alerts should not be used when an action would bring the user into a newly created item or when the action would present the user with their new change immediatedly.
+> **ProTip:** Sucesss message Alerts should not be used when an action would bring the user into a newly created item or when the action would present the user with their new change immediatedly.
 
 #### Confirmation Dialogs
 
@@ -522,7 +780,7 @@ Alert stacking can become quite busy. To minimize the amount of alerts that appe
 
 A confirmation dialog is a notification that requires user action in order to move forward.
 
-> ProTip: Confirmation dialogs are meant to stop the user from completing other parallel actions in the application. This way we force the user to take action on this before doing anything else.
+> **ProTip:** Confirmation dialogs are meant to stop the user from completing other parallel actions in the application. This way we force the user to take action on this before doing anything else.
 
 Confirmation dialogs provide the user with one or more options to confirm or deny their choices for the action that prompted the dialog. 
 
@@ -532,8 +790,7 @@ Confirmation dialogs provide the user with one or more options to confirm or den
 + When there is no ability to retain changes when switching between actions
 + When performing batch operations that would require a reset of items in the workspace. This is particularly common in the Model Configurator
 
-
-Confirmation dialogs require one of three actions to take place:
+**Confirmation dialogs require one of three actions to take place:**
 
 + A user must click the `cancel` button in the dialog. This action will cancel any changes that were tied to the confirmation dialog. 
 + A user must click the `Continue` button in the dialog. This action will confirm any changes that were tied to the confirmation dialog.
@@ -567,16 +824,69 @@ There are several techniques that nVision uses to  guide users throught the appl
 
 #### Tabs
 
+__Dialog tabs__
+
+[Provide example of pattern in sidebar dialog from workspace]
+
+__Modal tabs__
+
+[Provide example of pattern in modal dialog from workspace]
+
 #### Nested tabs
+
+[Provide example of this in Modal dialog from workspace]
 
 #### Cross-section tabs
 
+[Provide example of this in Modal dialog from workspace]
+
 #### Trees List
+
+[Provide example of this pattern in workspace]
+
 
 #### Breadcrumbs
 
+[Provide example of this pattern in dashboard and workspace]
+
 #### Filter bar
+
+[Provide example of this pattern in dashboard]
 
 #### Off-Canvas Navigation
 
+[Provide example of this pattern in dashboard]
 
+# Components
+
+## Buttons
+
+## Data Loadig/Processing Indicators
+
+## Data Tables
+
+## Dialogs
+
+## Forms
+
+## Grid Lists
+
+## Library List
+
+## Lists
+
+## List Tree
+
+## Menus
+
+## Modals
+
+## Navigation
+
+## Notifications
+
+## Panels
+
+## Tiles
+
+## Tooltips
