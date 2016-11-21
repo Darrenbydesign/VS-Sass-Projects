@@ -3,36 +3,37 @@
 // columns labeled Status. This is used instead of icons because its
 // nice to use CSS instead of loading images.
 //===================================================================
-
 .status {
-  @include status($blue);
-}
-$status-map: (
-  created:(
-    background: $white,
-    border: 2px solid $corp-color-dark,
-    ),
-  open:(
-    background: map-get($colors, blue)
-    ),
-  info:(
-    background: map-get($colors, red)
-    ),
-  closed: (
-    background: map-get($colors, dark-gray)
-    ),
-  pending: (
-    background: map-get($colors, yellow)
-    ),
-  solution: (
-    background: map-get($colors, green)
-    )
-);
-@each $name, $style-map in $status-map {
-  .status-#{$name} {
-    @each $property, $value in $style-map {
-      #{$property}: $value;
-    }
-  }
+    @include status-circle($blue);
 }
 
+$status-map: ( created:( background: $white, border: 2px solid $corp-color-dark, ), open:( background: map-get($colors, blue)), info:( background: map-get($colors, red)), closed: ( background: map-get($colors, dark-gray)), pending: ( background: map-get($colors, yellow)), solution: ( background: map-get($colors, green)));
+@each $name,
+$style-map in $status-map {
+    .status-#{$name} {
+        @each $property,
+        $value in $style-map {
+            #{$property}: $value;
+        }
+    }
+}
+
+.success {
+    @include color-state($success);
+}
+
+.info {
+    @include color-state($info);
+}
+
+.warning {
+    @include color-state($warning);
+}
+
+.success {
+    @include color-state($success);
+}
+
+.error {
+    @include color-state($error);
+}

@@ -71,3 +71,11 @@
     background: $corp-color-light;
     margin-left: -4.7%;
 }
+
+.nv-example{
+    width: 100%;
+    min-height: ce(400px);
+    height: calc(100% - 72px);
+    padding: 10px;
+    background: $surfmist;
+}

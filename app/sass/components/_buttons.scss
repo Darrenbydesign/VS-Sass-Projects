@@ -59,11 +59,13 @@
 // Styleguide  Components - Buttons - Text
 .button-text {
     @include button(transparent);
-    color: $corp-color;
     font-family: $segoe-UI-regular;
+    color: $corp-color;
     &:hover {
-        color: $corp-color-dark;
         @include transition( background 0.3s ease-in-out);
+        color: $corp-color-dark;
+        background: transparent;
+        text-decoration: underline;
     }
 }
 
@@ -89,4 +91,188 @@
 .button-small {
     @include button($corp-color);
     padding: 6px 10px;
+}
+
+.nv-button-default {
+    @include button($surfmist);
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $surfmist;
+        }
+    }
+}
+
+.nv-button-primary {
+    @include button($bluescope-blue);
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $bluescope-blue;
+        }
+    }
+}
+
+.nv-button-secondary {
+    @include button($bluescope-bright);
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $bluescope-bright;
+        }
+    }
+}
+
+.nv-button-text {
+    @include button(transparent);
+    @include font-size(18px);
+    color: rgba($monument, 0.84);
+    &:hover,
+    &:focus {
+        color: $bluescope-bright;
+        background: transparent;
+        text-decoration: underline;
+    }
+    &:active {
+        @include transition(background 0.3s ease-in);
+        background: rgba($surfgray, 0.54);
+    }
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: transparent;
+            color: rgba($monument, 0.84);
+            text-decoration: none;
+        }
+    }
+}
+
+.nv-button-small {
+    @include font-size(14px);
+    padding: 0 6px;
+}
+
+.nv-button-large {
+    @include font-size(18px);
+    padding: 10px 15px;
+}
+
+.nv-button-block {
+    @include font-size(18px);
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.nv-icon-button {
+    @include button($surfmist);
+    &:hover,
+    &:focus {
+        .nv-icon {
+            fill: $monument;
+        }
+    }
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $surfmist;
+        }
+    }
+}
+
+.nv-icon-button-primary {
+    @include color-state($deep-ocean);
+    .nv-icon {
+        fill: $surfmist;
+    }
+    &:hover,
+    &:focus {
+        .nv-icon {
+            fill: $surfmist;
+        }
+    }
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $deep-ocean;
+        }
+    }
+}
+
+.nv-icon-button-secondary {
+    @include color-state($bluescope-bright);
+    .nv-icon {
+        fill: $deep-ocean;
+    }
+    &:hover,
+    &:focus {
+        .nv-icon {
+            fill: $deep-ocean;
+        }
+    }
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $bluescope-bright;
+        }
+    }
+}
+
+.nv-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 6px;
+    vertical-align: middle;
+    fill: $monument;
+    &[disabled],
+    [disabled],
+    .disabled {
+        &:focus,
+        &:hover {
+            fill: $monument;
+        }
+    }
+}
+
+.nv-button-active {
+    @include color-state($bluescope-bright);
+    .nv-icon {
+        fill: $deep-ocean;
+    }
+}
+
+.nv-icon-lg {
+    width: 50px;
+    height: 50px;
+    margin: 0 6px;
+    vertical-align: middle;
+    fill: $monument;
+    &[disabled],
+    [disabled],
+    .disabled {
+        &:focus,
+        &:hover {
+            fill: $monument;
+        }
+    }
 }

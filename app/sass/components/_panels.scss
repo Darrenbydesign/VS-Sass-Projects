@@ -106,3 +106,58 @@
         font-family: 'Segoe UI Light';
     }
 }
+
+// Sidebar panels
+.sidebar-dialog-pane {
+    background-color: $white;
+    min-width: ce(150px);
+    max-width: ce(400px);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 300;
+    overflow-y: auto;
+}
+
+.sd-pane-clicked {
+    @include transition(all 0.5s ease-in-out);
+    height: calc(100% - 72px);
+}
+
+.sd-pane-hidden {
+    @include transition(all 0.5s ease-in-out);
+    height: calc(100% - 72px);
+    left: -500px;
+}
+
+.sidebar-dialog {
+    min-width: ce(150px);
+    max-width: ce(400px);    
+    background-color: $white;
+    hr{
+        border: 1px solid  $surfmist-mid;
+    }
+}
+
+.sd-header {
+    @include font-size(18px);
+    color: $monument-dark;
+    border-bottom: 2px solid $surfmist-mid;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.sd-content {
+    max-width: ce(400px);
+    overflow: auto;
+    height: 100%;
+    padding: 10px 15px;
+}
+
+.sd-button-container {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}

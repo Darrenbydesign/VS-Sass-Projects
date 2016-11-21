@@ -1,0 +1,82 @@
+%tree-list-arrow-base {
+    float: left;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.tree-list-container {
+    min-width: (130px);
+    max-width: ce(400px);
+    background: $monument-dark;
+    color: $surfmist;
+    height: calc(100% - ce(72px));
+    overflow: auto;
+    [aria-level="1"] > .tree-list-item {
+        padding-left: ce(15px);
+    }
+    [aria-level="2"] > .tree-list-item {
+        padding-left: ce(25px);
+    }
+    [aria-level="3"] > .tree-list-item {
+        padding-left: ce(45px);
+    }
+    [aria-level="4"] > .tree-list-item {
+        padding-left: ce(65px);
+    }
+    [aria-level="5"] > .tree-list-item {
+        padding-left: ce(85px);
+    }
+    [aria-level="6"] > .tree-list-item {
+        padding-left: ce(115px);
+    }
+}
+
+.tree-list-title {
+    @include font-size(22px);
+    padding-top: ce(5px);
+    margin-left: ce(15px);
+    margin-right: ce(15px);
+    margin-bottom: ce(10px);
+    color: $surfgray;
+    font-weight: normal;
+}
+
+.tree-list-group,
+.tree-list-sub-group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tree-list-item {
+    @include flexbox;
+    // @include flex-flow(column, nowrap);
+    line-height: ce(30px);
+    &:hover,
+    &:focus {
+        background: $monument;
+        cursor: pointer;
+        color: $white;
+    }
+}
+
+.tree-list-editing {
+    background: $goldenrod;
+}
+
+.arrow-down {
+    @extend %tree-list-arrow-base;
+    border-top: 6px solid $white;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    margin: 7px 7px 7px 15px;
+}
+
+.arrow-right {
+    @extend %tree-list-arrow-base;
+    border-top: 6px solid transparent;
+    border-left: 6px solid white;
+    border-bottom: 6px solid transparent;
+    margin: 4px 7px 0 15px;
+}

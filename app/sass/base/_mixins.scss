@@ -3,17 +3,16 @@
 /// @group Mixins
 /// @author Darren Sorrels
 ////
-
 /// Clearfix: Helper to clear inner floats
 /// @group helpers 
 /// @author Nicolas Gallagher
 /// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
 @mixin clearfix {
-  &::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
 
 /// Vendor Prefix generator for properties that need them.
@@ -22,16 +21,16 @@
 /// @param {alpanum} $map - used to map the vendor prefixes to a property declaration
 /// @param {string} $vendors['webkit' 'moz' 'ms' 'o'] - map values from the $prop map
 @mixin prefix($map, $vendors: webkit moz ms o) {
-  @each $prop,
-  $value in $map {
-    @if $vendors {
-      @each $vendor in $vendors {
-        #{'-' + $vendor + '-' + $prop}: #{$value};
-      }
+    @each $prop,
+    $value in $map {
+        @if $vendors {
+            @each $vendor in $vendors {
+                #{'-' + $vendor + '-' + $prop}: #{$value};
+            }
+        }
+        // add regular property to the end of list without vendor prefixes
+        #{$prop}: #{$value};
     }
-    // add regular property to the end of list without vendor prefixes
-    #{$prop}: #{$value};
-  }
 }
 
 /// Border Radius
@@ -39,7 +38,7 @@
 /// @group Cross-Browser Support
 /// @param {number} $radius[0] - value that desired for border-radius
 @mixin border-radius($radius: 0) {
-  @include prefix((border-radius: $radius));
+    @include prefix((border-radius: $radius));
 }
 
 /// Button mixin part:2  creates a button for you. all it needs is a color declararation added for the background yay!
@@ -48,26 +47,30 @@
 /// @param {alphanum} $color [$gray] - include a color in the mixin and this will add all the values for you
 /// @param {bool} $extend [true] - This value pertains to the button static mixin that is used to do all the heavy lifting. It should be set to true to start the loop.
 @mixin button($color: $gray-light, $extend: true) {
-  @include button-static($extend);
-  background-color: $color;
-  color: dt($color);
-  border-color: mix($white, $color, 25%);
-  a {
+    @include button-static($extend);
+    background-color: $color;
     color: dt($color);
-    text-decoration: none;
-    &:hover {
-      background-color: mix($black, $color, 15%);
-      border-color: mix($black, $color, 40%);
-      color: dt($color);
-      text-decoration: none;
+    border-color: mix($white, $color, 25%);
+    a {
+        color: dt($color);
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            @include transition( background 0.3s ease-in);
+            background-color: mix($black, $color, 15%);
+            border-color: mix($black, $color, 40%);
+            color: dt($color);
+            text-decoration: none;
+        }
     }
-  }
-  &:hover {
-    background-color: mix($black, $color, 15%);
-    border-color: mix($black, $color, 40%);
-    color: dt($color);
-    text-decoration: none;
-  }
+    &:hover,
+    &:focus {
+        @include transition( background 0.2s ease-in);
+        background-color: mix($black, $color, 15%);
+        border-color: mix($black, $color, 40%);
+        color: dt($color);
+        text-decoration: none;
+    }
 }
 
 ///Variable used for generating the button mixin placeholder selectors
@@ -80,44 +83,44 @@ $Placeholder-Selectors: ();
 /// @param {String} $button-selector - unique value that drives looping function to create buttons dynamically
 /// @param {bool} $extend [true] - It should be set to true to start the loop.
 @mixin button-static($extend: true) {
-  $button-selector: map-get($Placeholder-Selectors, 'button');
-  @if $extend==true {
-    @if $button-selector==null {
-      $button-selector: unique-id();
-      $Placeholder-Selectors: map-merge($Placeholder-Selectors, ('button': $button-selector)) !global;
-      @at-root %#{$button-selector} {
-        @include button-static(false);
-      }
+    $button-selector: map-get($Placeholder-Selectors, 'button');
+    @if $extend==true {
+        @if $button-selector==null {
+            $button-selector: unique-id();
+            $Placeholder-Selectors: map-merge($Placeholder-Selectors, ('button': $button-selector)) !global;
+            @at-root %#{$button-selector} {
+                @include button-static(false);
+            }
+        }
+        @extend %#{$button-selector};
     }
-    @extend %#{$button-selector};
-  }
-  @else {
-    @include border-radius(2px);
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    border: none;
-    margin-bottom: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    &:hover {
-      cursor: pointer;
+    @else {
+        @include border-radius(2px);
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        border: none;
+        margin-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:hover {
+            cursor: pointer;
+        }
     }
-  }
 }
 
 /// Strips browser styling from an input
 /// @group helpers 
 @mixin unstyled-input {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  font: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font: inherit;
 }
 
 /// Font Size
@@ -126,9 +129,9 @@ $Placeholder-Selectors: ();
 /// @group helpers 
 /// @param {variable} $size - pixel size you want to convert into em/rems
 @mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateEm($size);
-  // font-size: calculateRem($size);
+    font-size: $size;
+    font-size: calculateEm($size);
+    // font-size: calculateRem($size);
 }
 
 /// Responsive Image
@@ -137,11 +140,11 @@ $Placeholder-Selectors: ();
 /// @group helpers 
 /// @param {String} $display [block] - set the display type of the image for layout purposes.
 @mixin img-responsive($display: block) {
-  display: $display;
-  max-width: 100%;
-  // Part 1: Set a maximum relative to the parent
-  height: auto;
-  // Part 2: Scale the height according to the width, otherwise you get stretching
+    display: $display;
+    max-width: 100%;
+    // Part 1: Set a maximum relative to the parent
+    height: auto;
+    // Part 2: Scale the height according to the width, otherwise you get stretching
 }
 
 /// This mixin will alleviate the need to write the vendor prefixes yourself for animations.
@@ -149,77 +152,77 @@ $Placeholder-Selectors: ();
 /// @group helpers 
 /// @param {string} $animation-name - Enter the name of your animation
 @mixin keyframes($animation-name) {
-  @-webkit-keyframes #{$animation-name} {
-    @content;
-  }
-  @-moz-keyframes #{$animation-name} {
-    @content;
-  }
-  @-ms-keyframes #{$animation-name} {
-    @content;
-  }
-  @-o-keyframes #{$animation-name} {
-    @content;
-  }
-  @keyframes #{$animation-name} {
-    @content;
-  }
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
 }
 
 /// This mixin can be coupled with the keyframes animation above.
 /// Use this one to give animation action values like timing and looping, etc.
 /// @group helpers 
 @mixin animation($str...) {
-  @include prefix((animation: #{$str}));
+    @include prefix((animation: #{$str}));
 }
 
 /// Transform mixin for writing animations quickly while utilizing the vendor prefixes
 /// @group helpers
 @mixin transform($args) {
-  @include prefix((transform: #{$args}));
+    @include prefix((transform: #{$args}));
 }
 
 /// Translate mixin for animating objects
 ///@group helpers
 @mixin translate($x, $y: auto) {
-  @include prefix((translate: #{$x, $y}));
+    @include prefix((translate: #{$x, $y}));
 }
 
 /// Rotate mixin for animating objects
 ///@group helpers
 @mixin rotate($args) {
-  @include prefix((rotate: #{$args}));
+    @include prefix((rotate: #{$args}));
 }
 
 /// Skew mixin for animating objects
 ///@group helpers
 @mixin skew($args) {
-  @include prefix((skew: #{$args}));
+    @include prefix((skew: #{$args}));
 }
 
 /// Scale mixin for animating objects
 ///@group helpers
 @mixin scale($dimensions) {
-  @include prefix((scale: #{$dimensions}));
+    @include prefix((scale: #{$dimensions}));
 }
 
 /// Scale3D mixin for animating objects in 3 dimensions
 ///@group helpers
 @mixin scale3d($dimensions...) {
-  @include prefix((scale3d: #{$dimensions...}));
+    @include prefix((scale3d: #{$dimensions...}));
 }
 
 /// Opacity mixin for animating objects
 ///@group helpers
 @mixin opacity($args) {
-  @include prefix((opacity: #{$args}));
+    @include prefix((opacity: #{$args}));
 }
 
 /// A mixin that makes creating transition animations a little less of a burden.
 /// @group helpers 
 /// @param {string}  $prop - property for the transition animation
 @mixin transition($args) {
-  @include prefix ((transition: $args));
+    @include prefix ((transition: $args));
 }
 
 /// Create link colors easily with this mixin. This very useful for navigation links and aritcle/blog links.
@@ -229,18 +232,18 @@ $Placeholder-Selectors: ();
 /// @param {alphanum} $hover - something about that value here
 /// @param {alphanum} $active - something about that value here
 @mixin link-color($link, $visited, $hover, $active) {
-  a {
-    color: $link;
-    &:visited {
-      color: $visited;
+    a {
+        color: $link;
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active {
+            color: $active;
+        }
     }
-    &:hover {
-      color: $hover;
-    }
-    &:active {
-      color: $active;
-    }
-  }
 }
 
 // Media Queries
@@ -268,10 +271,10 @@ $mq-xlarge: 1600px;
 /// @param {variable} $mq-xlarge - uses the variable  for really wide screen widths
 /// @content conditions for element changes based on the viewport go here
 @mixin breakpoint-xl {
-  /// large screen breakpoints (used only when absolutely necessary. targeting over 1800px)
-  @media only screen and (min-width: $mq-xlarge) {
-    @content;
-  }
+    /// large screen breakpoints (used only when absolutely necessary. targeting over 1800px)
+    @media only screen and (min-width: $mq-xlarge) {
+        @content;
+    }
 }
 
 /// Breakpoint large
@@ -280,9 +283,9 @@ $mq-xlarge: 1600px;
 /// @param {variable} $mq-large - uses the variable for large screen widths
 /// @content conditions for element changes based on the viewport go here
 @mixin breakpoint-lg {
-  @media only screen and (min-width: $mq-large) {
-    @content;
-  }
+    @media only screen and (min-width: $mq-large) {
+        @content;
+    }
 }
 
 /// Breakpoint medium
@@ -291,9 +294,9 @@ $mq-xlarge: 1600px;
 /// @param {variable} $mq-medium- uses the variable  for medium screen widths
 /// @content conditions for element changes based on the viewport go here
 @mixin breakpoint-md {
-  @media only screen and (min-width: $mq-medium) and (max-width: 1024px) {
-    @content;
-  }
+    @media only screen and (min-width: $mq-medium) and (max-width: 1024px) {
+        @content;
+    }
 }
 
 /// Breakpoint small
@@ -302,9 +305,9 @@ $mq-xlarge: 1600px;
 /// @param {variable} $mq-small - uses the variable  for small screen widths
 /// @content conditions for element changes based on the viewport go here
 @mixin breakpoint-sm {
-  @media only screen and (min-width: $mq-small) and (max-width: 480px) {
-    @content;
-  }
+    @media only screen and (min-width: $mq-small) and (max-width: 480px) {
+        @content;
+    }
 }
 
 // Define the upper and lower range of the media queries programatically for more complex media queries
@@ -350,10 +353,10 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// @param {variable} $fq-xlarge - uses the variable  for small screen widths
 /// @content conditions for element changes based on the viewport go here
 @mixin flexpoint-xl {
-  /// Smaller and Medium screen sizes
-  @media (min-width: $fq-xlarge) {
-    @content;
-  }
+    /// Smaller and Medium screen sizes
+    @media (min-width: $fq-xlarge) {
+        @content;
+    }
 }
 
 /// Flexible breakpoint large
@@ -363,10 +366,10 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// @param {variable} $fq-large - uses the variable  for small screen widths
 /// @content conditions for element changes based on the viewport go here
 @mixin flexpoint-lg {
-  /// Smaller and Medium screen sizes
-  @media (min-width: $fq-large) {
-    @content;
-  }
+    /// Smaller and Medium screen sizes
+    @media (min-width: $fq-large) {
+        @content;
+    }
 }
 
 /// Flexible breakpoint medium
@@ -376,10 +379,10 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// @param {variable} $fq-medium - uses the variable  for small screen widths
 /// @content conditions for element changes based on the viewport go here
 @mixin flexpoint-md {
-  /// Smaller and Medium screen sizes
-  @media (min-width: $fq-medium) {
-    @content;
-  }
+    /// Smaller and Medium screen sizes
+    @media (min-width: $fq-medium) {
+        @content;
+    }
 }
 
 /// Flexible breakpoint small
@@ -389,20 +392,20 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// @param {variable} $fq-small - uses the variable  for small screen widths
 /// @content conditions for element changes based on the viewport go here
 @mixin flexpoint-sm {
-  @media (min-width: $fq-small) {
-    @content;
-  }
+    @media (min-width: $fq-small) {
+        @content;
+    }
 }
 
 /// FlexBox mixin created to place backwards compatible flexbox code 
 /// into your CSS so you don't have to remember it
 /// @group Flexbox
 @mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 
 /// Flex mixin created with backwards compatible flexbox code for the flex property
@@ -421,11 +424,11 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// @link https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 /// @param {String} $values - this is the value by which the flex item will be increased.
 @mixin flex($values) {
-  -webkit-box-flex: $values;
-  -moz-box-flex: $values;
-  -webkit-flex: $values;
-  -ms-flex: $values;
-  flex: $values;
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
 }
 
 /// Flex direction mixin for a quick way to provide the direction to a flex item
@@ -433,9 +436,9 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// @param {string} $values [row] - The direction by which a flex-item will move along the X or Y axis
 /// The default value is set to Row because most of the time we want to make items flex across the horizontal plane
 @mixin flex-direction($values: row) {
-  -ms-flex-direction: $values;
-  -webkit-flex-direction: $values;
-  flex-direction: $values;
+    -ms-flex-direction: $values;
+    -webkit-flex-direction: $values;
+    flex-direction: $values;
 }
 
 /// Mixin for the FLex-flow short-hand CSS call. It defaults to row wrap since that is most commonly used initiall
@@ -444,9 +447,9 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// @param {string} $direction [row] - sets the flex-item evenly across the horizontal acces
 /// @param {string} $wrap [wrap] - sets the flex items to wrap when they reach the edge of its parent flex container.
 @mixin flex-flow($direction: row, $wrap: wrap) {
-  -ms-flex-flow: $direction $wrap;
-  -webkit-flex-flow: $direction $wrap;
-  flex-flow: $direction $wrap;
+    -ms-flex-flow: $direction $wrap;
+    -webkit-flex-flow: $direction $wrap;
+    flex-flow: $direction $wrap;
 }
 
 /// Align Items: 
@@ -454,64 +457,79 @@ $fq-xlarge-range: ($fq-large + ce(1px), $fq-xlarge) !default;
 /// this mixin to make changing the value easier. Our default is set to center(most of the project models need to be changed to this state).
 /// @group Flexbox
 @mixin align-items($values: center) {
-  -webkit-box-align: $values;
-  -moz-box-align: $values;
-  -ms-flex-align: $values;
-  //-webkit-align-items: $values;
-  align-items: $values;
+    -webkit-box-align: $values;
+    -moz-box-align: $values;
+    -ms-flex-align: $values;
+    //-webkit-align-items: $values;
+    align-items: $values;
 }
 
 /// Align-content
 /// @param {String} $value [center] - This aligns flex child content in a group along the x or y axis depending the parent container flex-direction (row or column)
 /// @group Flexbox
 @mixin align-content($value: center) {
-  align-content: $value;
+    align-content: $value;
 }
 
 /// Justify-content
 /// @param {String} $value [flex-start] - justifies the content in a group along the x axis (left to right or reverse)
 /// @group Flexbox
 @mixin justify-content($values: flex-start) {
-  -webkit-box-pack: $values;
-  -moz-box-pack: $values;
-  -ms-flex-pack: $values;
-  //-webkit-justify-content: $values;
-  justify-content: $values;
+    -webkit-box-pack: $values;
+    -moz-box-pack: $values;
+    -ms-flex-pack: $values;
+    //-webkit-justify-content: $values;
+    justify-content: $values;
 }
 
 /// Order 
 /// @param {Number} $value [0] - This changes the order in which flex children appear in the viewport.
 /// @group Flexbox
 @mixin order($value: 0) {
-  -webkit-box-ordinal-group: $value;
-  -moz-box-ordinal-group: $value;
-  -ms-flex-order: $value;
-  //-webkit-order: $value;
-  order: $value;
+    -webkit-box-ordinal-group: $value;
+    -moz-box-ordinal-group: $value;
+    -ms-flex-order: $value;
+    //-webkit-order: $value;
+    order: $value;
 }
-
 
 @mixin font-face($font-family, $font-file-path, $font-weight: normal, $font-style: normal) {
-  @font-face {
-    font-family: $font-family;
-    src: url($font-file-path);
-    /* IE9 Compat Modes */
-    src: url($font-file-path + '#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url($font-file-path + '.woff') format('woff'), /* Modern Browsers */
-    url($font-file-path + '.ttf') format('truetype'), /* Safari, Android, iOS */
-    url($font-file-path + '.svg#'+ '#{$font-family}') format('svg')/* Legacy iOS */;
-    font-weight: $font-weight;
-    font-style: $font-style;
-  }
+    @font-face {
+        font-family: $font-family;
+        src: url($font-file-path);
+        /* IE9 Compat Modes */
+        src: url($font-file-path + '#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url($font-file-path + '.woff') format('woff'),
+        /* Modern Browsers */
+        url($font-file-path + '.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url($font-file-path + '.svg#'+ '#{$font-family}') format('svg')/* Legacy iOS */
+        ;
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
 }
 
-@mixin status($color){
-  @include border-radius(50%);
-  background: $color;
-  display: inline-block;
-  width: ce(20px);
-  height: ce(20px);
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
+@mixin status-circle($color) {
+    @include border-radius(50%);
+    background: $color;
+    display: inline-block;
+    width: ce(20px);
+    height: ce(20px);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+@mixin color-state($state-color) {
+    background: $state-color;
+    color: dt($state-color);
+    &:hover,
+    &:focus {
+        @include transition( background 0.3s ease-in);
+        background-color: mix($black, $state-color, 15%);
+        border-color: mix($black, $state-color, 40%);
+        color: dt($state-color);
+    }
 }

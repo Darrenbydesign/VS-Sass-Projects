@@ -31,6 +31,7 @@
 @import 'components/forms';
 @import 'components/icons';
 @import 'components/svg';
+@import 'components/lists';
 @import 'components/modals';
 @import 'components/panels';
 @import 'components/tables';
@@ -44,7 +45,7 @@
 // Modules are things like Navigation, Headers, Footers, Sidebars, Etc.
 // They are built with components to create larger more structures
 @import 'modules/masthead';
-// @import 'modules/gridbox';
+@import 'modules/tree-list';
 @import 'modules/alerts';
 @import 'modules/calendar';
 @import 'modules/status';

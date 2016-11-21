@@ -1,8 +1,6 @@
 //=================================================================== 
 // $SVG - Styles for SVGs go here
 //===================================================================
-
-
 svg {
     // border: 1px solid $gray-light;
     width: 100%;
@@ -15,6 +13,11 @@ svg {
     path {
         fill: inherit;
     }
+}
+
+.icon-sm {
+    width: 20px;
+    height: 20px;
 }
 
 .is-x2 {

@@ -1,0 +1,68 @@
+.library-list-container {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 20px;
+    min-height: ce(150px);
+    max-height: ce(450px);
+    overflow: auto;
+}
+
+.library-list {
+    @include flexbox;
+    @include flex-flow(row, wrap);
+    @include justify-content(flex-start);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lb-list-item {
+    background: rgba($surfmist, 0.25);
+    border-bottom: 1px solid rgba($surfmist-mid, 0.55);
+    border-top: 1px solid rgba($surfmist-mid, 0.55);
+    height: ce(150px);
+    @include flex(0 1 50%);
+    &:nth-child(odd) {
+        border-right: 2px solid rgba($surfmist-mid, 0.55);
+    }
+    &:hover,
+    &:focus {
+        background: rgba($surfmist, 0.60);
+        color: dt(rgba($surfmist, 0.60));
+        .library-list-icon {
+            fill: $monument;
+        }
+    }
+}
+
+.lb-item-active {
+    background: rgba($bluescope-bright, 1);
+    &:hover,
+    &:focus {
+        background: rgba($bluescope-bright, 0.60);
+        color: dt(rgba($bluescope-bright, 0.60));
+        .library-list-icon {
+            fill: $monument;
+        }
+    }
+    .library-list-icon {
+        fill: $deep-ocean;
+    }
+}
+
+.lb-icon-container {
+    width: 3vw;
+    margin: 10px auto;
+}
+
+.library-list-icon {
+    width: ce(50px);
+    height: ce(50px);
+    fill: $surfgray;
+}
+
+.lb-item-name {
+    @include font-size(16px);
+    text-align: center;
+    color: $deep-ocean;
+}
