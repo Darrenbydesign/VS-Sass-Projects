@@ -3,12 +3,12 @@
     @include flex-flow(row, wrap);
     @include align-content(center);
     margin-left: 15px;
-    // margin-right: 15px;
-    margin-bottom: 20px;
-    .button,
+    margin-bottom: 15px;
+    .nv-button,
     .btn {
         @include border-radius(8px);
         @include font-size(18px);
+        padding: 3px 10px;
         margin: 0 3px;
     }
 }
@@ -22,14 +22,39 @@
     background: rgba($deep-ocean, 0.9);
 }
 
-.properties-modal-container {
+.properties-modal-container,
+.properties-modal .modal-dialog {
     @include transition(width 0.3s ease-in);
     @include transition(height 0.3s ease-in);
-    width: 80vw;
+    width: 90vw;
+    max-width: 90vw;
+    margin: 6vh auto;
+    @include flexpoint-lg {
+        width: 60vw;
+    }
+    @include flexpoint-xl {
+        width: 50vw;
+    }
+    .input-error {
+        color: $warning;
+    }
+}
+
+.properties-modal-container-small,
+.properties-modal .modal-dialog {
+    @include transition(width 0.3s ease-in);
+    @include transition(height 0.3s ease-in);
+    width: 60vw;
     max-width: 80vw;
     margin: 6vh auto;
     @include flexpoint-lg {
         width: 50vw;
+    }
+    @include flexpoint-xl {
+        width: 30vw;
+    }
+    .input-error {
+        color: $warning;
     }
 }
 
@@ -46,19 +71,21 @@
 .properties-modal-title {
     text-align: center;
     font-weight: normal;
-    color: dt(#181818);
+    color: dt($monument-black);
 }
 
-.properties-modal-content {
+.properties-modal-content,
+.properties-modal .modal-content {
     @include flexbox;
     @include flex-flow(row, wrap);
     @include justify-content(flex-start);
     @include border-radius(4px);
     background: $monument;
     color: $surfmist;
+    height: 100%;
     hr {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         border: 0;
         border-top: 1px solid $surfgray;
     }
@@ -68,12 +95,16 @@
     @include flexbox;
     @include flex-flow(column, wrap);
     @include justify-content(space-between);
-    @include flex(0.5 1 0);
-    background: #282A2A;
+    @include flex(0.3 1 0);
+    background: $monument-dark;
     margin: 0;
     padding: 0;
+    min-height: ce(300px);
     @include flexpoint-lg {
-        @include flex(1 1 0);
+        @include flex(0.6 1 0);
+        // This is a hack for IE to work properly 
+        // since it doesn't play nice with flexbox even though they created it...
+        -ms-flex: 0 1 25%;
     }
 }
 
@@ -107,7 +138,7 @@
     }
 }
 
-// This should ideally be used instead of the active boostrap class
+// This should ideally be used instead of the active bootstrap class
 // This class has better semantic meaning than just "active"
 .pm-item-active {
     background: rgba($surfgray, 1);
@@ -129,26 +160,73 @@
 .properties-modal-body {
     @include flex(1 1 0);
     padding: 10px 20px;
+    background: #24292D;
     @include flexpoint-lg {
+        @include flex(1.8 1 0);
+        -ms-flex: 0 1 70%;
+        padding: 10px 14px;
+    }
+    @include flexpoint-xl {
         @include flex(2 1 0);
+        // This is a hack for IE to work properly 
+        // since it doesn't play nice with flexbox even though they created it...
+        -ms-flex: 0 1 70%;
     }
     .form-inline > .form-group {
-        margin-bottom: 15px;
+        padding: 10px 15px;
     }
+}
+
+.properties-modal-fieldset {
+    border: 1px solid transparent;
+    padding: 10px 5px;
+    margin: 15px 0;
+}
+
+.properties-modal-legend {
+    @include font-size(16px);
+    color: $surfmist;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
+    color: inherit;
+    // width: 100%;
 }
 
 .properties-modal-input {
-    display: inherit;
+    display: inline-block;
+    // width: auto;
     background: rgba($surfgray, 0.5);
     color: $surfmist;
+    padding: 3px;
+    &.disabled,
+    &[disabled] {
+        background: rgba($surfmist-mid, 0.2);
+    }
+    option {
+        background: rgba($monument, 0.9);
+        color: $surfmist;
+        &:hover {
+            color: $surfmist;
+            background: $monument;
+        }
+    }
 }
 
-.properties-modal-input option {
-    background: rgba($surfgray, 0.9);
+.textarea-resize-vertical {
+    resize: vertical;
+}
+
+.properties-modal-input-error,
+.has-error .properties-modal-input {
+    display: inline-block;
+    background: rgba($surfgray, 0.5);
     color: $surfmist;
+    border: 2px solid $warning;
+    box-shadow: none;
+    &:focus,
     &:hover {
-        color: $surfmist;
-        background: $monument;
+        border: 2px solid $warning;
     }
 }
 
@@ -176,26 +254,51 @@
     color: saturate($bluescope-bright, 10%);
 }
 
-.pm-inline-group {
-    @include font-size(14px);
+.confirmed {
+    &:focus {
+        color: $surfmist;
+    }
 }
 
 .pm-table {
-    @include border-radius(6px);
-    @include font-size(13px);
+    @include font-size(14px);
     border: 1px solid $surfmist;
+    width: 100%;
     thead,
     tbody,
     tr,
     td {
-        border: 1px solid $surfgray;
+        border: 1px solid transparent;
     }
     tbody {
         > tr {
+            &:nth-child(2) {
+                >td {
+                    background: none;
+                }
+            }
+            > th {
+                padding: 7px;
+            }
             > td {
-                background: rgba($surfgray, 0.4);
-                padding: 3px 5px;
+                padding: 0;
+                background: rgba($surfgray, 0.1);
+                &:first-child {
+                    background: none;
+                    padding-right: 5px;
+                }
             }
         }
     }
+    .properties-modal-input {
+        @include border-radius(0);
+        border: none;
+        border-bottom: 1px solid $surfgray;
+        padding: 0 0 0 5px;
+    }
+}
+
+.pm-container-small {
+    width: ce(600px);
+    margin: 0 auto;
 }

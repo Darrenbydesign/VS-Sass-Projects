@@ -24,10 +24,24 @@ fieldset {
     }
 }
 
-// Overwrite to boostraps borders on all elements using this class
-.form-control {
+// Overwrite to bootstraps borders on all elements using this class
+.form-control,.nv-form-control {
     @include border-radius(4px);
     @include font-size(14px);
-    border: 1px solid rgba($surfgray,0.54);
+    border: 1px solid rgba($surfgray, 0.54);
     background: rgba($surfmist, 0.54);
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: none;
+    }
+    &:focus{
+        border: 3px solid  rgba($bluescope-blue, 0.6);
+    }
+}
+
+.nv-read-only {
+    @include font-size(16px);
+    font-style: italic;
+    color: $monument;
 }

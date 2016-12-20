@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-quiv="X-UA-Compatabile" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title</title>
+    <title>Darren's Demo Environment</title>
     <link rel="stylesheet" href="/styles/main.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
@@ -50,7 +50,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div id="section-1" class="col-md-12">
-                    <h1 class="font-gray">General Loadings UI Concept</h1>
+                    <h1 class="font-gray">Properties Modal UI Concept</h1>
                     <hr>
                     <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
                     <div class="properties-modal modal fade" id="modal-id">
@@ -195,7 +195,7 @@
                                         </form>
                                     </section>
                                     <section id="liveLoad" class="tab-pane" role="tabpanel">
-                                        <form >
+                                        <form>
                                             <div class="row">
                                                 <div class="form-group col-md-6">
                                                     <label>Roof Live Load</label>
@@ -567,19 +567,408 @@
                         </div>
                     </div>
                 </div>
+                <div id="section-2" class="col-md-12">
+                    <h1 class="font-gray">Model Preferences Modal Concept</h1>
+                    <hr>
+                    <a class="btn btn-primary" data-toggle="modal" href='#modal-id2'>Model Preferences modal</a>
+                    <div class="properties-modal modal fade" id="modal-id2">
+                        <div class="modal-dialog properties-modal-container">
+                            <div class="modal-content properties-modal-content">
+                                <div class="modal-header properties-modal-header">
+                                    <button type="button" class="properties-modal-close close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title properties-modal-title">[Model Name] Secondary Preferences</h4>
+                                </div>
+                                <aside class="properties-modal-nav-container">
+                                    <nav>
+                                        <ul class="properties-modal-nav" role="tablist">
+                                            <li class="properties-modal-nav-item pm-item-active" role="presentation">
+                                                <a href="#wallsTab" data-toggle="tab" aria-controls="buildingCode">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" checked> Walls
+                                                        </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="properties-modal-nav-item" role="presentation">
+                                                <a href="#roofsTab" data-toggle="tab" aria-controls="liveLoad">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Roofs
+                                                        </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <footer class="properties-modal-footer">
+                                        <button type="button" class="btn nv-button-default">Apply</button>
+                                        <button type="button" class="btn nv-button-text" data-dismiss="modal">Cancel</button>
+                                    </footer>
+                                </aside>
+                                <div class="tab-content modal-body properties-modal-body">
+                                    <section id="wallsTab" class="tab-pane fade in" role="tabpanel">
+                                        <form>
+                                            <fieldset>
+                                                <legend class="properties-modal-legend">Column Offset</legend>
+                                                <div class="form-group">
+                                                    <div class="radio">
+                                                        <label for="radioOption1">
+                                                            <input type="radio" name="radioOptions" id="radioOption1" value="1"> Match Secondary Depth (ByPass)
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label for="radioOption2">
+                                                            <input type="radio" name="radioOptions" id="radioOption2" value="2"> Dimension to Building Line
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset>
+                                                <legend class="properties-modal-legend">Girt Options</legend>
+                                                <div class="form-group">
+                                                    <label for="inputOption1">Shape</label>
+                                                    <select id="inputOption1" class="properties-modal-input form-control">
+                                                        <option value="">Please select a shape</option>
+                                                        <option value="1">[value 1]</option>
+                                                        <option value="2">[value 2]</option>
+                                                        <option value="3">[value 3]</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputOption2">Depth</label>
+                                                    <select id="inputOption1" class="properties-modal-input form-control">
+                                                        <option value="">Please select a Depth Option</option>
+                                                        <option value="1">[value 1]</option>
+                                                        <option value="2">[value 2]</option>
+                                                        <option value="3">[value 3]</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputOption3">Member Type</label>
+                                                    <select id="inputOption3" class="form-control properties-modal-input">
+                                                        <option value="">Please Select member Type</option>
+                                                        <option value="1">Continuous</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset>
+                                                <legend class="properties-modal-legend">Thickness</legend>
+                                                <div class="form-group">
+                                                    <div class="radio">
+                                                        <label for="thicknessOption1">
+                                                            <input type="radio" name="thicknessOptions" id="thicknessOption1" value="1"> Minimum
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label for="thicknessOption2">
+                                                            <input type="radio" name="thicknessOptions" id="thicknessOption2" value="2"> Hold
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset>
+                                                <legend class="properties-modal-legend">Secondary to Frame Attachment</legend>
+                                                <div class="form-group">
+                                                    <div class="radio">
+                                                        <label for="frameAttachmentOption1">
+                                                            <input type="radio" name="frameAttachmentOptions" id="frameAttachmentOption1" value="1"> Welded
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label for="frameAttachementOption2">
+                                                            <input type="radio" name="frameAttachmentOptions" id="frameAttachementOption2" value="2"> Bolted
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </section>
+                                    <section id="roofsTab" class="tab-pane" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Rafter Offset</legend>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="radioOption1">
+                                                                <input type="radio" name="radioOptions" id="radioOption1" value="1"> Match Secondary Depth (ByPass)
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="radioOption2">
+                                                                <input type="radio" name="radioOptions" id="radioOption2" value="2"> Dimension to Building Line
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Secondary to Frame Attachment</legend>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="frameAttachmentOption1">
+                                                                <input type="radio" name="frameAttachmentOptions" id="frameAttachmentOption1" value="1"> Welded
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="frameAttachementOption2">
+                                                                <input type="radio" name="frameAttachmentOptions" id="frameAttachementOption2" value="2"> Bolted
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Purlin</legend>
+                                                    <div class="form-group">
+                                                        <label for="inputOption1">Shape</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a shape</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption2">Depth</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a Depth Option</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption3">Member Type</label>
+                                                        <select id="inputOption3" class="form-control properties-modal-input">
+                                                            <option value="">Please Select member Type</option>
+                                                            <option value="1">Continuous</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="thicknessOption1">
+                                                                <input type="radio" name="purlinThicknessOptions" id="thicknessOption1" value="1"> Minimum
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="thicknessOption2">
+                                                                <input type="radio" name="purlinThicknessOptions" id="thicknessOption2" value="2"> Hold
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Low Eave Strut</legend>
+                                                    <div class="form-group">
+                                                        <label for="inputOption1">Shape</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a shape</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption2">Depth</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a Depth Option</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption3">Member Type</label>
+                                                        <select id="inputOption3" class="form-control properties-modal-input">
+                                                            <option value="">Please Select member Type</option>
+                                                            <option value="1">Continuous</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="thicknessOption1">
+                                                                <input type="radio" name="lowEaveThicknessOptions" id="thicknessOption1" value="1"> Minimum
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="thicknessOption2">
+                                                                <input type="radio" name="lowEaveThicknessOptions" id="thicknessOption2" value="2"> Hold
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">High Eave Strut</legend>
+                                                    <div class="form-group">
+                                                        <label for="inputOption1">Shape</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a shape</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption2">Depth</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a Depth Option</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption3">Member Type</label>
+                                                        <select id="inputOption3" class="form-control properties-modal-input">
+                                                            <option value="">Please Select member Type</option>
+                                                            <option value="1">Continuous</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="thicknessOption1">
+                                                                <input type="radio" name="highEaveThicknessOptions" id="thicknessOption1" value="1"> Minimum
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="thicknessOption2">
+                                                                <input type="radio" name="highEaveThicknessOptions" id="thicknessOption2" value="2"> Hold
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="section-3" class="col-md-12">
+                    <h1 class="font-gray">Bracing Preferences Modal Concept</h1>
+                    <hr>
+                    <a class="btn btn-primary" data-toggle="modal" href='#modal-id3'>Bracing Preferences modal</a>
+                    <div class="properties-modal modal fade" id="modal-id3">
+                        <div class="modal-dialog properties-modal-container-small">
+                            <div class="modal-content properties-modal-content">
+                                <div class="modal-header properties-modal-header">
+                                    <button type="button" class="properties-modal-close close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title properties-modal-title">[Model Name] Bracing Preferences</h4>
+                                </div>
+                                <div class="modal-body properties-modal-body">
+                                    <section id="bracingPropertiesContainer">
+                                        <div class="pm-container-small">
+                                            <form>
+                                                <div class="col-md-5">
+                                                    <div class="form-group">
+                                                        <label for="roofBracingOptions">Roof Bracing</label>
+                                                        <select name="" id="roofBracingOptions" class="properties-modal-input form-control">
+                                                            <option value="0">Please select Bracing option</option>
+                                                            <option value="1">Option 2</option>
+                                                            <option value="2">Option 3</option>
+                                                            <option value="3">Option 4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="WallBracingOptions">Wall Bracing</label>
+                                                        <select name="" id="WallBracingOptions" class="properties-modal-input form-control">
+                                                            <option value="0">Please select Bracing option</option>
+                                                            <option value="1">Option 2</option>
+                                                            <option value="2">Option 3</option>
+                                                            <option value="3">Option 4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="canopyBracingOptions">Canopy Bracing</label>
+                                                        <select name="" id="canopyBracingOptions" class="properties-modal-input form-control">
+                                                            <option value="0">Please select Bracing option</option>
+                                                            <option value="1">Option 2</option>
+                                                            <option value="2">Option 3</option>
+                                                            <option value="3">Option 4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="4BracingOptions">Facade Bracing</label>
+                                                        <select name="" id="4BracingOptions" class="properties-modal-input form-control">
+                                                            <option value="0">Please select Bracing option</option>
+                                                            <option value="1">Option 2</option>
+                                                            <option value="2">Option 3</option>
+                                                            <option value="3">Option 4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="MezzanineBracingOptions">Mezzanine</label>
+                                                        <select name="" id="MezzanineBracingOptions" class="properties-modal-input form-control">
+                                                            <option value="0">Please select Bracing option</option>
+                                                            <option value="1">Option 2</option>
+                                                            <option value="2">Option 3</option>
+                                                            <option value="3">Option 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="form-group">
+                                                        <label for="maxTierSpacing">Maximum Tier Spacing</label>
+                                                        <input type="text" class="form-control properties-modal-input" id="maxTierSpacing">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="minTierSpacing">Minimum Tier Spacing</label>
+                                                        <input type="text" class="form-control properties-modal-input" id="minTierSpacing">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="typicalTierSpacing">Typical Tier Spacing</label>
+                                                        <input type="text" class="form-control properties-modal-input" id="typicalTierSpacing">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="maxUnbracedLength">Maximum UnBracing Length</label>
+                                                        <input type="text" class="form-control properties-modal-input" id="maxUnbracedLength">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="breakLocationTolerance">Break Location Tolerance</label>
+                                                        <input type="text" class="form-control properties-modal-input" id="breakLocationTolerance">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="maxAllowableStrutLoad">Maximum Allowable Strut Load</label>
+                                                        <input type="text" class="nv-form-control properties-modal-input" id="maxAllowableStrutLoad">
+                                                        <span class="form-control-static">kps</span>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <footer class="properties-modal-button-container">
+                                                <button class="nv-button-default" role="button">Apply</button>
+                                                <button class="nv-button-text" role="button">Text</button>
+                                            </footer>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <footer class="footer ">
-        <ul class="footer-nav list-inline pull-right ">
-            <li><a href="# ">Link1</a></li>
-            <li><a href="# ">Link2</a></li>
-            <li><a href="# ">Link3</a></li>
-            <li><a href="# ">Link4</a></li>
-            <li><a href="# ">Link5</a></li>
-            <li> &copy; 2016 [What name here]</li>
-        </ul>
-    </footer>
     <!-- JQuey CDN from Google-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
     <!-- Angular JS CDN-->

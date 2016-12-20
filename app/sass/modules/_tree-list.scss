@@ -6,12 +6,20 @@
 }
 
 .tree-list-container {
-    min-width: (130px);
+    height: calc(100% - 72px);
+    min-width: ce(130px);
     max-width: ce(400px);
+    position: absolute;
+    overflow-y: auto;
+    right: 0;
+}
+
+.tree-list {
     background: $monument-dark;
     color: $surfmist;
-    height: calc(100% - ce(72px));
-    overflow: auto;
+    .tree-list-item {
+        padding-right: 15px;
+    }
     [aria-level="1"] > .tree-list-item {
         padding-left: ce(15px);
     }
