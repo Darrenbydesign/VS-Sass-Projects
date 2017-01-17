@@ -1,0 +1,162 @@
+<div id="generalInformationPreferencesTemplate" class="col-md-12">
+                    <h1 class="font-gray">General Information Preferences Modal Concept Template</h1>
+                    <p>This is a static example prototype. This should used to created the model preferences modal for General Information</p>
+                    <hr>
+                    <a class="btn nv-button-primary" data-toggle="modal" href='#modal-id4'>Show General Info Preferences modal Template</a>
+                    <div class="properties-modal modal fade" id="modal-id4">
+                        <div class="modal-dialog properties-modal-container">
+                            <div class="modal-content properties-modal-content">
+                                <div class="modal-header properties-modal-header">
+                                    <button type="button" class="properties-modal-close close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title properties-modal-title">[Model Name] General Information</h4>
+                                </div>
+                                <aside class="properties-modal-nav-container">
+                                    <nav>
+                                        <ul class="properties-modal-nav" role="tablist">
+                                            <li class="properties-modal-nav-item pm-item-active" role="presentation">
+                                                <a href="#jobSiteTab" data-toggle="tab" aria-controls="jobSiteTab">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" checked> Job SIte
+                                                        </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="properties-modal-nav-item" role="presentation">
+                                                <a href="#orderOptionsTab" data-toggle="tab" aria-controls="orderOptionsTab">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Order Options
+                                                        </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="properties-modal-nav-item" role="presentation">
+                                                <a href="#builderTab" data-toggle="tab" aria-controls="builderTab">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Builder
+                                                        </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="properties-modal-nav-item" role="presentation">
+                                                <a href="#specialColorsTab" data-toggle="tab" aria-controls="specialColorsTab">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Special Colors
+                                                        </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <footer class="properties-modal-footer">
+                                        <button type="button" class="btn nv-button-default">Apply</button>
+                                        <button type="button" class="btn nv-button-text" data-dismiss="modal">Cancel</button>
+                                    </footer>
+                                </aside>
+                                <div class="modal-body properties-modal-body">
+                                    <section id="jobSiteTab" class="tab-pane fade" role="tabpanel">
+                                        <form>
+                                            <div class="col-md-5">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Job Site Address</legend>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteCountry">Country</label>
+                                                        <select name="" id="jobSiteCountry" class="properties-modal-input form-control">
+                                                            <option value="0">Please select a Country option</option>
+                                                            <option value="1">United States</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteZip">ZIP</label>
+                                                        <input type="text" id="jobSiteZip" class="form-control properties-modal-input">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteState">State</label>
+                                                        <select name="" id="jobSiteState" class="properties-modal-input form-control">
+                                                            <option value="0">Please select State option</option>
+                                                            <option value="1">Option 2</option>
+                                                            <option value="2">Option 3</option>
+                                                            <option value="3">Option 4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteCounty">County</label>
+                                                        <select name="" id="jobSiteCounty" class="properties-modal-input form-control">
+                                                            <option value="0">Please select County option</option>
+                                                            <option value="1">Option 2</option>
+                                                            <option value="2">Option 3</option>
+                                                            <option value="3">Option 4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteCity">City</label>
+                                                        <select name="" id="jobSiteCity" class="properties-modal-input form-control">
+                                                            <option value="0">Please select City option</option>
+                                                            <option value="1">Option 2</option>
+                                                            <option value="2">Option 3</option>
+                                                            <option value="3">Option 4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteStreetAddress">Street</label>
+                                                        <input id="jobSiteStreetAddress" type="text" class="form-control properties-modal-input">
+                                                        <label for="jobSiteStreetAddress2">Street Address 2</label>
+                                                        <input id="jobSiteStreetAddress2" type="text" class="form-control properties-modal-input">
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Ship To</legend>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="jobSiteRadioOption1">
+                                                                <input type="radio" id="jobSiteRadioOption1"> Job Site
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="jobSiteRadioOption2">
+                                                                <input type="radio" id="jobSiteRadioOption2"> My Office
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">
+                                                        Contact Info
+                                                    </legend>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteContactName">Contact Name</label>
+                                                        <input type="text" class="form-control properties-modal-input" id="jobSiteContactName">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteContactPhone">Contact Phone</label>
+                                                        <input type="text" class="form-control properties-modal-input" id="jobSiteContactPhone">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="jobSiteContactFax">Contact Fax</label>
+                                                        <input type="text" class="form-control properties-modal-input" id="jobSiteContactFax">
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </form>
+                                    </section>
+                                    <section id="orderOptionsTab" class="tab-pane fade" role="tabpanel">
+                                        <p>order Options go here</p>
+                                    </section>
+                                    <section id="builderTab" class="tab-pane fade" role="tabpanel">
+                                        <p>builder options go here</p>
+                                    </section>
+                                    <section id="specialColorsTab" class="tab-pane fade" role="tabpanel">
+                                        <p>special colors go here</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

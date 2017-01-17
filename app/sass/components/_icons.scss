@@ -2,7 +2,6 @@
 // $Icons - Icons styles go here including the spritesheet styles
 // as well as any new icons styles created
 //===================================================================
-
 .ft-icon {
     display: inline-block;
     position: relative;
@@ -32,21 +31,17 @@
 }
 
 // Icons from another project
-
 $icons-background-size: 400px 600px;
-
 .icons {
     background-image: url($icons);
     background-size: $icons-background-size;
     display: block;
-
     &.icon-plus {
         background-position: 0 0;
         min-width: 14px;
         min-height: 14px;
         display: inline-block;
     }
-
     &.icon-back {
         background-position: 0 -50px;
         min-width: 23px;
@@ -54,7 +49,6 @@ $icons-background-size: 400px 600px;
         display: inline-block;
         vertical-align: middle;
     }
-
     &.icon-forward {
         background-position: 0 -50px;
         min-width: 23px;
@@ -63,161 +57,135 @@ $icons-background-size: 400px 600px;
         vertical-align: middle;
         transform: rotate(180deg);
     }
-
     &.icon-pin {
         background-position: -50px 0;
         min-width: 16px;
         min-height: 17px;
         display: inline-block;
-
         &:hover {
             background-position: -50px -50px;
         }
     }
-
     &.icon-unpin {
         background-position: -100px 0;
         min-width: 17px;
         min-height: 17px;
         display: inline-block;
-
         &:hover {
             background-position: -100px -50px;
         }
     }
-
     &.icon-download {
         background-position: -150px 0;
         min-width: 17px;
         min-height: 15px;
         display: inline-block;
-
         &:hover {
             background-position: -150px -50px;
         }
     }
-
     &.icon-link {
         background-position: -200px 0;
         min-width: 15px;
         min-height: 16px;
         display: inline-block;
-
         &:hover {
             background-position: -200px -50px;
         }
     }
-
     &.icon-trash {
         background-position: -250px 0;
         min-width: 19px;
         min-height: 22px;
         display: inline-block;
-
         &:hover {
             background-position: -250px -50px;
         }
     }
-
     &.icon-email {
         background-position: -350px 0;
         min-width: 32px;
         min-height: 24px;
         display: inline-block;
-
         &:hover {
             background-position: -350px -50px;
         }
     }
-
     &.icon-search {
         background-position: 0 -150px;
         min-width: 17px;
         min-height: 16px;
         display: inline-block;
-
         &:hover {
             background-position: 0 -200px;
         }
     }
-
     &.icon-added {
         background-position: -300px 0;
         min-width: 24px;
         min-height: 24px;
         display: inline-block;
     }
-
     &.icon-added-progress {
         background-position: -300px -50px;
         min-width: 19px;
         min-height: 19px;
         display: inline-block;
     }
-
     &.icon-filter {
         background-position: 0 -100px;
         min-width: 13px;
         min-height: 20px;
         display: inline-block;
     }
-
     &.icon-filterdown {
         background-position: -150px -100px;
         min-width: 12px;
         min-height: 7px;
         display: inline-block;
     }
-
     &.icon-filterup {
         background-position: -200px -100px;
         min-width: 12px;
         min-height: 7px;
         display: inline-block;
     }
-
     &.icon-arrowback {
         background-position: -50px -100px;
         min-width: 7px;
         min-height: 12px;
         display: inline-block;
     }
-
     &.icon-arrownext {
         background-position: -100px -100px;
         min-width: 7px;
         min-height: 12px;
         display: inline-block;
     }
-
     &.icon-gripper {
         background-position: -250px -100px;
         min-width: 16px;
         min-height: 15px;
         display: inline-block;
     }
-
     &.icon-notfavorited {
         background-position: -300px -100px;
         min-width: 20px;
         min-height: 20px;
         display: inline-block;
     }
-
     &.icon-favorited {
         background-position: -350px -100px;
         min-width: 20px;
         min-height: 20px;
         display: inline-block;
     }
-
     &.icon-shield {
         background-position: -100px -150px;
         min-width: 35px;
         min-height: 42px;
         display: inline-block;
     }
-
     &.icon-shield-sm {
         background-size: 200px 300px;
         background-position: -50px -75px;
@@ -225,56 +193,48 @@ $icons-background-size: 400px 600px;
         min-height: 24px;
         display: inline-block;
     }
-
     &.icon-arrowup {
         background-position: -150px -150px;
         min-width: 10px;
         min-height: 18px;
         display: inline-block;
     }
-
     &.icon-arrowdown {
         background-position: -200px -150px;
         min-width: 10px;
         min-height: 18px;
         display: inline-block;
     }
-
     &.icon-new {
         background-position: -250px -150px;
         min-width: 34px;
         min-height: 17px;
         display: inline-block;
     }
-
     &.icon-alert {
         background-position: -300px -150px;
         min-width: 27px;
         min-height: 22px;
         display: inline-block;
     }
-
     &.icon-dashboard {
         background-position: -350px -150px;
         min-width: 23px;
         min-height: 14px;
         display: inline-block;
     }
-
     &.icon-arrowup-w {
         background-position: -50px -200px;
         min-width: 18px;
         min-height: 10px;
         display: inline-block;
     }
-
     &.icon-arrowdown-w {
         background-position: -100px -200px;
         min-width: 18px;
         min-height: 10px;
         display: inline-block;
     }
-
     &.icon-profile {
         background-position: -150px -200px;
         min-width: 40px;
@@ -282,49 +242,42 @@ $icons-background-size: 400px 600px;
         display: inline-block;
         vertical-align: middle;
     }
-
     &.icon-play {
         background-position: -225px -200px;
         min-width: 58px;
         min-height: 58px;
         display: inline-block;
     }
-
     &.icon-yammer {
         background-position: -325px -200px;
         min-width: 67px;
         min-height: 58px;
         display: inline-block;
     }
-
     &.icon-session-regular {
         background-position: 0 -275px;
         min-width: 156px;
         min-height: 84px;
         display: inline-block;
     }
-
     &.icon-session-quick {
         background-position: -200px -275px;
         min-width: 156px;
         min-height: 84px;
         display: inline-block;
     }
-
     &.icon-learnmore {
         background-position: 0 -400px;
         min-width: 102px;
         min-height: 130px;
         display: inline-block;
     }
-
     &.icon-needhelp {
         background-position: -150px -400px;
         min-width: 127px;
         min-height: 130px;
         display: inline-block;
     }
-
     &.icon-notification {
         background-position: -50px -150px;
         min-width: 29px;
@@ -332,7 +285,6 @@ $icons-background-size: 400px 600px;
         display: inline-block;
         position: relative;
         vertical-align: middle;
-
         .count {
             background: $blue;
             width: 18px;
@@ -349,4 +301,31 @@ $icons-background-size: 400px 600px;
             text-align: center;
         }
     }
+}
+
+%icon-base-styles {
+    fill: $monument;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+    &[disabled],
+    [disabled],
+    .disabled {
+        &:focus,
+        &:hover {
+            fill: $monument;
+        }
+    }
+}
+
+.nv-icon {
+    @extend %icon-base-styles;
+    width: 25px;
+    height: 25px;
+}
+
+.nv-icon-lg {
+    @extend %icon-base-styles;
+    width: 50px;
+    height: 50px;
 }

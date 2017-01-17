@@ -119,6 +119,45 @@
     }
 }
 
+.nv-button-default {
+    @include button($surfmist);
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $surfmist;
+        }
+    }
+}
+
+.nv-button-primary {
+    @include button($bluescope-blue);
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $bluescope-blue;
+        }
+    }
+}
+
+.nv-button-primary-alt {
+    @include button($deep-ocean);
+    &[disabled],
+    &.disabled {
+        opacity: .65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: $deep-ocean;
+        }
+    }
+}
+
 .nv-button-secondary {
     @include button($bluescope-bright);
     &[disabled],
@@ -135,16 +174,18 @@
 .nv-button-text {
     @include button(transparent);
     @include font-size(18px);
-    color: rgba($monument, 0.84);
+    @include transition(color 0.3s ease-in);
+    color: rgba($monument, 0.64);
     &:hover,
     &:focus {
-        color: $bluescope-bright;
+        color: rgba($monument, 0.9);
         background: transparent;
-        text-decoration: underline;
+        text-decoration: none;
     }
     &:active {
         @include transition(background 0.3s ease-in);
-        background: rgba($surfgray, 0.54);
+        background: rgba($monument, 0.9);
+        text-decoration: none;
     }
     &[disabled],
     &.disabled {
@@ -194,6 +235,39 @@
     }
 }
 
+// This icon button should be used for when the button should not have a background at all
+// If the icon is being combined with text use the nv-button-text class instead
+.nv-icon-button-alt {
+    @include button(transparent);
+    color: rgba($monument, 0.84);
+    padding-left: 0;
+    padding-right: 0;
+    &:hover,
+    &:focus {
+        color: $monument;
+        background: transparent;
+        text-decoration: none;
+        .nv-icon {
+            fill: $monument;
+        }
+    }
+    &:active {
+        @include transition(background 0.3s ease-in);
+        background: rgba($surfgray, 0.54);
+    }
+    &[disabled],
+    &.disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+        &:focus,
+        &:hover {
+            background: transparent;
+            color: rgba($monument, 0.84);
+            text-decoration: none;
+        }
+    }
+}
+
 .nv-icon-button-primary {
     @include color-state($deep-ocean);
     .nv-icon {
@@ -234,45 +308,6 @@
         &:focus,
         &:hover {
             background: $bluescope-bright;
-        }
-    }
-}
-
-.nv-icon {
-    width: 25px;
-    height: 25px;
-    margin: 0 6px;
-    vertical-align: middle;
-    fill: $monument;
-    &[disabled],
-    [disabled],
-    .disabled {
-        &:focus,
-        &:hover {
-            fill: $monument;
-        }
-    }
-}
-
-.nv-button-active {
-    @include color-state($bluescope-bright);
-    .nv-icon {
-        fill: $deep-ocean;
-    }
-}
-
-.nv-icon-lg {
-    width: 50px;
-    height: 50px;
-    margin: 0 6px;
-    vertical-align: middle;
-    fill: $monument;
-    &[disabled],
-    [disabled],
-    .disabled {
-        &:focus,
-        &:hover {
-            fill: $monument;
         }
     }
 }

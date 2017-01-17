@@ -30,6 +30,8 @@ fieldset {
     @include font-size(14px);
     border: 1px solid rgba($surfgray, 0.54);
     background: rgba($surfmist, 0.54);
+    display: block;
+    height: 30px;
     &:hover,
     &:focus,
     &:active {

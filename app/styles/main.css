@@ -8885,6 +8885,8 @@ fieldset legend {
   font-size: 0.875em;
   border: 1px solid rgba(191, 191, 191, 0.54);
   background: rgba(238, 238, 237, 0.54);
+  display: block;
+  height: 30px;
 }
 
 .form-control:hover, .form-control:focus, .form-control:active, .nv-form-control:hover, .nv-form-control:focus, .nv-form-control:active {
@@ -9247,6 +9249,27 @@ fieldset legend {
   text-align: center;
 }
 
+.nv-icon, .nv-icon-lg {
+  fill: #36393A;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+[disabled].nv-icon:focus, [disabled].nv-icon-lg:focus, [disabled].nv-icon:hover, [disabled].nv-icon-lg:hover, .nv-icon [disabled]:focus, .nv-icon-lg [disabled]:focus, .nv-icon [disabled]:hover, .nv-icon-lg [disabled]:hover, .nv-icon .disabled:focus, .nv-icon-lg .disabled:focus, .nv-icon .disabled:hover, .nv-icon-lg .disabled:hover {
+  fill: #36393A;
+}
+
+.nv-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.nv-icon-lg {
+  width: 50px;
+  height: 50px;
+}
+
 svg {
   width: 100%;
 }
@@ -9472,7 +9495,7 @@ svg {
   padding: 3px 15px;
 }
 
-.panel-supplier-items .panel-button, .button, .button-text, .button-block, .button-small, .nv-button-default, .nv-button-primary, .nv-button-secondary, .nv-button-text, .nv-icon-button, .calendar-larrow, .calendar-rarrow, .submit-form-button, .review-form-button {
+.panel-supplier-items .panel-button, .button, .button-text, .button-block, .button-small, .nv-button-default, .nv-button-primary, .nv-button-primary-alt, .nv-button-secondary, .nv-button-text, .nv-icon-button, .nv-icon-button-alt, .calendar-larrow, .calendar-rarrow, .submit-form-button, .review-form-button {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -9490,7 +9513,7 @@ svg {
   padding-right: 10px;
 }
 
-.panel-supplier-items .panel-button:hover, .button:hover, .button-text:hover, .button-block:hover, .button-small:hover, .nv-button-default:hover, .nv-button-primary:hover, .nv-button-secondary:hover, .nv-button-text:hover, .nv-icon-button:hover, .calendar-larrow:hover, .calendar-rarrow:hover, .submit-form-button:hover, .review-form-button:hover {
+.panel-supplier-items .panel-button:hover, .button:hover, .button-text:hover, .button-block:hover, .button-small:hover, .nv-button-default:hover, .nv-button-primary:hover, .nv-button-primary-alt:hover, .nv-button-secondary:hover, .nv-button-text:hover, .nv-icon-button:hover, .nv-icon-button-alt:hover, .calendar-larrow:hover, .calendar-rarrow:hover, .submit-form-button:hover, .review-form-button:hover {
   cursor: pointer;
 }
 
@@ -9980,6 +10003,138 @@ svg {
   background: #086DB6;
 }
 
+.nv-button-default {
+  background-color: #EEEEED;
+  color: #4d4d4d;
+  border-color: #f2f2f2;
+}
+
+.nv-button-default a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.nv-button-default a:hover, .nv-button-default a:focus {
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  background-color: #cacac9;
+  border-color: #8f8f8e;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.nv-button-default:hover, .nv-button-default:focus {
+  -webkit-transition: background 0.2s ease-in;
+  -moz-transition: background 0.2s ease-in;
+  -ms-transition: background 0.2s ease-in;
+  -o-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
+  background-color: #cacac9;
+  border-color: #8f8f8e;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.nv-button-default[disabled], .nv-button-default.disabled {
+  opacity: .65;
+  cursor: not-allowed;
+}
+
+.nv-button-default[disabled]:focus, .nv-button-default[disabled]:hover, .nv-button-default.disabled:focus, .nv-button-default.disabled:hover {
+  background: #EEEEED;
+}
+
+.nv-button-primary {
+  background-color: #086DB6;
+  color: #fff;
+  border-color: #4692c8;
+}
+
+.nv-button-primary a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-button-primary a:hover, .nv-button-primary a:focus {
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  background-color: #075d9b;
+  border-color: #05416d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-button-primary:hover, .nv-button-primary:focus {
+  -webkit-transition: background 0.2s ease-in;
+  -moz-transition: background 0.2s ease-in;
+  -ms-transition: background 0.2s ease-in;
+  -o-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
+  background-color: #075d9b;
+  border-color: #05416d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-button-primary[disabled], .nv-button-primary.disabled {
+  opacity: .65;
+  cursor: not-allowed;
+}
+
+.nv-button-primary[disabled]:focus, .nv-button-primary[disabled]:hover, .nv-button-primary.disabled:focus, .nv-button-primary.disabled:hover {
+  background: #086DB6;
+}
+
+.nv-button-primary-alt {
+  background-color: #073247;
+  color: #fff;
+  border-color: #456575;
+}
+
+.nv-button-primary-alt a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-button-primary-alt a:hover, .nv-button-primary-alt a:focus {
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  background-color: #062b3c;
+  border-color: #041e2b;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-button-primary-alt:hover, .nv-button-primary-alt:focus {
+  -webkit-transition: background 0.2s ease-in;
+  -moz-transition: background 0.2s ease-in;
+  -ms-transition: background 0.2s ease-in;
+  -o-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
+  background-color: #062b3c;
+  border-color: #041e2b;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-button-primary-alt[disabled], .nv-button-primary-alt.disabled {
+  opacity: .65;
+  cursor: not-allowed;
+}
+
+.nv-button-primary-alt[disabled]:focus, .nv-button-primary-alt[disabled]:hover, .nv-button-primary-alt.disabled:focus, .nv-button-primary-alt.disabled:hover {
+  background: #073247;
+}
+
 .nv-button-secondary {
   background-color: #55C9F4;
   color: #4d4d4d;
@@ -10030,7 +10185,12 @@ svg {
   border-color: rgba(255, 255, 255, 0.25);
   font-size: 18px;
   font-size: 1.125em;
-  color: rgba(54, 57, 58, 0.84);
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -ms-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+  color: rgba(54, 57, 58, 0.64);
 }
 
 .nv-button-text a {
@@ -10063,9 +10223,9 @@ svg {
 }
 
 .nv-button-text:hover, .nv-button-text:focus {
-  color: #55C9F4;
+  color: rgba(54, 57, 58, 0.9);
   background: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nv-button-text:active {
@@ -10074,7 +10234,8 @@ svg {
   -ms-transition: background 0.3s ease-in;
   -o-transition: background 0.3s ease-in;
   transition: background 0.3s ease-in;
-  background: rgba(191, 191, 191, 0.54);
+  background: rgba(54, 57, 58, 0.9);
+  text-decoration: none;
 }
 
 .nv-button-text[disabled], .nv-button-text.disabled {
@@ -10155,6 +10316,74 @@ svg {
   background: #EEEEED;
 }
 
+.nv-icon-button-alt {
+  background-color: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgba(54, 57, 58, 0.84);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nv-icon-button-alt a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-icon-button-alt a:hover, .nv-icon-button-alt a:focus {
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-icon-button-alt:hover, .nv-icon-button-alt:focus {
+  -webkit-transition: background 0.2s ease-in;
+  -moz-transition: background 0.2s ease-in;
+  -ms-transition: background 0.2s ease-in;
+  -o-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nv-icon-button-alt:hover, .nv-icon-button-alt:focus {
+  color: #36393A;
+  background: transparent;
+  text-decoration: none;
+}
+
+.nv-icon-button-alt:hover .nv-icon, .nv-icon-button-alt:focus .nv-icon {
+  fill: #36393A;
+}
+
+.nv-icon-button-alt:active {
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  background: rgba(191, 191, 191, 0.54);
+}
+
+.nv-icon-button-alt[disabled], .nv-icon-button-alt.disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.nv-icon-button-alt[disabled]:focus, .nv-icon-button-alt[disabled]:hover, .nv-icon-button-alt.disabled:focus, .nv-icon-button-alt.disabled:hover {
+  background: transparent;
+  color: rgba(54, 57, 58, 0.84);
+  text-decoration: none;
+}
+
 .nv-icon-button-primary {
   background: #073247;
   color: #fff;
@@ -10219,58 +10448,6 @@ svg {
 
 .nv-icon-button-secondary[disabled]:focus, .nv-icon-button-secondary[disabled]:hover, .nv-icon-button-secondary.disabled:focus, .nv-icon-button-secondary.disabled:hover {
   background: #55C9F4;
-}
-
-.nv-icon {
-  width: 25px;
-  height: 25px;
-  margin: 0 6px;
-  vertical-align: middle;
-  fill: #36393A;
-}
-
-.nv-icon[disabled]:focus, .nv-icon[disabled]:hover,
-.nv-icon [disabled]:focus,
-.nv-icon [disabled]:hover,
-.nv-icon .disabled:focus,
-.nv-icon .disabled:hover {
-  fill: #36393A;
-}
-
-.nv-button-active {
-  background: #55C9F4;
-  color: #4d4d4d;
-}
-
-.nv-button-active:hover, .nv-button-active:focus {
-  -webkit-transition: background 0.3s ease-in;
-  -moz-transition: background 0.3s ease-in;
-  -ms-transition: background 0.3s ease-in;
-  -o-transition: background 0.3s ease-in;
-  transition: background 0.3s ease-in;
-  background-color: #48abcf;
-  border-color: #337992;
-  color: #4d4d4d;
-}
-
-.nv-button-active .nv-icon {
-  fill: #073247;
-}
-
-.nv-icon-lg {
-  width: 50px;
-  height: 50px;
-  margin: 0 6px;
-  vertical-align: middle;
-  fill: #36393A;
-}
-
-.nv-icon-lg[disabled]:focus, .nv-icon-lg[disabled]:hover,
-.nv-icon-lg [disabled]:focus,
-.nv-icon-lg [disabled]:hover,
-.nv-icon-lg .disabled:focus,
-.nv-icon-lg .disabled:hover {
-  fill: #36393A;
 }
 
 .flex-breadcrumb li a:after, .flex-breadcrumb li a:before {
@@ -12224,7 +12401,7 @@ svg {
   margin-bottom: 15px;
 }
 
-.properties-modal-button-container .nv-button, .properties-modal-footer .nv-button, .properties-modal-button-container .btn, .properties-modal-footer .btn {
+.properties-modal-button-container .nv-button-default, .properties-modal-footer .nv-button-default, .properties-modal-button-container .btn, .properties-modal-footer .btn {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -12281,8 +12458,17 @@ svg {
   color: #EFB91B;
 }
 
-.properties-modal-container-small,
-.properties-modal .modal-dialog {
+.properties-modal-container .nv-button-text,
+.properties-modal .modal-dialog .nv-button-text {
+  color: #E5E5E4;
+}
+
+.properties-modal-small {
+  background: rgba(7, 50, 71, 0.9);
+}
+
+.properties-modal-small .properties-modal-container,
+.properties-modal-small .properties-modal .modal-dialog {
   -webkit-transition: width 0.3s ease-in;
   -moz-transition: width 0.3s ease-in;
   -ms-transition: width 0.3s ease-in;
@@ -12299,21 +12485,21 @@ svg {
 }
 
 @media (min-width: 90em) {
-  .properties-modal-container-small,
-  .properties-modal .modal-dialog {
+  .properties-modal-small .properties-modal-container,
+  .properties-modal-small .properties-modal .modal-dialog {
     width: 50vw;
   }
 }
 
 @media (min-width: 120em) {
-  .properties-modal-container-small,
-  .properties-modal .modal-dialog {
+  .properties-modal-small .properties-modal-container,
+  .properties-modal-small .properties-modal .modal-dialog {
     width: 30vw;
   }
 }
 
-.properties-modal-container-small .input-error,
-.properties-modal .modal-dialog .input-error {
+.properties-modal-small .properties-modal-container .input-error,
+.properties-modal-small .properties-modal .modal-dialog .input-error {
   color: #EFB91B;
 }
 
@@ -12619,11 +12805,6 @@ svg {
   border: none;
   border-bottom: 1px solid #BFBFBF;
   padding: 0 0 0 5px;
-}
-
-.pm-container-small {
-  width: 37.5em;
-  margin: 0 auto;
 }
 
 .video-full {

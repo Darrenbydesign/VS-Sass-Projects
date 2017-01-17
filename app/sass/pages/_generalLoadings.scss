@@ -4,7 +4,7 @@
     @include align-content(center);
     margin-left: 15px;
     margin-bottom: 15px;
-    .nv-button,
+    .nv-button-default,
     .btn {
         @include border-radius(8px);
         @include font-size(18px);
@@ -38,23 +38,29 @@
     .input-error {
         color: $warning;
     }
+    .nv-button-text{
+        color: $surfmist-mid;
+    }
 }
 
-.properties-modal-container-small,
-.properties-modal .modal-dialog {
-    @include transition(width 0.3s ease-in);
-    @include transition(height 0.3s ease-in);
-    width: 60vw;
-    max-width: 80vw;
-    margin: 6vh auto;
-    @include flexpoint-lg {
-        width: 50vw;
-    }
-    @include flexpoint-xl {
-        width: 30vw;
-    }
-    .input-error {
-        color: $warning;
+.properties-modal-small {
+    background: rgba($deep-ocean, 0.9);
+    .properties-modal-container,
+    .properties-modal .modal-dialog {
+        @include transition(width 0.3s ease-in);
+        @include transition(height 0.3s ease-in);
+        width: 60vw;
+        max-width: 80vw;
+        margin: 6vh auto;
+        @include flexpoint-lg {
+            width: 50vw;
+        }
+        @include flexpoint-xl {
+            width: 30vw;
+        }
+        .input-error {
+            color: $warning;
+        }
     }
 }
 
@@ -296,9 +302,4 @@
         border-bottom: 1px solid $surfgray;
         padding: 0 0 0 5px;
     }
-}
-
-.pm-container-small {
-    width: ce(600px);
-    margin: 0 auto;
 }
