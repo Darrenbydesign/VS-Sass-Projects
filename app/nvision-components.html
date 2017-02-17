@@ -461,6 +461,26 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div id="section-3">
+                    <div class="col-md-12">
+                        <div class="flex-test">
+                            <img class="img-responsive" src="images/svg/box-icon.svg" alt="test image">
+                            <div class="img-profile-container">
+                                <h4 class="loggedInUserName" ng-bind="userInfo.profile.given_name + ' ' + userInfo.profile.family_name" ng-show="vm.isLoggedIn">Profile name</h4>
+                                <ul class="profile-nav">
+                                    <li class="pn-item">
+                                        <button class="nv-button-text" ng-bind="'Profile Settings'" ng-show="vm.isLoggedIn">Profile Settings</button>
+                                    </li>
+                                    <li class="pn-item">
+                                        <button class="nv-button-text" ng-show="userInfo.isAuthenticated" ng-click="vm.logout()">Logout</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">

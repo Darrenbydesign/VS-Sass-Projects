@@ -107,15 +107,40 @@
     }
 }
 
-.link-icon-container{
+.link-icon-container {
     position: relative;
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.link-icon{
+
+.link-icon {
     position: absolute;
     bottom: -5px;
-    right: -15px; 
+    right: -15px;
     margin: 0;
     padding: 0;
+}
+
+.flex-test {
+    @include flexbox;
+    @include flex-flow(row, wrap);
+    @include align-content(space-between);
+}
+
+.profile-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pn-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pn-link {
+    color: $surfmist;
+    &:hover {
+        color: $surfgray;
+    }
 }

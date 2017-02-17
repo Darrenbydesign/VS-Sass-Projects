@@ -12950,4 +12950,35 @@ svg {
   padding: 0;
 }
 
+.flex-test {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+
+.profile-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pn-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pn-link {
+  color: #EEEEED;
+}
+
+.pn-link:hover {
+  color: #BFBFBF;
+}
+
 /*# sourceMappingURL=maps/main.css.map */
