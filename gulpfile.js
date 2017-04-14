@@ -56,39 +56,39 @@ var paths = {
 
   // JSON options for compiling Sass files
   //=====================================================================
-  sassOptions = {
-    errLogToConsole: true,
-    outputStyle: 'expanded'
+  sassOptions         = {
+    errLogToConsole   : true,
+    outputStyle       : 'expanded'
   },
 
   // JSON options for compiling Sassdoc files
   //=====================================================================
-  sassdocOptions = {
-    dest: 'sassdoc',
-    verbose: true,
-    theme: 'flippant', // find out about creating custom themes visit http://sassdoc.com/using-your-own-theme/
+  sassdocOptions      = {
+    dest              : 'sassdoc',
+    verbose           : true,
+    theme             : 'flippant', // find out about creating custom themes visit http://sassdoc.com/using-your-own-theme/
   },
 
   // JSON options for BrowswerSync Server
   //=====================================================================
-  browserSyncOptions = {
-    server: {
-      baseDir: paths.dev,
+  browserSyncOptions  = {
+    server            : {
+      baseDir         : paths.dev,
     },
   },
 
   // JSON options for imagemin plug-in
   //=====================================================================
-  imageminOptions = {
-    progressive: true,
-    interlaced: true
+  imageminOptions     = {
+    progressive       : true,
+    interlaced        : true
   },
 
   // KSS options for imagemin plug-in
   //=====================================================================
-  kssOptions = {
-    overview: __dirname + paths.kssStyleguideFile,
-    templateDirectory: paths.templatePath,
+  kssOptions          = {
+    overview          : __dirname + paths.kssStyleguideFile,
+    templateDirectory : paths.templatePath,
   };
 
 // COMPILE TASK TO CREATE CSS JS and DOCUMENTATION FILES
