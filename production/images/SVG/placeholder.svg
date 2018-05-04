@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+    <title>placeholder</title>
+    <g>
+        <path class="placeholderBG" d="M45.4,4.6H4.6v40.8h40.8V4.6z M7.7,7.7h34.5v34.5H7.7V7.7z" />
+        <path class="placeholderBG" d="M24.2,15.3l-8.7,4.5v10.8L26.2,36l8.3-6V19.2L24.2,15.3z M24.2,17l7.5,3l-6,3.8l-7.6-3.4L24.2,17z M17.1,21.7
+    l7.8,3.5v8.5l-7.8-4C17.1,29.7,17.1,21.7,17.1,21.7z M26.5,33.8V25l6.3-3.9v8.1L26.5,33.8z" />
+    </g>
+</svg>

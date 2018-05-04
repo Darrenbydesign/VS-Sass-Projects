@@ -25,15 +25,15 @@
 			],
 			[
 				"gameO",
-				"gameObject	[class]"
+				"gameObject\t[class]"
 			],
 			[
 				"Collider",
-				"Collider	[class]"
+				"Collider\t[class]"
 			],
 			[
 				"Find",
-				"Find	Transform.*(name)"
+				"Find\tTransform.*(name)"
 			],
 			[
 				"di",
@@ -375,7 +375,7 @@
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -542,7 +542,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -587,7 +587,7 @@
 	"project": "VS-Sass-Project.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 58.0
 	},
 	"save_all_on_build": false,
 	"select_file":

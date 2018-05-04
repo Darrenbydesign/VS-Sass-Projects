@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-quiv="X-UA-Compatabile" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Darren's Demo Environment</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!-- [if lt IE 9]>
+    script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+    script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+    -->
+    <!--[endif]-->
+    <meta name="description" content="The initial page in the base template project">
+</head>
+
+<body>
+    <header>
+        <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button data-toggle="collapse" data-target="#main-nav" aria-expanded="false" class="navbar-toggle collapsed">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- This is where the logo should go -->
+                    <a href="#" class="navbar-brand"> [Generic name here] </a>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav ft-nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="grid-example.html">CSS Grid example</a></li>
+                        <li><a href="review-form.html">Review Form Example</a></li>
+                        <li><a href="sloped-concept.html">Sloped Grid</a></li>
+                        <li><a href="generalLoadings.html">General Loadings UI</a></li>
+                        <li><a href="supplier-items.html">Supplier Items</a></li>
+                        <li><a href="loading-screen.html">Loading Animation</a></li>
+                        <li><a href="nvision-components.html">Component Examples</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="wrap">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="section-1" class="col-md-12">
+                    <h1>nVision Component Refactoring Page </h1>
+                    <p>this still updates immediately?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2>Tree list example</h2>
+                    <div class="nv-example is-relative">
+                        <div class="tree-list-container">
+                            <div class="tree-list">
+                                <h4 class="tree-list-title" id="treeheading">Model Structure</h4>
+                                <ul class="tree-list-group" role="tree" aria-labeledby="treeheading">
+                                    <li id="tree0-node0" role="treeItem" aria-level="1">
+                                        <div class="tree-list-item">Tree List Item</div>
+                                    </li>
+                                    <li id="tree0-node1" role="treeItem" aria-level="1">
+                                        <div class="tree-list-item">
+                                            <span><span class="arrow-down"></span>Tree Branch</span>
+                                        </div>
+                                        <ul class="tree-list-sub-group" role="group">
+                                            <li id="tree0-node1-1" role="treeItem" aria-level="2">
+                                                <div class="tree-list-item tree-list-editing">
+                                                    <span><span class="arrow-down"></span>Tree List Sub Item</span>
+                                                </div>
+                                                <ul class="tree-list-group" role="group" arialabelledby="">
+                                                    <li id="tree0-node1-1-0" role="treeitem" aria-level="3">
+                                                        <div class="tree-list-item"><span><span class="arrow-down"></span>Tree List Level 3</span>
+                                                        </div>
+                                                        <ul class="tree-list-group" role="group" arialabeledby="">
+                                                            <li id="tree0-node-1-1-1-0" role="treeitem" aria-level="4">
+                                                                <div class="tree-list-item"><span><span class="arrow-down"></span>Tree List Level 4</span>
+                                                                </div>
+                                                                <ul class="tree-list-group" role="group" arialabeledby="">
+                                                                    <li id="tree0-node1-1-1-1-0" aria-level="5" role="treeitem">
+                                                                        <div class="tree-list-item "><span><span class="arrow-down"></span>Tree Level too far to care</span>
+                                                                        </div>
+                                                                        <ul class="tree-list-group" role="group" arialabeledby="">
+                                                                            <li id="tree0-node1-1-1-1-1-0" aria-level="6" role="treeitem">
+                                                                                <div class="tree-list-item tree-list-editing"><span><span class="arrow-right"></span>Tree Level too far to care</span>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="tree0-node2" role="treeItem" aria-level="1">
+                                        <div class="tree-list-item">
+                                            <span><span class="arrow-right"></span>Tree Branch</span>
+                                        </div>
+                                        <ul class="tree-list-sub-group" role="group">
+                                            <li id="tree0-node2-1" role="treeItem" aria-level="2">
+                                                <div class="tree-list-item">
+                                                    <span><span class="arrow-down"></span> Tree List Sub Item</span>
+                                                </div>
+                                                <ul class="tree-list-group" role="group" arialabelledby="">
+                                                    <li id="tree0-node1-1-0" role="treeitem" aria-level="3">
+                                                        <div class="tree-list-item">Tree List Level 3</div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="tree0-node3" role="treeItem" aria-level="1">
+                                        <div class="tree-list-item">
+                                            <span><span class="arrow-right"></span>Tree Branch</span>
+                                        </div>
+                                        <ul class="tree-list-sub-group" role="group">
+                                            <li id="tree0-node3-1" role="treeItem" aria-level="2">
+                                                <div class="tree-list-item">
+                                                    <span><span class="arrow-down"></span> Tree List Sub Item</span>
+                                                </div>
+                                                <ul class="tree-list-group" role="group" arialabelledby="">
+                                                    <li id="tree0-node1-1-0" role="treeitem" aria-level="3">
+                                                        <div class="tree-list-item"><span>Tree List Level 3</span></div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="tree0-node4" role="treeItem" aria-level="1">
+                                        <div class="tree-list-item">
+                                            <span><span class="arrow-down"></span>Tree Branch</span>
+                                        </div>
+                                        <ul class="tree-list-sub-group" role="group">
+                                            <li id="tree0-node4-1" role="treeItem" aria-level="2">
+                                                <div class="tree-list-item">
+                                                    <span><span class="arrow-down"></span> Tree List Sub Item</span>
+                                                </div>
+                                                <ul class="tree-list-group" role="group" arialabelledby="">
+                                                    <li id="tree0-node1-1-0" role="treeitem" aria-level="3">
+                                                        <div class="tree-list-item"><span><span class="arrow-right"></span>Tree List Level 3</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="tree0-node5" role="treeItem" aria-level="1">
+                                        <div class="tree-list-item"><span>Tree List Item</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h2>Sidebar Dialog Example</h2>
+                    <div class="nv-example is-relative">
+                        <div class="sidebar-dialog-pane">
+                            <div class="sidebar-dialog">
+                                <header class="sd-header">
+                                    <h4>Dialog Title Here</h4>
+                                </header>
+                                <div class="sd-content">
+                                    <section>
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="libraryOptions">Sorting Options</label>
+                                                <select class="form-control" name="libraryOptions" id="libraryOptions">
+                                                    <option value="">--Select Option here--</option>
+                                                    <option value="OptionValue">Most Used</option>
+                                                    <option value="OptionValue">Panels </option>
+                                                    <option value="OptionValue">Liners</option>
+                                                    <option value="OptionValue">Insulation</option>
+                                                    <option value="OptionValue">Assemblies</option>
+                                                    <option value="OptionValue">Custom</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="librarySearch" class="sr-only">
+                                                    Search
+                                                </label>
+                                                <input type="search" role="search" class="form-control" placeholder="Type to search shapes library">
+                                            </div>
+                                        </form>
+                                    </section>
+                                    <section>
+                                        <header>
+                                            <h4>Library Title</h4>
+                                        </header>
+                                        <nav class="library-list-container">
+                                            <ul class="library-list">
+                                                <li class="lb-list-item lb-item-active">
+                                                    <div id="libraryitem1" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                                <li class="lb-list-item">
+                                                    <div id="libraryitem2" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                                <li class="lb-list-item">
+                                                    <div id="libraryitem3" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                                <li class="lb-list-item ">
+                                                    <div id="libraryitem4" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                                <li class="lb-list-item">
+                                                    <div id="libraryitem5" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                                <li class="lb-list-item">
+                                                    <div id="libraryitem6" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                                <li class="lb-list-item">
+                                                    <div id="libraryitem6" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                                <li class="lb-list-item">
+                                                    <div id="libraryitem6" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                                <li class="lb-list-item">
+                                                    <div id="libraryitem6" class="lb-icon-container" role="libraryitem">
+                                                        <svg class="icon library-list-icon">
+                                                            <use xlink:href="#cube-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="lb-item-name">Library item</h3>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </section>
+                                    <section>
+                                        <form name="sdd">
+                                            <header>
+                                                <h4>Shape Dimensions</h4>
+                                            </header>
+                                            <div class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="widthField" class="col-md-5">Width
+                                                    </label>
+                                                    <div class="col-md-6">
+                                                        <input id="widthField" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lengthField" class="col-md-5">Length
+                                                    </label>
+                                                    <div class="col-md-6">
+                                                        <input id="lengthField" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <header>
+                                                <h4>Eave Height</h4>
+                                            </header>
+                                            <div class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="eaveHeightA" class="col-md-5">Eave Height <span>A</span>
+                                                    </label>
+                                                    <div class="col-md-6 linked-input-A">
+                                                        <input id="eaveHeightA" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="link-icon-container">
+                                                    <svg class="nv-icon link-icon">
+                                                        <use xlink:href="#unlink-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="eaveHeightB" class="col-md-5">Eave Height <span>B</span>
+                                                    </label>
+                                                    <div class="col-md-6 linked-input-B">
+                                                        <input id="eaveHeightB" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <header>
+                                                <h4>Pitches</h4>
+                                            </header>
+                                            <div class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="roofPitchA" class="col-md-5">Roof Pitch <span>A</span>
+                                                    </label>
+                                                    <div class="col-md-6 linked-input-A">
+                                                        <input id="roofPitchA" type="text" class="form-control ">
+                                                    </div>
+                                                </div>
+                                                <div class="link-icon-container">
+                                                    <svg class="nv-icon link-icon">
+                                                        <use xlink:href="#link-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="roofPitchB" class="col-md-5">Roof Pitch <span>B</span>
+                                                    </label>
+                                                    <div class="col-md-6 linked-input-B">
+                                                        <input id="roofPitchB" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <header>
+                                                <h4>Ridge Dimensions</h4>
+                                            </header>
+                                            <div class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="ridgeDistanceA" class="col-md-6">Ridge Distance <span>A</span>
+                                                    </label>
+                                                    <div class="col-md-5">
+                                                        <input id="ridgeDistanceA" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ridgeDistanceB" class="col-md-6 ">Ridge Distance <span>B</span>
+                                                    </label>
+                                                    <div class="col-md-5">
+                                                        <span id="ridgeDistanceB" class="form-control-static nv-read-only">25'</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ridgeHeight" class="col-md-6 ">Ridge Height
+                                                    </label>
+                                                    <div class="col-md-5">
+                                                        <span id="ridgeHeight" class="form-control-static nv-read-only">14' - 1"</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </section>
+                                    <hr>
+                                    <footer class="sd-button-container">
+                                        <button class="nv-button-primary nv-button-large">Apply</button>
+                                        <button class="nv-button-text nv-button-large">Cancel</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h2>Button Types</h2>
+                    <div class="is-relative">
+                        <div class="form-group">
+                            <button class="nv-button-text">Text</button>
+                            <button class="nv-button-default nv-button-small">small</button>
+                            <button class="nv-button-default">default</button>
+                            <button class="nv-button-default nv-button-large">Large</button>
+                        </div>
+                        <div class="form-group">
+                            <button class="nv-button-primary nv-icon-button">Apply</button>
+                            <button class="nv-button-secondary">Apply</button>
+                        </div>
+                        <div class="form-group">
+                            <button class="nv-button-default nv-button-block">Apply</button>
+                        </div>
+                        <div class="form-group">
+                            <h3>Button States</h3>
+                            <div class="btn-group">
+                                <button class="btn nv-button-default info">button</button>
+                                <button class="btn nv-button-default error">button</button>
+                                <button class="btn nv-button-default warning">button</button>
+                                <button class="btn nv-button-default success">button</button>
+                                <button class="btn nv-button-default">button</button>
+                            </div>
+                        </div>
+                        <h3>Icon buttons</h3>
+                        <div class="form-group">
+                            <button class="nv-icon-button">
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon" />
+                                </svg>
+                            </button>
+                            <button class="nv-icon-button">
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon" />
+                                </svg>
+                            </button>
+                            <button class="nv-icon-button nv-icon-button-primary">
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon" />
+                                </svg>
+                            </button>
+                            <button class="nv-icon-button nv-icon-button-secondary">
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon" />
+                                </svg>
+                            </button>
+                        </div>
+                        <h3>Disabled buttons</h3>
+                        <div class="form-group">
+                            <button class="nv-button-default" disabled>Disabled</button>
+                            <button class="nv-button-default nv-icon-button" disabled>
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon"></use>
+                                </svg>
+                            </button>
+                            <button class="nv-icon-button nv-icon-button-primary" disabled role="button">
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon"></use>
+                                </svg>
+                            </button>
+                            <button class="nv-icon-button nv-icon-button-secondary" disabled role="button">
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon"></use>
+                                </svg>
+                            </button>
+                            <button class="nv-icon-button nv-button-text" disabled role="button">
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon"></use>
+                                </svg> Text
+                            </button>
+                            <button class="nv-icon-button nv-button-secondary" disabled role="button">
+                                <svg class="nv-icon">
+                                    <use xlink:href="#cube-icon"></use>
+                                </svg> button
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="section-3">
+                    <div class="col-md-12">
+                        <div class="flex-test">
+                            <img class="img-responsive" src="images/svg/box-icon.svg" alt="test image">
+                            <div class="img-profile-container">
+                                <h4 class="loggedInUserName" ng-bind="userInfo.profile.given_name + ' ' + userInfo.profile.family_name" ng-show="vm.isLoggedIn">Profile name</h4>
+                                <ul class="profile-nav">
+                                    <li class="pn-item">
+                                        <button class="nv-button-text" ng-bind="'Profile Settings'" ng-show="vm.isLoggedIn">Profile Settings</button>
+                                    </li>
+                                    <li class="pn-item">
+                                        <button class="nv-button-text" ng-show="userInfo.isAuthenticated" ng-click="vm.logout()">Logout</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="footer-nav list-inline pull-right">
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+            <li><a href="#">Link5</a></li>
+            <li> &copy; 2015 [What name here]</li>
+        </ul>
+    </footer>
+    <!-- JQuey CDN from Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Angular JS CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <!-- Bootstrap JavaScript-->
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!-- Output of Compiled TypeScript -->
+    <script src="Scripts/main.js"></script>
+    <script type='text/javascript' id="__bs_script__">
+    //<![CDATA[document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.10.0.js'><\/script>".replace("HOST", location.hostname));//]]>
+    </script>
+    <div id="svgList">
+        <svg class="hide">
+            <symbol id="cube-icon" viewBox="0 0 61 68">
+                <g id="Layer_2" data-name="Layer 2">
+                    <path id="Layer_1-2" d="M28.13 0L0 14.87v35.44l34.38 17.54 26.79-19.46V13zm.08 5.64l24.62 9.65L33.06 27.6 8.1 16.68zM4.87 20.88l25.83 11.3v27.91L4.87 47zm31 39.56V31.92L56.3 19.18v26.4z" class="cls-1" data-name="Layer 1" />
+                </g>
+            </symbol>
+            <symbol id="ic" viewBox="0 0 100 100">
+                <path d="M81,40.933c0-4.25-3-7.811-6.996-8.673c-0.922-5.312-3.588-10.178-7.623-13.844  c-2.459-2.239-5.326-3.913-8.408-4.981c-0.797-3.676-4.066-6.437-7.979-6.437c-3.908,0-7.184,2.764-7.979,6.442  c-3.078,1.065-5.939,2.741-8.396,4.977c-4.035,3.666-6.701,8.531-7.623,13.844C22.002,33.123,19,36.682,19,40.933  c0,2.617,1.145,4.965,2.957,6.589c0.047,0.195,0.119,0.389,0.225,0.568l26.004,43.873c0.383,0.646,1.072,1.04,1.824,1.04  c0.748,0,1.439-0.395,1.824-1.04L77.82,48.089c0.105-0.179,0.178-0.373,0.225-0.568C79.855,45.897,81,43.549,81,40.933z   M49.994,11.235c2.164,0,3.928,1.762,3.928,3.93c0,2.165-1.764,3.929-3.928,3.929s-3.928-1.764-3.928-3.929  C46.066,12.997,47.83,11.235,49.994,11.235z M27.842,36.301c0.014,0,0.027,0,0.031,0c1.086,0,1.998-0.817,2.115-1.907  c0.762-7.592,5.641-13.791,12.303-16.535c1.119,3.184,4.146,5.475,7.703,5.475c3.561,0,6.588-2.293,7.707-5.48  c6.664,2.742,11.547,8.944,12.312,16.54c0.115,1.092,1.037,1.929,2.143,1.907c2.541,0.013,4.604,2.087,4.604,4.631  c0,1.684-0.914,3.148-2.266,3.958H25.508c-1.354-0.809-2.268-2.273-2.268-3.958C23.24,38.389,25.303,36.316,27.842,36.301z   M50.01,86.723L27.73,49.13h44.541L50.01,86.723z" />
+            </symbol>
+            <symbol id="link-icon" viewBox="0 0 23.18 57">
+                <defs>
+                    <style>
+                    .cls-1 {
+                        fill: #333;
+                    }
+                    </style>
+                </defs>
+                <g id="Layer_2" data-name="Layer 2">
+                    <path id="Layer_1-2" d="M19.09 33.27a10.71 10.71 0 0 1-7.64 3 3 3 0 0 1 0-6 5.49 5.49 0 0 0 5.18-5.73l.27-12.82a6.19 6.19 0 0 0-1.64-4.36A4.8 4.8 0 0 0 11.73 6a4 4 0 0 0-3.55 1.64A6.19 6.19 0 0 0 6.55 12v7.36c-1.64 0-6 2.73-6 4.64l.27-12.27a11.55 11.55 0 0 1 3.27-8.18A11.34 11.34 0 0 1 12.27 0a10.32 10.32 0 0 1 7.64 3.27A12.39 12.39 0 0 1 23.18 12l-.27 12.82a13.51 13.51 0 0 1-3.82 8.45m-15-9.55a12 12 0 0 0-3.54 8.46L0 45a12.39 12.39 0 0 0 3.27 8.73A9.9 9.9 0 0 0 10.91 57a10.76 10.76 0 0 0 8.18-3.55 12.85 12.85 0 0 0 3.27-8.18L22.64 33c0 1.91-4.36 4.91-6 4.64V45A6.19 6.19 0 0 1 15 49.36 4.86 4.86 0 0 1 11.45 51a6.07 6.07 0 0 1-3.55-1.36 6.19 6.19 0 0 1-1.64-4.36l.27-12.82a5.49 5.49 0 0 1 5.18-5.73 3 3 0 0 0 0-6 8.86 8.86 0 0 0-7.64 3" class="cls-1" data-name="Layer 1" />
+                </g>
+            </symbol>
+            <symbol id="unlink-icon" viewBox="0 0 41.1 56.95">
+                <defs>
+                    <style>
+                    .cls-1 {
+                        fill: #333;
+                    }
+                    </style>
+                </defs>
+                <g id="Layer_2" data-name="Layer 2">
+                    <path id="Layer_1-2" d="M15 23.1V11.55a5.47 5.47 0 0 1 1.61-4 4.79 4.79 0 0 1 3.49-1.61 6 6 0 0 1 3.49 1.34 6.1 6.1 0 0 1 1.61 4.3v11.26h5.91v-11a12.2 12.2 0 0 0-3.22-8.6A9.76 9.76 0 0 0 20.42 0a10.6 10.6 0 0 0-8.06 3.49 12.66 12.66 0 0 0-3.22 8.06V23.1zm10 10.21v11.82a5.47 5.47 0 0 1-1.61 4 4.79 4.79 0 0 1-3.49 1.61 6 6 0 0 1-3.49-1.34 6.1 6.1 0 0 1-1.61-4.3V33.58H8.87v11.55a12.2 12.2 0 0 0 3.22 8.6A9.76 9.76 0 0 0 19.61 57a10.6 10.6 0 0 0 8.06-3.49 12.66 12.66 0 0 0 3.22-8.06V33.58H25zm16.1-2.42L29 29.55v-2.42l12.1-1.34zm-41.1 0l12.09-1.34v-2.42L0 25.79z" class="cls-1" data-name="Layer 1" />
+                </g>
+            </symbol>
+        </svg>
+    </div>
+</body>
+
+</html>

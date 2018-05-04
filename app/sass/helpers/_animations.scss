@@ -15,29 +15,41 @@
 @include keyframes(grow-shrink) {
     0% {
         @include scale(1);
+        width: 50px;
+        height: 50px;
+    }
+    25%{
+        @include scale(1.5);
+        width: 100px;
+        height: 100px;
     }
     50% {
         @include scale(2.5);
+        width: 150px;
+        height: 150px;
     }
     100% {
         @include scale(1);
+        width: 50px;
+        height: 50px;
     }
 }
 
 @include keyframes(color-phase) {
     0% {
         fill: $surfmist;
-        opacity: 0.6;
+        opacity: 0;
     }
     50% {
-        fill: $surfgray;
-        opacity: 0.85;
+        fill: $surfmist;
+        opacity: 1;
     }
     100% {
-        fill: $surfmist-mid;
-        opacity: 0.6;
+        fill: $surfmist;
+        opacity: 0;
     }
 }
+
 @include keyframes(color-phase-dark) {
     0% {
         fill: $monument;
@@ -45,32 +57,37 @@
     }
     50% {
         fill: $monument-dark;
-        opacity: 0.85;
+        opacity: 1;
     }
     100% {
         fill: $monument-black;
         opacity: 0.6;
     }
 }
+
 @include keyframes(color-phase-text) {
     0% {
         color: $surfmist;
         opacity: 0.6;
     }
     50% {
-        color: $surfgray;
+        color: $surfmist;
         opacity: 0.85;
     }
     100% {
-        color: $surfmist-mid;
+        color: $surfmist;
         opacity: 0.6;
     }
 }
-@include keyframes(rotation){
-  0%{
-    @include rotate(45deg);
-  }
-  100%{
-    @include rotate(180deg);
-  }
+
+@include keyframes(rotation) {
+    0% {
+        @include rotate(90deg);
+    }
+    50%{
+        @include rotate(0deg);
+    }
+    100% {
+        @include rotate(180deg);
+    }
 }

@@ -5,71 +5,80 @@
     @include align-content(center);
     margin: 0;
     padding: 0;
-    position: absolute;
     width: 100%;
     height: 100%;
+    position: fixed; // attempting to make the background flow to the full screen for dashboard loading screen
+    // position: absolute;
+    top: 0;
+    // left: 0;
 }
 
 %loading-cube-base {
+    fill: $surfmist; // This is a fallback color for when the animation fails
     position: absolute;
     height: 50px;
     width: 50px;
-    fill: $surfmist; // This is a fallback color for when the animation fails
+}
+
+%loading-heading-base {
+    @include animation(color-phase-text 2s ease-in-out alternate infinite);
+    @include font-size(24px);
+    margin-top: 30vh;
+    text-align: center;
 }
 
 .loading-cube-screen {
     @extend %loading-screen-base;
     background: rgba($deep-ocean, 0.9);
+    padding-top: 6vh;
 }
 
 .loading-cube-screen-light {
     @extend %loading-screen-base;
     background: rgba($surfgray, 0.9);
+    padding-top: 6vh;
 }
 
 .loading-cube-container {
-    padding-top: 40vh;
-    position: relative;
     @include flexbox;
+    @include flex-flow(column, wrap);
     @include justify-content(space-around);
     @include align-content(center);
+    @include align-items(center);
+    position: relative;
 }
+
 .loading-heading {
-    @include animation(color-phase-text 2.5s ease-in-out alternate infinite);
-    @include font-size(24px);
-    margin-top: 12vh;
-    text-align: center;
+    @extend %loading-heading-base;
     .loading-text {
         color: $surfmist;
     }
 }
+
 .loading-heading-dark {
-    @include animation(color-phase-text 2.5s ease-in-out alternate infinite);
-    @include font-size(24px);
-    margin-top: 12vh;
-    text-align: center;
+    @extend %loading-heading-base;
     .loading-text {
         color: $monument-dark;
     }
 }
 
 .loading-cube {
-    @include animation(grow-shrink 2s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite);
+    @include animation(grow-shrink 2s ease-in-out infinite, color-phase 2s ease-in-out infinite);
     @extend %loading-cube-base;
 }
 
 .loading-cube-sm {
-    @include animation(grow-shrink 3s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite);
+    @include animation(grow-shrink 3s ease-in-out alternate infinite, color-phase 2s ease-in-out infinite);
     @extend %loading-cube-base;
 }
 
 .loading-cube-lg {
-    @include animation(grow-shrink 4s ease-in-out alternate infinite, color-phase 2.5s ease-in-out infinite);
+    @include animation(grow-shrink 4s ease-in-out alternate infinite, color-phase 2s ease-in-out infinite);
     @extend %loading-cube-base;
 }
 
 .loading-cube-dark {
-    @include animation(grow-shrink 2s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite);
+    @include animation(grow-shrink 2s ease-in-out alternate infinite, color-phase-dark 2s ease-in-out infinite);
     @extend %loading-cube-base;
     fill: $monument;
 }
@@ -77,9 +86,17 @@
 .loading-cube-dark-sm {
     @include animation(grow-shrink 3s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite);
     @extend %loading-cube-base;
+    fill: $monument;
 }
 
 .loading-cube-dark-lg {
     @include animation(grow-shrink 4s ease-in-out alternate infinite, color-phase-dark 2.5s ease-in-out infinite);
     @extend %loading-cube-base;
+    fill: $monument;
+}
+
+// This class was created for use in the properties-modal screens
+.data-loading {
+    padding-top: 300px;
+    padding-left: 500px;
 }

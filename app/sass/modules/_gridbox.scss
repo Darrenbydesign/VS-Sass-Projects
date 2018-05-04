@@ -2,12 +2,11 @@
 // $GridBox - this is a custom module that allows you to create a 
 // semi flexible grid. [needs to be refactored]
 // ===================================================================
-
 .grid-box {
     margin: 15px auto;
     list-style: none;
     text-align: center;
-    > ul {
+    >ul {
         margin: 0;
         padding: 0;
     }
@@ -84,4 +83,28 @@
 
 .gb-style-1 figure figcaption a:hover {
     background: $green;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.grid-item-full {
+    grid-column: 1 / span 2;
+}
+
+.roofs-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 20px;
+    max-height: ce(700px);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.modal-header,
+.modal-footer {
+    grid-column: 1 / -1;
 }

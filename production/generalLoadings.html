@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -573,8 +573,8 @@
                     <hr>
                     <a class="btn nv-button-primary" data-toggle="modal" href='#modal-id2'>Show Model Preferences modal template</a>
                     <div class="properties-modal modal fade" id="modal-id2">
-                        <div class="modal-dialog">
-                            <div class="modal-content grid-container">
+                        <div class="modal-dialog properties-modal-container">
+                            <div class="modal-content properties-modal-content">
                                 <div class="modal-header properties-modal-header">
                                     <button type="button" class="properties-modal-close close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <h4 class="modal-title properties-modal-title">[Model Name] Secondary Preferences</h4>
@@ -688,433 +688,176 @@
                                         </form>
                                     </section>
                                     <section id="secondaryRoofsTab" class="tab-pane" role="tabpanel">
-                                        <section id="roofs" class="tab-pane" role="tabpanel">
-                                            <div class="">
-                                                <div class="nv-input-group">
-                                                    <div class="nv-input-group-item-alt margin-right-10">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" ng-model="src.modelReferencesModel.secondaryRoofs.standardSpaces" ng-change="src.onStandardSpaceChanged()">Standard Spaces
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Rafter Offset</legend>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="radioOption1">
+                                                                <input type="radio" name="radioOptions" id="radioOption1" value="1"> Match Secondary Depth (ByPass)
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="radioOption2">
+                                                                <input type="radio" name="radioOptions" id="radioOption2" value="2"> Dimension to Building Line
                                                             </label>
                                                         </div>
                                                     </div>
-                                                    <div class="nv-input-group-field" ng-class="{'has-error': src.modelReferencesModel.secondaryRoofs.space < 0 && !src.modelReferencesModel.secondaryRoofs.standardSpaces}" ng-show="!src.modelReferencesModel.secondaryRoofs.standardSpace">
-                                                        <calc-input ng-show="!src.modelReferencesModel.secondaryRoofs.standardSpaces" class="nv-form-control properties-modal-input nv-form-control-inline" ng-model="src.modelReferencesModel.secondaryRoofs.space" type="Architectural" allow-default="true" default-value="0">
-                                                        </calc-input>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Secondary to Frame Attachment</legend>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="frameAttachmentOption1">
+                                                                <input type="radio" name="frameAttachmentOptions" id="frameAttachmentOption1" value="1"> Welded
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="frameAttachementOption2">
+                                                                <input type="radio" name="frameAttachmentOptions" id="frameAttachementOption2" value="2"> Bolted
+                                                            </label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <p class="errorMessage errorMessage--alert help-block margin-bottom-0" ng-show="src.modelReferencesModel.secondaryRoofs.space < 0 && !src.modelReferencesModel.secondaryRoofs.standardSpaces">
-                                                    <svg class="nv-icon error-svg">
-                                                        <use xlink:href="../app/assets/symbols/assets.svg#alert"></use>
-                                                    </svg> Please enter a value greater than or equal to 0.
-                                                </p>
+                                                </fieldset>
                                             </div>
-                                            <div class="roofs-grid-container">
-                                                <!--Intermediate Location Options-->
-                                                <div class="nv-grid-item">
-                                                    <fieldset class="properties-modal-fieldset">
-                                                        <legend class="properties-modal-legend">Intermediate Location Options</legend>
-                                                        <div class="form-group">
-                                                            <label for="inputRoofPurlinType">Type</label>
-                                                            <select id="inputRoofPurlinType" ng-disabled="false" class="properties-modal-input form-control" ng-options="type as src.formatType(type) for type in src.types() track by type" ng-model="src.modelReferencesModel.secondaryRoofs.purlinType" ng-change="src.onRoofPurlinTypeChanged()"></select>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Purlin</legend>
+                                                    <div class="form-group">
+                                                        <label for="inputOption1">Shape</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a shape</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption2">Depth</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a Depth Option</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption3">Member Type</label>
+                                                        <select id="inputOption3" class="form-control properties-modal-input">
+                                                            <option value="">Please Select member Type</option>
+                                                            <option value="1">Continuous</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="thicknessOption1">
+                                                                <input type="radio" name="purlinThicknessOptions" id="thicknessOption1" value="1"> Minimum
+                                                            </label>
                                                         </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.purlinType==='ColdForm'">
-                                                            <div class="form-group">
-                                                                <label for="inputPurlinShape">Shape</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinShape" ng-change="src.onPurlinShapeChanged()" id="inputPurlinShape" ng-disabled="false" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.shapeList"></select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinDepth" id="inputDepth" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.purlinDepthList" ng-change="src.onPurlinDepthChanged()"></select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPurlinMemberType">Lap Type</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinMemberType" id="inputPurlinMemberType" ng-disabled="src.purlinMemberTypeList.length <2" class="form-control properties-modal-input" ng-options="option.value as option.name for option in src.purlinMemberTypeList"></select>
-                                                            </div>
-                                                            <div class="form-group" ng-show="src.purlinThicknessList.length>0">
-                                                                <label>Thickness</label>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input ng-model="src.modelReferencesModel.secondaryRoofs.purlinThicknessType" type="radio" name="srPurlinThicknessOptions" value="Minimum" ng-change="src.onPurlinDepthChanged()"> Minimum
-                                                                    </label>
-                                                                    <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.purlinThicknessType === 'Minimum'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.purlinThicknessList"></select>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input ng-model="src.modelReferencesModel.secondaryRoofs.purlinThicknessType" type="radio" name="srPurlinThicknessOptions" value="Hold" ng-change="src.onPurlinDepthChanged()"> Hold
-                                                                    </label>
-                                                                    <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.purlinThicknessType === 'Hold'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.purlinThicknessList"></select>
-                                                                </div>
-                                                            </div>
-                                                            <fieldset class="properties-modal-fieldset" ng-show="src.modelReferencesModel.secondaryRoofs.purlinMemberType === 'Continuous'">
-                                                                <legend class="properties-modal-legend">Continuous Lap Options</legend>
-                                                                <div class="col-md-12 form-group">
-                                                                    <label>Lap</label>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.purlinLapOffsetType" type="radio" name="purlinContinuousLapType" id="purlinContinuousLapOption1" value="Minimum"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinLapOffset" ng-show="src.modelReferencesModel.secondaryRoofs.purlinLapOffsetType === 'Minimum'" id="purlinInputContinuousLapValue1" class="properties-modal-input nv-form-control-inline" ng-options="v as src.formatLapOption(v) for v in src.continuousLapOptions"></select>
-                                                                    </div>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.purlinLapOffsetType" type="radio" name="purlinContinuousLapType" id="purlinContinuousLapOption2" value="Hold"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinLapOffset" ng-show="src.modelReferencesModel.secondaryRoofs.purlinLapOffsetType === 'Hold'" id="purlinInputContinuousLapValue2" class="properties-modal-input nv-form-control-inline" ng-options="v as src.formatLapOption(v) for v in src.continuousLapOptions"></select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group col-md-12">
-                                                                    <label>Lap Connection Options</label>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" ng-model="src.modelReferencesModel.secondaryRoofs.purlinHighStrengthBolts" indeterminate /> High Strength Bolts
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" ng-model="src.modelReferencesModel.secondaryRoofs.purlinWashersRequired" i ndeterminate /> Washers Required
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </fieldset>
+                                                        <div class="radio">
+                                                            <label for="thicknessOption2">
+                                                                <input type="radio" name="purlinThicknessOptions" id="thicknessOption2" value="2"> Hold
+                                                            </label>
                                                         </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.purlinType==='BarJoist'">
-                                                            <div class="form-group">
-                                                                <label>Hole Gauge</label>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input ng-model="src.modelReferencesModel.secondaryRoofs.purlinHoleGaugeValue" type="radio" name="purlinHoleGaugeOptions" value="3.5"> 3 1/2"
-                                                                    </label>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input ng-model="src.modelReferencesModel.secondaryRoofs.purlinHoleGaugeValue" type="radio" name="purlinHoleGaugeOptions" value="4"> 4"
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinDepth" id="inputDepth" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.purlinDepthList" ng-change="src.onPurlinDepthChanged()"></select>
-                                                            </div>
-                                                        </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.purlinType==='TrussPurlin'">
-                                                            <div class="form-group">
-                                                                <label for="inputDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinDepth" id="inputDepth" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.purlinDepthList" ng-change="src.onPurlinDepthChanged()"></select>
-                                                            </div>
-                                                            <div>
-                                                                <div>
-                                                                    <label>Top Chord Thickness</label>
-                                                                    <div class="radio">
-                                                                        <label for="purlinTopThicknessOption1" class="minimum-label">
-                                                                            <input id="purlinTopThicknessOption1" ng-model="src.modelReferencesModel.secondaryRoofs.purlinTopChordThicknessType" type="radio" name="modifyTopChordThicknessOptions" value="Minimum" ng-change="src.thicknessOptionChanged()"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinTopChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.purlinTopChordThicknessType === 'Minimum'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList" ng-change="src.thicknessChange()"></select>
-                                                                    </div>
-                                                                    <div class="radio">
-                                                                        <label for="purlinTopThicknessOption2" class="max-label">
-                                                                            <input id="purlinTopThicknessOption2" ng-model="src.modelReferencesModel.secondaryRoofs.purlinTopChordThicknessType" type="radio" name="modifyTopChordThicknessOptions" value="Hold" ng-change="src.thicknessOptionChanged()"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinTopChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.purlinTopChordThicknessType === 'Hold'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList" ng-change="src.thicknessChange()"></select>
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <label>Bottom Chord Thickness</label>
-                                                                    <div class="radio">
-                                                                        <label for="purlinBottomThicknessOption1" class="minimum-label">
-                                                                            <input id="purlinBottomThicknessOption1" ng-model="src.modelReferencesModel.secondaryRoofs.purlinBottomChordThicknessType" type="radio" name="modifyBottomChordThicknessOptions" value="Minimum" ng-change="src.thicknessOptionChanged()"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinBottomChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.purlinBottomChordThicknessType === 'Minimum'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList" ng-change="src.thicknessChange()"></select>
-                                                                    </div>
-                                                                    <div class="radio">
-                                                                        <label for="purlinBottomThicknessOption2" class="max-label">
-                                                                            <input id="purlinBottomThicknessOption2" ng-model="src.modelReferencesModel.secondaryRoofs.purlinBottomChordThicknessType" type="radio" name="modifyBottomChordThicknessOptions" value="Hold" ng-change="src.thicknessOptionChanged()"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.purlinBottomChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.purlinBottomChordThicknessType === 'Hold'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList" ng-change="src.thicknessChange()"></select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </fieldset>
-                                                </div>
-                                                <!--Low Eave Location Options-->
-                                                <div class="nv-grid-item">
-                                                    <fieldset class="properties-modal-fieldset">
-                                                        <legend class="properties-modal-legend">Low Eave Location Options</legend>
-                                                        <div class="form-group">
-                                                            <label for="inputRoofEaveType">Type</label>
-                                                            <select id="inputRoofEaveType" ng-disabled="false" class="properties-modal-input form-control" ng-options="type.name for type in src.eaveStrutTypes" ng-model="src.selectedLowEaveType" ng-change="src.onRoofLowEaveTypeChanged()"></select>
-                                                        </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.lowEaveType ==='ColdForm'">
-                                                            <div class="form-group">
-                                                                <label for="inputLowEaveStrut">Shape</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutShape" ng-change="src.onLowEaveStrutShapeChanged()" id="inputLowEaveStrut" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.lowEaveStrutShapeList"></select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputLowEaveStrutDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutDepth" id="inputLowEaveStrutDepth" ng-disabled="false" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.lowEaveStrutDepthList" ng-change="src.onLowEaveStrutDepthChanged()"></select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputLowEaveStrutMember">Lap Type</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutMemberType" id="inputLowEaveStrutMember" ng-disabled="src.lowEaveStrutMemberTypeList.length <2" class="form-control properties-modal-input" ng-options="option.value as option.name for option in src.lowEaveStrutMemberTypeList"></select>
-                                                            </div>
-                                                            <div class="form-group" ng-show="src.lowEaveStrutThicknessList.length>0">
-                                                                <div>
-                                                                    <label>Thickness</label>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutThickness" type="radio" name="srlowEavestructThicknessOptions" value="Minimum" ng-change="src.onLowEaveStrutDepthChanged()"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveStrutThickness === 'Minimum'" id="inputEavestructMinimumThickness" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.lowEaveStrutThicknessList"></select>
-                                                                    </div>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutThickness" type="radio" name="srlowEavestructThicknessOptions" value="Hold" ng-change="src.onLowEaveStrutDepthChanged()"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveStrutThickness === 'Hold'" id="inputeavestructHoldThickness" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.lowEaveStrutThicknessList"></select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <fieldset class="properties-modal-fieldset" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveStrutMemberType === 'Continuous'">
-                                                                <legend class="properties-modal-legend">Continuous Lap Options</legend>
-                                                                <div class="col-md-12 form-group">
-                                                                    <label>Lap</label>
-                                                                    <div>
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveLapOffsetType" type="radio" name="lowEaveContinuousLapType" id="lowEaveContinuousLapOption1" value="Minimum"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveLapOffset" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveLapOffsetType === 'Minimum'" id="lowEaveInputContinuousLapValue1" class="properties-modal-input nv-form-control-inline" ng-options="v as src.formatLapOption(v) for v in src.continuousLapOptions"></select>
-                                                                    </div>
-                                                                    <div>
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveLapOffsetType" type="radio" name="lowEaveContinuousLapType" id="continuousLapOption2" value="Hold"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveLapOffset" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveLapOffsetType === 'Hold'" id="lowEaveInputContinuousLapValue2" class="properties-modal-input nv-form-control-inline" ng-options="v as src.formatLapOption(v) for v in src.continuousLapOptions"></select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group col-md-12">
-                                                                    <label>Lap Connection Options</label>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveHighStrengthBolts" indeterminate /> High Strength Bolts
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveWashersRequired" indeterminate /> Washers Required
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </fieldset>
-                                                        </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.lowEaveType==='BarJoist'">
-                                                            <div class="form-group">
-                                                                <label>Hole Gauge</label>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveHoleGaugeValue" type="radio" name="lowEaveHoleGaugeOptions" value="3.5"> 3 1/2"
-                                                                    </label>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveHoleGaugeValue" type="radio" name="lowEaveHoleGaugeOptions" value="4"> 4"
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutDepth" id="inputDepth" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.lowEaveStrutDepthList" ng-change="src.onEaveDepthChanged()"></select>
-                                                            </div>
-                                                        </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.lowEaveType==='TrussPurlin'">
-                                                            <div class="form-group">
-                                                                <label for="inputDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutDepth" id="inputDepth" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.lowEaveStrutDepthList" ng-change="src.onEaveDepthChanged()"></select>
-                                                            </div>
-                                                            <label>Top Chord Thickness</label>
-                                                            <div class="radio">
-                                                                <label>
-                                                                    <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutTopChordThicknessType" type="radio" name="srTopLowEaveStrutTopChordThicknessOption" value="Minimum"> Minimum
-                                                                </label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutTopChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveStrutTopChordThicknessType === 'Minimum'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList"></select>
-                                                            </div>
-                                                            <div class="radio">
-                                                                <label>
-                                                                    <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutTopChordThicknessType" type="radio" name="srTopLowEaveStrutTopChordThicknessOption" value="Hold"> Hold
-                                                                </label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutTopChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveStrutTopChordThicknessType === 'Hold'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList"></select>
-                                                            </div>
-                                                            <label>Bottom Chord Thickness</label>
-                                                            <div class="radio">
-                                                                <label>
-                                                                    <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutBottomChordThicknessType" type="radio" name="srBottomLowEaveStrutTopChordThicknessOption" value="Minimum"> Minimum
-                                                                </label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutBottomChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveStrutBottomChordThicknessType === 'Minimum'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList"></select>
-                                                            </div>
-                                                            <div class="radio">
-                                                                <label>
-                                                                    <input ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutBottomChordThicknessType" type="radio" name="srBottomLowEaveStrutTopChordThicknessOption" value="Hold"> Hold
-                                                                </label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.lowEaveStrutBottomChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.lowEaveStrutBottomChordThicknessType === 'Hold'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList"></select>
-                                                            </div>
-                                                        </div>
-                                                    </fieldset>
-                                                </div>
-                                                <!--High Eave Location Options-->
-                                                <div class="nv-grid-item">
-                                                    <fieldset class="properties-modal-fieldset">
-                                                        <legend class="properties-modal-legend">High Eave Location Options</legend>
-                                                        <div class="form-group">
-                                                            <label for="inputRoofEaveType">Type</label>
-                                                            <select id="inputRoofEaveType" ng-disabled="false" class="properties-modal-input form-control" ng-options="type.name for type in src.eaveStrutTypes" ng-model="src.selectedHighEaveType" ng-change="src.onRoofHighEaveTypeChanged()"></select>
-                                                        </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.highEaveType ==='ColdForm'">
-                                                            <div class="form-group">
-                                                                <label for="inputLowEaveStrut">Shape</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutShape" ng-change="src.onHighStrutShapeChanged()" id="inputLowEaveStrut" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.highEaveStrutShapeList"></select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputLowEaveStrutDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutDepth" id="inputLowEaveStrutDepth" ng-disabled="false" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.highEaveStrutDepthList" ng-change="src.onHighEaveStrutDepthChanged()"></select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputLowEaveStrutMember">Lap Type</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutMemberType" id="inputLowEaveStrutMember" ng-disabled="src.highEaveStrutMemberTypeList.length <2" class="form-control properties-modal-input" ng-options="option.value as option.name for option in src.highEaveStrutMemberTypeList"></select>
-                                                            </div>
-                                                            <div class="form-group" ng-show="src.highEaveStrutThicknessList.length>0">
-                                                                <div>
-                                                                    <label>Thickness</label>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutThickness" type="radio" name="srHighEavestructThicknessOptions" value="Minimum" ng-change="src.onHighEaveStrutDepthChanged()"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.highEaveStrutThickness === 'Minimum'" id="inputEavestructMinimumThickness" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.highEaveStrutThicknessList"></select>
-                                                                    </div>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutThickness" type="radio" name="srHighEavestructThicknessOptions" value="Hold" ng-change="src.onHighEaveStrutDepthChanged()"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.highEaveStrutThickness === 'Hold'" id="inputeavestructHoldThickness" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.highEaveStrutThicknessList"></select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <fieldset class="properties-modal-fieldset" ng-show="src.modelReferencesModel.secondaryRoofs.highEaveStrutMemberType === 'Continuous'">
-                                                                <legend class="properties-modal-legend">Continuous Lap Options</legend>
-                                                                <div class="col-md-12 form-group">
-                                                                    <label>Lap</label>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.highEaveLapOffsetType" type="radio" name="highEaveContinuousLapType" id="highEaveContinuousLapOption1" value="Minimum"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveLapOffset" ng-show="src.modelReferencesModel.secondaryRoofs.highEaveLapOffsetType === 'Minimum'" id="highEaveInputContinuousLapValue1" class="properties-modal-input nv-form-control-inline" ng-options="v as src.formatLapOption(v) for v in src.continuousLapOptions"></select>
-                                                                    </div>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.highEaveLapOffsetType" type="radio" name="highEaveContinuousLapType" id="continuousLapOption2" value="Hold"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveLapOffset" ng-show="src.modelReferencesModel.secondaryRoofs.highEaveLapOffsetType === 'Hold'" id="highEaveInputContinuousLapValue2" class="properties-modal-input nv-form-control-inline" ng-options="v as src.formatLapOption(v) for v in src.continuousLapOptions"></select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group col-md-12">
-                                                                    <label>Lap Connection Options</label>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" ng-model="src.modelReferencesModel.secondaryRoofs.highEaveHighStrengthBolts" indeterminate /> High Strength Bolts
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" ng-model="src.modelReferencesModel.secondaryRoofs.highEaveWashersRequired" indeterminate /> Washers Required
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </fieldset>
-                                                        </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.highEaveType==='BarJoist'">
-                                                            <div class="form-group">
-                                                                <label>Hole Gauge</label>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input ng-model="src.modelReferencesModel.secondaryRoofs.highEaveHoleGaugeValue" type="radio" name="highEaveHoleGaugeOptions" value="3.5"> 3 1/2"
-                                                                    </label>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input ng-model="src.modelReferencesModel.secondaryRoofs.highEaveHoleGaugeValue" type="radio" name="highEaveHoleGaugeOptions" value="4"> 4"
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutDepth" id="inputDepth" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.highEaveStrutDepthList" ng-change="src.onHighEaveStrutDepthChanged()"></select>
-                                                            </div>
-                                                        </div>
-                                                        <div ng-if="src.modelReferencesModel.secondaryRoofs.highEaveType==='TrussPurlin'">
-                                                            <div class="form-group">
-                                                                <label for="inputDepth">Depth</label>
-                                                                <select ng-model="src.modelReferencesModel.secondaryRoofs.highEaveStrutDepth" id="inputDepth" class="properties-modal-input form-control" ng-options="option.value as option.name for option in src.highEaveStrutDepthList" ng-change="src.onHighEaveStrutDepthChanged()"></select>
-                                                            </div>
-                                                            <div>
-                                                                <div>
-                                                                    <label>Top Chord Thickness</label>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.eaveStrutTopChordThicknessType" type="radio" name="srTopHighEaveStrutTopChordThicknessOption" value="Minimum"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.eaveStrutTopChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.eaveStrutTopChordThicknessType === 'Minimum'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList"></select>
-                                                                    </div>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.eaveStrutTopChordThicknessType" type="radio" name="srTopHighEaveStrutTopChordThicknessOption" value="Hold"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.eaveStrutTopChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.eaveStrutTopChordThicknessType === 'Hold'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList"></select>
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <label>Bottom Chord Thickness</label>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.eaveStrutBottomChordThicknessType" type="radio" name="srBottomHighEaveStrutTopChordThicknessOption" value="Minimum"> Minimum
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.eaveStrutBottomChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.eaveStrutBottomChordThicknessType === 'Minimum'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList"></select>
-                                                                    </div>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input ng-model="src.modelReferencesModel.secondaryRoofs.eaveStrutBottomChordThicknessType" type="radio" name="srBottomHighEaveStrutTopChordThicknessOption" value="Hold"> Hold
-                                                                        </label>
-                                                                        <select ng-model="src.modelReferencesModel.secondaryRoofs.eaveStrutBottomChordThicknessValue" ng-show="src.modelReferencesModel.secondaryRoofs.eaveStrutBottomChordThicknessType === 'Hold'" class="properties-modal-input nv-form-control-inline" ng-options="option.value as option.name for option in src.thicknessChordList"></select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="nv-grid-item">
-                                                    <fieldset class="properties-modal-fieldset">
-                                                        <legend class="properties-modal-legend">Sub-Framing Options</legend>
-                                                        <div class="form-group">
-                                                            <label>End Zone Options</label>
-                                                            <select id="endZoneOptions" class="properties-modal-input form-control" ng-options="option as src.formatEndZoneOption(option) for option in src.endZoneOptions() track by option" ng-model="src.modelReferencesModel.secondaryRoofs.subFramingEndZone"></select>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Sub-Member Extension Options</label>
-                                                            <div class="radio">
-                                                                <label for="subMemberMaximumDistance">
-                                                                    <input type="radio" ng-model="src.modelReferencesModel.secondaryRoofs.subMemberExtensionType" name="subMemberExtensionOptions" id="subMemberMaximumDistance" value="MaximumDistance" ng-change="src.onSubMemberExtensionChanged()"> Maximum Distance
-                                                                </label>
-                                                                <calc-input ng-model="src.modelReferencesModel.secondaryRoofs.subMemberExtensionValue" ng-show="src.modelReferencesModel.secondaryRoofs.subMemberExtensionType === 'MaximumDistance'" class="properties-modal-input nv-form-control-inline"></calc-input>
-                                                            </div>
-                                                            <div class="radio">
-                                                                <label for="subMemberMaximumBayRatio">
-                                                                    <input type="radio" ng-model="src.modelReferencesModel.secondaryRoofs.subMemberExtensionType" name="subMemberExtensionOptions" id="subMemberMaximumBayRatio" value="MaximumBayRatio" ng-change="src.onSubMemberExtensionChanged()"> Maximum Bay Ratio
-                                                                </label>
-                                                                <input ng-model="src.modelReferencesModel.secondaryRoofs.subMemberExtensionValue" type="text" ng-show="src.modelReferencesModel.secondaryRoofs.subMemberExtensionType === 'MaximumBayRatio'" class="properties-modal-input nv-form-control-inline" input-number-format allow-negative="false" />
-                                                            </div>
-                                                        </div>
-                                                    </fieldset>
-                                                </div>
+                                                    </div>
+                                                </fieldset>
                                             </div>
-                                        </section>
+                                            <div class="col-md-4">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">Low Eave Strut</legend>
+                                                    <div class="form-group">
+                                                        <label for="inputOption1">Shape</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a shape</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption2">Depth</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a Depth Option</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption3">Member Type</label>
+                                                        <select id="inputOption3" class="form-control properties-modal-input">
+                                                            <option value="">Please Select member Type</option>
+                                                            <option value="1">Continuous</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="thicknessOption1">
+                                                                <input type="radio" name="lowEaveThicknessOptions" id="thicknessOption1" value="1"> Minimum
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="thicknessOption2">
+                                                                <input type="radio" name="lowEaveThicknessOptions" id="thicknessOption2" value="2"> Hold
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <fieldset>
+                                                    <legend class="properties-modal-legend">High Eave Strut</legend>
+                                                    <div class="form-group">
+                                                        <label for="inputOption1">Shape</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a shape</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption2">Depth</label>
+                                                        <select id="inputOption1" class="properties-modal-input form-control">
+                                                            <option value="">Please select a Depth Option</option>
+                                                            <option value="1">[value 1]</option>
+                                                            <option value="2">[value 2]</option>
+                                                            <option value="3">[value 3]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputOption3">Member Type</label>
+                                                        <select id="inputOption3" class="form-control properties-modal-input">
+                                                            <option value="">Please Select member Type</option>
+                                                            <option value="1">Continuous</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label for="thicknessOption1">
+                                                                <input type="radio" name="highEaveThicknessOptions" id="thicknessOption1" value="1"> Minimum
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="thicknessOption2">
+                                                                <input type="radio" name="highEaveThicknessOptions" id="thicknessOption2" value="2"> Hold
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
                                     </section>
                                 </div>
                             </div>
@@ -1398,8 +1141,7 @@
     <script src="Scripts/main.js "></script>
     <script type='text/javascript' id="__bs_script__ ">
     //<![CDATA[document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.10.0.js'>
-    <
-    \/script>".replace("HOST", location.hostname));/ / ]] >
+    < \/script>".replace("HOST", location.hostname));/ / ]] >
     </script>
     <div id="svgList">
         <svg class="hide icon">

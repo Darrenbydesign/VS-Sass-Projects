@@ -10,12 +10,14 @@ var gulp                          = require('gulp'),
   runSequence                     = require('run-sequence'),
   browserSync                     = require('browser-sync'),
   kss                             = require('gulp-kss'),
+  svgstore                        = require('gulp-svgstore'),
 
   // grouped plugins
   sass                            = require('gulp-sass'),
   sassdoc                         = require('sassdoc'),
   ts                              = require('gulp-typescript'),
   tsProject                       = ts.createProject('tsconfig.json');
+
 
 // Path Variables for various actions on folders and files 
 //=====================================================================
@@ -45,13 +47,15 @@ var paths = {
     prodViews                     : 'production/',
 
     // dev paths
-    dev                           : 'app/',
-    fonts                         : 'app/fonts/**/*',
-    scripts                       : 'app/Scripts/**/*.js',
-    images                        : 'app/images/**/*.+(png|jpg|gif|svg)',
-    videos                        : 'app/images/**/*.+(mp4|webm|ogg|theora|mov)',
+    dev                           : 'app/',                                                                                      
+    fonts                         : 'app/fonts/**/*',                                                                  
+    scripts                       : 'app/Scripts/**/*.js',                                                        
+    images                        : 'app/images/**/*.+(png|jpg|gif|svg)',                          
+    videos                        : 'app/images/**/*.+(mp4|webm|ogg|theora|mov)',          
     html                          : ['app/**/*.html', '!app/sass/snippets/**/*.html'],
-    mapPath                       : 'maps',
+    mapPath                       : 'maps',                                                                                      
+    svgPath                       : 'app/images/SVG/*.svg',     
+    svgOutputPath                 : 'app/images/SVG/'                             
   },
 
   // JSON options for compiling Sass files
@@ -90,6 +94,18 @@ var paths = {
     overview          : __dirname + paths.kssStyleguideFile,
     templateDirectory : paths.templatePath,
   };
+
+ // SVGStore options
+ // =====================================================================
+
+// Task to import SVGs into one symbol file
+// ======================================================================
+gulp.task('svgstore', function () {
+    return gulp
+        .src(paths.svgPath)
+        .pipe(svgstore())
+        .pipe(gulp.dest(paths.svgOutputPath));
+});
 
 // COMPILE TASK TO CREATE CSS JS and DOCUMENTATION FILES
 //===================================================================
